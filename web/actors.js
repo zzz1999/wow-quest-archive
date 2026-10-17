@@ -1,6 +1,6 @@
 /* Local script bundles keep NPC archives available offline without a server. */
 'use strict';
-window.createActorBrowser = ({catalog, getVersion, getQuests, onQuest, onSelect, onClose, escape, badge, download}) => {
+window.createActorBrowser = ({catalog, getVersion, getQuests, questTitle, onQuest, onSelect, onClose, escape, badge, download}) => {
  const $=id=>document.getElementById(id), dialog=$('actor-dialog'), PAGE=40;
  const cache=new Map(), loading=new Map();
  let generation=0, restoreOnClose=true;
@@ -72,7 +72,7 @@ window.createActorBrowser = ({catalog, getVersion, getQuests, onQuest, onSelect,
  }
 
  function questLinks(ids,label,quests){
-  return `<section class="text-section"><h3 class="section-label">${label} <span class="relation-count">${ids.length}</span></h3>${ids.length?`<div class="actor-quests">${ids.map(id=>{const q=quests.get(id);const tags=q?.tags||[];return `<button data-actor-quest="${id}" ${q?'':'disabled'}><span>${escape(q?.text.title||'未命名任务')} <small>#${id}</small></span>${tags.includes('community-custom')?'<small class="relation-warning">社区自定义</small>':tags.includes('suspected-test')?'<small class="relation-warning">疑似测试 / 废弃</small>':''}</button>`;}).join('')}</div>`:'<p class="empty-field">源数据未提供这类关系</p>'}</section>`;
+  return `<section class="text-section"><h3 class="section-label">${label} <span class="relation-count">${ids.length}</span></h3>${ids.length?`<div class="actor-quests">${ids.map(id=>{const q=quests.get(id);const tags=q?.tags||[];return `<button data-actor-quest="${id}" ${q?'':'disabled'}><span>${escape(q?questTitle(q):'未命名任务')} <small>#${id}</small></span>${tags.includes('community-custom')?'<small class="relation-warning">社区自定义</small>':tags.includes('suspected-test')?'<small class="relation-warning">疑似测试 / 废弃</small>':''}</button>`;}).join('')}</div>`:'<p class="empty-field">源数据未提供这类关系</p>'}</section>`;
  }
 
  function select(id,{updateHash=true}={}){

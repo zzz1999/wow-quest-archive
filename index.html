@@ -5,7 +5,7 @@
   <meta name="description" content="魔兽世界五版本任务研究资料库。简体中文优先，支持离线查阅与 JSONL 导出。">
   <title>艾泽拉斯任务档案 · WoW Quest Archive</title>
   <link rel="stylesheet" href="web/style.css">
-  <script src="web/catalog.js" defer></script><script src="web/actors.js" defer></script><script src="web/app.js" defer></script>
+  <script src="web/catalog.js" defer></script><script src="web/reading.js" defer></script><script src="web/actors.js" defer></script><script src="web/app.js" defer></script>
 </head>
 <body>
 <aside class="sidebar">
@@ -14,7 +14,7 @@
   <div class="sidebar-bottom"><span class="offline-dot"></span> 任务资料库 <span class="small">v1.0</span><p>从一段委托，读懂一个世界。</p><button id="about" class="sidebar-link">来源与收录情况 ↗</button><a class="sidebar-link" href="https://github.com/zzz1999/wow-quest-archive" target="_blank" rel="noreferrer">GitHub 项目 ↗</a></div>
 </aside>
 <main>
- <header class="topbar"><span>资料馆 <span class="muted">/</span> <b id="breadcrumb">任务索引</b></span><div><button id="actors-open" disabled>NPC 档案</button><button id="bookmarks" aria-pressed="false">☆ 研究书签 <span id="bookmark-count">0</span></button><button id="source-open">数据说明</button></div></header>
+ <header class="topbar"><span>资料馆 <span class="muted">/</span> <b id="breadcrumb">任务索引</b></span><div><button id="reading-open">玩家视角 · 设置</button><button id="actors-open" disabled>NPC 档案</button><button id="bookmarks" aria-pressed="false">☆ 研究书签 <span id="bookmark-count">0</span></button><button id="source-open">数据说明</button></div></header>
  <section class="intro"><div><p class="overline">THE STORIES BEHIND THE QUESTS</p><h1>每个任务，都有一个故事。</h1><p>查阅委托、目标与交接对白，沿着任务关系，观察故事如何展开。</p></div><div class="archive-total"><strong id="total-count">—</strong><span>条版本任务记录 · 5 个版本</span></div></section>
  <section class="workbench" aria-label="任务查阅">
   <div class="catalog-pane">
@@ -31,6 +31,17 @@
  <footer>社区数据库快照 · 逐字段语言回退 · 不同版本独立保存 <span>非暴雪官方项目</span></footer>
 </main>
 <dialog id="info-dialog"><div class="dialog-top"><h2>来源与收录情况</h2><button id="close-dialog" aria-label="关闭">×</button></div><div id="info-body"></div></dialog>
+<dialog id="reading-dialog" aria-labelledby="reading-heading">
+ <div class="dialog-top"><h2 id="reading-heading">阅读设置</h2><button id="reading-close" aria-label="关闭阅读设置">×</button></div>
+ <form id="reading-form">
+  <fieldset class="reading-modes"><legend>阅读视角</legend><label><input type="radio" name="reading-mode" value="player"> 玩家视角 <small>代入角色称呼，突出目标与对话</small></label><label><input type="radio" name="reading-mode" value="source"> 原文视角 <small>保留游戏变量与资料字段</small></label></fieldset>
+  <fieldset id="character-settings"><legend>你的角色</legend><p class="reading-help">填写后，对话中的称呼会换成你的角色资料。留空则显示“玩家名称”“玩家职业”“玩家种族”。</p>
+   <div class="character-fields"><label>玩家名称<input id="player-name" maxlength="40" placeholder="玩家名称" autocomplete="off"></label><label>玩家职业<input id="player-class" maxlength="40" placeholder="例如：法师" autocomplete="off"></label><label>玩家种族<input id="player-race" maxlength="40" placeholder="例如：人类" autocomplete="off"></label><label>性别称呼<select id="player-gender"><option value="both">并列显示两种称呼</option><option value="male">男性称呼</option><option value="female">女性称呼</option></select></label></div>
+  </fieldset>
+  <p class="reading-help">设置仅保存在当前浏览器。原始资料与 JSON / JSONL 导出保持原文。</p>
+  <div class="reading-actions"><button type="button" id="reading-reset">恢复默认</button><button type="button" id="reading-cancel">取消</button><button type="submit" class="primary-button">应用设置</button></div>
+ </form>
+</dialog>
 <dialog id="actor-dialog" aria-labelledby="actor-heading">
  <div class="dialog-top"><div><h2 id="actor-heading">NPC 与任务物件档案</h2><p id="actor-version"></p></div><button id="actor-close" aria-label="关闭 NPC 档案">×</button></div>
  <div class="actor-workbench">
