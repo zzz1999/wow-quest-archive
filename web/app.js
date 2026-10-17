@@ -63,7 +63,12 @@
  function renderEmpty(){$('reader').innerHTML='<div class="empty"><span>✦</span><h2>选择一条任务，开始阅读</h2><p>可按关键词、语言与等级筛选。</p></div>';}
  function selectQuest(id,{updateHash=true}={}){
   const r=state.rows.find(x=>x.record.id===Number(id))?.record;if(!r)return;state.selected=r;
-  const position=state.filtered.findIndex(x=>x.id===r.id);if(position>=0)state.page=Math.floor(position/PAGE);renderList();
+  const previousPage=state.page,position=state.filtered.findIndex(x=>x.id===r.id);if(position>=0)state.page=Math.floor(position/PAGE);
+  if(state.page!==previousPage)renderList();
+  else for(const button of $('quest-list').querySelectorAll('[data-id]')){
+   const selected=Number(button.dataset.id)===r.id;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected));
+   if(selected)button.querySelector('strong').textContent=(bookmarks.has(r.key)?'☆ ':'')+(r.text.title||'未命名任务 #'+r.id);
+  }
   if(updateHash){const hash=`#${state.version}/${r.id}`;if(location.hash!==hash)history.pushState(null,'',hash);}
   const meta=cat.versions.find(x=>x.id===state.version);
   const quality=(r.qualityNotes||[]).map(note=>'<div class="notice">翻译待核：'+escape(note)+'</div>').join('')+(r.tags.includes('community-custom')?'<div class="notice">已核实的社区服务器自定义任务，不应当作暴雪原版任务样本。</div>':'')+(r.tags.includes('source-encoding-issue')?'<div class="notice">上游部分文本含损坏字符，已跳过损坏候选并继续语言回退；详见结构化记录 textIssues。</div>':'');
