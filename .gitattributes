@@ -1,0 +1,5 @@
+# Keep generated JSONL hashes stable across Windows, macOS and Linux checkouts.
+* text=auto eol=lf
+
+# Preserve upstream license and attribution files byte for byte.
+sources/licenses/** -text

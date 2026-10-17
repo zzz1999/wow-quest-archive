@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-18",
+  "purpose": "Fixed community database quest snapshots for local research",
+  "versions": [
+    {
+      "id": "classic",
+      "name": "经典旧世",
+      "patch": "1.12.1–1.12.3",
+      "repo": "cmangos/classic-db",
+      "commit": "ec4f596146be6467ea93c57397858e329e2db852",
+      "snapshot": "ClassicDB_1_12_1_z2815 / 2023-10-09",
+      "note": "基础快照，未应用后续 Updates。中文来自同库 Chinese/locales_quest，仅合并基础任务 ID。未找到同库繁中任务文本。",
+      "license": "GPL-3.0; see separate Blizzard copyright notice",
+      "assets": [
+        {
+          "name": "classic-base.sql.gz",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/Full_DB/ClassicDB_1_12_1_z2815.sql.gz",
+          "bytes": 12959882,
+          "sha256": "4f92db520868ab4e566726f68b5b2e380ae781209beaf22237b4f7f04600d0c0",
+          "input": true,
+          "entry": "classic-base.sql"
+        },
+        {
+          "name": "locales_quest.sql",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/locales/Chinese/locales_quest.sql",
+          "bytes": 7018016,
+          "sha256": "22799e4cdac36aacaed928803d911424e84c8ae5081db6584939b2c6d74b3233",
+          "input": true
+        },
+        {
+          "name": "LICENSE.md",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/LICENSE.md",
+          "bytes": 35148,
+          "sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b",
+          "input": false
+        },
+        {
+          "name": "COPYRIGHT.md",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/COPYRIGHT.md",
+          "bytes": 1123,
+          "sha256": "82d2406c330adb4e4b96795821f79e7c171332008f5827d9ddc6433045477385",
+          "input": false
+        },
+        {
+          "name": "README.md",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/README.md",
+          "bytes": 5004,
+          "sha256": "e6547f5dd10dcf9c6ee91abe7e96a69772a0cd697c95c19d95789794a23bc546",
+          "input": false
+        }
+      ]
+    },
+    {
+      "id": "wotlk",
+      "name": "巫妖王之怒",
+      "patch": "3.3.5a",
+      "repo": "azerothcore/azerothcore-wotlk",
+      "commit": "8265956f54c64ad082e2b9f8d37db64b38600b3f",
+      "snapshot": "data/sql/base/db_world",
+      "note": "固定提交中的基础表快照，未应用 updates。",
+      "license": "GPL-2.0",
+      "assets": [
+        {
+          "name": "AUTHORS",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/AUTHORS",
+          "bytes": 2897,
+          "sha256": "76047a285432615359bba4f1e2e3cb02b9cc30617688b2a3341b1f963d2b683d",
+          "input": false
+        },
+        {
+          "name": "creature_questender.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/creature_questender.sql",
+          "bytes": 112487,
+          "sha256": "926b56956cba585f14b9fb2fa9ea5ba52096fc18182b9a3dab02fc9a0462bb72",
+          "input": true
+        },
+        {
+          "name": "creature_queststarter.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/creature_queststarter.sql",
+          "bytes": 105851,
+          "sha256": "9c9598115adbc69d8c2d152e0fdb92fbbc727a42417837443d1cee5f3eee0a0a",
+          "input": true
+        },
+        {
+          "name": "creature_template_locale.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/creature_template_locale.sql",
+          "bytes": 10536182,
+          "sha256": "a69dab1fbaefcfbdc453cf64900ed000cb70a6bd9a61453dd689c3918a53b5e2",
+          "input": true
+        },
+        {
+          "name": "creature_template.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/creature_template.sql",
+          "bytes": 5423056,
+          "sha256": "0066e4fd35b809986dd325487515087f5a95f4ffe50ea03846c8d8bf5196870a",
+          "input": true
+        },
+        {
+          "name": "gameobject_questender.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/gameobject_questender.sql",
+          "bytes": 8820,
+          "sha256": "4e0c371a8f47ee53bac822753389c54d734d9e0aeb0e73b73b1eb124745e7e4b",
+          "input": true
+        },
+        {
+          "name": "gameobject_queststarter.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/gameobject_queststarter.sql",
+          "bytes": 8732,
+          "sha256": "5d497aeacadf10c0fa077590a0020ac9048e259445355e74954cb77d7b38d39b",
+          "input": true
+        },
+        {
+          "name": "gameobject_template_locale.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/gameobject_template_locale.sql",
+          "bytes": 7015633,
+          "sha256": "9cfff57b8f278e751e4eacef4012623cbef787aa0f017bb56124d3b00cbe416d",
+          "input": true
+        },
+        {
+          "name": "gameobject_template.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/gameobject_template.sql",
+          "bytes": 2347184,
+          "sha256": "5878b10d2ad512f9385be22a44e6f62f45fb59b7cca0187c13a64e2d14c79140",
+          "input": true
+        },
+        {
+          "name": "quest_offer_reward_locale.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_offer_reward_locale.sql",
+          "bytes": 11846241,
+          "sha256": "9e851249598681a0ed16eba08623f01a81993c4641b36ade1e8eed9bf697ddc5",
+          "input": true
+        },
+        {
+          "name": "quest_offer_reward.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_offer_reward.sql",
+          "bytes": 1965994,
+          "sha256": "9e605b2e37501b9ee9644faa46a888591b5cdf79823d5556e4e8ab766daa85b6",
+          "input": true
+        },
+        {
+          "name": "quest_request_items_locale.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_request_items_locale.sql",
+          "bytes": 4144435,
+          "sha256": "9e8d9a083925b323946276837383d480878d9af892a69204f959540aff6810be",
+          "input": true
+        },
+        {
+          "name": "quest_request_items.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_request_items.sql",
+          "bytes": 784156,
+          "sha256": "40d907f580e590797bb33c29f8ee4021c0e942be718353ea4ad1069ec4c55858",
+          "input": true
+        },
+        {
+          "name": "quest_template_addon.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_template_addon.sql",
+          "bytes": 430713,
+          "sha256": "ca1081203af9dc5ab9b948d94652a66674d116ce387f629595ec38f89c4af5d2",
+          "input": true
+        },
+        {
+          "name": "quest_template_locale.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_template_locale.sql",
+          "bytes": 39094071,
+          "sha256": "d4c7705fecc34f329416364daf23384060069a48af43aa2362bbc235d634d577",
+          "input": true
+        },
+        {
+          "name": "quest_template.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/quest_template.sql",
+          "bytes": 7033399,
+          "sha256": "5dc7e6c92ea6875a5fc68cf5d3e33150e86cda5819a11af0c59217b24c63a37f",
+          "input": true
+        },
+        {
+          "name": "LICENSE",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/LICENSE",
+          "bytes": 18091,
+          "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+          "input": false
+        }
+      ]
+    },
+    {
+      "id": "cataclysm",
+      "name": "大地的裂变",
+      "patch": "4.3.4",
+      "repo": "mangosthree/database",
+      "commit": "2e72872298e59a7ec8763ad2cdf897218b761b20",
+      "snapshot": "World/Setup/FullDB + Chinese/Taiwanese translations",
+      "note": "同库4.3.4基础快照与本地化。含未全面人工核验的旧译文；已确认任务2描述与目标仍使用旧地点，已标记translation-review。未应用后续更新。",
+      "translationWarnings": {
+        "2": [
+          "简中描述和目标中的碎木哨岗与4.3.4英文 Silverwind Refuge 地点不符；保留源文本供对照，需人工复核。"
+        ]
+      },
+      "license": "Database CC-BY-NC-SA-3.0; translation subdirectory GPL-2.0",
+      "assets": [
+        {
+          "name": "schema.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/mangosdLoadDB.sql",
+          "bytes": 226920,
+          "sha256": "b985b33f87fc94c45a2677ccc687b6fe44cd52afbe06dab506f400b9d1f9ed14",
+          "input": true
+        },
+        {
+          "name": "quest_template.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/quest_template.sql",
+          "bytes": 15653898,
+          "sha256": "ffddb74d8c672ea144869e60e4fb598d83d0fa8cc77d4c72c8bc800dc4799e34",
+          "input": true
+        },
+        {
+          "name": "locales_quest.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/locales_quest.sql",
+          "bytes": 1681,
+          "sha256": "594c204a3399c7ae504db8893eff22d4a9403f071384f34b955376711e555c4f",
+          "input": true
+        },
+        {
+          "name": "creature_template.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/creature_template.sql",
+          "bytes": 11848612,
+          "sha256": "5a93f1621b0bed27337274c8e682d40cc269152fd1acb86365d5377fc6732202",
+          "input": true
+        },
+        {
+          "name": "locales_creature.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/locales_creature.sql",
+          "bytes": 1696,
+          "sha256": "198a6e28fd52b20aa87482591e80187002de7d5690683dc590d527cc586efec6",
+          "input": true
+        },
+        {
+          "name": "gameobject_template.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/gameobject_template.sql",
+          "bytes": 3384113,
+          "sha256": "fff7781a661e6ac5ef0fb6ac895ec693241c6835542131d50d8ad84dd81d6076",
+          "input": true
+        },
+        {
+          "name": "locales_gameobject.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/locales_gameobject.sql",
+          "bytes": 1706,
+          "sha256": "f062bc9d06bd987ebce0e58f2dbfd7e243823d390bd491de6033c733f4ef3d60",
+          "input": true
+        },
+        {
+          "name": "quest_relations.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/quest_relations.sql",
+          "bytes": 423502,
+          "sha256": "7884f85995601d996be8155d42bd6af5b7f0d997e9f734638069f3e0353d78ef",
+          "input": true
+        },
+        {
+          "name": "Chinese_Quest.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Chinese/Chinese_Quest.sql",
+          "bytes": 8151754,
+          "sha256": "a9656b01e126ad4c6bd4fcbe47ba05fb916375d220077577d3e5b2eae4adc9d7",
+          "input": true
+        },
+        {
+          "name": "Taiwanese_Quest.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Taiwanese/Taiwanese_Quest.sql",
+          "bytes": 212078,
+          "sha256": "5449225ef54f959e9f6558b92343f0b31753deecc6e7b90fd289a932151294d0",
+          "input": true
+        },
+        {
+          "name": "Chinese_creature.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Chinese/Chinese_creature.sql",
+          "bytes": 2422803,
+          "sha256": "88cc6e4575bd9e1d4d5199768444f1c26508f09bab61f7bb8fb711c717d9d3f7",
+          "input": true
+        },
+        {
+          "name": "Taiwanese_creature.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Taiwanese/Taiwanese_creature.sql",
+          "bytes": 2641401,
+          "sha256": "0756b6653f6cb38996fc253a71ed29bf2c1de7f68dff25242110207345131248",
+          "input": true
+        },
+        {
+          "name": "Chinese_gameobject.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Chinese/Chinese_gameobject.sql",
+          "bytes": 1549562,
+          "sha256": "8cec14696cf66b74f937edce874049de86293c0711829911cab57f3704b85f0b",
+          "input": true
+        },
+        {
+          "name": "Taiwanese_gameobject.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Taiwanese/Taiwanese_gameobject.sql",
+          "bytes": 1563337,
+          "sha256": "2d85f8208b580394ccdb4f9e3a311f8c0477eff657f563f9ebc5025129379c45",
+          "input": true
+        },
+        {
+          "name": "2_Add_NewLocalisationFields.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/2_Add_NewLocalisationFields.sql",
+          "bytes": 3714,
+          "sha256": "dfbe987aca458ef095747827d5e4e011f3efff8f46952e0349ba5340ad341c60",
+          "input": false
+        },
+        {
+          "name": "LICENSE.md",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/LICENSE.md",
+          "bytes": 2255,
+          "sha256": "67223cc4fe802fa6290382a02e6519c87bcb8ec8124b1321719799cc9f9aca58",
+          "input": false
+        },
+        {
+          "name": "README.md",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/README.md",
+          "bytes": 4388,
+          "sha256": "b40d818a3573c86ad191b093046c0b01630a9c36946ca33c6e85ab872d507edc",
+          "input": false
+        },
+        {
+          "name": "Translations-LICENSE",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/LICENSE",
+          "bytes": 18046,
+          "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73",
+          "input": false
+        }
+      ]
+    },
+    {
+      "id": "pandaria",
+      "name": "潘达利亚之谜",
+      "patch": "5.4.8",
+      "repo": "alexkulya/pandaria_5.4.8",
+      "commit": "e0a20613d73e2b9324ac13a4783c724fec1d4559",
+      "snapshot": "world_04_03_2023 + 2026_08_06_16 locale import",
+      "note": "同库5.4.8基础快照加本地化导入表。中文有后续客户端采集痕迹（VerifiedBuild高于18414），属于社区适配文本，不保证原始5.4.8逐字一致。未应用其他迁移。",
+      "customQuestIds": [
+        40000,
+        40001,
+        40002,
+        40003,
+        40004,
+        40005,
+        40006,
+        40007,
+        40008,
+        40009,
+        40010,
+        40011,
+        40012,
+        40013,
+        40014,
+        40015,
+        40016,
+        40017,
+        40018,
+        40019,
+        40020,
+        40021,
+        40022,
+        40023,
+        40024,
+        40025,
+        40026,
+        40027,
+        40028,
+        40029,
+        40030,
+        40031,
+        40032,
+        40033,
+        40034,
+        40035,
+        40036,
+        40037,
+        40038,
+        40039,
+        40040,
+        40100,
+        40101,
+        40102,
+        40103,
+        40104,
+        40105,
+        40106,
+        40107,
+        40108,
+        40109,
+        40110,
+        40111,
+        40112,
+        40113,
+        40114,
+        40115,
+        40120,
+        40121,
+        40122,
+        40123,
+        40124,
+        40125,
+        40126,
+        40127,
+        40128,
+        40129,
+        40130,
+        40131,
+        40132,
+        40133,
+        40134,
+        40135,
+        40136,
+        40137,
+        40138,
+        40139,
+        40140,
+        40141,
+        40142,
+        40143,
+        40144,
+        40145,
+        40146,
+        40147,
+        40148,
+        40149,
+        40150,
+        40151,
+        40152,
+        40153,
+        40154,
+        40155,
+        40190,
+        40191,
+        40192,
+        40193,
+        40200,
+        40201,
+        40202,
+        40203,
+        40204,
+        40205,
+        40206,
+        40300,
+        40301,
+        40302,
+        40303,
+        40304,
+        40305,
+        40306,
+        40307,
+        40308,
+        40309,
+        40310,
+        40311
+      ],
+      "license": "GPL-2.0",
+      "assets": [
+        {
+          "name": "world_04_03_2023.zip",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/sql/base/world_04_03_2023.zip",
+          "bytes": 76330459,
+          "sha256": "16c9a3e63f8aeaab9259524aefda5184f089455d7cbfb7a3810516ec4f257c7f",
+          "input": true,
+          "role": "base-data",
+          "entry": "world_04_03_2023.sql"
+        },
+        {
+          "name": "2026_08_06_16_world_quest_locale_import.sql",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/sql/old/world/2026_08_06_16_world_quest_locale_import.sql",
+          "bytes": 36631717,
+          "sha256": "723085dca6fcbc11b7130aff535af9f2534262884a42725335a1861c09e3a85f",
+          "input": true,
+          "role": "quest-text-languages"
+        },
+        {
+          "name": "2026_08_06_11_world_quest_template_locale.sql",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/sql/old/world/2026_08_06_11_world_quest_template_locale.sql",
+          "bytes": 11399,
+          "sha256": "261df4002705b2e2567a720f41cc97aaf0f15746d1b51e09708efc1582b70ddb",
+          "input": false,
+          "role": "schema-and-mapping-evidence"
+        },
+        {
+          "name": "2026_08_06_18_world_quest_objective_locale.sql",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/sql/old/world/2026_08_06_18_world_quest_objective_locale.sql",
+          "bytes": 688285,
+          "sha256": "686fe7a5d7d84c352de7ec3cc861a5772ae7636d9a3747810c24bb286b3d6c23",
+          "input": true,
+          "role": "objective-text-languages"
+        },
+        {
+          "name": "2026_08_18_01_world_custom_things.sql",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/sql/updates/world/2026_08_18_01_world_custom_things.sql",
+          "bytes": 94520,
+          "sha256": "9f57f805915dca5008b86a5505b8287a00da022b1f9af3cd4d45e197034b7d59",
+          "input": false,
+          "role": "custom-classification-evidence"
+        },
+        {
+          "name": "README.md",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/README.md",
+          "bytes": 3665,
+          "sha256": "81236fa9813e9e751af5a87aa75fc2a538a08c237041b0236d25917b5e68bd5e",
+          "input": false,
+          "role": "version-evidence"
+        },
+        {
+          "name": "COPYING.md",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/COPYING.md",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "input": false,
+          "role": "license"
+        },
+        {
+          "name": "ObjectMgr.cpp",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Globals/ObjectMgr.cpp",
+          "bytes": 437043,
+          "sha256": "bce7e8e8241ae66fb360036f2acb516dd68cd689668cb49705f6295e07cf4eeb",
+          "input": false,
+          "role": "field-mapping-evidence"
+        }
+      ]
+    },
+    {
+      "id": "legion",
+      "name": "军团再临",
+      "patch": "7.3.5",
+      "repo": "TrinityCore/TrinityCore",
+      "commit": "7f2b7dc9c2165d2608742473a931f55b1c1a753a",
+      "snapshot": "TDB735.00 / 2018-02-19",
+      "note": "TrinityCore官方项目的历史基础快照；奖励/进度本地化表为空，因此这些字段主要回退英文。未应用后续updates。",
+      "license": "GPL-2.0",
+      "assets": [
+        {
+          "name": "trinity-735.7z",
+          "url": "https://github.com/TrinityCore/TrinityCore/releases/download/TDB735.00/TDB_full_735.00_2018_02_19.7z",
+          "bytes": 103925362,
+          "sha256": "15540bab9db7bf7a5d7e672f517be6140e36aebc0e26c73cbee63bd1135a9b6c",
+          "input": true,
+          "entry": "TDB_full_735.00_2018_02_19/TDB_world_735.00_2018_02_19.sql"
+        },
+        {
+          "name": "COPYING",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/COPYING",
+          "bytes": 18092,
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "input": false
+        },
+        {
+          "name": "README.md",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/README.md",
+          "bytes": 3651,
+          "sha256": "6de195331cba3eae08fce5da9cb00e0155f0ae11915e5361019ad975db9a7f32",
+          "input": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "wotlk",
+  "name": "巫妖王之怒",
+  "patch": "3.3.5a",
+  "repo": "azerothcore/azerothcore-wotlk",
+  "commit": "8265956f54c64ad082e2b9f8d37db64b38600b3f",
+  "snapshot": "data/sql/base/db_world",
+  "note": "固定提交中的基础表快照，未应用 updates。",
+  "license": "GPL-2.0",
+  "count": 9464,
+  "fields": {
+    "title": {
+      "zhCN": 9338,
+      "zhTW": 9,
+      "enUS": 109,
+      "missing": 8
+    },
+    "objectives": {
+      "zhCN": 7935,
+      "zhTW": 8,
+      "enUS": 44,
+      "missing": 1477
+    },
+    "description": {
+      "zhCN": 7926,
+      "zhTW": 10,
+      "enUS": 55,
+      "missing": 1473
+    },
+    "progress": {
+      "zhCN": 7435,
+      "zhTW": 0,
+      "enUS": 28,
+      "missing": 2001
+    },
+    "completion": {
+      "zhCN": 9087,
+      "zhTW": 0,
+      "enUS": 60,
+      "missing": 317
+    },
+    "end": {
+      "zhCN": 490,
+      "zhTW": 1,
+      "enUS": 3,
+      "missing": 8970
+    },
+    "completed": {
+      "zhCN": 6122,
+      "zhTW": 12,
+      "enUS": 13,
+      "missing": 3317
+    },
+    "giverWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "giverTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "turninWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "turninTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "objective1": {
+      "zhCN": 924,
+      "zhTW": 26,
+      "enUS": 8,
+      "missing": 8506
+    },
+    "objective2": {
+      "zhCN": 262,
+      "zhTW": 3,
+      "enUS": 3,
+      "missing": 9196
+    },
+    "objective3": {
+      "zhCN": 165,
+      "zhTW": 3,
+      "enUS": 0,
+      "missing": 9296
+    },
+    "objective4": {
+      "zhCN": 68,
+      "zhTW": 2,
+      "enUS": 0,
+      "missing": 9394
+    }
+  },
+  "testLike": 241,
+  "communityCustom": 0,
+  "files": [
+    {
+      "path": "data/wotlk/000.jsonl",
+      "records": 1000,
+      "sha256": "3f3213cbeccf850979c97c3efca776e2416e9cf70d40d001b7509ac6334c1d24"
+    },
+    {
+      "path": "data/wotlk/001.jsonl",
+      "records": 1000,
+      "sha256": "0cf1c36e30099e81c13ad820d363b2ee493413df86f41fbe4ec9234855bc9de7"
+    },
+    {
+      "path": "data/wotlk/002.jsonl",
+      "records": 1000,
+      "sha256": "21da0ef191e34b063af887ee41f725d8306e9335b8921937e8291f87ca192efa"
+    },
+    {
+      "path": "data/wotlk/003.jsonl",
+      "records": 1000,
+      "sha256": "b70c640eb29b33d05935ac4b4e50b6ead049145efc3a9937d61d4f7a0d91b822"
+    },
+    {
+      "path": "data/wotlk/004.jsonl",
+      "records": 1000,
+      "sha256": "763e167a1a019413f10dbe18a821abb27a9fb8ee03e6e9f007a3aee563ce460a"
+    },
+    {
+      "path": "data/wotlk/005.jsonl",
+      "records": 1000,
+      "sha256": "881ca63cb8404622e726ad9bf24945a9b0016c75a8e71e3a1c7b7b011b908641"
+    },
+    {
+      "path": "data/wotlk/006.jsonl",
+      "records": 1000,
+      "sha256": "e8b95f4ec1e4d5d51f6069a3011f21a31e95c822479321578388ee39a7eeff9b"
+    },
+    {
+      "path": "data/wotlk/007.jsonl",
+      "records": 1000,
+      "sha256": "d9cda3ea0410e2deb7d8e9ccddf77db52c9d1d3de68194a52f7298fd0f97810f"
+    },
+    {
+      "path": "data/wotlk/008.jsonl",
+      "records": 1000,
+      "sha256": "101e5fcb6978e36cf5688dda562fccad292a3011e0d64bedaf5e152c46cec56b"
+    },
+    {
+      "path": "data/wotlk/009.jsonl",
+      "records": 464,
+      "sha256": "44fa96fcbe216122ee06d51aa0a9b206e7829c142dde9cfcf78434a0b2d8ad0d"
+    }
+  ]
+}

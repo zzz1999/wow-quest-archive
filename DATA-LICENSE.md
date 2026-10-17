@@ -1,0 +1,17 @@
+# 数据来源与权利声明
+
+本仓库的原创网页与导入工具采用根目录 MIT 许可证。该许可证**不适用于魔兽世界任务原文或第三方数据库资料**。
+
+`data/` 中的任务资料以及 `web/data/` 中的等价离线副本由公开社区数据库整理而来，必须保留对应上游署名、许可证及版权说明。具体来源、固定提交、下载文件 SHA-256 与转换方法见 `sources/manifest.json` 和 `docs/DATA.md`；上游许可原件位于 `sources/licenses/`。
+
+| 资料来源 | 上游项目许可证 / 声明 |
+| --- | --- |
+| CMaNGOS Classic-DB | GPL-3.0；另有 COPYRIGHT.md 明确说明 Blizzard 内容不在 GPL 授权之内 |
+| AzerothCore | 上游 LICENSE 原件（GPL-2.0） |
+| MaNGOS Three (4.3.4) | 数据库 CC BY-NC-SA 3.0；Translations 子目录另附 GPL-2.0。保留两份原始声明及非商业限制 |
+| alexkulya/pandaria_5.4.8 | GPL-2.0；社区 5.4.8 适配数据，含后续采集的本地化文字 |
+| TrinityCore TDB735.00 | GPL-2.0 项目声明及 COPYING 原件 |
+
+World of Warcraft 及相关任务文本、角色、世界设定、商标与游戏内容归 Blizzard Entertainment 或相应权利人所有。本项目为独立研究与资料整理项目，与 Blizzard Entertainment 无隶属或授权关系。
+
+上游程序或数据库结构的开源许可，不表示游戏原文已被重新授权为 MIT，也不构成模型训练或其他使用目的的单独授权。研究导出保持来源与版本信息。需要转发资料时，应一并保留本声明和上游许可文件。

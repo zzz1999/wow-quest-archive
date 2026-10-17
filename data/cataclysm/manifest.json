@@ -1,0 +1,187 @@
+{
+  "id": "cataclysm",
+  "name": "大地的裂变",
+  "patch": "4.3.4",
+  "repo": "mangosthree/database",
+  "commit": "2e72872298e59a7ec8763ad2cdf897218b761b20",
+  "snapshot": "World/Setup/FullDB + Chinese/Taiwanese translations",
+  "note": "同库4.3.4基础快照与本地化。含未全面人工核验的旧译文；已确认任务2描述与目标仍使用旧地点，已标记translation-review。未应用后续更新。",
+  "translationWarnings": {
+    "2": [
+      "简中描述和目标中的碎木哨岗与4.3.4英文 Silverwind Refuge 地点不符；保留源文本供对照，需人工复核。"
+    ]
+  },
+  "license": "Database CC-BY-NC-SA-3.0; translation subdirectory GPL-2.0",
+  "count": 14907,
+  "fields": {
+    "title": {
+      "zhCN": 13129,
+      "zhTW": 4,
+      "enUS": 1774,
+      "missing": 0
+    },
+    "objectives": {
+      "zhCN": 10745,
+      "zhTW": 0,
+      "enUS": 2413,
+      "missing": 1749
+    },
+    "description": {
+      "zhCN": 10666,
+      "zhTW": 0,
+      "enUS": 2563,
+      "missing": 1678
+    },
+    "progress": {
+      "zhCN": 3376,
+      "zhTW": 0,
+      "enUS": 3096,
+      "missing": 8435
+    },
+    "completion": {
+      "zhCN": 4267,
+      "zhTW": 0,
+      "enUS": 8454,
+      "missing": 2186
+    },
+    "end": {
+      "zhCN": 248,
+      "zhTW": 0,
+      "enUS": 421,
+      "missing": 14238
+    },
+    "completed": {
+      "zhCN": 192,
+      "zhTW": 0,
+      "enUS": 9463,
+      "missing": 5252
+    },
+    "giverWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 605,
+      "missing": 14302
+    },
+    "giverTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 611,
+      "missing": 14296
+    },
+    "turninWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 119,
+      "missing": 14788
+    },
+    "turninTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 119,
+      "missing": 14788
+    },
+    "objective1": {
+      "zhCN": 141,
+      "zhTW": 1,
+      "enUS": 2146,
+      "missing": 12619
+    },
+    "objective2": {
+      "zhCN": 46,
+      "zhTW": 0,
+      "enUS": 465,
+      "missing": 14396
+    },
+    "objective3": {
+      "zhCN": 34,
+      "zhTW": 0,
+      "enUS": 248,
+      "missing": 14625
+    },
+    "objective4": {
+      "zhCN": 22,
+      "zhTW": 0,
+      "enUS": 94,
+      "missing": 14791
+    }
+  },
+  "testLike": 557,
+  "communityCustom": 0,
+  "files": [
+    {
+      "path": "data/cataclysm/000.jsonl",
+      "records": 1000,
+      "sha256": "114ddeae6fa52be5b1b1d90c57ca88099d8041a89c5d0d6a2eb6c6844a802151"
+    },
+    {
+      "path": "data/cataclysm/001.jsonl",
+      "records": 1000,
+      "sha256": "f8fdb3112ddb59b1d459d58364821a9ff18bd1e97830a9497e94594896e4dcca"
+    },
+    {
+      "path": "data/cataclysm/002.jsonl",
+      "records": 1000,
+      "sha256": "58fe03491fee8ff5a7392ba3e616f87d6f266e81919c34f0acc3d522a89f9e11"
+    },
+    {
+      "path": "data/cataclysm/003.jsonl",
+      "records": 1000,
+      "sha256": "3c391d9c2943b7307fbb172bf7b92ae4ccc77e41595fa321311a832957097615"
+    },
+    {
+      "path": "data/cataclysm/004.jsonl",
+      "records": 1000,
+      "sha256": "09e3f18094de1abc9f70bd51355c3945abba31c9ae3f377db0fcd3abcf50d2be"
+    },
+    {
+      "path": "data/cataclysm/005.jsonl",
+      "records": 1000,
+      "sha256": "721b46a0793909c69ed6db9455c68d6ccb8a4df7d879623188614c7eeed52f0a"
+    },
+    {
+      "path": "data/cataclysm/006.jsonl",
+      "records": 1000,
+      "sha256": "f9b66e4ef7be9e1e172e663b3dbcb900c816f1dcf786b208756427c510f845b9"
+    },
+    {
+      "path": "data/cataclysm/007.jsonl",
+      "records": 1000,
+      "sha256": "01807b8a8f69d9f7d5ab56d718119da6e9c53581cec1827f1bda9514de681b8d"
+    },
+    {
+      "path": "data/cataclysm/008.jsonl",
+      "records": 1000,
+      "sha256": "ee16d7d8202958c6a4c7463684a9952f9043a4f74f32e41ad9aa513efb4f2e39"
+    },
+    {
+      "path": "data/cataclysm/009.jsonl",
+      "records": 1000,
+      "sha256": "dabdc983703335d05d502398293197a657ea0f397ab0a7d7514bad0c3526f050"
+    },
+    {
+      "path": "data/cataclysm/010.jsonl",
+      "records": 1000,
+      "sha256": "f8b1b9e57b240e07a9601de7423ee25e9655fe01eb99054f5e2e875e64d1a6bc"
+    },
+    {
+      "path": "data/cataclysm/011.jsonl",
+      "records": 1000,
+      "sha256": "8d85bec3302f90d75be3e2bebb73881efc04cc434836ede2a70b789ecc217897"
+    },
+    {
+      "path": "data/cataclysm/012.jsonl",
+      "records": 1000,
+      "sha256": "b9b5a69e8a73744b56e50212a101ffc88456e707fd96550820364b0161df9779"
+    },
+    {
+      "path": "data/cataclysm/013.jsonl",
+      "records": 1000,
+      "sha256": "61a469a6d4735cd2f68db944f770d3ad5a71bb3cd28109bc95b863e6405b70a4"
+    },
+    {
+      "path": "data/cataclysm/014.jsonl",
+      "records": 907,
+      "sha256": "ad4f44a6f0ebfc1676e55a2b1e566c1226f775d73cc95045ad762cd43225c3f9"
+    }
+  ]
+}

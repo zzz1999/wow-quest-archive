@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="魔兽世界五版本任务研究资料库。简体中文优先，支持离线查阅与 JSONL 导出。">
+  <title>艾泽拉斯任务档案 · WoW Quest Archive</title>
+  <link rel="stylesheet" href="web/style.css">
+  <script src="web/catalog.js" defer></script><script src="web/app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">✦</span><span>艾泽拉斯<br><b>任务档案</b><small>WOW QUEST ARCHIVE</small></span></a>
+  <div class="sidebar-rule"></div><p class="overline">选择世界版本</p><nav id="versions" aria-label="游戏版本"></nav>
+  <div class="sidebar-bottom"><span class="offline-dot"></span> 离线资料库 <span class="small">v1.0</span><p>从一段委托，读懂一个世界。</p><button id="about" class="sidebar-link">来源与收录情况 ↗</button><a class="sidebar-link" href="https://github.com/zzz1999/wow-quest-archive" target="_blank" rel="noreferrer">GitHub 项目 ↗</a></div>
+</aside>
+<main>
+ <header class="topbar"><span>资料馆 <span class="muted">/</span> <b id="breadcrumb">任务索引</b></span><div><button id="bookmarks" aria-pressed="false">☆ 研究书签 <span id="bookmark-count">0</span></button><button id="source-open">数据说明</button></div></header>
+ <section class="intro"><div><p class="overline">THE STORIES BEHIND THE QUESTS</p><h1>每个任务，都有一个故事。</h1><p>查阅委托、目标与交接对白，沿着任务关系，观察故事如何展开。</p></div><div class="archive-total"><strong id="total-count">—</strong><span>条版本任务记录 · 5 个版本</span></div></section>
+ <section class="workbench" aria-label="任务查阅">
+  <div class="catalog-pane">
+   <div class="catalog-heading"><h2 id="version-title">正在载入…</h2><span id="version-patch" class="patch"></span></div>
+   <div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索任务、正文、NPC 或 ID" aria-label="搜索任务"><kbd>/</kbd></div>
+   <div class="filters"><label>标题语言<select id="language"><option value="">全部语言</option><option value="zhCN">简体中文</option><option value="zhTW">繁体中文</option><option value="enUS">英文回退</option></select></label><label>区域 / 分类<select id="zone"><option value="">全部区域</option></select></label></div>
+   <details class="more-filters"><summary>更多筛选 <span>等级 · 正文 · 测试记录</span></summary><div class="level-row"><label>最低等级<input id="level-min" type="number" min="-1" max="255" placeholder="不限"></label><label>最高等级<input id="level-max" type="number" min="-1" max="255" placeholder="不限"></label></div><label class="check"><input id="story-only" type="checkbox"> 仅看有任务描述的记录</label><label class="check"><input id="hide-test" type="checkbox" checked> 隐藏测试、废弃、占位及已知自定义记录</label><button id="reset" class="text-button">重置筛选</button></details>
+   <div class="list-toolbar"><span id="result-count" role="status" aria-live="polite">正在读取资料…</span><button id="export-results" title="导出当前筛选的所有结果为 JSONL">导出结果 ↓</button></div>
+   <div id="quest-list" class="quest-list" aria-label="任务列表"></div>
+   <div class="pagination"><button id="prev-page" aria-label="上一页">←</button><span id="page-label">—</span><button id="next-page" aria-label="下一页">→</button></div>
+  </div>
+  <article id="reader" class="reader" aria-label="任务详情"><div class="empty"><span>✦</span><h2>正在打开任务档案</h2><p>资料完全保存在本地，首次读取需要片刻。</p></div></article>
+ </section>
+ <footer>社区数据库快照 · 逐字段语言回退 · 不同版本独立保存 <span>非暴雪官方项目</span></footer>
+</main>
+<dialog id="info-dialog"><div class="dialog-top"><h2>来源与收录情况</h2><button id="close-dialog" aria-label="关闭">×</button></div><div id="info-body"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>请开启浏览器 JavaScript 以读取本地任务资料。原始数据也可直接查看 data/ 下的 JSONL 文件。</noscript>
+</body></html>

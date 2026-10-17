@@ -1,0 +1,132 @@
+{
+  "id": "classic",
+  "name": "经典旧世",
+  "patch": "1.12.1–1.12.3",
+  "repo": "cmangos/classic-db",
+  "commit": "ec4f596146be6467ea93c57397858e329e2db852",
+  "snapshot": "ClassicDB_1_12_1_z2815 / 2023-10-09",
+  "note": "基础快照，未应用后续 Updates。中文来自同库 Chinese/locales_quest，仅合并基础任务 ID。未找到同库繁中任务文本。",
+  "license": "GPL-3.0; see separate Blizzard copyright notice",
+  "count": 4245,
+  "fields": {
+    "title": {
+      "zhCN": 3105,
+      "zhTW": 0,
+      "enUS": 1140,
+      "missing": 0
+    },
+    "objectives": {
+      "zhCN": 2696,
+      "zhTW": 0,
+      "enUS": 956,
+      "missing": 593
+    },
+    "description": {
+      "zhCN": 2695,
+      "zhTW": 0,
+      "enUS": 976,
+      "missing": 574
+    },
+    "progress": {
+      "zhCN": 3092,
+      "zhTW": 0,
+      "enUS": 123,
+      "missing": 1030
+    },
+    "completion": {
+      "zhCN": 3105,
+      "zhTW": 0,
+      "enUS": 1019,
+      "missing": 121
+    },
+    "end": {
+      "zhCN": 137,
+      "zhTW": 0,
+      "enUS": 73,
+      "missing": 4035
+    },
+    "completed": {
+      "zhCN": 2415,
+      "zhTW": 0,
+      "enUS": 1,
+      "missing": 1829
+    },
+    "giverWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 4245
+    },
+    "giverTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 4245
+    },
+    "turninWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 4245
+    },
+    "turninTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 4245
+    },
+    "objective1": {
+      "zhCN": 79,
+      "zhTW": 0,
+      "enUS": 15,
+      "missing": 4151
+    },
+    "objective2": {
+      "zhCN": 26,
+      "zhTW": 0,
+      "enUS": 10,
+      "missing": 4209
+    },
+    "objective3": {
+      "zhCN": 18,
+      "zhTW": 0,
+      "enUS": 10,
+      "missing": 4217
+    },
+    "objective4": {
+      "zhCN": 8,
+      "zhTW": 0,
+      "enUS": 10,
+      "missing": 4227
+    }
+  },
+  "testLike": 19,
+  "communityCustom": 0,
+  "files": [
+    {
+      "path": "data/classic/000.jsonl",
+      "records": 1000,
+      "sha256": "0fbc420794c61e21e02b730232315c7ecca9558ba0dc98dda8e1351fe14f65db"
+    },
+    {
+      "path": "data/classic/001.jsonl",
+      "records": 1000,
+      "sha256": "6112888a43d720058fd7590b4a7dd8157c3d4beedf322b6b9a332b0ea76a5880"
+    },
+    {
+      "path": "data/classic/002.jsonl",
+      "records": 1000,
+      "sha256": "e5f82acf582cc5e02f45302bc0e53e72ce4e79bd02c36a996d60bb27ec4712b7"
+    },
+    {
+      "path": "data/classic/003.jsonl",
+      "records": 1000,
+      "sha256": "e8fbd4b0ebd12d1a27c0d94ee956a1078d317d0c3efce53472bd2336860c7952"
+    },
+    {
+      "path": "data/classic/004.jsonl",
+      "records": 245,
+      "sha256": "b5024adb3e339d0d0c8f66a22f9af43e09c0de207f3d9a1239ec2bab9a46e43c"
+    }
+  ]
+}
