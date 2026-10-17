@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {tuples,readTables} from '../scripts/sql.mjs';
-import {chooseText,normalize} from '../scripts/normalize.mjs';
+import {chooseText,normalize,normalizeActors} from '../scripts/normalize.mjs';
 
 test('SQL preserves apostrophes, separators, Unicode, NULL and game tokens',()=>{
  const rows=[...tuples("(7,'中文; (x), \\'quote\\' $B$N',NULL,-3),(8,'it''s\\nnext',0,2);")];
@@ -42,4 +42,33 @@ test('locale UPDATEs merge fields by task ID without executing SQL',async()=>{
  await fs.writeFile(file,"UPDATE `locales_quest` SET `Title_loc4`='简中',`Details_loc4`='甲,乙; WHERE' WHERE `entry`=42;\nUPDATE `locales_quest` SET `RequestItemsText_loc4`='进度',`Title_loc4`='修正标题' WHERE `entry`='42';\n");
  const t=await readTables([file],new Set(['locales_quest']));assert.deepEqual(t.get('locales_quest'),[{entry:42,title_loc4:'修正标题',details_loc4:'甲,乙; WHERE',requestitemstext_loc4:'进度'}]);
  await fs.unlink(file);await fs.rmdir(dir);
+});
+test('NPC archives retain localized names, separate title provenance and reverse quest roles',()=>{
+ const tables=new Map([
+  ['quest_template',[{id:1,title:'Quest one'},{id:2,title:'Quest two'}]],
+  ['creature_template',[{entry:42,name:'A guard',subname:'Officer',minlevel:5,maxlevel:6},{entry:999,name:'Unrelated NPC'}]],
+  ['creature_template_locale',[{id:42,locale:'zhCN',name:'守卫',title:'',verifiedbuild:123},{id:42,locale:'zhTW',name:'守衛',title:'軍官',verifiedbuild:456}]],
+  ['creature_queststarter',[{id:42,quest:1},{id:42,quest:1}]],
+  ['creature_questender',[{id:42,quest:1},{id:42,quest:2}]]
+ ]);
+ const quests=normalize(tables,'wotlk'),actors=normalizeActors(tables,'wotlk',quests);assert.equal(actors.length,1);
+ const [npc]=actors;assert.equal(npc.key,'wotlk:creature:42');assert.equal(npc.name,'守卫');assert.equal(npc.subname,'軍官');assert.equal(npc.subnameLocale,'zhTW');
+ assert.equal(npc.textColumns.subname,'creature_template_locale.title');assert.equal(npc.textBuilds.subname,456);assert.equal(npc.english.subname,'Officer');
+ assert.deepEqual(npc.starts,[1]);assert.deepEqual(npc.ends,[1,2]);assert.equal(npc.minLevel,5);assert.equal(quests[0].starters[0].key,npc.key);
+ assert.equal(normalizeActors(tables,'legion',normalize(tables,'legion'))[0].key,'legion:creature:42');
+});
+test('legacy and numeric NPC locales preserve object identity and missing source facts',()=>{
+ const tables=new Map([
+  ['quest_template',[{entry:7,title:'Quest'}]],
+  ['creature_template',[{entry:197,name:'Marshal McBride',subname:''},{entry:200,name:'English NPC'}]],
+  ['locales_creature',[{entry:197,name_loc4:'治安官玛克布莱德',subname_loc4:''},{entry:200,locale:4,name:'中文名称',subname:'中文称号'}]],
+  ['gameobject_template',[{entry:197,name:'A chest'}]],
+  ['locales_gameobject',[{entry:197,name_loc4:'',name_loc5:'寶箱'}]],
+  ['creature_questrelation',[{id:197,quest:7},{id:200,quest:7}]],
+  ['gameobject_involvedrelation',[{id:197,quest:7},{id:999,quest:7}]]
+ ]);
+ const quests=normalize(tables,'classic'),actors=normalizeActors(tables,'classic',quests),byKey=new Map(actors.map(a=>[a.key,a]));
+ assert.equal(byKey.get('classic:creature:197').name,'治安官玛克布莱德');assert.equal(byKey.get('classic:creature:197').subname,'');
+ assert.equal(byKey.get('classic:creature:200').subname,'中文称号');assert.equal(byKey.get('classic:gameobject:197').nameLocale,'zhTW');
+ const missing=byKey.get('classic:gameobject:999');assert.equal(missing.templatePresent,false);assert.equal(missing.name,'');assert.equal(missing.nameLocale,null);assert.equal(missing.minLevel,null);
 });

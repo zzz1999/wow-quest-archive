@@ -25,22 +25,55 @@ function localizedIndex(tables,names){
  for(const name of names)for(const r of tables.get(name)||[]){const id=idOf(r);if(!result.has(id))result.set(id,[]);result.get(id).push({name,r});}
  return result;
 }
+function candidates(rows,keys){const out=[];for(const {name,r} of rows){
+ const locale=({0:'enUS',4:'zhCN',5:'zhTW'}[r.locale]??r.locale);
+ for(const key of keys){
+  if(['zhCN','zhTW','enUS'].includes(locale))out.push({text:r[key],locale,table:name,column:key,verifiedBuild:r.verifiedbuild??null});
+  for(const [language,suffix]of [['zhCN','4'],['zhTW','5']])out.push({text:r[key+'_loc'+suffix],locale:language,table:name,column:key+'_loc'+suffix,verifiedBuild:r.verifiedbuild??null});
+ }
+}return out;}
+function actorLookup(tables,version){
+ const kinds=new Map(['creature','gameobject'].map(kind=>[kind,{
+  base:index(tables.get(kind+'_template')),
+  locales:localizedIndex(tables,['locales_'+kind,kind+'_template_locale'])
+ }]));
+ const cache=new Map();
+ return (kind,id)=>{
+  const key=`${version}:${kind}:${id}`;if(cache.has(key))return cache.get(key);
+  const source=kinds.get(kind),base=source.base.get(id)||{},local=source.locales.get(id)||[],table=kind+'_template';
+  const text={},locales={},columns={},builds={},english={},textIssues={};
+  for(const [field,keys]of [['name',['name']],['subname',['subname','title']]]){
+   const en=keys.map(column=>({text:base[column],locale:'enUS',table,column,verifiedBuild:base.verifiedbuild??base.wdbverified??null}));
+   const localized=candidates(local,keys),all=[...localized,...en],chosen=chooseText(all);
+   text[field]=chosen.text;locales[field]=chosen.locale;columns[field]=chosen.table?chosen.table+'.'+chosen.column:null;builds[field]=chosen.verifiedBuild??null;
+   english[field]=chooseText([...en,...localized.filter(c=>c.locale==='enUS')]).text;
+   const broken=all.filter(c=>typeof c.text==='string'&&c.text.includes('\ufffd')).map(c=>`${c.locale}:${c.table}.${c.column}:replacement-character`);
+   if(broken.length)textIssues[field]=[...new Set(broken)];
+  }
+  const actor={schemaVersion:1,key,version,kind,id,name:text.name,nameLocale:locales.name,subname:text.subname,subnameLocale:locales.subname,
+   english,textColumns:columns,textBuilds:builds,textIssues,
+   minLevel:kind==='creature'&&Number.isFinite(base.minlevel)?base.minlevel:null,maxLevel:kind==='creature'&&Number.isFinite(base.maxlevel)?base.maxlevel:null,
+   templatePresent:source.base.has(id),starts:[],ends:[],source:version,
+   sourceFields:Object.fromEntries(['name','subname','minlevel','maxlevel','type','creaturetype','faction','factionalliance','factionhorde','npcflag','npcflags'].filter(k=>base[k]!==undefined&&base[k]!==null).map(k=>[k,base[k]]))};
+  cache.set(key,actor);return actor;
+ };
+}
+export function normalizeActors(tables,version,quests){
+ const lookup=actorLookup(tables,version),actors=new Map();
+ for(const quest of quests)for(const [role,field]of [['starts','starters'],['ends','enders']])for(const ref of quest[field]){
+  const actor=lookup(ref.kind,ref.id);actors.set(actor.key,actor);if(!actor[role].includes(quest.id))actor[role].push(quest.id);
+ }
+ return [...actors.values()].map(actor=>({...actor,starts:actor.starts.sort((a,b)=>a-b),ends:actor.ends.sort((a,b)=>a-b)})).sort((a,b)=>a.kind.localeCompare(b.kind)||a.id-b.id);
+}
 export function normalize(tables,version,{customQuestIds=[],translationWarnings={}}={}){
  const bases=index(tables.get('quest_template')),addons=index(tables.get('quest_template_addon'));
  const localeRows=localizedIndex(tables,['locales_quest','quest_template_locale']);
  const progress=index(tables.get('quest_request_items')),completion=index(tables.get('quest_offer_reward'));
  const progressLoc=localizedIndex(tables,['quest_request_items_locale']),completionLoc=localizedIndex(tables,['quest_offer_reward_locale']);
- const creatures=index(tables.get('creature_template')),objects=index(tables.get('gameobject_template'));
- const creatureLoc=localizedIndex(tables,['locales_creature','creature_template_locale']),objectLoc=localizedIndex(tables,['locales_gameobject','gameobject_template_locale']);
+ const lookupActor=actorLookup(tables,version);
  const objectives=new Map(), objectiveLocales=localizedIndex(tables,['quest_objective_locale','quest_objectives_locale','locales_quest_objective']);
  for(const t of ['quest_objective','quest_objectives'])for(const o of tables.get(t)||[]){const id=Number(o.questid);if(!objectives.has(id))objectives.set(id,[]);objectives.get(id).push({table:t,row:o});}
- function candidates(rows,keys){const out=[];for(const {name,r} of rows){
-   for(const key of keys){if(r.locale&&['zhCN','zhTW','enUS'].includes(r.locale))out.push({text:r[key],locale:r.locale,table:name,column:key,verifiedBuild:r.verifiedbuild??null});
-     for(const [locale,suffix]of [['zhCN','4'],['zhTW','5']])out.push({text:r[key+'_loc'+suffix],locale,table:name,column:key+'_loc'+suffix,verifiedBuild:r.verifiedbuild??null});
-   }
- }return out;}
- function entity(kind,id){const table=kind==='creature'?creatures:objects,loc=kind==='creature'?creatureLoc:objectLoc;
-  const chosen=chooseText([...candidates(loc.get(id)||[],['name']),{text:table.get(id)?.name,locale:'enUS'}]);return {kind,id,name:chosen.text,nameLocale:chosen.locale};}
+ function entity(kind,id){const actor=lookupActor(kind,id);return {key:actor.key,kind,id,name:actor.name,nameLocale:actor.nameLocale};}
  const starters=new Map(),enders=new Map();
  for(const [dest,suffixes]of [[starters,['queststarter','questrelation']],[enders,['questender','involvedrelation']]])for(const kind of ['creature','gameobject'])for(const suffix of suffixes){
   for(const r of tables.get(kind+'_'+suffix)||[]){const quest=Number(r.quest);if(!dest.has(quest))dest.set(quest,[]);dest.get(quest).push(entity(kind,Number(r.id)));}

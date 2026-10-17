@@ -6,7 +6,6 @@
   "commit": "8265956f54c64ad082e2b9f8d37db64b38600b3f",
   "snapshot": "data/sql/base/db_world",
   "note": "固定提交中的基础表快照，未应用 updates。",
-  "license": "GPL-2.0",
   "count": 9464,
   "fields": {
     "title": {
@@ -106,52 +105,93 @@
     {
       "path": "data/wotlk/000.jsonl",
       "records": 1000,
-      "sha256": "3f3213cbeccf850979c97c3efca776e2416e9cf70d40d001b7509ac6334c1d24"
+      "sha256": "0c720a55765a5ddbf42323a9ad631b8557a35dc82687b6ede27ed44a18d068d8"
     },
     {
       "path": "data/wotlk/001.jsonl",
       "records": 1000,
-      "sha256": "0cf1c36e30099e81c13ad820d363b2ee493413df86f41fbe4ec9234855bc9de7"
+      "sha256": "92e445b63b6c54fa752de2b9b5f731b5bf4b25cacd163357fcc11619972cd29a"
     },
     {
       "path": "data/wotlk/002.jsonl",
       "records": 1000,
-      "sha256": "21da0ef191e34b063af887ee41f725d8306e9335b8921937e8291f87ca192efa"
+      "sha256": "30e6c4cd2cef6cb1fa97f5fb5b036564be5b5efe7af1f42e8661934a990e237e"
     },
     {
       "path": "data/wotlk/003.jsonl",
       "records": 1000,
-      "sha256": "b70c640eb29b33d05935ac4b4e50b6ead049145efc3a9937d61d4f7a0d91b822"
+      "sha256": "c5624e317eba0871ed664a72415b72c3a64d0f26775c3402f58b962ce1f718cf"
     },
     {
       "path": "data/wotlk/004.jsonl",
       "records": 1000,
-      "sha256": "763e167a1a019413f10dbe18a821abb27a9fb8ee03e6e9f007a3aee563ce460a"
+      "sha256": "995f594bcccb22efa1b9ccaffded3e7bab0498642f4415724428ee8dc45aac26"
     },
     {
       "path": "data/wotlk/005.jsonl",
       "records": 1000,
-      "sha256": "881ca63cb8404622e726ad9bf24945a9b0016c75a8e71e3a1c7b7b011b908641"
+      "sha256": "b68ab81e54ef5a0fd2a6db7f22b40c25179efcab24f64ef98895d352f5d35d93"
     },
     {
       "path": "data/wotlk/006.jsonl",
       "records": 1000,
-      "sha256": "e8b95f4ec1e4d5d51f6069a3011f21a31e95c822479321578388ee39a7eeff9b"
+      "sha256": "5423599094b795b08baa9ef4e0856d2ad7858ef71a233132f5d073c9550720bf"
     },
     {
       "path": "data/wotlk/007.jsonl",
       "records": 1000,
-      "sha256": "d9cda3ea0410e2deb7d8e9ccddf77db52c9d1d3de68194a52f7298fd0f97810f"
+      "sha256": "3aa00bb40bfe15873a15c3f1f3d7d96e296405cac562b76a43a24e7ef105dae9"
     },
     {
       "path": "data/wotlk/008.jsonl",
       "records": 1000,
-      "sha256": "101e5fcb6978e36cf5688dda562fccad292a3011e0d64bedaf5e152c46cec56b"
+      "sha256": "5a2cc1eb91a1dae9323456bad718076e462411d7248c7232a7d5ee03279557ae"
     },
     {
       "path": "data/wotlk/009.jsonl",
       "records": 464,
-      "sha256": "44fa96fcbe216122ee06d51aa0a9b206e7829c142dde9cfcf78434a0b2d8ad0d"
+      "sha256": "d01febf7c7adc844994ff543fe628abb6551ccb06d22c5e64ece94caf22fe620"
     }
-  ]
+  ],
+  "actors": {
+    "count": 3910,
+    "npcs": 3408,
+    "objects": 502,
+    "fields": {
+      "name": {
+        "zhCN": 3894,
+        "zhTW": 2,
+        "enUS": 14,
+        "missing": 0
+      },
+      "subname": {
+        "zhCN": 1095,
+        "zhTW": 0,
+        "enUS": 0,
+        "missing": 2815
+      }
+    },
+    "files": [
+      {
+        "path": "data/wotlk/actors/000.jsonl",
+        "records": 1000,
+        "sha256": "39c318d6f3817cf91838c0f6312f62f6f5e61e544966463b8a3d5cd9a27b0cac"
+      },
+      {
+        "path": "data/wotlk/actors/001.jsonl",
+        "records": 1000,
+        "sha256": "64b277fafa792c8e771fbbe21e447b6c0bef9d9643b57f338e1ad9b9cfe2a6a2"
+      },
+      {
+        "path": "data/wotlk/actors/002.jsonl",
+        "records": 1000,
+        "sha256": "975ca4de0c525991ba607090bcdb3f926892b01b425dc4bddad951c8335d97d4"
+      },
+      {
+        "path": "data/wotlk/actors/003.jsonl",
+        "records": 910,
+        "sha256": "68242fd99385e877a9c532d659127a6f6fe9a7bc08b448625f0ebba98d4142a1"
+      }
+    ]
+  }
 }

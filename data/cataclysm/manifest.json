@@ -11,7 +11,6 @@
       "简中描述和目标中的碎木哨岗与4.3.4英文 Silverwind Refuge 地点不符；保留源文本供对照，需人工复核。"
     ]
   },
-  "license": "Database CC-BY-NC-SA-3.0; translation subdirectory GPL-2.0",
   "count": 14907,
   "fields": {
     "title": {
@@ -111,77 +110,128 @@
     {
       "path": "data/cataclysm/000.jsonl",
       "records": 1000,
-      "sha256": "114ddeae6fa52be5b1b1d90c57ca88099d8041a89c5d0d6a2eb6c6844a802151"
+      "sha256": "9a20b144d7619f829b8867406f2df5f4df1437585a21a96857feb644a6c8f661"
     },
     {
       "path": "data/cataclysm/001.jsonl",
       "records": 1000,
-      "sha256": "f8fdb3112ddb59b1d459d58364821a9ff18bd1e97830a9497e94594896e4dcca"
+      "sha256": "f596923d02abd3f08bdb2a87faaa57691b906d7070e5c3aa52d31cfb25a176ab"
     },
     {
       "path": "data/cataclysm/002.jsonl",
       "records": 1000,
-      "sha256": "58fe03491fee8ff5a7392ba3e616f87d6f266e81919c34f0acc3d522a89f9e11"
+      "sha256": "8b09d1ee0cbe3441d1e5f609e79e0cd9b5fba10ebe4f524ff9c749eb550d4f3c"
     },
     {
       "path": "data/cataclysm/003.jsonl",
       "records": 1000,
-      "sha256": "3c391d9c2943b7307fbb172bf7b92ae4ccc77e41595fa321311a832957097615"
+      "sha256": "2ff80d0eee253c4c875edd187784f22f82c3d966d2aca465bf21a9cb93587ccd"
     },
     {
       "path": "data/cataclysm/004.jsonl",
       "records": 1000,
-      "sha256": "09e3f18094de1abc9f70bd51355c3945abba31c9ae3f377db0fcd3abcf50d2be"
+      "sha256": "e7facae217c9173267cef5b5631227f7244f73eff5ad6cc670ca2191ff673b1f"
     },
     {
       "path": "data/cataclysm/005.jsonl",
       "records": 1000,
-      "sha256": "721b46a0793909c69ed6db9455c68d6ccb8a4df7d879623188614c7eeed52f0a"
+      "sha256": "917dd05c3d5aa3765f8afe371b3d7cc1f3ca4525ad63d70a61c13c066ea94094"
     },
     {
       "path": "data/cataclysm/006.jsonl",
       "records": 1000,
-      "sha256": "f9b66e4ef7be9e1e172e663b3dbcb900c816f1dcf786b208756427c510f845b9"
+      "sha256": "d578bd2a99175568d05276ab67e78fa3b6e8d1d4881312ab6c286827ec38c2e5"
     },
     {
       "path": "data/cataclysm/007.jsonl",
       "records": 1000,
-      "sha256": "01807b8a8f69d9f7d5ab56d718119da6e9c53581cec1827f1bda9514de681b8d"
+      "sha256": "9adf546b3f797d1bb2c0ea8d36e07ee1fea373f3c0dc64ff935ae8893dd7244a"
     },
     {
       "path": "data/cataclysm/008.jsonl",
       "records": 1000,
-      "sha256": "ee16d7d8202958c6a4c7463684a9952f9043a4f74f32e41ad9aa513efb4f2e39"
+      "sha256": "85be748b776dad48493c794cb71fbfd906c6a61fbdfcee06e769d1de8b7c82f9"
     },
     {
       "path": "data/cataclysm/009.jsonl",
       "records": 1000,
-      "sha256": "dabdc983703335d05d502398293197a657ea0f397ab0a7d7514bad0c3526f050"
+      "sha256": "9f1c68447e535b63249a53de8ca8325caf891707eba8a1ba01001a1d44601d0d"
     },
     {
       "path": "data/cataclysm/010.jsonl",
       "records": 1000,
-      "sha256": "f8b1b9e57b240e07a9601de7423ee25e9655fe01eb99054f5e2e875e64d1a6bc"
+      "sha256": "cd300750c9ec590731e565bd12414721d4c1ca136b1fbcaccd6b4df294aca6f7"
     },
     {
       "path": "data/cataclysm/011.jsonl",
       "records": 1000,
-      "sha256": "8d85bec3302f90d75be3e2bebb73881efc04cc434836ede2a70b789ecc217897"
+      "sha256": "835015e347b2cb2a01cc0320c777d2e5557516bdb45b1bf17df73abf9204ab2c"
     },
     {
       "path": "data/cataclysm/012.jsonl",
       "records": 1000,
-      "sha256": "b9b5a69e8a73744b56e50212a101ffc88456e707fd96550820364b0161df9779"
+      "sha256": "408bd9bac09cad1d30026e1961200e9fb2e79b1e670aaa97a7f40c6c9865b826"
     },
     {
       "path": "data/cataclysm/013.jsonl",
       "records": 1000,
-      "sha256": "61a469a6d4735cd2f68db944f770d3ad5a71bb3cd28109bc95b863e6405b70a4"
+      "sha256": "3ec315eba596123fefb8b65c17426db666222d0faec18b27f0a441373c24a8ca"
     },
     {
       "path": "data/cataclysm/014.jsonl",
       "records": 907,
-      "sha256": "ad4f44a6f0ebfc1676e55a2b1e566c1226f775d73cc95045ad762cd43225c3f9"
+      "sha256": "7f8c7bd12926cea7061eda0a32359a128bbd570d430c7eaa5ddbca4a465c78e7"
     }
-  ]
+  ],
+  "actors": {
+    "count": 5176,
+    "npcs": 4588,
+    "objects": 588,
+    "fields": {
+      "name": {
+        "zhCN": 3396,
+        "zhTW": 4,
+        "enUS": 1776,
+        "missing": 0
+      },
+      "subname": {
+        "zhCN": 1256,
+        "zhTW": 0,
+        "enUS": 178,
+        "missing": 3742
+      }
+    },
+    "files": [
+      {
+        "path": "data/cataclysm/actors/000.jsonl",
+        "records": 1000,
+        "sha256": "4f9f5b88883fe7cdfd1532b402138bb3e5e41a0105c5018b9179fe37624fa1b4"
+      },
+      {
+        "path": "data/cataclysm/actors/001.jsonl",
+        "records": 1000,
+        "sha256": "b33c840a8680df28545ebf10ec9ecee7658804e7ef359fb93c3620f626089d83"
+      },
+      {
+        "path": "data/cataclysm/actors/002.jsonl",
+        "records": 1000,
+        "sha256": "5a72157d7dc6bbc131158ff58df58f16af42ebf7c243e01121bf615c5f80e190"
+      },
+      {
+        "path": "data/cataclysm/actors/003.jsonl",
+        "records": 1000,
+        "sha256": "d9c2e1a05c7be2641094f163a94931408a4a10fe60acbad98c34cec67c89c38a"
+      },
+      {
+        "path": "data/cataclysm/actors/004.jsonl",
+        "records": 1000,
+        "sha256": "50132af0b8d556811675d3cf2f636dede8d39522693baf5e14be055c14330664"
+      },
+      {
+        "path": "data/cataclysm/actors/005.jsonl",
+        "records": 176,
+        "sha256": "82341ec7104f313c73c22d9a97a440a13286aa3f009399638c228a4b78ba496f"
+      }
+    ]
+  }
 }

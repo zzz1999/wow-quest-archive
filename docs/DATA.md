@@ -1,6 +1,6 @@
 # 数据字典与导入边界
 
-每个 JSONL 文件按 UTF-8 存储，一行一个任务对象。主键是 `key = version + ':' + id`。不同版本的同 ID 记录始终分开，后一个版本通常还保留早期版本任务。
+`data/<version>/*.jsonl` 按 UTF-8 存储，一行一个任务对象。任务主键是 `key = version + ':' + id`。不同版本的同 ID 记录始终分开，后一个版本通常还保留早期版本任务。NPC 与物件另存于 `data/<version>/actors/*.jsonl`。
 
 | 字段 | 含义 |
 | --- | --- |
@@ -18,7 +18,7 @@
 | `raceMask`, `classMask` | 原始种族 / 职业位掩码；不同客户端位定义可能不同 |
 | `flags`, `specialFlags` | 原始任务标志，不能跨版本直接解释 |
 | `links` | 前置、后续、奖励后续、互斥组与引导字段；保留正负号和零 |
-| `starters`, `enders` | 静态接取 / 交付关系中的 NPC 或物件，含名称、名称语言和 ID |
+| `starters`, `enders` | 静态接取 / 交付关系中的 NPC 或物件，含档案 `key`、`kind`、名称、名称语言和 ID |
 | `objectiveDetails` | 使用独立目标表的版本，其目标类型、对象、数量、顺序、文本与语言 |
 | `sourceFields` | 原表与 addon 表剩余非零、非空字段；包含奖励物品、金钱、条件等。是稀疏补充，不是可恢复整个数据库的完整备份 |
 | `tags` | 缺标题、缺描述、疑似测试/废弃/占位、已知社区自定义等标记 |
@@ -33,6 +33,28 @@
 这只是可复现的语言筛选规则，不是人工翻译质量验收。不进行繁简转换，不把后续版本文本静默覆盖早期版本。繁中和英文的实际采用情况均可由 `textLocales` 检查。
 
 保留 `$N`、`$C`、`$R`、`$G...;`、`$B` 等客户端变量和格式标记。网页只把 `$B` / `$b` 和字面量 `\n` 展示为换行。JSONL 和 JSON 导出保留原字符串。SQL 的引号和转义按字面值解码，不执行任何 SQL。
+
+## NPC 与任务物件档案
+
+只收录任务 `starters` / `enders` 引用的 NPC（`kind=creature`）和物件（`kind=gameobject`）。档案由同版本模板与本地化表生成，不从任务正文猜测人物身份。主键为 `version:kind:id`，因此相同数字的任务、NPC、物件以及不同版本对象互不混合。
+
+| 字段 | 含义 |
+| --- | --- |
+| `schemaVersion`, `version`, `kind`, `id`, `key` | 格式版本 1、客户端快照、对象类型、模板 ID 与完整主键 |
+| `name`, `nameLocale` | 选用名称及实际语言 |
+| `subname`, `subnameLocale` | 模板的独立称号与语言，不拆解名称制造称号 |
+| `english.name`, `english.subname` | 同版本英文名称与称号 |
+| `textColumns`, `textBuilds`, `textIssues` | 名称 / 称号的来源列、采集 build、损坏字符记录 |
+| `minLevel`, `maxLevel` | NPC 模板等级范围；源未提供及物件为 null，不能据此推断玩家接任务等级 |
+| `templatePresent` | 是否找到对应基础模板；关系存在但模板缺失时明确为 false |
+| `starts`, `ends` | 当前版本中可接取 / 可交付的任务 ID 数组，去重并排序 |
+| `source`, `sourceFields` | 来源版本索引，以及模板中已保留的名称、等级、类型、阵营与 NPC 标志原值 |
+
+名称与称号**分别**按 `zhCN → zhTW → enUS` 回退，原文和来源字段保留。各数据库的 `subname` / `title` 会映射为独立称号；女性 / 备用名称字段不覆盖主名称。不补写人物传记、坐标或动态对白。经典旧世 NPC 197 的名称为“治安官玛克布莱德”，模板没有独立称号，故 `subname` 为空。
+
+档案 `starts` / `ends` 与任务 `starters` / `enders` 双向校验。档案列出所有静态关联，包括明确标识的测试 / 自定义任务；不受任务列表默认隐藏这些记录的筛选影响。军团有 29 个任务物件关系缺少基础模板，其档案保留 ID 与关系、名称留空。
+
+每个版本的 `manifest.actors` 记录 NPC / 物件数量、字段语言统计及 JSONL 分片哈希。网页包在 `web/actors/<version>.js`，按需加载，不改变离线使用方式。
 
 ## 版本与完整性
 

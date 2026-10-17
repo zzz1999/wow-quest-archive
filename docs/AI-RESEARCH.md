@@ -9,10 +9,13 @@
 1. 确认版本、源任务 ID、实际采用语言和字段是否缺失。
 2. 观察委托人与玩家的关系、动机、冲突、行动目标、反馈和下一步引导。
 3. 沿 `links` 查相邻任务，再检查支线、条件与互斥关系，避免把孤立任务当完整故事。
+   沿 `starters` / `enders` 的 `key` 查 `data/<version>/actors/*.jsonl`，查看 NPC 名称、称号和它的 `starts` / `ends` 关联任务；只在同版本内解析任务 ID。
 4. 区分原文证据与分析结论；对缺失对白只记录缺失。
 5. 跨版本比较使用 `version:id`，明确文本来自哪个社区快照；尤其注意潘达利亚较晚采集的中文。
 
 研究原版风格时默认排除 `community-custom`、`suspected-test`，但启发式标记不能代替人工检查。中文叙事样本应检查 `textLocales.description`、`textLocales.progress` 与 `textLocales.completion`，不能只按标题语言筛选。
+
+NPC 档案只覆盖任务接取 / 交付涉及的对象，不能当作完整人物图鉴。名称与称号独立回退，分别检查 `nameLocale` 与 `subnameLocale`。缺少模板或称号时保留未知；不要从名称推导称号、身份背景、坐标或可接任务条件。分析 NPC 关联任务时同样检查每条任务的测试 / 自定义标签。
 
 可记录原创分析标签：
 

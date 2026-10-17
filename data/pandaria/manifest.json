@@ -124,7 +124,6 @@
     40310,
     40311
   ],
-  "license": "GPL-2.0",
   "count": 18144,
   "fields": {
     "title": {
@@ -224,97 +223,148 @@
     {
       "path": "data/pandaria/000.jsonl",
       "records": 1000,
-      "sha256": "372f6379a09df772dbfd6f7ef29338419b3ae1051f6ff0b8c4b9faecbb51d9b1"
+      "sha256": "10268121a987a1cde2c6e8ead3afb4b920936e81815238e9a19be631db19db4b"
     },
     {
       "path": "data/pandaria/001.jsonl",
       "records": 1000,
-      "sha256": "53a1c940dde8c426295f6d3deac200df83f62f280408e2f4822bb6e683b39cba"
+      "sha256": "55f99c362d8cb631390a8d2411d1d5777759210652faba969686b69013a684fa"
     },
     {
       "path": "data/pandaria/002.jsonl",
       "records": 1000,
-      "sha256": "3c3cc353588d5934ba0e5e4b8fabfa7e38b141d53e36386cd0ea9a545f72d63c"
+      "sha256": "66c1502e209935191fa8fcaa474ea0133a8cfc8d034c8502087a3c8117165206"
     },
     {
       "path": "data/pandaria/003.jsonl",
       "records": 1000,
-      "sha256": "ca5bcc46753545167c03470954df541a62baccf45f3cc6b2bd8c9b800af88b48"
+      "sha256": "d7f25331ef2d2a61b2e552a961efbc25171a1b28da49bb92a0eff2d0686a3120"
     },
     {
       "path": "data/pandaria/004.jsonl",
       "records": 1000,
-      "sha256": "18be87e18e1f38a7dc8454b9d896eeb8ab0655f47651307e8feb74aabdc26768"
+      "sha256": "0abf72bc16e8257d5ef606e29bc5d66326059a5a45b88000e570f51b3f4c2b48"
     },
     {
       "path": "data/pandaria/005.jsonl",
       "records": 1000,
-      "sha256": "784533885d1f50d54c4f6677b4f3831434cb96958393bb7515c6877550ba5cb8"
+      "sha256": "bf2f5451ef006d12b1ee0c43029a910090bca334dd8687d1b4abba43274bd928"
     },
     {
       "path": "data/pandaria/006.jsonl",
       "records": 1000,
-      "sha256": "e7737bfc267a6a9e269caac733b195902a2207249752611d5f0fa48f67390ce3"
+      "sha256": "384c7d2d6adeeec74aa5bdf00843a1060db6e0ac7aad33dc51f01e64a3f2ff2c"
     },
     {
       "path": "data/pandaria/007.jsonl",
       "records": 1000,
-      "sha256": "971fa4d5f8db136be15725d97f06b216ccfa1dea9f6ea8741937d994fb249c2d"
+      "sha256": "80b38b87cfc432e4dd09541a947457fd636e7f7e3639755ce61741f120b17f03"
     },
     {
       "path": "data/pandaria/008.jsonl",
       "records": 1000,
-      "sha256": "3107ecfe29157016c3ce565cdfbb60a2a223506a1d403e5489b875cbd4fc7a5b"
+      "sha256": "b2aaa588b7e7b1bfc65f05b27ab2bb77af7340a9389be967cf381ef5eef1d0b4"
     },
     {
       "path": "data/pandaria/009.jsonl",
       "records": 1000,
-      "sha256": "e82869d43b3487477abb978a56830ab68733dc28178e79fa2c2e69fe97192550"
+      "sha256": "9d8ef03c4c78d8a9141b83c963cd28e7787881df1d68dddbbea205184180dad8"
     },
     {
       "path": "data/pandaria/010.jsonl",
       "records": 1000,
-      "sha256": "8975753017ab4e57803aa33ee4de82146f649df250e4293840745a83c9643a3e"
+      "sha256": "8f90fbc2e1c55b3cdfdd54f20c58d21fe05ab695d8f0279b81e729d1f4b16f1b"
     },
     {
       "path": "data/pandaria/011.jsonl",
       "records": 1000,
-      "sha256": "e933ee6c7b618498a5ae315b17474701048447f6c9212d3429537feb5f5a76c7"
+      "sha256": "c98462dec120cec8ea67207134a251bb2e73a068edf65e27f19772c99cd6050e"
     },
     {
       "path": "data/pandaria/012.jsonl",
       "records": 1000,
-      "sha256": "6b4bdd4c0edea914e38f394d9f2ec67789a49c2ec23605940c3aa71149c2045e"
+      "sha256": "4e4b77f38868a375dc7a00cfd5aa3d029e37b5e938286c93865417cf00fe1227"
     },
     {
       "path": "data/pandaria/013.jsonl",
       "records": 1000,
-      "sha256": "d8261f0b77db2391dc43d2081a9f58d1baf3992a5121be03fd64e086e338c4f1"
+      "sha256": "7b7d1494c599654ba6da5aaa748e0511d62519ed7f342674a673c9b09e5185a6"
     },
     {
       "path": "data/pandaria/014.jsonl",
       "records": 1000,
-      "sha256": "105e62f2311f6f3e77d99572ff3c42c772b17287fbda6c7fc76a04165a96e599"
+      "sha256": "1fa359d9b1ba2ec6666622843beb1da2656f7325482c32e7f029b6b8bf0bd0d6"
     },
     {
       "path": "data/pandaria/015.jsonl",
       "records": 1000,
-      "sha256": "516d9af08573eb5ced5d83405544dfe1e84d5d10db6f255758c6d68a48bdcf91"
+      "sha256": "6bb4c53f5e877d26238e4735b9a70aabccc4aa9ffaad3ca077984a6bb4806a77"
     },
     {
       "path": "data/pandaria/016.jsonl",
       "records": 1000,
-      "sha256": "ab52f4b6dc8b985fb5908d33a122a112b75c193dfda1247647d37422a3e33a9b"
+      "sha256": "59006a0027e7eb0db2c172a156219eb18e8c5b6579f2625267c7244f0c1e6ddd"
     },
     {
       "path": "data/pandaria/017.jsonl",
       "records": 1000,
-      "sha256": "711b7dec7c518ae092ecffd673f2acac8a5fd9594f6a0ac05002f78f88f4e75c"
+      "sha256": "d9d060a3a4ca409ac87e6d463e95f8c7da2c700d0015434a00706abcde95f3ce"
     },
     {
       "path": "data/pandaria/018.jsonl",
       "records": 144,
-      "sha256": "56b43d6340ec227a268489d0c1bdab3ccc46488e82ed7534b36338f208bb7598"
+      "sha256": "307e7472290d83f731940d59a9e890eb89abc1afeeca8250aa3fcb472a9b0354"
     }
-  ]
+  ],
+  "actors": {
+    "count": 5938,
+    "npcs": 5262,
+    "objects": 676,
+    "fields": {
+      "name": {
+        "zhCN": 5272,
+        "zhTW": 7,
+        "enUS": 659,
+        "missing": 0
+      },
+      "subname": {
+        "zhCN": 1670,
+        "zhTW": 0,
+        "enUS": 10,
+        "missing": 4258
+      }
+    },
+    "files": [
+      {
+        "path": "data/pandaria/actors/000.jsonl",
+        "records": 1000,
+        "sha256": "b3083b006e1103144039481c4ec049983a923bcbdfb2ba267d80227e435b91ce"
+      },
+      {
+        "path": "data/pandaria/actors/001.jsonl",
+        "records": 1000,
+        "sha256": "9ff131ee998e0fc594483c5015da89d49ce5ae8b82c1d042c2ddeee43959d402"
+      },
+      {
+        "path": "data/pandaria/actors/002.jsonl",
+        "records": 1000,
+        "sha256": "326590a251568c41c234b039f569f41500e7b474a876b253bb13ae6b7d9ee6c8"
+      },
+      {
+        "path": "data/pandaria/actors/003.jsonl",
+        "records": 1000,
+        "sha256": "ba0e46ffcf084666e1dd54272ba63a664dd084a2b0c4d3386ebe5511cd758037"
+      },
+      {
+        "path": "data/pandaria/actors/004.jsonl",
+        "records": 1000,
+        "sha256": "32d20e4407fe9f376f5cdce65a43c1d4fc231db6ff59327faf258304d0892dc7"
+      },
+      {
+        "path": "data/pandaria/actors/005.jsonl",
+        "records": 938,
+        "sha256": "b0ee3681ac9721e67042d0df3f2db98f9539685829f4bf0b72ab41369aef08e8"
+      }
+    ]
+  }
 }

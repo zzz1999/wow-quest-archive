@@ -5,7 +5,7 @@
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const label={zhCN:'简中',zhTW:'繁中',enUS:'英文'};
  const fieldLabels={title:'标题',objectives:'任务目标',description:'任务描述',progress:'进行中对白',completion:'完成对白',end:'区域提示',completed:'完成日志',giverWindow:'接取角色对白',giverTarget:'接取角色名',turninWindow:'交付角色对白',turninTarget:'交付角色名',objective1:'目标说明 1',objective2:'目标说明 2',objective3:'目标说明 3',objective4:'目标说明 4'};
- let state={version:'classic',rows:[],filtered:[],selected:null,page:0,bookmarks:false},loadGeneration=0;
+ let state={version:'classic',rows:[],filtered:[],selected:null,page:0,bookmarks:false},loadGeneration=0,navigateGeneration=0;
  const PAGE=40,cache=new Map(),loading=new Map();window.QUEST_PACKS={};
  let bookmarks;try{bookmarks=new Set(JSON.parse(localStorage.getItem('wow-quest-bookmarks-v1')||'[]'));}catch{bookmarks=new Set();}
  function toast(s){$('toast').textContent=s;$('toast').classList.add('visible');setTimeout(()=>$('toast').classList.remove('visible'),2500);}
@@ -25,11 +25,11 @@
  }
  async function selectVersion(id,questId,{fromHash=false}={}){
   const meta=cat.versions.find(x=>x.id===id);if(!meta)return;
-  const generation=++loadGeneration;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
+  const generation=++loadGeneration;actors.close({restoreHash:false});$('actors-open').disabled=true;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
   document.querySelectorAll('.version-button').forEach(b=>{b.classList.toggle('active',b.dataset.version===id);b.setAttribute('aria-current',b.dataset.version===id?'page':'false');});
   $('version-title').textContent=meta.name;$('version-patch').textContent=meta.patch;$('breadcrumb').textContent=meta.name;$('result-count').textContent='正在载入资料…';$('quest-list').replaceChildren();
   $('reader').innerHTML='<div class="empty"><span>✦</span><h2>正在打开任务档案</h2><p>首次读取这个版本需要片刻。</p></div>';
-  try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;
+  try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;$('actors-open').disabled=false;
    const zones=[...new Set(prepared.map(x=>x.record.zoneOrSort))].sort((a,b)=>a-b);
    $('zone').innerHTML='<option value="">全部区域</option>'+zones.map(z=>`<option value="${z}">${z===0?'未分类':z<0?'任务分类 #'+Math.abs(z):'区域 #'+z}</option>`).join('');
    applyFilters(false);const chosen=questId?prepared.find(x=>x.record.id===Number(questId))?.record:state.filtered.find(r=>r.id===783&&r.textLocales.title==="zhCN")||state.filtered.find(r=>r.text.description&&r.textLocales.description==='zhCN')||state.filtered[0];
@@ -59,7 +59,7 @@
   for(const {record:x}of state.rows){if(x.links.prevQuestId===r.id)add(x.id,'以本任务为前置');if(x.links.nextQuestId===r.id||x.links.nextQuestInChain===r.id)add(x.id,'指向本任务');}
   return links.length?`<section class="text-section"><h3 class="section-label">任务关系</h3><div class="related">${links.join('')}</div><p class="empty-field" style="margin-top:10px;font-size:10px">依据数据库字段关联；分支、条件与脚本可能影响实际顺序。</p></section>`:'';
  }
- function entityList(rows){return rows.length?rows.map(x=>`${escape(x.name||'未命名')}${badge(x.nameLocale)} <span>#${x.id} · ${x.kind==='creature'?'NPC':'物件'}</span>`).join('<br>'):'源数据未提供';}
+ function entityList(rows){return rows.length?rows.map(x=>`<button class="actor-link" data-actor-kind="${x.kind}" data-actor-id="${x.id}" title="打开${x.kind==='creature'?'NPC':'物件'}档案">${escape(x.name||'未命名')} ↗</button> ${badge(x.nameLocale)} <span>#${x.id} · ${x.kind==='creature'?'NPC':'物件'}</span>`).join('<br>'):'源数据未提供';}
  function renderEmpty(){$('reader').innerHTML='<div class="empty"><span>✦</span><h2>选择一条任务，开始阅读</h2><p>可按关键词、语言与等级筛选。</p></div>';}
  function selectQuest(id,{updateHash=true}={}){
   const r=state.rows.find(x=>x.record.id===Number(id))?.record;if(!r)return;state.selected=r;
@@ -83,11 +83,17 @@
   $('info-body').innerHTML=`<p>按客户端版本分别收录社区数据库的基础任务快照，包括该版本保留的早期内容。数量按「版本 + ID」统计，不能相加视为独立故事数，也不代表全部任务均可在游戏中接取。</p><p>每个字段依次选用 <b>简体中文 → 繁体中文 → 英文</b>。空白与含损坏字符的文本不作为可用翻译；中文表中没有汉字的英文占位文本会继续回退。缺失内容保留为空，不由 AI 补写。</p><table><thead><tr><th>版本</th><th>任务</th><th>简中标题</th><th>繁中标题</th><th>英文标题</th><th>简中描述</th></tr></thead><tbody>${cat.versions.map(v=>`<tr><td>${v.name}<br>${v.patch}</td><td>${v.count.toLocaleString()}</td><td>${v.fields.title.zhCN}</td><td>${v.fields.title.zhTW}</td><td>${v.fields.title.enUS}</td><td>${v.fields.description.zhCN}</td></tr>`).join('')}</tbody></table><p>标题缺失、正文缺失与每个字段的完整统计可查 reports/coverage.json。地区目前保留数据库区域/分类 ID；负值表示任务分类。疑似测试及已确认的自定义记录默认隐藏，但仍保存在原始数据中。研究书签仅保存在当前浏览器。</p>${cat.versions.map(v=>`<h3>${v.name} · ${v.patch}</h3><p><a href="https://github.com/${v.repo}/tree/${v.commit}" target="_blank" rel="noreferrer">${escape(v.repo)}</a> · ${escape(v.snapshot)}<br>${escape(v.note)}<br>固定提交 <code>${v.commit.slice(0,12)}</code></p>`).join('')}<h3>研究与 AI 使用</h3><p>JSONL 位于 data/版本/；每行是一条记录。可导出筛选结果用于检索、比较与风格分析。游戏变量、空字段、版本差异以及社区修订痕迹均应保留。详细字段说明、复现方法和数据限制见 README、docs/ 与 sources/。</p><p>网页和工具代码采用 MIT；社区数据遵循各自上游许可与署名。魔兽世界文本、商标及相关内容归 Blizzard Entertainment 或相应权利人所有。代码许可不等于游戏原文或模型训练的授权。</p>`;
   $('info-dialog').showModal();
  }
+ const actors=window.createActorBrowser({catalog:cat,getVersion:()=>state.version,getQuests:()=>state.rows.map(x=>x.record),escape,badge,download,
+  onQuest:id=>{selectQuest(id);$('reader').scrollIntoView({behavior:'smooth',block:'start'});},
+  onSelect:actor=>{const hash=`#${actor.version}/${actor.kind==='creature'?'npc':'object'}/${actor.id}`;if(location.hash!==hash)history.pushState(null,'',hash);},
+  onClose:()=>{if(/^#[^/]+\/(npc|object)\//.test(location.hash))history.replaceState(null,'',`#${state.version}/${state.selected?.id||''}`);}
+ });
+ $('actors-open').onclick=()=>actors.open();
  $('versions').innerHTML=cat.versions.map((v,i)=>`<button class="version-button" data-version="${v.id}"><span class="version-icon" aria-hidden="true">${['✦','❅','♜','◈','☾'][i]}</span><span><b>${v.name}</b><small>${v.patch} · ${v.count.toLocaleString()} 条</small></span></button>`).join('');
  $('total-count').textContent=cat.versions.reduce((s,v)=>s+v.count,0).toLocaleString();saveBookmarks();
- $('versions').onclick=e=>{const b=e.target.closest('[data-version]');if(b){$('search').value='';selectVersion(b.dataset.version);}};
+ $('versions').onclick=e=>{const b=e.target.closest('[data-version]');if(b){++navigateGeneration;$('search').value='';selectVersion(b.dataset.version);}};
  $('quest-list').onclick=e=>{const b=e.target.closest('[data-id]');if(b){selectQuest(b.dataset.id);if(innerWidth<650)$('reader').scrollIntoView({behavior:'smooth'});}};
- $('reader').onclick=e=>{const b=e.target.closest('[data-related]');if(b&&!b.disabled){selectQuest(b.dataset.related);$('reader').scrollIntoView({behavior:'smooth',block:'start'});}};
+ $('reader').onclick=e=>{const actor=e.target.closest('[data-actor-id]');if(actor){actors.open({kind:actor.dataset.actorKind,id:Number(actor.dataset.actorId)});return;}const b=e.target.closest('[data-related]');if(b&&!b.disabled){selectQuest(b.dataset.related);$('reader').scrollIntoView({behavior:'smooth',block:'start'});}};
  let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(applyFilters,140);};
  for(const id of ['language','zone','level-min','level-max','story-only','hide-test'])$(id).onchange=applyFilters;
  $('reset').onclick=()=>{for(const id of ['search','language','zone','level-min','level-max'])$(id).value='';$('story-only').checked=false;$('hide-test').checked=true;applyFilters();};
@@ -96,7 +102,15 @@
  $('export-results').onclick=()=>{if(!state.filtered.length){toast('当前筛选没有可导出的任务');return;}download(`${state.version}-quests-${state.filtered.length}.jsonl`,state.filtered.map(r=>JSON.stringify(r)).join('\n')+'\n','application/x-ndjson');toast(`已导出 ${state.filtered.length} 条任务`);};
  $('about').onclick=$('source-open').onclick=info;$('close-dialog').onclick=()=>$('info-dialog').close();
  $('info-dialog').onclick=e=>{if(e.target===$('info-dialog')){const r=$('info-dialog').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('info-dialog').close();}};
- document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$('search').focus();}});
- function navigate(){const [v,id]=location.hash.slice(1).split('/');const version=cat.versions.some(x=>x.id===v)?v:cat.versions[0].id;if(version===state.version&&state.rows.length){if(id)selectQuest(id,{updateHash:false});}else selectVersion(version,id,{fromHash:true});}
+ document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$(actors.isOpen()?'actor-search':'search').focus();}});
+ async function navigate(){
+  const request=++navigateGeneration,[v,id,actorId]=location.hash.slice(1).split('/'),actorRoute=['npc','object'].includes(id);
+  const version=cat.versions.some(x=>x.id===v)?v:cat.versions[0].id;
+  if(!actorRoute)actors.close({restoreHash:false});
+  if(version!==state.version||!state.rows.length)await selectVersion(version,actorRoute?undefined:id,{fromHash:true});
+  else if(!actorRoute&&id)selectQuest(id,{updateHash:false});
+  if(request!==navigateGeneration||version!==state.version||!state.rows.length)return;
+  if(actorRoute)actors.open({kind:id==='npc'?'creature':'gameobject',id:Number(actorId),updateHash:false});
+ }
  addEventListener('popstate',navigate);navigate();
 })();

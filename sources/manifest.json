@@ -10,7 +10,7 @@
       "repo": "cmangos/classic-db",
       "commit": "ec4f596146be6467ea93c57397858e329e2db852",
       "snapshot": "ClassicDB_1_12_1_z2815 / 2023-10-09",
-      "note": "基础快照，未应用后续 Updates。中文来自同库 Chinese/locales_quest，仅合并基础任务 ID。未找到同库繁中任务文本。",
+      "note": "基础快照，未应用后续 Updates。任务、NPC 与物件中文来自同库 Chinese 本地化，仅关联基础快照已有任务与接取/交付对象。未找到同库繁中任务与 NPC 文件。",
       "license": "GPL-3.0; see separate Blizzard copyright notice",
       "assets": [
         {
@@ -48,6 +48,20 @@
           "bytes": 5004,
           "sha256": "e6547f5dd10dcf9c6ee91abe7e96a69772a0cd697c95c19d95789794a23bc546",
           "input": false
+        },
+        {
+          "name": "locales_creature.sql",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/locales/Chinese/locales_creature.sql",
+          "bytes": 3112294,
+          "sha256": "6583930dc1bee7ef43eb434dcc933a909a4647f44dc1b3cc060818ce05ba1def",
+          "input": true
+        },
+        {
+          "name": "locales_gameobject.sql",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/locales/Chinese/locales_gameobject.sql",
+          "bytes": 1795664,
+          "sha256": "bbee8c3ca416b4a8818112d6b0c2ffe10b5daac3df2306496f6dcfa0f8468c27",
+          "input": true
         }
       ]
     },

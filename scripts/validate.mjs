@@ -5,7 +5,15 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-let total=0;
+let total=0,totalNpcs=0,totalObjects=0;
+async function readShards(files){
+ const rows=[];
+ for(const f of files){const content=await fs.readFile(path.join(root,f.path));assert.equal(createHash('sha256').update(content).digest('hex'),f.sha256,f.path);const shard=content.toString('utf8').trim().split('\n').filter(Boolean).map(x=>JSON.parse(x));assert.equal(shard.length,f.records,f.path);rows.push(...shard);}
+ return rows;
+}
+async function verifyBundle(directory,id,records){
+ const bundle=await fs.readFile(path.join(root,'web',directory,id+'.js'),'utf8'),b64=bundle.match(/="([A-Za-z0-9+/=]+)";/)?.[1];assert.ok(b64,'Missing bundle '+directory+'/'+id);assert.deepEqual(JSON.parse(gunzipSync(Buffer.from(b64,'base64'))),records,'Browser bundle differs from JSONL '+directory+'/'+id);
+}
 for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  const m=JSON.parse(await fs.readFile(path.join(root,'data',id,'manifest.json'),'utf8'));
  const seen=new Set(),fields={},records=[];
@@ -15,7 +23,17 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
   }records.push(...rows);
  }
  assert.equal(seen.size,m.count);assert.deepEqual(fields,m.fields);
- const bundle=await fs.readFile(path.join(root,'web/data',id+'.js'),'utf8');const b64=bundle.match(/="([A-Za-z0-9+/=]+)";/)?.[1];assert.ok(b64,'Missing bundle '+id);const packed=JSON.parse(gunzipSync(Buffer.from(b64,'base64')));assert.deepEqual(packed,records,'Browser bundle differs from JSONL '+id);
- total+=m.count;console.log(`${id}: ${m.count} records; hashes, locale provenance, UTF-8 and offline bundle verified`);
+ await verifyBundle('data',id,records);
+ const actors=await readShards(m.actors.files),byKey=new Map(),expected=new Map(),actorFields={};
+ for(const a of actors){
+  assert.equal(a.schemaVersion,1);assert.equal(a.version,id);assert.equal(a.source,id);assert.ok(['creature','gameobject'].includes(a.kind));assert.ok(Number.isInteger(a.id)&&a.id>0);assert.equal(a.key,`${id}:${a.kind}:${a.id}`);assert.ok(!byKey.has(a.key),'Duplicate '+a.key);byKey.set(a.key,a);expected.set(a.key,{starts:new Set(),ends:new Set()});
+  assert.equal(typeof a.templatePresent,'boolean');for(const k of ['minLevel','maxLevel'])assert.ok(a[k]===null||Number.isFinite(a[k]));
+  for(const key of ['name','subname']){const value=a[key],locale=a[key+'Locale'];assert.equal(typeof value,'string');assert.ok(!value.includes('\ufffd'),'Invalid UTF-8 replacement in '+a.key);assert.ok(['zhCN','zhTW','enUS',null].includes(locale));if(value){assert.ok(locale);assert.equal(typeof a.textColumns[key],'string');}else{assert.equal(locale,null);assert.equal(a.textColumns[key],null);}if(locale==='zhCN'||locale==='zhTW')assert.ok(/\p{Script=Han}/u.test(value));assert.equal(typeof a.english[key],'string');actorFields[key]??={zhCN:0,zhTW:0,enUS:0,missing:0};actorFields[key][locale||'missing']++;}
+ }
+ for(const q of records)for(const [field,role]of [['starters','starts'],['enders','ends']])for(const ref of q[field]){const actor=byKey.get(ref.key);assert.ok(actor,'Missing actor '+ref.key);assert.equal(ref.kind,actor.kind);assert.equal(ref.id,actor.id);assert.equal(ref.name,actor.name);assert.equal(ref.nameLocale,actor.nameLocale);expected.get(ref.key)[role].add(q.id);}
+ for(const a of actors)for(const role of ['starts','ends'])assert.deepEqual(a[role],[...expected.get(a.key)[role]].sort((a,b)=>a-b),'Incorrect reverse relation '+a.key+' '+role);
+ assert.equal(actors.length,m.actors.count);assert.equal(actors.filter(a=>a.kind==='creature').length,m.actors.npcs);assert.equal(actors.filter(a=>a.kind==='gameobject').length,m.actors.objects);assert.deepEqual(actorFields,m.actors.fields);
+ await verifyBundle('actors',id,actors);
+ total+=m.count;totalNpcs+=m.actors.npcs;totalObjects+=m.actors.objects;console.log(`${id}: ${m.count} quests, ${m.actors.npcs} NPCs, ${m.actors.objects} objects; hashes, locales, reverse relations and browser bundles verified`);
 }
-console.log(`Verified ${total} versioned quest records.`);
+console.log(`Verified ${total} versioned quests, ${totalNpcs} NPCs and ${totalObjects} task objects.`);

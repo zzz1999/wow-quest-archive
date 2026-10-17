@@ -14,8 +14,7 @@
       "repo": "cmangos/classic-db",
       "commit": "ec4f596146be6467ea93c57397858e329e2db852",
       "snapshot": "ClassicDB_1_12_1_z2815 / 2023-10-09",
-      "note": "基础快照，未应用后续 Updates。中文来自同库 Chinese/locales_quest，仅合并基础任务 ID。未找到同库繁中任务文本。",
-      "license": "GPL-3.0; see separate Blizzard copyright notice",
+      "note": "基础快照，未应用后续 Updates。任务、NPC 与物件中文来自同库 Chinese 本地化，仅关联基础快照已有任务与接取/交付对象。未找到同库繁中任务与 NPC 文件。",
       "count": 4245,
       "fields": {
         "title": {
@@ -115,29 +114,60 @@
         {
           "path": "data/classic/000.jsonl",
           "records": 1000,
-          "sha256": "0fbc420794c61e21e02b730232315c7ecca9558ba0dc98dda8e1351fe14f65db"
+          "sha256": "d37a3cb623b5492cf32812558e6854bbc08305e81352e5ad0b504fb1f11cba47"
         },
         {
           "path": "data/classic/001.jsonl",
           "records": 1000,
-          "sha256": "6112888a43d720058fd7590b4a7dd8157c3d4beedf322b6b9a332b0ea76a5880"
+          "sha256": "c2e6814d20b9bcd9fa323feaddccb9b20860838ad06d20958e028b4a5c9f1b28"
         },
         {
           "path": "data/classic/002.jsonl",
           "records": 1000,
-          "sha256": "e5f82acf582cc5e02f45302bc0e53e72ce4e79bd02c36a996d60bb27ec4712b7"
+          "sha256": "3810ce3b87874c8c90841582d2c94c7a8118990be2a0c00db2a94a61967f70bf"
         },
         {
           "path": "data/classic/003.jsonl",
           "records": 1000,
-          "sha256": "e8fbd4b0ebd12d1a27c0d94ee956a1078d317d0c3efce53472bd2336860c7952"
+          "sha256": "5855bc202bb5ddd505cc4ba9ee1ffbc09049f4b5546a52b91b85049c60d084b4"
         },
         {
           "path": "data/classic/004.jsonl",
           "records": 245,
-          "sha256": "b5024adb3e339d0d0c8f66a22f9af43e09c0de207f3d9a1239ec2bab9a46e43c"
+          "sha256": "99faa6adf8ab9dd12362c815e5fb63482ebeb5297e564c3e4c91509f6fc06689"
         }
-      ]
+      ],
+      "actors": {
+        "count": 1861,
+        "npcs": 1624,
+        "objects": 237,
+        "fields": {
+          "name": {
+            "zhCN": 1856,
+            "zhTW": 0,
+            "enUS": 5,
+            "missing": 0
+          },
+          "subname": {
+            "zhCN": 585,
+            "zhTW": 0,
+            "enUS": 1,
+            "missing": 1275
+          }
+        },
+        "files": [
+          {
+            "path": "data/classic/actors/000.jsonl",
+            "records": 1000,
+            "sha256": "25583644dda14b2dd589982e6b5137ecf0f0491a3f25d5df8ed403e1f5b7a57f"
+          },
+          {
+            "path": "data/classic/actors/001.jsonl",
+            "records": 861,
+            "sha256": "9e5858dd7b33986ee28f57183239edaadbf51f3bbd889b8f4941a5b565d73465"
+          }
+        ]
+      }
     },
     {
       "id": "wotlk",
@@ -147,7 +177,6 @@
       "commit": "8265956f54c64ad082e2b9f8d37db64b38600b3f",
       "snapshot": "data/sql/base/db_world",
       "note": "固定提交中的基础表快照，未应用 updates。",
-      "license": "GPL-2.0",
       "count": 9464,
       "fields": {
         "title": {
@@ -247,54 +276,95 @@
         {
           "path": "data/wotlk/000.jsonl",
           "records": 1000,
-          "sha256": "3f3213cbeccf850979c97c3efca776e2416e9cf70d40d001b7509ac6334c1d24"
+          "sha256": "0c720a55765a5ddbf42323a9ad631b8557a35dc82687b6ede27ed44a18d068d8"
         },
         {
           "path": "data/wotlk/001.jsonl",
           "records": 1000,
-          "sha256": "0cf1c36e30099e81c13ad820d363b2ee493413df86f41fbe4ec9234855bc9de7"
+          "sha256": "92e445b63b6c54fa752de2b9b5f731b5bf4b25cacd163357fcc11619972cd29a"
         },
         {
           "path": "data/wotlk/002.jsonl",
           "records": 1000,
-          "sha256": "21da0ef191e34b063af887ee41f725d8306e9335b8921937e8291f87ca192efa"
+          "sha256": "30e6c4cd2cef6cb1fa97f5fb5b036564be5b5efe7af1f42e8661934a990e237e"
         },
         {
           "path": "data/wotlk/003.jsonl",
           "records": 1000,
-          "sha256": "b70c640eb29b33d05935ac4b4e50b6ead049145efc3a9937d61d4f7a0d91b822"
+          "sha256": "c5624e317eba0871ed664a72415b72c3a64d0f26775c3402f58b962ce1f718cf"
         },
         {
           "path": "data/wotlk/004.jsonl",
           "records": 1000,
-          "sha256": "763e167a1a019413f10dbe18a821abb27a9fb8ee03e6e9f007a3aee563ce460a"
+          "sha256": "995f594bcccb22efa1b9ccaffded3e7bab0498642f4415724428ee8dc45aac26"
         },
         {
           "path": "data/wotlk/005.jsonl",
           "records": 1000,
-          "sha256": "881ca63cb8404622e726ad9bf24945a9b0016c75a8e71e3a1c7b7b011b908641"
+          "sha256": "b68ab81e54ef5a0fd2a6db7f22b40c25179efcab24f64ef98895d352f5d35d93"
         },
         {
           "path": "data/wotlk/006.jsonl",
           "records": 1000,
-          "sha256": "e8b95f4ec1e4d5d51f6069a3011f21a31e95c822479321578388ee39a7eeff9b"
+          "sha256": "5423599094b795b08baa9ef4e0856d2ad7858ef71a233132f5d073c9550720bf"
         },
         {
           "path": "data/wotlk/007.jsonl",
           "records": 1000,
-          "sha256": "d9cda3ea0410e2deb7d8e9ccddf77db52c9d1d3de68194a52f7298fd0f97810f"
+          "sha256": "3aa00bb40bfe15873a15c3f1f3d7d96e296405cac562b76a43a24e7ef105dae9"
         },
         {
           "path": "data/wotlk/008.jsonl",
           "records": 1000,
-          "sha256": "101e5fcb6978e36cf5688dda562fccad292a3011e0d64bedaf5e152c46cec56b"
+          "sha256": "5a2cc1eb91a1dae9323456bad718076e462411d7248c7232a7d5ee03279557ae"
         },
         {
           "path": "data/wotlk/009.jsonl",
           "records": 464,
-          "sha256": "44fa96fcbe216122ee06d51aa0a9b206e7829c142dde9cfcf78434a0b2d8ad0d"
+          "sha256": "d01febf7c7adc844994ff543fe628abb6551ccb06d22c5e64ece94caf22fe620"
         }
-      ]
+      ],
+      "actors": {
+        "count": 3910,
+        "npcs": 3408,
+        "objects": 502,
+        "fields": {
+          "name": {
+            "zhCN": 3894,
+            "zhTW": 2,
+            "enUS": 14,
+            "missing": 0
+          },
+          "subname": {
+            "zhCN": 1095,
+            "zhTW": 0,
+            "enUS": 0,
+            "missing": 2815
+          }
+        },
+        "files": [
+          {
+            "path": "data/wotlk/actors/000.jsonl",
+            "records": 1000,
+            "sha256": "39c318d6f3817cf91838c0f6312f62f6f5e61e544966463b8a3d5cd9a27b0cac"
+          },
+          {
+            "path": "data/wotlk/actors/001.jsonl",
+            "records": 1000,
+            "sha256": "64b277fafa792c8e771fbbe21e447b6c0bef9d9643b57f338e1ad9b9cfe2a6a2"
+          },
+          {
+            "path": "data/wotlk/actors/002.jsonl",
+            "records": 1000,
+            "sha256": "975ca4de0c525991ba607090bcdb3f926892b01b425dc4bddad951c8335d97d4"
+          },
+          {
+            "path": "data/wotlk/actors/003.jsonl",
+            "records": 910,
+            "sha256": "68242fd99385e877a9c532d659127a6f6fe9a7bc08b448625f0ebba98d4142a1"
+          }
+        ]
+      }
     },
     {
       "id": "cataclysm",
@@ -309,7 +379,6 @@
           "简中描述和目标中的碎木哨岗与4.3.4英文 Silverwind Refuge 地点不符；保留源文本供对照，需人工复核。"
         ]
       },
-      "license": "Database CC-BY-NC-SA-3.0; translation subdirectory GPL-2.0",
       "count": 14907,
       "fields": {
         "title": {
@@ -409,79 +478,130 @@
         {
           "path": "data/cataclysm/000.jsonl",
           "records": 1000,
-          "sha256": "114ddeae6fa52be5b1b1d90c57ca88099d8041a89c5d0d6a2eb6c6844a802151"
+          "sha256": "9a20b144d7619f829b8867406f2df5f4df1437585a21a96857feb644a6c8f661"
         },
         {
           "path": "data/cataclysm/001.jsonl",
           "records": 1000,
-          "sha256": "f8fdb3112ddb59b1d459d58364821a9ff18bd1e97830a9497e94594896e4dcca"
+          "sha256": "f596923d02abd3f08bdb2a87faaa57691b906d7070e5c3aa52d31cfb25a176ab"
         },
         {
           "path": "data/cataclysm/002.jsonl",
           "records": 1000,
-          "sha256": "58fe03491fee8ff5a7392ba3e616f87d6f266e81919c34f0acc3d522a89f9e11"
+          "sha256": "8b09d1ee0cbe3441d1e5f609e79e0cd9b5fba10ebe4f524ff9c749eb550d4f3c"
         },
         {
           "path": "data/cataclysm/003.jsonl",
           "records": 1000,
-          "sha256": "3c391d9c2943b7307fbb172bf7b92ae4ccc77e41595fa321311a832957097615"
+          "sha256": "2ff80d0eee253c4c875edd187784f22f82c3d966d2aca465bf21a9cb93587ccd"
         },
         {
           "path": "data/cataclysm/004.jsonl",
           "records": 1000,
-          "sha256": "09e3f18094de1abc9f70bd51355c3945abba31c9ae3f377db0fcd3abcf50d2be"
+          "sha256": "e7facae217c9173267cef5b5631227f7244f73eff5ad6cc670ca2191ff673b1f"
         },
         {
           "path": "data/cataclysm/005.jsonl",
           "records": 1000,
-          "sha256": "721b46a0793909c69ed6db9455c68d6ccb8a4df7d879623188614c7eeed52f0a"
+          "sha256": "917dd05c3d5aa3765f8afe371b3d7cc1f3ca4525ad63d70a61c13c066ea94094"
         },
         {
           "path": "data/cataclysm/006.jsonl",
           "records": 1000,
-          "sha256": "f9b66e4ef7be9e1e172e663b3dbcb900c816f1dcf786b208756427c510f845b9"
+          "sha256": "d578bd2a99175568d05276ab67e78fa3b6e8d1d4881312ab6c286827ec38c2e5"
         },
         {
           "path": "data/cataclysm/007.jsonl",
           "records": 1000,
-          "sha256": "01807b8a8f69d9f7d5ab56d718119da6e9c53581cec1827f1bda9514de681b8d"
+          "sha256": "9adf546b3f797d1bb2c0ea8d36e07ee1fea373f3c0dc64ff935ae8893dd7244a"
         },
         {
           "path": "data/cataclysm/008.jsonl",
           "records": 1000,
-          "sha256": "ee16d7d8202958c6a4c7463684a9952f9043a4f74f32e41ad9aa513efb4f2e39"
+          "sha256": "85be748b776dad48493c794cb71fbfd906c6a61fbdfcee06e769d1de8b7c82f9"
         },
         {
           "path": "data/cataclysm/009.jsonl",
           "records": 1000,
-          "sha256": "dabdc983703335d05d502398293197a657ea0f397ab0a7d7514bad0c3526f050"
+          "sha256": "9f1c68447e535b63249a53de8ca8325caf891707eba8a1ba01001a1d44601d0d"
         },
         {
           "path": "data/cataclysm/010.jsonl",
           "records": 1000,
-          "sha256": "f8b1b9e57b240e07a9601de7423ee25e9655fe01eb99054f5e2e875e64d1a6bc"
+          "sha256": "cd300750c9ec590731e565bd12414721d4c1ca136b1fbcaccd6b4df294aca6f7"
         },
         {
           "path": "data/cataclysm/011.jsonl",
           "records": 1000,
-          "sha256": "8d85bec3302f90d75be3e2bebb73881efc04cc434836ede2a70b789ecc217897"
+          "sha256": "835015e347b2cb2a01cc0320c777d2e5557516bdb45b1bf17df73abf9204ab2c"
         },
         {
           "path": "data/cataclysm/012.jsonl",
           "records": 1000,
-          "sha256": "b9b5a69e8a73744b56e50212a101ffc88456e707fd96550820364b0161df9779"
+          "sha256": "408bd9bac09cad1d30026e1961200e9fb2e79b1e670aaa97a7f40c6c9865b826"
         },
         {
           "path": "data/cataclysm/013.jsonl",
           "records": 1000,
-          "sha256": "61a469a6d4735cd2f68db944f770d3ad5a71bb3cd28109bc95b863e6405b70a4"
+          "sha256": "3ec315eba596123fefb8b65c17426db666222d0faec18b27f0a441373c24a8ca"
         },
         {
           "path": "data/cataclysm/014.jsonl",
           "records": 907,
-          "sha256": "ad4f44a6f0ebfc1676e55a2b1e566c1226f775d73cc95045ad762cd43225c3f9"
+          "sha256": "7f8c7bd12926cea7061eda0a32359a128bbd570d430c7eaa5ddbca4a465c78e7"
         }
-      ]
+      ],
+      "actors": {
+        "count": 5176,
+        "npcs": 4588,
+        "objects": 588,
+        "fields": {
+          "name": {
+            "zhCN": 3396,
+            "zhTW": 4,
+            "enUS": 1776,
+            "missing": 0
+          },
+          "subname": {
+            "zhCN": 1256,
+            "zhTW": 0,
+            "enUS": 178,
+            "missing": 3742
+          }
+        },
+        "files": [
+          {
+            "path": "data/cataclysm/actors/000.jsonl",
+            "records": 1000,
+            "sha256": "4f9f5b88883fe7cdfd1532b402138bb3e5e41a0105c5018b9179fe37624fa1b4"
+          },
+          {
+            "path": "data/cataclysm/actors/001.jsonl",
+            "records": 1000,
+            "sha256": "b33c840a8680df28545ebf10ec9ecee7658804e7ef359fb93c3620f626089d83"
+          },
+          {
+            "path": "data/cataclysm/actors/002.jsonl",
+            "records": 1000,
+            "sha256": "5a72157d7dc6bbc131158ff58df58f16af42ebf7c243e01121bf615c5f80e190"
+          },
+          {
+            "path": "data/cataclysm/actors/003.jsonl",
+            "records": 1000,
+            "sha256": "d9c2e1a05c7be2641094f163a94931408a4a10fe60acbad98c34cec67c89c38a"
+          },
+          {
+            "path": "data/cataclysm/actors/004.jsonl",
+            "records": 1000,
+            "sha256": "50132af0b8d556811675d3cf2f636dede8d39522693baf5e14be055c14330664"
+          },
+          {
+            "path": "data/cataclysm/actors/005.jsonl",
+            "records": 176,
+            "sha256": "82341ec7104f313c73c22d9a97a440a13286aa3f009399638c228a4b78ba496f"
+          }
+        ]
+      }
     },
     {
       "id": "pandaria",
@@ -609,7 +729,6 @@
         40310,
         40311
       ],
-      "license": "GPL-2.0",
       "count": 18144,
       "fields": {
         "title": {
@@ -709,99 +828,150 @@
         {
           "path": "data/pandaria/000.jsonl",
           "records": 1000,
-          "sha256": "372f6379a09df772dbfd6f7ef29338419b3ae1051f6ff0b8c4b9faecbb51d9b1"
+          "sha256": "10268121a987a1cde2c6e8ead3afb4b920936e81815238e9a19be631db19db4b"
         },
         {
           "path": "data/pandaria/001.jsonl",
           "records": 1000,
-          "sha256": "53a1c940dde8c426295f6d3deac200df83f62f280408e2f4822bb6e683b39cba"
+          "sha256": "55f99c362d8cb631390a8d2411d1d5777759210652faba969686b69013a684fa"
         },
         {
           "path": "data/pandaria/002.jsonl",
           "records": 1000,
-          "sha256": "3c3cc353588d5934ba0e5e4b8fabfa7e38b141d53e36386cd0ea9a545f72d63c"
+          "sha256": "66c1502e209935191fa8fcaa474ea0133a8cfc8d034c8502087a3c8117165206"
         },
         {
           "path": "data/pandaria/003.jsonl",
           "records": 1000,
-          "sha256": "ca5bcc46753545167c03470954df541a62baccf45f3cc6b2bd8c9b800af88b48"
+          "sha256": "d7f25331ef2d2a61b2e552a961efbc25171a1b28da49bb92a0eff2d0686a3120"
         },
         {
           "path": "data/pandaria/004.jsonl",
           "records": 1000,
-          "sha256": "18be87e18e1f38a7dc8454b9d896eeb8ab0655f47651307e8feb74aabdc26768"
+          "sha256": "0abf72bc16e8257d5ef606e29bc5d66326059a5a45b88000e570f51b3f4c2b48"
         },
         {
           "path": "data/pandaria/005.jsonl",
           "records": 1000,
-          "sha256": "784533885d1f50d54c4f6677b4f3831434cb96958393bb7515c6877550ba5cb8"
+          "sha256": "bf2f5451ef006d12b1ee0c43029a910090bca334dd8687d1b4abba43274bd928"
         },
         {
           "path": "data/pandaria/006.jsonl",
           "records": 1000,
-          "sha256": "e7737bfc267a6a9e269caac733b195902a2207249752611d5f0fa48f67390ce3"
+          "sha256": "384c7d2d6adeeec74aa5bdf00843a1060db6e0ac7aad33dc51f01e64a3f2ff2c"
         },
         {
           "path": "data/pandaria/007.jsonl",
           "records": 1000,
-          "sha256": "971fa4d5f8db136be15725d97f06b216ccfa1dea9f6ea8741937d994fb249c2d"
+          "sha256": "80b38b87cfc432e4dd09541a947457fd636e7f7e3639755ce61741f120b17f03"
         },
         {
           "path": "data/pandaria/008.jsonl",
           "records": 1000,
-          "sha256": "3107ecfe29157016c3ce565cdfbb60a2a223506a1d403e5489b875cbd4fc7a5b"
+          "sha256": "b2aaa588b7e7b1bfc65f05b27ab2bb77af7340a9389be967cf381ef5eef1d0b4"
         },
         {
           "path": "data/pandaria/009.jsonl",
           "records": 1000,
-          "sha256": "e82869d43b3487477abb978a56830ab68733dc28178e79fa2c2e69fe97192550"
+          "sha256": "9d8ef03c4c78d8a9141b83c963cd28e7787881df1d68dddbbea205184180dad8"
         },
         {
           "path": "data/pandaria/010.jsonl",
           "records": 1000,
-          "sha256": "8975753017ab4e57803aa33ee4de82146f649df250e4293840745a83c9643a3e"
+          "sha256": "8f90fbc2e1c55b3cdfdd54f20c58d21fe05ab695d8f0279b81e729d1f4b16f1b"
         },
         {
           "path": "data/pandaria/011.jsonl",
           "records": 1000,
-          "sha256": "e933ee6c7b618498a5ae315b17474701048447f6c9212d3429537feb5f5a76c7"
+          "sha256": "c98462dec120cec8ea67207134a251bb2e73a068edf65e27f19772c99cd6050e"
         },
         {
           "path": "data/pandaria/012.jsonl",
           "records": 1000,
-          "sha256": "6b4bdd4c0edea914e38f394d9f2ec67789a49c2ec23605940c3aa71149c2045e"
+          "sha256": "4e4b77f38868a375dc7a00cfd5aa3d029e37b5e938286c93865417cf00fe1227"
         },
         {
           "path": "data/pandaria/013.jsonl",
           "records": 1000,
-          "sha256": "d8261f0b77db2391dc43d2081a9f58d1baf3992a5121be03fd64e086e338c4f1"
+          "sha256": "7b7d1494c599654ba6da5aaa748e0511d62519ed7f342674a673c9b09e5185a6"
         },
         {
           "path": "data/pandaria/014.jsonl",
           "records": 1000,
-          "sha256": "105e62f2311f6f3e77d99572ff3c42c772b17287fbda6c7fc76a04165a96e599"
+          "sha256": "1fa359d9b1ba2ec6666622843beb1da2656f7325482c32e7f029b6b8bf0bd0d6"
         },
         {
           "path": "data/pandaria/015.jsonl",
           "records": 1000,
-          "sha256": "516d9af08573eb5ced5d83405544dfe1e84d5d10db6f255758c6d68a48bdcf91"
+          "sha256": "6bb4c53f5e877d26238e4735b9a70aabccc4aa9ffaad3ca077984a6bb4806a77"
         },
         {
           "path": "data/pandaria/016.jsonl",
           "records": 1000,
-          "sha256": "ab52f4b6dc8b985fb5908d33a122a112b75c193dfda1247647d37422a3e33a9b"
+          "sha256": "59006a0027e7eb0db2c172a156219eb18e8c5b6579f2625267c7244f0c1e6ddd"
         },
         {
           "path": "data/pandaria/017.jsonl",
           "records": 1000,
-          "sha256": "711b7dec7c518ae092ecffd673f2acac8a5fd9594f6a0ac05002f78f88f4e75c"
+          "sha256": "d9d060a3a4ca409ac87e6d463e95f8c7da2c700d0015434a00706abcde95f3ce"
         },
         {
           "path": "data/pandaria/018.jsonl",
           "records": 144,
-          "sha256": "56b43d6340ec227a268489d0c1bdab3ccc46488e82ed7534b36338f208bb7598"
+          "sha256": "307e7472290d83f731940d59a9e890eb89abc1afeeca8250aa3fcb472a9b0354"
         }
-      ]
+      ],
+      "actors": {
+        "count": 5938,
+        "npcs": 5262,
+        "objects": 676,
+        "fields": {
+          "name": {
+            "zhCN": 5272,
+            "zhTW": 7,
+            "enUS": 659,
+            "missing": 0
+          },
+          "subname": {
+            "zhCN": 1670,
+            "zhTW": 0,
+            "enUS": 10,
+            "missing": 4258
+          }
+        },
+        "files": [
+          {
+            "path": "data/pandaria/actors/000.jsonl",
+            "records": 1000,
+            "sha256": "b3083b006e1103144039481c4ec049983a923bcbdfb2ba267d80227e435b91ce"
+          },
+          {
+            "path": "data/pandaria/actors/001.jsonl",
+            "records": 1000,
+            "sha256": "9ff131ee998e0fc594483c5015da89d49ce5ae8b82c1d042c2ddeee43959d402"
+          },
+          {
+            "path": "data/pandaria/actors/002.jsonl",
+            "records": 1000,
+            "sha256": "326590a251568c41c234b039f569f41500e7b474a876b253bb13ae6b7d9ee6c8"
+          },
+          {
+            "path": "data/pandaria/actors/003.jsonl",
+            "records": 1000,
+            "sha256": "ba0e46ffcf084666e1dd54272ba63a664dd084a2b0c4d3386ebe5511cd758037"
+          },
+          {
+            "path": "data/pandaria/actors/004.jsonl",
+            "records": 1000,
+            "sha256": "32d20e4407fe9f376f5cdce65a43c1d4fc231db6ff59327faf258304d0892dc7"
+          },
+          {
+            "path": "data/pandaria/actors/005.jsonl",
+            "records": 938,
+            "sha256": "b0ee3681ac9721e67042d0df3f2db98f9539685829f4bf0b72ab41369aef08e8"
+          }
+        ]
+      }
     },
     {
       "id": "legion",
@@ -811,7 +981,6 @@
       "commit": "7f2b7dc9c2165d2608742473a931f55b1c1a753a",
       "snapshot": "TDB735.00 / 2018-02-19",
       "note": "TrinityCore官方项目的历史基础快照；奖励/进度本地化表为空，因此这些字段主要回退英文。未应用后续updates。",
-      "license": "GPL-2.0",
       "count": 29716,
       "fields": {
         "title": {
@@ -911,142 +1080,142 @@
         {
           "path": "data/legion/000.jsonl",
           "records": 1000,
-          "sha256": "8e95decb150d2e64a25ca631f15f91828f20a37d4b1bc730ad59cf087556b889"
+          "sha256": "cbc561be2f09de45b5d6bbd3c14a7ea9da0e417e37f2a2ead1d9f0962dbf9738"
         },
         {
           "path": "data/legion/001.jsonl",
           "records": 1000,
-          "sha256": "ca08f833ed2ecf18bfda8bb97d9e4f6fbe5ad2f8a6f2aa6b935f2a1e77e7485f"
+          "sha256": "083b390ac8b6e3f47217968b468c41207b9f520109c95b6f14c30885238d94d5"
         },
         {
           "path": "data/legion/002.jsonl",
           "records": 1000,
-          "sha256": "ec57ebecb42d6871de1397386d6ea5a36955c64646f864fec25c4447eda875fb"
+          "sha256": "f4102665c9e1cf887bc6dd31d39af9d09bfa8cd58a984991ffb6b6ff9594dce6"
         },
         {
           "path": "data/legion/003.jsonl",
           "records": 1000,
-          "sha256": "a58a3741a484c275885c22b2c88327595788fa35dacbe55aac2ae4c82c1774fe"
+          "sha256": "530f0d7a0217f208902672842daead52baceed93fed1758dca3c2bea235075b3"
         },
         {
           "path": "data/legion/004.jsonl",
           "records": 1000,
-          "sha256": "2ab6e5df57fff6e74bc5b388a9279c45b7210cdb28b85e5d3b65fb7423b2ecbf"
+          "sha256": "0af192cc621869e1e0a75826a7619bd24049f4468bb66f375ffaf64775186567"
         },
         {
           "path": "data/legion/005.jsonl",
           "records": 1000,
-          "sha256": "d88ce0318dee9d1b393d66a9e6d5f886a7913b3101541711c85afb61ed15826b"
+          "sha256": "17943d2b6150bfb732be6584e05f3f748736db62c720aa6f321ffa181d9b5d3a"
         },
         {
           "path": "data/legion/006.jsonl",
           "records": 1000,
-          "sha256": "338b6962d864b4e8aca3c0d2556024158ae2afa40a570cbdf793d9cd213854f8"
+          "sha256": "b46b566e643f8b6021567e527f7e08f3aa2639593621636303a283efb4a62251"
         },
         {
           "path": "data/legion/007.jsonl",
           "records": 1000,
-          "sha256": "16c84bc7f9cf840d9926afb945fe4928cc0f919efd39be2c4ed36457ed06b5ad"
+          "sha256": "4e79e548a589d21a2c3fa3d91ccbd3424bd09c0034db3a0ef5160f1bc0447d35"
         },
         {
           "path": "data/legion/008.jsonl",
           "records": 1000,
-          "sha256": "424d96461797210cd0b8c6bab26298886dae4f2674b8ae883eecd8a0811723f9"
+          "sha256": "6c545e3bad16cd36d90a0cf2eb18478bb459758c0b7698a9536ce6e4228396e2"
         },
         {
           "path": "data/legion/009.jsonl",
           "records": 1000,
-          "sha256": "e3eb5aee1e19d69fb750ca37cc694294ac310595511a44cbad76501201ca1cb2"
+          "sha256": "4df00986176374032789f9b58e0f76e92a2ed85a62b0a15a081dc8871b710730"
         },
         {
           "path": "data/legion/010.jsonl",
           "records": 1000,
-          "sha256": "a127b37be150a5590a10efb7c9141ffdcfc35da200c91bbaaf4d736adf308790"
+          "sha256": "c7fc78beafe44363fe02455fa1dd4bb365f54db65474673d17f850a1279a77dd"
         },
         {
           "path": "data/legion/011.jsonl",
           "records": 1000,
-          "sha256": "d59ade378ed5251959f7c3724f0587a09f41b66a04c32b8eadf8eb04f302bb28"
+          "sha256": "5766b4e64191ec83152316a96846d601c0ad6718c194915a54497d3a9930f126"
         },
         {
           "path": "data/legion/012.jsonl",
           "records": 1000,
-          "sha256": "305f0f5602c410c504b8db746bc37191084373da7a5088d40b15d135ac04b312"
+          "sha256": "3c33a6c9600c2d266006278031787da2ef7c7552274dede43863de797f8f5cc3"
         },
         {
           "path": "data/legion/013.jsonl",
           "records": 1000,
-          "sha256": "260cc3154c20e1f2715c8dd41a78e9dc1899bd757b828df06c3bb89b83018f27"
+          "sha256": "d4979b2952ff24448fb036b934daaed15e078553cfa50efdff46c556d5af5607"
         },
         {
           "path": "data/legion/014.jsonl",
           "records": 1000,
-          "sha256": "8db82090ab1a4fcbfa7a69e7b0c7d1cd9ec505ba07dd2734d6d8c54883a35599"
+          "sha256": "9c592e38dcf3a1726989a46deab2b3e646749b285b4eca9b1b2625a47aa1f2fe"
         },
         {
           "path": "data/legion/015.jsonl",
           "records": 1000,
-          "sha256": "57cd34cf212549cac54de61868e25494842e30d0b8f51f16207c4398dbbae7ca"
+          "sha256": "eb1f1a4406cba100211f9843fce2d1e8098ee0ebccbd5b6d5fedfa4bc23dbfa8"
         },
         {
           "path": "data/legion/016.jsonl",
           "records": 1000,
-          "sha256": "1b0ec54f23df7dffb7c6dcc58c6c91c763f238beda3931b789c7ff4338909ac9"
+          "sha256": "921e1e101da4c7481c1cd57cda465e5a07831275121580a7de4b5da1fc8133d0"
         },
         {
           "path": "data/legion/017.jsonl",
           "records": 1000,
-          "sha256": "0304198df6d8f24cb8a2836def382ec8d4532a12ad04e09579d1cd31e9e4fb61"
+          "sha256": "1274a21dc87f5384fb66609b896b9d82ebe4f6856a753af55b707f69c4436eb3"
         },
         {
           "path": "data/legion/018.jsonl",
           "records": 1000,
-          "sha256": "1909dc31b943e24f42a4a813f07f5b6ad817d5b5421cbbc2d2e0744d141c5808"
+          "sha256": "ca93f6608f38ed51b7c5d6654f16f7aadf596b2751d4235ceeb111969e0f702a"
         },
         {
           "path": "data/legion/019.jsonl",
           "records": 1000,
-          "sha256": "a436ca24cd5543549b35f0dd6b0d88b7b1815e3647ede25e925926adae0e34cc"
+          "sha256": "24ba72a6634357d43378abbac980d8281855f1c0c9e27722c3b25820efe9c154"
         },
         {
           "path": "data/legion/020.jsonl",
           "records": 1000,
-          "sha256": "3182e5b11dcda1ead643bef53eecb1de326b520763a44aff616f9b7836f7bdb9"
+          "sha256": "ab54ed705e462069c6e00f052e173543ec9614f02b948d5c8d0b08ad6d27d48a"
         },
         {
           "path": "data/legion/021.jsonl",
           "records": 1000,
-          "sha256": "114cde3fa53a1ba91aac84e33fa7c30b7dbc01c5eeeeb53cb19c4dabfdca63f4"
+          "sha256": "945971feab91b5abdc34c50b02395e7e73c8aa8a8aca3aebf86521f498445734"
         },
         {
           "path": "data/legion/022.jsonl",
           "records": 1000,
-          "sha256": "52ed1da0e24fa96ab3f97d63f1c918c94f9f1047a1f11cadcaf0f359dea5d2fe"
+          "sha256": "41baa0ef845c016e37db5a29b9ec286fa5953cfccd794a99abe74e1744a4c645"
         },
         {
           "path": "data/legion/023.jsonl",
           "records": 1000,
-          "sha256": "e965bb78b0dae986599fdbed5c38ad59afa42407db76673fc5f4f1fd6f1a9aee"
+          "sha256": "9ae3d6fd5b0c5d6ccf288a5876cfc52bbe470d9755633432a7f4563e0195e00e"
         },
         {
           "path": "data/legion/024.jsonl",
           "records": 1000,
-          "sha256": "c49d2198d6d43371c9d197decb0a8bcde7aa66dc61b8a1cfb9c9a4fcd5d97a98"
+          "sha256": "50f8aa0146660247ee1b46ea7592f9d36a93acc3936c28551cfa040f789399de"
         },
         {
           "path": "data/legion/025.jsonl",
           "records": 1000,
-          "sha256": "d041cc889f08e22dce6f321eee2f5650d7125f4cb739eb9f61ca24b6dc9ad82f"
+          "sha256": "b7cb774b8e63e2580323296a084d30c114ca67dd94e9de3b33a58867494a8922"
         },
         {
           "path": "data/legion/026.jsonl",
           "records": 1000,
-          "sha256": "60f06fa23a3a8a59d5c1c67324005d3a88f5ec940cb7b050019fcb7d3e1d1b17"
+          "sha256": "1d72acc5f4e108d2484da7f92a865e97b97269906065b1f721011e3bf94b96a7"
         },
         {
           "path": "data/legion/027.jsonl",
           "records": 1000,
-          "sha256": "4623e7cfbbfc50493711e9ff84b650c734df992f5a14dbebf30de5e27d7a4e7f"
+          "sha256": "a1a74378e9cf564851c7eefa16e78cecac6d9dea83c0d6c99153dc025020ca1e"
         },
         {
           "path": "data/legion/028.jsonl",
@@ -1058,7 +1227,73 @@
           "records": 716,
           "sha256": "eb1ddeda21add0d0df6b7293fe3fbbe5e5e07d53016113500106e45c88b809ee"
         }
-      ]
+      ],
+      "actors": {
+        "count": 8915,
+        "npcs": 8014,
+        "objects": 901,
+        "fields": {
+          "name": {
+            "zhCN": 8397,
+            "zhTW": 34,
+            "enUS": 455,
+            "missing": 29
+          },
+          "subname": {
+            "zhCN": 2735,
+            "zhTW": 6,
+            "enUS": 12,
+            "missing": 6162
+          }
+        },
+        "files": [
+          {
+            "path": "data/legion/actors/000.jsonl",
+            "records": 1000,
+            "sha256": "22a375b4e6f1f546d3b98748e9daf0872a28b4e2202461e5b576ee70de75eb84"
+          },
+          {
+            "path": "data/legion/actors/001.jsonl",
+            "records": 1000,
+            "sha256": "14139490f381bcb3ae767902f53d874cfac873e7c90a5b56f2c7300c1540ecb3"
+          },
+          {
+            "path": "data/legion/actors/002.jsonl",
+            "records": 1000,
+            "sha256": "3d339d52b1eb3ac2862962873dbb5fe00fd226456554235293aa50cce363b2b9"
+          },
+          {
+            "path": "data/legion/actors/003.jsonl",
+            "records": 1000,
+            "sha256": "0fa675dba9d9d3f176d31608d77983bfcb74832f8952537519ea28446caa9a10"
+          },
+          {
+            "path": "data/legion/actors/004.jsonl",
+            "records": 1000,
+            "sha256": "8436783ef126fa486c00e369bdc659072363c5720dbda34da934f3f0c81ec165"
+          },
+          {
+            "path": "data/legion/actors/005.jsonl",
+            "records": 1000,
+            "sha256": "b9956e45fe4139666aaf971f37056b7dc9e0b7f20df236567eff02fb50be535d"
+          },
+          {
+            "path": "data/legion/actors/006.jsonl",
+            "records": 1000,
+            "sha256": "882b355bfae1fedbb1d3297fc6f03805eff85a245c816ac297315ab5cf8aba58"
+          },
+          {
+            "path": "data/legion/actors/007.jsonl",
+            "records": 1000,
+            "sha256": "09a61d452b908a47726ab839b147024253631f76b6ab9513a6517049835135af"
+          },
+          {
+            "path": "data/legion/actors/008.jsonl",
+            "records": 915,
+            "sha256": "8d2792133b5e5e2ad756bda4adbf8f2740c4fd4f483d285fbf8431fd239d5551"
+          }
+        ]
+      }
     }
   ]
 }
