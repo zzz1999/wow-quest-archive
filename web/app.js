@@ -20,7 +20,7 @@
     const b64=window.QUEST_PACKS[id];if(!b64)throw new Error('数据文件不完整，请下载并解压整个项目。');
     const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));const data=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
     const prepared=data.map(r=>({record:r,search:rowText(r)}));cache.set(id,prepared);delete window.QUEST_PACKS[id];resolve(prepared);
-   }catch(e){reject(e);}finally{s.remove();}};s.onerror=()=>{s.remove();reject(new Error('无法读取本地数据。请先解压整个文件夹，再打开 index.html。'));};document.head.append(s);});
+   }catch(e){reject(e);}finally{s.remove();}};s.onerror=()=>{s.remove();reject(new Error(location.protocol==='file:'?'无法读取本地数据。请先解压整个文件夹，再打开 index.html。':'无法下载这个版本的数据。请检查网络后重试。'));};document.head.append(s);});
   loading.set(id,promise);promise.catch(()=>loading.delete(id));return promise;
  }
  async function selectVersion(id,questId,{fromHash=false}={}){
