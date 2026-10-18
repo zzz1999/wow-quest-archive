@@ -6,6 +6,16 @@ const comparable=value=>String(value||'').normalize('NFKC').trim().replace(/\s+/
 export function textCoverage(records){
  const fields={};for(const r of records)for(const [field,locale]of Object.entries(r.textLocales)){fields[field]??={zhCN:0,zhTW:0,enUS:0,missing:0};fields[field][locale||'missing']++;}return fields;
 }
+export function filterSupplementBuilds(tables,maxVerifiedBuild){
+ if(maxVerifiedBuild===undefined)return {tables,excludedBuildRows:{}};
+ if(!Number.isSafeInteger(maxVerifiedBuild)||maxVerifiedBuild<=0)throw new Error('Invalid supplement build limit');
+ const filtered=new Map(),excludedBuildRows={};
+ for(const [name,rows]of tables){
+  const kept=rows.filter(row=>{const build=Number(row.verifiedbuild??row.wdbverified??0);return Number.isSafeInteger(build)&&Math.abs(build)<=maxVerifiedBuild;});
+  filtered.set(name,kept);if(kept.length!==rows.length)excludedBuildRows[name]=rows.length-kept.length;
+ }
+ return {tables:filtered,excludedBuildRows};
+}
 function matchField(primary,candidate,field){
  if(field==='title')return 'english-title';
  const a=comparable(primary.english[field]),b=comparable(candidate.english[field]);
@@ -23,8 +33,10 @@ export function supplementQuests(primary,sources,version){
   if(source.version!==version)throw new Error('Supplement version mismatch: '+source.id);
   if(!source.id||source.id===version||sourceIds.has(source.id))throw new Error('Invalid supplement ID');
   sourceIds.add(source.id);
+  if(source.allowedLocales&&(!source.allowedLocales.length||source.allowedLocales.some(l=>!Object.hasOwn(rank,l))))throw new Error('Invalid supplement locales');
   const byKey=new Map();for(const r of source.records){if(r.version!==version||r.key!==`${version}:${r.id}`||byKey.has(r.key))throw new Error('Invalid supplement quest: '+r.key);byKey.set(r.key,r);}
   const stats={id:source.id,records:byKey.size,matchedQuests:0,unmatchedTitles:0,customQuestsSkipped:0,rejectedFields:0,selectedFields:0};report.sources.push(stats);
+  if(source.excludedBuildRows&&Object.keys(source.excludedBuildRows).length)stats.excludedBuildRows=source.excludedBuildRows;
   return {source,byKey,stats};
  });
  const records=primary.map(original=>{
@@ -39,6 +51,7 @@ export function supplementQuests(primary,sources,version){
    if(!comparable(original.english.title)||comparable(original.english.title)!==comparable(candidate.english.title)){stats.unmatchedTitles++;continue;}
    stats.matchedQuests++;
    for(const field of Object.keys(TEXT_FIELDS)){
+    if(source.allowedLocales&&!source.allowedLocales.includes(candidate.textLocales[field]))continue;
     if(!candidate.text[field]||(rank[candidate.textLocales[field]]??3)>=(rank[r.textLocales[field]]??3))continue;
     const match=matchField(original,candidate,field);if(!match){stats.rejectedFields++;continue;}
     const change={id:r.id,field,source:source.id,fromLocale:original.textLocales[field],toLocale:candidate.textLocales[field],match};

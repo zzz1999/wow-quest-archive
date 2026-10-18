@@ -96,7 +96,9 @@
   $('quest-list').scrollTop=0;
  }
  function section(r,field,extraClass=''){
-  const value=r.text[field];return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(r.textLocales[field])}</h3>${value?`<div class="quest-prose">${readingHtml(value)}</div>`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
+  const value=r.text[field],notes=window.QuestReading.notes(value,reading);
+  const help=notes.length?`<details class="variable-help"><summary>游戏变量说明（${notes.length}）</summary><p>这些是原文中的游戏标记。缺少上下文或含义尚未核实的内容显示为标签，下方保留原始标记供对照。</p><dl>${notes.map(n=>`<dt><code>${escape(n.token)}</code> · ${escape(n.label)}</dt><dd>${escape(n.note)}</dd>`).join('')}</dl></details>`:'';
+  return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(r.textLocales[field])}</h3>${value?`<div class="quest-prose">${readingHtml(value)}</div>${help}`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
  }
  function sourceFor(r,id){const meta=cat.versions.find(v=>v.id===r.version);return id===r.version?meta:meta.supplements?.find(s=>s.id===id);}
  function sourceLink(source){return source?`<a href="https://github.com/${escape(source.repo)}/tree/${escape(source.commit)}" target="_blank" rel="noopener noreferrer">${escape(source.repo)} ↗</a>`:'未记录';}
@@ -143,7 +145,7 @@
  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type:type+';charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  function info(){
   const coverage=cat.versions.map(v=>'<tr><td>'+escape(v.name)+'<br>'+escape(v.patch)+'</td><td>'+v.count.toLocaleString()+'</td><td>'+v.fields.title.zhCN+'</td><td>'+v.fields.title.zhTW+'</td><td>'+v.fields.title.enUS+'</td><td>'+v.fields.description.zhCN+'</td></tr>').join('');
-  const sources=cat.versions.map(v=>'<h3>'+escape(v.name)+' · '+escape(v.patch)+'</h3><p>基础资料：'+sourceLink(v)+' · '+escape(v.snapshot)+'<br>'+escape(v.note)+'</p>'+(v.supplements||[]).map(s=>'<p>补充来源：'+sourceLink(s)+' · '+escape(s.snapshot)+'<br>'+escape(s.note)+'</p>').join('')+(v.textAudit?'<p>本次补充涉及 '+v.textAudit.changedQuests.toLocaleString()+' 条任务、'+v.textAudit.changedFields.toLocaleString()+' 个文字字段。<a href="'+escape(v.textAudit.report)+'" target="_blank" rel="noopener noreferrer">查看逐字段检查报告 ↗</a></p>':'')).join('');
+  const sources=cat.versions.map(v=>'<h3>'+escape(v.name)+' · '+escape(v.patch)+'</h3><p>基础资料：'+sourceLink(v)+' · '+escape(v.snapshot)+'<br>'+escape(v.note)+'</p>'+(v.supplements||[]).map(s=>'<p>补充来源：'+sourceLink(s)+' · '+escape(s.snapshot)+'<br>'+escape(s.note)+'</p>').join('')+(v.textAudit?'<p>多源补充累计涉及 '+v.textAudit.changedQuests.toLocaleString()+' 条任务、'+v.textAudit.changedFields.toLocaleString()+' 个文字字段。<a href="'+escape(v.textAudit.report)+'" target="_blank" rel="noopener noreferrer">查看逐字段检查报告 ↗</a></p>':'')).join('');
   $('info-body').innerHTML='<p>按客户端版本分别收录社区数据库的任务快照，并使用同版本的其他来源补充文字。数量按「版本 + ID」统计，不能相加视为独立故事数，也不代表全部任务均可在游戏中接取。</p>'+
    '<p>每个字段依次选用 <b>简体中文 → 繁体中文 → 英文</b>；同语言优先保留原有主库。补充文字必须匹配英文标题与对应英文内容；空字段需要匹配描述或目标作为依据。不会只凭相同数字 ID 跨版本套用文字。</p>'+
    '<p>空白与损坏文本不参与回退，中文表中的英文占位不计作中文。暂时没有可匹配来源的内容保留为空；部分自动任务、测试任务或可选对白本身也可能没有文本。译文仍可能存在社区修订或错误，不由 AI 补写。</p>'+

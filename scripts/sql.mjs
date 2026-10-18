@@ -30,11 +30,25 @@ export async function* statements(file) {
   if(parts.join('').trim())yield parts.join('');
 }
 
-export function* tuples(text,start=0) {
+export function* tuples(text,start=0,tail=null) {
   let i=start;
-  const ws=()=>{while(/\s/.test(text[i]||'')&&i<text.length)i++;};
+  const ws=()=>{while(i<text.length){
+    if(/\s/.test(text[i])){i++;continue;}
+    if(text[i]==='#'||(text.startsWith('--',i)&&/\s/.test(text[i+2]||''))){const end=text.indexOf('\n',i);i=end<0?text.length:end+1;continue;}
+    if(text.startsWith('/*',i)){const end=text.indexOf('*/',i+2);if(end<0)throw new Error('Unclosed SQL comment');i=end+2;continue;}
+    break;
+  }};
   while(i<text.length){
     ws();if(text[i]===','||text[i]===';'){i++;continue;}if(i>=text.length)break;
+    if(tail&&/^ON\s+DUPLICATE\s+KEY\s+UPDATE\s+/i.test(text.slice(i))){
+      const assignments=text.slice(i).replace(/^ON\s+DUPLICATE\s+KEY\s+UPDATE\s+/i,'').replace(/;\s*$/,'').split(',');
+      tail.upsert=assignments.map(value=>{
+        const match=/^\s*`([^`]+)`\s*=\s*VALUES\s*\(\s*`\1`\s*\)\s*$/i.exec(value);
+        if(!match)throw new Error('Unsupported ON DUPLICATE KEY UPDATE assignment');
+        return match[1].toLowerCase();
+      });
+      return;
+    }
     if(text[i++]!=='(')throw new Error('Unsupported SQL tuple near '+text.slice(i-1,i+60));
     const row=[];
     for(;;){
@@ -74,9 +88,10 @@ export async function readTables(files,wanted,{onTable}={}) {
         const columns=[...statement.matchAll(/^\s*`([^`]+)`\s+/gm)].map(x=>x[1]);
         schemas.set(create[1],columns);if(!tables.has(create[1]))tables.set(create[1],[]);
       }
-      const update=/^UPDATE\s+`([^`]+)`\s+SET\s+([^]*)\s+WHERE\s+`?(entry|id)`?\s*=\s*'?(\d+)'?\s*;?\s*$/i.exec(statement);
+      const update=/^UPDATE\s+`([^`]+)`\s+SET\s+([^]*)\s+WHERE\s*\(?\s*`?(entry|id)`?\s*=\s*'?(\d+)'?(?:\s+AND\s+`?locale`?\s*=\s*'([A-Za-z0-9]+)')?\s*\)?\s*;?\s*$/i.exec(statement);
       if(update&&wanted.has(update[1])){
-        const [,table,set,primary,id]=update;const record={[primary.toLowerCase()]:Number(id)};
+        const [,table,set,primary,id,locale]=update;const record={[primary.toLowerCase()]:Number(id),...(locale?{locale}:{})};
+        if(locale&&!['enUS','zhCN','zhTW','4','5'].includes(locale))continue;
         let i=0;
         while(i<set.length){
           const column=/^\s*,?\s*`([^`]+)`\s*=\s*/.exec(set.slice(i));if(!column)throw new Error('Unsupported UPDATE assignment in '+file);
@@ -85,9 +100,10 @@ export async function readTables(files,wanted,{onTable}={}) {
           record[column[1].toLowerCase()]=[...tuples('('+set.slice(begin,i).trim()+')')][0][0];
         }
         if(!tables.has(table))tables.set(table,[]);
-        if(!updateIndexes.has(table))updateIndexes.set(table,new Map(tables.get(table).map(r=>[Number(r.entry??r.id),r])));
-        const rows=updateIndexes.get(table),existing=rows.get(Number(id));
-        if(existing)Object.assign(existing,record);else{tables.get(table).push(record);rows.set(Number(id),record);}
+        const rowKey=r=>`${r.entry??r.id}:${r.locale??''}`;
+        if(!updateIndexes.has(table))updateIndexes.set(table,new Map(tables.get(table).map(r=>[rowKey(r),r])));
+        const rows=updateIndexes.get(table),key=rowKey(record),existing=rows.get(key);
+        if(existing)Object.assign(existing,record);else{tables.get(table).push(record);rows.set(key,record);}
         continue;
       }
       const unknownUpdate=/^UPDATE\s+`([^`]+)`/i.exec(statement);
@@ -97,11 +113,17 @@ export async function readTables(files,wanted,{onTable}={}) {
       const name=insert[1];const cols=insert[2]?[...insert[2].matchAll(/`([^`]+)`/g)].map(x=>x[1]):schemas.get(name);
       if(!cols?.length)throw new Error(`Missing schema for ${name} in ${file}`);
       if(!tables.has(name))tables.set(name,[]);
-      for(const values of tuples(statement,insert.index+insert[0].length)){
+      updateIndexes.delete(name);
+      const tail={},rows=[...tuples(statement,insert.index+insert[0].length,tail)];
+      if(tail.upsert?.some(column=>!cols.some(c=>c.toLowerCase()===column)))throw new Error('Unknown upsert column in '+file);
+      const rowKey=r=>`${r.entry??r.id}:${r.locale??''}`;
+      const existing=tail.upsert?new Map(tables.get(name).map(r=>[rowKey(r),r])):null;
+      for(const values of rows){
         if(values.length!==cols.length)throw new Error(`${name}: ${values.length} values, ${cols.length} columns`);
         const record=Object.fromEntries(cols.map((key,i)=>[key.toLowerCase(),values[i]]));
         if(record.locale&&!['enUS','zhCN','zhTW',4,5,'4','5'].includes(record.locale))continue;
-        tables.get(name).push(record);
+        if(existing?.has(rowKey(record))){const prior=existing.get(rowKey(record));for(const column of tail.upsert)prior[column]=record[column];}
+        else{tables.get(name).push(record);existing?.set(rowKey(record),record);}
       }
     }
     onTable?.(file,tables);

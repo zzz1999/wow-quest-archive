@@ -27,3 +27,9 @@
 .text-sources th,.text-sources td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
 .text-sources td:first-child{white-space:nowrap}
 .text-sources small{display:block;color:var(--muted)}
+.variable-help{margin-top:14px;font-size:12px;line-height:1.8;color:var(--muted)}
+.variable-help summary{cursor:pointer}
+.variable-help dt{margin-top:10px;color:var(--ink)}
+.variable-help dd{margin:4px 0 10px}
+.variable-help code{overflow-wrap:anywhere}
+.variable-badge:focus-visible{outline:2px solid var(--gold);outline-offset:2px}

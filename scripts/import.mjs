@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {readTables} from './sql.mjs';
 import {normalize,normalizeActors} from './normalize.mjs';
-import {supplementQuests,textCoverage} from './supplements.mjs';
+import {supplementQuests,textCoverage,filterSupplementBuilds} from './supplements.mjs';
 export const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const config=JSON.parse(await fs.readFile(process.argv[2],'utf8'));
 const wanted=new Set(['quest_relations','quest_template','quest_template_addon','locales_quest','quest_template_locale','quest_request_items','quest_request_items_locale','quest_offer_reward','quest_offer_reward_locale','quest_objective','quest_objectives','quest_objective_locale','quest_objectives_locale','locales_quest_objective','creature_template','gameobject_template','locales_creature','locales_gameobject','creature_template_locale','gameobject_template_locale',...['creature','gameobject'].flatMap(k=>['queststarter','questender','questrelation','involvedrelation'].map(t=>k+'_'+t))]);
@@ -19,8 +19,8 @@ for(const src of config){
  const textTables=new Set(['quest_template','locales_quest','quest_template_locale','quest_request_items','quest_request_items_locale','quest_offer_reward','quest_offer_reward_locale']);
  for(const supplement of src.supplements||[]){
   console.log('Compare '+supplement.id+' for '+src.id);
-  const data=await readTables(supplement.localFiles,textTables);
-  supplements.push({id:supplement.id,version:supplement.version,records:normalize(data,supplement.version,{customQuestIds:supplement.customQuestIds||[]})});
+  const {tables:data,excludedBuildRows}=filterSupplementBuilds(await readTables(supplement.localFiles,textTables),supplement.maxVerifiedBuild);
+  supplements.push({id:supplement.id,version:supplement.version,allowedLocales:supplement.allowedLocales,excludedBuildRows,records:normalize(data,supplement.version,{customQuestIds:supplement.customQuestIds||[]})});
  }
  const {records,report}=supplementQuests(primary,supplements,src.id);
  await fs.mkdir(path.join(ROOT,'reports/text-audit'),{recursive:true});

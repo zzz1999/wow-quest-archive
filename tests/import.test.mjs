@@ -10,6 +10,10 @@ test('SQL preserves apostrophes, separators, Unicode, NULL and game tokens',()=>
  const rows=[...tuples("(7,'中文; (x), \\'quote\\' $B$N',NULL,-3),(8,'it''s\\nnext',0,2);")];
  assert.deepEqual(rows,[[7,"中文; (x), 'quote' $B$N",null,-3],[8,"it's\nnext",0,2]]);
 });
+
+test('packet-capture comments between tuples do not change quoted text',()=>{
+ assert.deepEqual([...tuples("(7,'-- 原文 /* 原文 */'), -- task name\n/* next */ (8,'正文 $N');")],[[7,'-- 原文 /* 原文 */'],[8,'正文 $N']]);
+});
 test('stream handles comments, large inserts and flexible INSERT whitespace',async()=>{
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'quest-sql-'));const file=path.join(dir,'test.sql');
  const title='汉'.repeat(700000);
@@ -23,6 +27,17 @@ test('field fallback skips blank and untranslated Chinese locale entries',()=>{
  assert.equal(chooseText([{locale:'zhCN',text:'English placeholder'},{locale:'enUS',text:'Base English'}]).text,'Base English');
  assert.equal(chooseText([]).locale,null);
  assert.equal(chooseText([{locale:'zhCN',text:'损坏\ufffd文字'},{locale:'zhTW',text:'正常文字'}]).locale,'zhTW');
+});
+
+test('locale upserts only accept literal VALUES assignments and retain locale identity',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'quest-upsert-')),file=path.join(dir,'dump.sql');
+ try{
+  await fs.writeFile(file,"INSERT INTO `quest_template_locale` (`ID`,`locale`,`Title`,`Details`) VALUES (7,'zhTW','舊標題','保留正文'),(7,'zhCN','旧标题','原正文');\nINSERT INTO `quest_template_locale` (`ID`,`locale`,`Title`) VALUES (7,'zhCN','新标题 $N'),(8,'zhTW','新任務') ON DUPLICATE KEY UPDATE `Title`=VALUES(`Title`);\n");
+  const tables=await readTables([file],new Set(['quest_template_locale']));
+  assert.deepEqual(tables.get('quest_template_locale'),[{id:7,locale:'zhTW',title:'舊標題',details:'保留正文'},{id:7,locale:'zhCN',title:'新标题 $N',details:'原正文'},{id:8,locale:'zhTW',title:'新任務'}]);
+  await fs.writeFile(file,"INSERT INTO `quest_template_locale` (`ID`,`Title`) VALUES (7,'中文') ON DUPLICATE KEY UPDATE `Title`=CONCAT('not','literal');");
+  await assert.rejects(readTables([file],new Set(['quest_template_locale'])),/Unsupported ON DUPLICATE/);
+ }finally{await fs.unlink(file);await fs.rmdir(dir);}
 });
 test('normalization keeps version boundaries, negative dependencies and missing text',()=>{
  const tables=new Map([
@@ -42,6 +57,17 @@ test('locale UPDATEs merge fields by task ID without executing SQL',async()=>{
  await fs.writeFile(file,"UPDATE `locales_quest` SET `Title_loc4`='简中',`Details_loc4`='甲,乙; WHERE' WHERE `entry`=42;\nUPDATE `locales_quest` SET `RequestItemsText_loc4`='进度',`Title_loc4`='修正标题' WHERE `entry`='42';\n");
  const t=await readTables([file],new Set(['locales_quest']));assert.deepEqual(t.get('locales_quest'),[{entry:42,title_loc4:'修正标题',details_loc4:'甲,乙; WHERE',requestitemstext_loc4:'进度'}]);
  await fs.unlink(file);await fs.rmdir(dir);
+});
+
+test('capture UPDATE predicates preserve ID plus locale and reject broader conditions',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'quest-capture-')),file=path.join(dir,'dump.sql');
+ try{
+  await fs.writeFile(file,"INSERT INTO `quest_template_locale` (`ID`,`locale`,`LogTitle`) VALUES (7,'zhCN','简中'),(7,'zhTW','繁體');\nUPDATE `quest_template_locale` SET `LogTitle`='新简中', `VerifiedBuild`=26365 WHERE (`ID`=7 AND `locale`='zhCN');\n");
+  const t=await readTables([file],new Set(['quest_template_locale']));
+  assert.deepEqual(t.get('quest_template_locale'),[{id:7,locale:'zhCN',logtitle:'新简中',verifiedbuild:26365},{id:7,locale:'zhTW',logtitle:'繁體'}]);
+  await fs.writeFile(file,"UPDATE `quest_template_locale` SET `LogTitle`='不能导入' WHERE (`ID`=7 OR `locale`='zhCN');");
+  await assert.rejects(readTables([file],new Set(['quest_template_locale'])),/Unsupported UPDATE/);
+ }finally{await fs.unlink(file);await fs.rmdir(dir);}
 });
 test('custom dump delimiters keep stored routine writes out of imported data',async()=>{
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'quest-routine-')),file=path.join(dir,'dump.sql');

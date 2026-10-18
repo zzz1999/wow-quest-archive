@@ -16,6 +16,9 @@
 | FirelandsProject/firelands-cata（大地的裂变补充） | GPL-2.0，保留 LICENSE 与 AUTHORS |
 | ProjectSkyfire/SkyFire_548（潘达利亚补充） | GPL-3.0，保留 LICENSE.md 与 README.md |
 | dufernst/LegionCore-7.3.5（军团补充） | 项目标示 GPL-2.0；README 明示核心源自 UWOW 2020 泄露版本。保留该来源说明，不把公开仓库或许可证标示视作游戏文本的独立权利证明 |
+| mangosfour/database（潘达利亚中文补充） | GPL-3.0，保留 LICENSE 和 README.md |
+| The-Legion-Preservation-Project/TrinityCore（军团中文补充） | GPL-2.0，保留 COPYING 和 README.md；TDB735.25051 社区快照 |
+| zitengzela/LegionCore-7.3.5V2（军团中文补充） | GPL-2.0，保留 COPYING 和 README.md；Legion Proyect 数据库，具有 LegionCore/UWOW 派生背景，未独立核实全部文字来源 |
 
 World of Warcraft 及相关任务文本、角色、世界设定、商标与游戏内容归 Blizzard Entertainment 或相应权利人所有。本项目为独立研究与资料整理项目，与 Blizzard Entertainment 无隶属或授权关系。
 

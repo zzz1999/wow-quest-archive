@@ -7,6 +7,11 @@ import {gunzipSync} from 'node:zlib';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const lock=JSON.parse(await fs.readFile(path.join(root,'sources/manifest.json'),'utf8'));
 const catalog=JSON.parse((await fs.readFile(path.join(root,'web/catalog.js'),'utf8')).replace(/^window\.QUEST_CATALOG=/,'').replace(/;\s*$/,''));
+const html=await fs.readFile(path.join(root,'index.html'),'utf8');
+for(const match of html.matchAll(/(?:src|href)="(web\/[a-z-]+\.(?:js|css))(?:\?v=([a-f0-9]+))?"/g)){
+ const hash=createHash('sha256').update(await fs.readFile(path.join(root,match[1]))).digest('hex').slice(0,12);
+ assert.equal(match[2],hash,'Stale page asset revision: '+match[1]);
+}
 let total=0,totalNpcs=0,totalObjects=0;
 async function readShards(files){
  const rows=[];
@@ -19,13 +24,14 @@ async function verifyBundle(directory,id,records){
 for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  const m=JSON.parse(await fs.readFile(path.join(root,'data',id,'manifest.json'),'utf8'));
  const sourceIds=new Set([id,...(m.supplements||[]).map(s=>s.id)]),sourceLock=lock.versions.find(v=>v.id===id);
- for(const source of m.supplements||[]){assert.equal(source.version,id);const pinned=sourceLock.supplements.find(s=>s.id===source.id);assert.ok(pinned);assert.equal(source.repo,pinned.repo);assert.equal(source.commit,pinned.commit);assert.ok(!source.localFiles,'Local paths must not enter published provenance');}
+ const supplementalSources=new Map();
+ for(const source of m.supplements||[]){assert.equal(source.version,id);const pinned=sourceLock.supplements.find(s=>s.id===source.id);assert.ok(pinned);assert.equal(source.repo,pinned.repo);assert.equal(source.commit,pinned.commit);assert.deepEqual(source.allowedLocales,pinned.allowedLocales);assert.equal(source.maxVerifiedBuild,pinned.maxVerifiedBuild);assert.ok(!source.localFiles,'Local paths must not enter published provenance');supplementalSources.set(source.id,source);}
  const audit=JSON.parse(await fs.readFile(path.join(root,m.textAudit.report),'utf8')),auditChanges=new Map(audit.changes.map(c=>[c.id+':'+c.field,c]));
  const seen=new Set(),fields={},records=[];
  for(const f of m.files){const content=await fs.readFile(path.join(root,f.path));assert.equal(createHash('sha256').update(content).digest('hex'),f.sha256,f.path);const rows=content.toString('utf8').trim().split('\n').map(x=>JSON.parse(x));assert.equal(rows.length,f.records);
   for(const r of rows){assert.equal(r.version,id);assert.equal(r.key,`${id}:${r.id}`);assert.ok(Number.isInteger(r.id)&&r.id>0);assert.ok(!seen.has(r.key),'Duplicate '+r.key);seen.add(r.key);
    for(const [key,value]of Object.entries(r.text)){assert.equal(typeof value,'string');assert.ok(!value.includes('\ufffd'),'Invalid UTF-8 replacement in '+r.key);const locale=r.textLocales[key];assert.ok(['zhCN','zhTW','enUS',null].includes(locale));if(value){assert.ok(locale);assert.ok(sourceIds.has(r.textSources[key]),'Unknown text source '+r.key);assert.equal(typeof r.textColumns[key],'string');}else{assert.equal(locale,null);assert.equal(r.textSources[key],null);}if(locale==='zhCN'||locale==='zhTW')assert.ok(/\p{Script=Han}/u.test(value));fields[key]??={zhCN:0,zhTW:0,enUS:0,missing:0};fields[key][locale||'missing']++;
-    if(value&&r.textSources[key]!==id){const change=auditChanges.get(r.id+':'+key);assert.ok(change,'Unaudited supplement '+r.key+':'+key);assert.equal(change.source,r.textSources[key]);assert.equal(change.match,r.textMatches[key]);assert.equal(change.toLocale,locale);auditChanges.delete(r.id+':'+key);}
+    if(value&&r.textSources[key]!==id){const change=auditChanges.get(r.id+':'+key);assert.ok(change,'Unaudited supplement '+r.key+':'+key);assert.equal(change.source,r.textSources[key]);assert.equal(change.match,r.textMatches[key]);assert.equal(change.toLocale,locale);auditChanges.delete(r.id+':'+key);const source=supplementalSources.get(r.textSources[key]);if(source.allowedLocales)assert.ok(source.allowedLocales.includes(locale),'Disallowed supplement locale');if(source.maxVerifiedBuild!==undefined){const build=Number(r.textBuilds[key]??0);assert.ok(Number.isSafeInteger(build)&&Math.abs(build)<=source.maxVerifiedBuild,'Later build entered '+r.key+':'+key);}}
     if(r.english[key])assert.ok(sourceIds.has(r.englishSources[key]));else assert.equal(r.englishSources[key],null);
    }
   }records.push(...rows);

@@ -736,6 +736,57 @@
               "input": false
             }
           ]
+        },
+        {
+          "id": "mangosfour-548",
+          "version": "pandaria",
+          "repo": "mangosfour/database",
+          "commit": "8b798ac6a6a51c0c00c7e20c0a864793eb53904c",
+          "patch": "5.4.8",
+          "snapshot": "World/Setup/FullDB quest_template + Chinese/Taiwanese translations",
+          "note": "5.4.8 社区库，保留大量旧世界任务；按同版本英文标题与对应文本匹配，仅补简繁中文，不补其独有任务。中文未提供逐条客户端采集证明。",
+          "license": "GPL-3.0-or-later; preserve translation notices",
+          "allowedLocales": [
+            "zhCN",
+            "zhTW"
+          ],
+          "assets": [
+            {
+              "name": "quest_template.sql",
+              "url": "https://raw.githubusercontent.com/mangosfour/database/8b798ac6a6a51c0c00c7e20c0a864793eb53904c/World/Setup/FullDB/quest_template.sql",
+              "bytes": 15654030,
+              "sha256": "382b634ce24e4c3db17414e4a6d0aff7b0e9bf765ede7e9f2f617f72732f6ab1",
+              "input": true
+            },
+            {
+              "name": "zhCN.sql",
+              "url": "https://raw.githubusercontent.com/mangosfour/database/8b798ac6a6a51c0c00c7e20c0a864793eb53904c/Translations/Translations/Chinese/Chinese_Quest.sql",
+              "bytes": 8151754,
+              "sha256": "a9656b01e126ad4c6bd4fcbe47ba05fb916375d220077577d3e5b2eae4adc9d7",
+              "input": true
+            },
+            {
+              "name": "zhTW.sql",
+              "url": "https://raw.githubusercontent.com/mangosfour/database/8b798ac6a6a51c0c00c7e20c0a864793eb53904c/Translations/Translations/Taiwanese/Taiwanese_Quest.sql",
+              "bytes": 212078,
+              "sha256": "5449225ef54f959e9f6558b92343f0b31753deecc6e7b90fd289a932151294d0",
+              "input": true
+            },
+            {
+              "name": "mangosfour-LICENSE",
+              "url": "https://raw.githubusercontent.com/mangosfour/database/8b798ac6a6a51c0c00c7e20c0a864793eb53904c/LICENSE",
+              "bytes": 35149,
+              "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+              "input": false
+            },
+            {
+              "name": "mangosfour-README.md",
+              "url": "https://raw.githubusercontent.com/mangosfour/database/8b798ac6a6a51c0c00c7e20c0a864793eb53904c/README.md",
+              "bytes": 4321,
+              "sha256": "464dadca5521ae07089086cedef08bc73c6fba065d2195c9fe92e49c8e02014e",
+              "input": false
+            }
+          ]
         }
       ]
     },
@@ -803,6 +854,84 @@
               "url": "https://raw.githubusercontent.com/dufernst/LegionCore-7.3.5/9222216e0dda0708ae53e6e6f6b07db7d65ba46f/README.md",
               "bytes": 3244,
               "sha256": "f879e4e3d6e4b3dcbf7dfdef9a19dc2bd5d2bb51dc38245a1538f947e8b130e7",
+              "input": false
+            }
+          ]
+        },
+        {
+          "id": "legion-preservation-735",
+          "version": "legion",
+          "repo": "The-Legion-Preservation-Project/TrinityCore",
+          "commit": "da6326dfb90ef3ffdf4333c303b4535a2f548747",
+          "patch": "7.3.5",
+          "snapshot": "TDB735.25051 / TDB_world_735.26972_2025_05_11.sql",
+          "note": "7.3.5 社区世界库；逐表排除 VerifiedBuild 绝对值高于 26972 的记录。多数中文进行中与完成对白标记为 0，保留为未核实的社区译文，不声称官方逐字一致。只补简繁中文。",
+          "license": "GPL-2.0",
+          "maxVerifiedBuild": 26972,
+          "allowedLocales": [
+            "zhCN",
+            "zhTW"
+          ],
+          "assets": [
+            {
+              "name": "tdb735-2025.7z",
+              "url": "https://github.com/The-Legion-Preservation-Project/TrinityCore/releases/download/TDB735.25051/TDB_full_735.26972_2025_05_11.7z",
+              "bytes": 84094604,
+              "sha256": "cdc0b9c725d9e712c2d28bce4dec76d1008678bb8b02c74afd7ef2d1a9df9df2",
+              "input": true,
+              "entry": "TDB_world_735.26972_2025_05_11.sql"
+            },
+            {
+              "name": "legion-preservation-COPYING",
+              "url": "https://raw.githubusercontent.com/The-Legion-Preservation-Project/TrinityCore/da6326dfb90ef3ffdf4333c303b4535a2f548747/COPYING",
+              "bytes": 18746,
+              "sha256": "f03129dfc402b411948913f8bd3739c1e86a89602c395429990971ffa606cbb6",
+              "input": false
+            },
+            {
+              "name": "legion-preservation-README.md",
+              "url": "https://raw.githubusercontent.com/The-Legion-Preservation-Project/TrinityCore/da6326dfb90ef3ffdf4333c303b4535a2f548747/README.md",
+              "bytes": 5720,
+              "sha256": "96f645adfd0a0c01269c5e7878b9c81ba192a1f1a0dc91cf2cdc7872b1e26c1f",
+              "input": false
+            }
+          ]
+        },
+        {
+          "id": "legion-proyect-735",
+          "version": "legion",
+          "repo": "zitengzela/LegionCore-7.3.5V2",
+          "commit": "80ad17a234fd4ed462bc9a23e401b70f86f15a0d",
+          "patch": "7.3.5",
+          "snapshot": "Legion_Proyect-DB.7z / legion_world.sql (2022-08-12)",
+          "note": "Legion Proyect 7.3.5 社区库，提供额外中文标题、目标和说明。排除明确高于 26972 的记录；仅导入主库匹配任务的简繁文字，不导入其玩法及自定义任务。核心具有 LegionCore/UWOW 派生背景，中文采集来源未逐条独立核实。",
+          "license": "GPL-2.0",
+          "maxVerifiedBuild": 26972,
+          "allowedLocales": [
+            "zhCN",
+            "zhTW"
+          ],
+          "assets": [
+            {
+              "name": "legion-proyect.7z",
+              "url": "https://raw.githubusercontent.com/zitengzela/LegionCore-7.3.5V2/80ad17a234fd4ed462bc9a23e401b70f86f15a0d/sql/base/Legion_Proyect-DB.7z",
+              "bytes": 102283762,
+              "sha256": "6bb034ec09e736deb814d4f511b19d5910722318ed171db5789c4934784a58a9",
+              "input": true,
+              "entry": "legion_world.sql"
+            },
+            {
+              "name": "legion-proyect-COPYING",
+              "url": "https://raw.githubusercontent.com/zitengzela/LegionCore-7.3.5V2/80ad17a234fd4ed462bc9a23e401b70f86f15a0d/COPYING",
+              "bytes": 18036,
+              "sha256": "632d31a1ef001a92b1b9184e13c22114b0de2b9f535f371ee533330f57c93aef",
+              "input": false
+            },
+            {
+              "name": "legion-proyect-README.md",
+              "url": "https://raw.githubusercontent.com/zitengzela/LegionCore-7.3.5V2/80ad17a234fd4ed462bc9a23e401b70f86f15a0d/README.md",
+              "bytes": 4761,
+              "sha256": "9f9c282e6724e34e8b92e6dfc1f8f425f5d00d4e49bf64c5d92d5c7a259afb6c",
               "input": false
             }
           ]

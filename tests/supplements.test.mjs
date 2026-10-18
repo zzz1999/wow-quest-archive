@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {normalize} from '../scripts/normalize.mjs';
-import {supplementQuests} from '../scripts/supplements.mjs';
+import {supplementQuests,filterSupplementBuilds} from '../scripts/supplements.mjs';
 const rows=(version,base,local=[])=>normalize(new Map([['quest_template',base],['locales_quest',local]]),version);
 const base={entry:7,title:'A quest',details:'Original story. $N',objectives:'Collect 3 items',rewardtext:'Well done',nextquestid:8};
 const merge=(primary,records,version='classic')=>supplementQuests(primary,[{id:'second',version,records}],version);
@@ -58,4 +58,19 @@ test('several supplemental locales report only the final adopted field',()=>{
  assert.equal(r.text.description,'简中描述');assert.equal(report.changes.length,1);assert.equal(report.changes[0].fromLocale,'enUS');
  assert.equal(report.sources[0].selectedFields,0);assert.equal(report.sources[1].selectedFields,1);
  assert.throws(()=>supplementQuests(primary,[sources[0],sources[0]],'classic'),/Invalid supplement ID/);
+});
+
+test('mixed snapshots discard later-build base and locale rows before matching',()=>{
+ const tables=new Map([['quest_template',[{...base,verifiedbuild:26972},{...base,entry:8,verifiedbuild:30000}]],['locales_quest',[{entry:7,details_loc4:'新版不可用',verifiedbuild:30000},{entry:7,details_loc5:'可用繁體',verifiedbuild:26365},{entry:8,title_loc4:'后续版本'}]],['quest_offer_reward_locale',[{id:7,locale:'zhCN',rewardtext:'未标版本的社区文本',verifiedbuild:0}]]]);
+ const filtered=filterSupplementBuilds(tables,26972);
+ assert.deepEqual(filtered.excludedBuildRows,{quest_template:1,locales_quest:1});
+ const [r]=normalize(filtered.tables,'legion');assert.equal(r.text.description,'可用繁體');assert.equal(r.textBuilds.description,26365);assert.equal(r.text.completion,'未标版本的社区文本');
+ assert.equal(normalize(filtered.tables,'legion').length,1);assert.equal(tables.get('quest_template').length,2);
+ assert.throws(()=>filterSupplementBuilds(tables,0),/Invalid/);
+});
+
+test('Chinese-only sources do not fill unrelated English gaps',()=>{
+ const primary=rows('classic',[{...base,requestitemstext:''}]),records=rows('classic',[{...base,requestitemstext:'Extra English'}],[{entry:7,title_loc5:'繁體標題'}]);
+ const result=supplementQuests(primary,[{id:'chinese',version:'classic',allowedLocales:['zhCN','zhTW'],records}],'classic');
+ assert.equal(result.records[0].text.title,'繁體標題');assert.equal(result.records[0].text.progress,'');
 });
