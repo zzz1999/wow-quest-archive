@@ -1,0 +1,1016 @@
+{
+  "schemaVersion": 1,
+  "note": "Counts are token occurrences in selected quest text fields, excluding ordinary N/C/R/G/B tokens. Class-dependent values use no user profile here.",
+  "versions": {
+    "classic": {
+      "resolved": 0,
+      "unresolved": 3,
+      "tokens": {
+        "$2063w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2071w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2082w": {
+          "resolved": 0,
+          "unresolved": 1
+        }
+      },
+      "unresolvedExamples": [
+        {
+          "key": "classic:8514",
+          "field": "description",
+          "token": "$2063w"
+        },
+        {
+          "key": "classic:8516",
+          "field": "description",
+          "token": "$2071w"
+        },
+        {
+          "key": "classic:8521",
+          "field": "description",
+          "token": "$2082w"
+        }
+      ]
+    },
+    "wotlk": {
+      "resolved": 0,
+      "unresolved": 8,
+      "tokens": {
+        "$2063w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2071w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2082w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$t": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$T": {
+          "resolved": 0,
+          "unresolved": 3
+        },
+        "$4581d": {
+          "resolved": 0,
+          "unresolved": 1
+        }
+      },
+      "unresolvedExamples": [
+        {
+          "key": "wotlk:8514",
+          "field": "description",
+          "token": "$2063w"
+        },
+        {
+          "key": "wotlk:8516",
+          "field": "description",
+          "token": "$2071w"
+        },
+        {
+          "key": "wotlk:8521",
+          "field": "description",
+          "token": "$2082w"
+        },
+        {
+          "key": "wotlk:9535",
+          "field": "progress",
+          "token": "$t"
+        },
+        {
+          "key": "wotlk:9589",
+          "field": "completion",
+          "token": "$T"
+        },
+        {
+          "key": "wotlk:9607",
+          "field": "progress",
+          "token": "$T"
+        },
+        {
+          "key": "wotlk:11119",
+          "field": "completion",
+          "token": "$4581d"
+        },
+        {
+          "key": "wotlk:11578",
+          "field": "description",
+          "token": "$T"
+        }
+      ]
+    },
+    "cataclysm": {
+      "resolved": 0,
+      "unresolved": 7,
+      "tokens": {
+        "$2063w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2071w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2082w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$Tpunk": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$Advance": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$Head": {
+          "resolved": 0,
+          "unresolved": 1
+        }
+      },
+      "unresolvedExamples": [
+        {
+          "key": "cataclysm:8514",
+          "field": "description",
+          "token": "$2063w"
+        },
+        {
+          "key": "cataclysm:8516",
+          "field": "description",
+          "token": "$2071w"
+        },
+        {
+          "key": "cataclysm:8521",
+          "field": "description",
+          "token": "$2082w"
+        },
+        {
+          "key": "cataclysm:11578",
+          "field": "description",
+          "token": "$Tpunk"
+        },
+        {
+          "key": "cataclysm:11579",
+          "field": "description",
+          "token": "$Tpunk"
+        },
+        {
+          "key": "cataclysm:29532",
+          "field": "description",
+          "token": "$Advance"
+        },
+        {
+          "key": "cataclysm:29542",
+          "field": "description",
+          "token": "$Head"
+        }
+      ]
+    },
+    "pandaria": {
+      "resolved": 92,
+      "unresolved": 27,
+      "tokens": {
+        "$2063w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2071w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2082w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$ct": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$vn": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$vg他:她;": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$t兄弟:姐妹;": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$T平民:平民;": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$4581d": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$1oa": {
+          "resolved": 24,
+          "unresolved": 0
+        },
+        "$T": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$Advance": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$p": {
+          "resolved": 55,
+          "unresolved": 0
+        },
+        "$1oo": {
+          "resolved": 0,
+          "unresolved": 6
+        },
+        "$oo": {
+          "resolved": 0,
+          "unresolved": 3
+        },
+        "$o1x": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$o1": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$oa": {
+          "resolved": 1,
+          "unresolved": 0
+        },
+        "$1ox": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$9o": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2oa": {
+          "resolved": 4,
+          "unresolved": 0
+        },
+        "$3oa": {
+          "resolved": 4,
+          "unresolved": 0
+        },
+        "$4oa": {
+          "resolved": 4,
+          "unresolved": 0
+        }
+      },
+      "unresolvedExamples": [
+        {
+          "key": "pandaria:8514",
+          "field": "description",
+          "token": "$2063w"
+        },
+        {
+          "key": "pandaria:8516",
+          "field": "description",
+          "token": "$2071w"
+        },
+        {
+          "key": "pandaria:8521",
+          "field": "description",
+          "token": "$2082w"
+        },
+        {
+          "key": "pandaria:9065",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "pandaria:9065",
+          "field": "description",
+          "token": "$vn"
+        },
+        {
+          "key": "pandaria:9065",
+          "field": "description",
+          "token": "$vg他:她;"
+        },
+        {
+          "key": "pandaria:9535",
+          "field": "progress",
+          "token": "$t兄弟:姐妹;"
+        },
+        {
+          "key": "pandaria:9589",
+          "field": "completion",
+          "token": "$T平民:平民;"
+        },
+        {
+          "key": "pandaria:9607",
+          "field": "progress",
+          "token": "$T平民:平民;"
+        },
+        {
+          "key": "pandaria:11119",
+          "field": "completion",
+          "token": "$4581d"
+        },
+        {
+          "key": "pandaria:11578",
+          "field": "description",
+          "token": "$T"
+        },
+        {
+          "key": "pandaria:29532",
+          "field": "description",
+          "token": "$Advance"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "objectives",
+          "token": "$1oo"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "objectives",
+          "token": "$oo"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "objectives",
+          "token": "$o1x"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "objectives",
+          "token": "$o1"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "description",
+          "token": "$1oo"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "description",
+          "token": "$oo"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "description",
+          "token": "$1ox"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "description",
+          "token": "$9o"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "completed",
+          "token": "$1oo"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "completed",
+          "token": "$oo"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "completed",
+          "token": "$o1x"
+        },
+        {
+          "key": "pandaria:31694",
+          "field": "completed",
+          "token": "$o1"
+        }
+      ]
+    },
+    "legion": {
+      "resolved": 722,
+      "unresolved": 105,
+      "tokens": {
+        "$2063w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2071w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2082w": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$ct": {
+          "resolved": 0,
+          "unresolved": 40
+        },
+        "$vn": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$vg他:她;": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$t兄弟:姐妹;": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$T平民:平民;": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$4581d": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$T": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$Advance": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$p": {
+          "resolved": 108,
+          "unresolved": 0
+        },
+        "$1oa": {
+          "resolved": 493,
+          "unresolved": 17
+        },
+        "$1oo": {
+          "resolved": 0,
+          "unresolved": 6
+        },
+        "$oo": {
+          "resolved": 0,
+          "unresolved": 3
+        },
+        "$o1x": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$o1": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$oa": {
+          "resolved": 37,
+          "unresolved": 1
+        },
+        "$1ox": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$9o": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$2oa": {
+          "resolved": 54,
+          "unresolved": 14
+        },
+        "$3oa": {
+          "resolved": 18,
+          "unresolved": 1
+        },
+        "$4oa": {
+          "resolved": 11,
+          "unresolved": 1
+        },
+        "$o1a": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$o1o": {
+          "resolved": 0,
+          "unresolved": 2
+        },
+        "$cy": {
+          "resolved": 0,
+          "unresolved": 1
+        },
+        "$1Oa": {
+          "resolved": 1,
+          "unresolved": 0
+        }
+      },
+      "unresolvedExamples": [
+        {
+          "key": "legion:8514",
+          "field": "description",
+          "token": "$2063w"
+        },
+        {
+          "key": "legion:8516",
+          "field": "description",
+          "token": "$2071w"
+        },
+        {
+          "key": "legion:8521",
+          "field": "description",
+          "token": "$2082w"
+        },
+        {
+          "key": "legion:9065",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:9065",
+          "field": "description",
+          "token": "$vn"
+        },
+        {
+          "key": "legion:9065",
+          "field": "description",
+          "token": "$vg他:她;"
+        },
+        {
+          "key": "legion:9535",
+          "field": "progress",
+          "token": "$t兄弟:姐妹;"
+        },
+        {
+          "key": "legion:9589",
+          "field": "completion",
+          "token": "$T平民:平民;"
+        },
+        {
+          "key": "legion:9607",
+          "field": "progress",
+          "token": "$T平民:平民;"
+        },
+        {
+          "key": "legion:11119",
+          "field": "completion",
+          "token": "$4581d"
+        },
+        {
+          "key": "legion:11578",
+          "field": "description",
+          "token": "$T"
+        },
+        {
+          "key": "legion:29532",
+          "field": "description",
+          "token": "$Advance"
+        },
+        {
+          "key": "legion:31694",
+          "field": "objectives",
+          "token": "$1oo"
+        },
+        {
+          "key": "legion:31694",
+          "field": "objectives",
+          "token": "$oo"
+        },
+        {
+          "key": "legion:31694",
+          "field": "objectives",
+          "token": "$o1x"
+        },
+        {
+          "key": "legion:31694",
+          "field": "objectives",
+          "token": "$o1"
+        },
+        {
+          "key": "legion:31694",
+          "field": "description",
+          "token": "$1oo"
+        },
+        {
+          "key": "legion:31694",
+          "field": "description",
+          "token": "$oo"
+        },
+        {
+          "key": "legion:31694",
+          "field": "description",
+          "token": "$1ox"
+        },
+        {
+          "key": "legion:31694",
+          "field": "description",
+          "token": "$9o"
+        },
+        {
+          "key": "legion:31694",
+          "field": "completed",
+          "token": "$1oo"
+        },
+        {
+          "key": "legion:31694",
+          "field": "completed",
+          "token": "$oo"
+        },
+        {
+          "key": "legion:31694",
+          "field": "completed",
+          "token": "$o1x"
+        },
+        {
+          "key": "legion:31694",
+          "field": "completed",
+          "token": "$o1"
+        },
+        {
+          "key": "legion:32936",
+          "field": "completed",
+          "token": "$o1a"
+        },
+        {
+          "key": "legion:32936",
+          "field": "completed",
+          "token": "$o1o"
+        },
+        {
+          "key": "legion:33228",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:33253",
+          "field": "description",
+          "token": "$cy"
+        },
+        {
+          "key": "legion:33509",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:33510",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:33781",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:33781",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:33843",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:33843",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:33906",
+          "field": "completed",
+          "token": "$o1a"
+        },
+        {
+          "key": "legion:33906",
+          "field": "completed",
+          "token": "$o1o"
+        },
+        {
+          "key": "legion:34515",
+          "field": "objectives",
+          "token": "$oa"
+        },
+        {
+          "key": "legion:34559",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:34559",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:34708",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:34708",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:34851",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:34851",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:35084",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:35128",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:35704",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:37256",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:37853",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:37921",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:37921",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:38569",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:38569",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:39799",
+          "field": "progress",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:39880",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:39957",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:39957",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:42271",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:43409",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:43414",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:43415",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:43420",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:43424",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:43945",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:44009",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:44406",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:44782",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45055",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:45055",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:45055",
+          "field": "objectives",
+          "token": "$3oa"
+        },
+        {
+          "key": "legion:45055",
+          "field": "objectives",
+          "token": "$4oa"
+        },
+        {
+          "key": "legion:45317",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45526",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45571",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45573",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45576",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45628",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45629",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:45652",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46108",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46129",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46130",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46131",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46132",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46133",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46140",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46141",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46142",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46143",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46144",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46147",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46245",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46246",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46247",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46249",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:46777",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:47988",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:47988",
+          "field": "objectives",
+          "token": "$2oa"
+        },
+        {
+          "key": "legion:47991",
+          "field": "objectives",
+          "token": "$1oa"
+        },
+        {
+          "key": "legion:48448",
+          "field": "description",
+          "token": "$ct"
+        },
+        {
+          "key": "legion:48976",
+          "field": "description",
+          "token": "$ct"
+        }
+      ]
+    }
+  }
+}

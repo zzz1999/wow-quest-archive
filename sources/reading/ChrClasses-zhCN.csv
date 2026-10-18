@@ -1,0 +1,13 @@
+PetNameToken,Name_lang,Name_female_lang,Name_male_lang,Filename,CreateScreenFileDataID,SelectScreenFileDataID,LowResScreenFileDataID,IconFileDataID,StartingLevel,Flags,CinematicSequenceID,DefaultSpec,DisplayPower,SpellClassSet,AttackPowerPerStrength,AttackPowerPerAgility,RangedAttackPowerPerAgility,PrimaryStatPriority,ID
+PET,战士,战士,战士,WARRIOR,0,0,0,626008,1,1074,0,71,1,4,1,0,0,5,1
+PET,圣骑士,圣骑士,圣骑士,PALADIN,0,0,0,626003,1,58,0,70,0,10,1,0,0,5,2
+PET,猎人,猎人,猎人,HUNTER,0,0,0,626000,1,406,0,253,2,9,0,1,1,2,3
+PET,潜行者,潜行者,潜行者,ROGUE,0,0,0,626005,1,2,0,259,3,8,0,1,1,3,4
+PET,牧师,牧师,牧师,PRIEST,0,0,0,626004,1,2,0,256,0,6,0,0,0,0,5
+PET,死亡骑士,死亡骑士,死亡骑士,DEATHKNIGHT,236082,236082,1560617,135771,55,1146,165,251,6,15,1,0,0,5,6
+PET,萨满祭司,萨满祭司,萨满祭司,SHAMAN,0,0,0,626006,1,26,0,262,0,11,0,1,0,0,7
+PET,法师,法师,法师,MAGE,0,0,0,626001,1,2,0,62,0,3,0,0,0,0,8
+DEMON,术士,术士,术士,WARLOCK,0,0,0,626007,1,134,0,265,0,5,0,0,0,0,9
+PET,武僧,武僧,武僧,MONK,0,0,0,626002,1,1538,0,268,3,53,0,1,0,2,10
+PET,德鲁伊,德鲁伊,德鲁伊,DRUID,0,0,0,625999,1,10,0,102,0,7,0,1,0,0,11
+PET,恶魔猎手,恶魔猎手,恶魔猎手,DEMONHUNTER,1305036,1305036,1560446,236415,98,2123,0,577,17,107,0,1,0,3,12

@@ -5,7 +5,7 @@
   <meta name="description" content="魔兽世界五版本任务研究资料库。简体中文优先，支持离线查阅与 JSONL 导出。">
   <title>艾泽拉斯任务档案 · WoW Quest Archive</title>
   <link rel="stylesheet" href="web/style.css?v=0c41d2c7ee61">
-  <script src="web/catalog.js?v=8bf6bfbdae70" defer></script><script src="web/reading.js?v=d4926e1a4c80" defer></script><script src="web/navigation.js?v=16ad244c81a4" defer></script><script src="web/actors.js?v=5c3f1e0b8603" defer></script><script src="web/app.js?v=68a6f2536916" defer></script>
+  <script src="web/catalog.js?v=8bf6bfbdae70" defer></script><script src="web/reading-data.js?v=3bd7e0716290" defer></script><script src="web/reading.js?v=0a5eb1595d56" defer></script><script src="web/navigation.js?v=16ad244c81a4" defer></script><script src="web/actors.js?v=5c3f1e0b8603" defer></script><script src="web/app.js?v=17dceaf6ee36" defer></script>
 </head>
 <body>
 <aside class="sidebar">
@@ -35,8 +35,8 @@
  <div class="dialog-top"><h2 id="reading-heading">阅读设置</h2><button id="reading-close" aria-label="关闭阅读设置">×</button></div>
  <form id="reading-form">
   <fieldset class="reading-modes"><legend>阅读视角</legend><label><input type="radio" name="reading-mode" value="player"> 玩家视角 <small>代入角色称呼，突出目标与对话</small></label><label><input type="radio" name="reading-mode" value="source"> 原文视角 <small>保留游戏变量与资料字段</small></label></fieldset>
-  <fieldset id="character-settings"><legend>你的角色</legend><p class="reading-help">游戏变量以小标签显示。留空时显示“名字”“职业”“种族”；填写后，标签中显示你的角色资料。</p>
-   <div class="character-fields"><label>玩家名称<input id="player-name" maxlength="40" placeholder="玩家名称" autocomplete="off"></label><label>玩家职业<input id="player-class" maxlength="40" placeholder="例如：法师" autocomplete="off"></label><label>玩家种族<input id="player-race" maxlength="40" placeholder="例如：人类" autocomplete="off"></label><label>性别称呼<select id="player-gender"><option value="both">并列显示两种称呼</option><option value="male">男性称呼</option><option value="female">女性称呼</option></select></label></div>
+  <fieldset id="character-settings"><legend>你的角色</legend><p class="reading-help">填写后，正文中的名字、职业、种族会显示你的角色资料。军团的职业头衔和对应敌人也会随职业变化，例如法师的“大法师”。职业留空时，限定单一职业的任务会使用该职业。</p>
+   <div class="character-fields"><label>玩家名称<input id="player-name" maxlength="40" placeholder="玩家名称" autocomplete="off"></label><label>玩家职业<input id="player-class" list="player-classes" maxlength="40" placeholder="选择或输入职业" autocomplete="off"><datalist id="player-classes"></datalist></label><label>玩家种族<input id="player-race" maxlength="40" placeholder="例如：人类" autocomplete="off"></label><label>性别称呼<select id="player-gender"><option value="both">并列显示两种称呼</option><option value="male">男性称呼</option><option value="female">女性称呼</option></select></label></div>
   </fieldset>
   <p class="reading-help">设置仅保存在当前浏览器。原始资料与 JSON / JSONL 导出保持原文。</p>
   <div class="reading-actions"><button type="button" id="reading-reset">恢复默认</button><button type="button" id="reading-cancel">取消</button><button type="submit" class="primary-button">应用设置</button></div>

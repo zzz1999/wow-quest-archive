@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-18",
+  "version": "legion",
+  "build": "7.3.5.26972",
+  "provider": "Wago Tools DB2 export",
+  "copyright": "Blizzard Entertainment game data; see DATA-LICENSE.md",
+  "assets": [
+    {
+      "table": "ChrClasses",
+      "locale": "zhCN",
+      "path": "sources/reading/ChrClasses-zhCN.csv",
+      "url": "https://wago.tools/db2/ChrClasses/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 1305,
+      "sha256": "665eb2fa265e5e3ed54c748218a778d831d1cceb40817186a856354751375d52"
+    },
+    {
+      "table": "ChrClasses",
+      "locale": "zhTW",
+      "path": "sources/reading/ChrClasses-zhTW.csv",
+      "url": "https://wago.tools/db2/ChrClasses/csv?build=7.3.5.26972&locale=zhTW",
+      "bytes": 1278,
+      "sha256": "3c68bf4c061e4913d334d2d76088eb010ea3bcc007eb61d3d8b5b74ad7475d9e"
+    },
+    {
+      "table": "ChrClasses",
+      "locale": "enUS",
+      "path": "sources/reading/ChrClasses-enUS.csv",
+      "url": "https://wago.tools/db2/ChrClasses/csv?build=7.3.5.26972&locale=enUS",
+      "bytes": 1178,
+      "sha256": "26159d6fe23f23ddc7ae9af2fc2aa244c2605a81f87ede2e816ceb7ed5bde7ec"
+    },
+    {
+      "table": "ChrClassTitle",
+      "locale": "zhCN",
+      "path": "sources/reading/ChrClassTitle-zhCN.csv",
+      "url": "https://wago.tools/db2/ChrClassTitle/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 370,
+      "sha256": "7c4f14a787fe213c4e997bb741d9ecda89088c905250c4955cb1d2fb355b4976"
+    },
+    {
+      "table": "ChrClassTitle",
+      "locale": "zhTW",
+      "path": "sources/reading/ChrClassTitle-zhTW.csv",
+      "url": "https://wago.tools/db2/ChrClassTitle/csv?build=7.3.5.26972&locale=zhTW",
+      "bytes": 346,
+      "sha256": "1e80dfdacfd893a44ca88f49152e248c6964e482e0e4c895772b9d9bcfe711aa"
+    },
+    {
+      "table": "ChrClassTitle",
+      "locale": "enUS",
+      "path": "sources/reading/ChrClassTitle-enUS.csv",
+      "url": "https://wago.tools/db2/ChrClassTitle/csv?build=7.3.5.26972&locale=enUS",
+      "bytes": 236,
+      "sha256": "22bacf6e2ee28418815e02ad0cdd6155fcd1b00de797f962bf45835e00f19782"
+    },
+    {
+      "table": "ChrClassVillain",
+      "locale": "zhCN",
+      "path": "sources/reading/ChrClassVillain-zhCN.csv",
+      "url": "https://wago.tools/db2/ChrClassVillain/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 274,
+      "sha256": "496ab0f0881f15dfc16af970d492644bd36f908d0820e160503caab6a10d5f89"
+    },
+    {
+      "table": "ChrClassVillain",
+      "locale": "zhTW",
+      "path": "sources/reading/ChrClassVillain-zhTW.csv",
+      "url": "https://wago.tools/db2/ChrClassVillain/csv?build=7.3.5.26972&locale=zhTW",
+      "bytes": 271,
+      "sha256": "c6fe08de010f430392decc1753feda4a94bf10ae2fa356f12c11cb6e83052d08"
+    },
+    {
+      "table": "ChrClassVillain",
+      "locale": "enUS",
+      "path": "sources/reading/ChrClassVillain-enUS.csv",
+      "url": "https://wago.tools/db2/ChrClassVillain/csv?build=7.3.5.26972&locale=enUS",
+      "bytes": 227,
+      "sha256": "aefcc1422f067fdb88297de5f14aedeaecee09bb49213898a1750d12774eb2cd"
+    }
+  ]
+}

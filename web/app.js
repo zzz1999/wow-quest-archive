@@ -17,11 +17,11 @@
  function toast(s){$('toast').textContent=s;$('toast').classList.add('visible');setTimeout(()=>$('toast').classList.remove('visible'),2500);}
  function saveBookmarks(){try{localStorage.setItem('wow-quest-bookmarks-v1',JSON.stringify([...bookmarks]));}catch{toast('浏览器未允许本地保存；本次会话仍可使用书签。');}$('bookmark-count').textContent=bookmarks.size;}
  function badge(locale){return locale?`<span class="locale-badge ${locale}">${label[locale]||escape(locale)}</span>`:'';}
- function format(text){return window.QuestReading.format(text,reading);}
- function readingHtml(text){return window.QuestReading.html(text,reading);}
+ function format(text,quest){return window.QuestReading.format(text,reading,{quest});}
+ function readingHtml(text,quest,objective){return window.QuestReading.html(text,reading,{quest,objective});}
  function originalLayout(text){return String(text||'').replace(/\$[Bb]/g,'\n').replace(/\\n/g,'\n');}
- function questTitle(r){return format(r.text.title||'未命名任务 #'+r.id);}
- function questTitleHtml(r){return readingHtml(r.text.title||'未命名任务 #'+r.id);}
+ function questTitle(r){return format(r.text.title||'未命名任务 #'+r.id,r);}
+ function questTitleHtml(r){return readingHtml(r.text.title||'未命名任务 #'+r.id,r);}
  function wowheadLink(r,type='quest'){
   const path=wowheadPaths[r.version];if(!['quest','npc'].includes(type)||path===undefined||!Number.isSafeInteger(r.id)||r.id<=0||r.tags?.includes('community-custom'))return '';
   const edition=r.version==='legion'?'正式服数据库（含军团再临资料）':cat.versions.find(x=>x.id===r.version).name+'怀旧服数据库';
@@ -96,9 +96,9 @@
   $('quest-list').scrollTop=0;
  }
  function section(r,field,extraClass=''){
-  const value=r.text[field],notes=window.QuestReading.notes(value,reading);
-  const help=notes.length?`<details class="variable-help"><summary>游戏变量说明（${notes.length}）</summary><p>这些是原文中的游戏标记。缺少上下文或含义尚未核实的内容显示为标签，下方保留原始标记供对照。</p><dl>${notes.map(n=>`<dt><code>${escape(n.token)}</code> · ${escape(n.label)}</dt><dd>${escape(n.note)}</dd>`).join('')}</dl></details>`:'';
-  return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(r.textLocales[field])}</h3>${value?`<div class="quest-prose">${readingHtml(value)}</div>${help}`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
+  const value=r.text[field],notes=window.QuestReading.notes(value,reading,{quest:r});
+  const help=notes.length?`<details class="variable-help"><summary>称呼与数量说明（${notes.length}）</summary><dl>${notes.map(n=>`<dt><code>${escape(n.token)}</code> · ${escape(n.label)}</dt><dd>${escape(n.note)}</dd>`).join('')}</dl></details>`:'';
+  return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(r.textLocales[field])}</h3>${value?`<div class="quest-prose">${readingHtml(value,r)}</div>${help}`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
  }
  function sourceFor(r,id){const meta=cat.versions.find(v=>v.id===r.version);return id===r.version?meta:meta.supplements?.find(s=>s.id===id);}
  function sourceLink(source){return source?`<a href="https://github.com/${escape(source.repo)}/tree/${escape(source.commit)}" target="_blank" rel="noopener noreferrer">${escape(source.repo)} ↗</a>`:'未记录';}
@@ -128,19 +128,19 @@
   const quality=(r.qualityNotes||[]).map(note=>'<div class="notice">翻译待核：'+escape(note)+'</div>').join('')+(r.tags.includes('community-custom')?'<div class="notice">已核实的社区服务器自定义任务，不应当作暴雪原版任务样本。</div>':'')+(r.tags.includes('source-encoding-issue')?'<div class="notice">上游部分文本含损坏字符，已跳过损坏候选并继续语言回退；详见结构化记录 textIssues。</div>':'');
   $('reader').innerHTML=`${backButton()}<div class="reader-top"><span>${reading.mode==='player'?'任务日志 · #':'QUEST RECORD / '}${r.id}</span><div class="reader-actions">${wowheadLink(r)}<button id="bookmark-current" aria-pressed="${bookmarks.has(r.key)}">${bookmarks.has(r.key)?'★ 已收藏':'☆ 收藏'}</button><button id="copy-current">复制当前文本</button><button id="export-current" title="导出保留游戏变量的原始资料">原始 JSON ↓</button></div></div>
    <h2>${questTitleHtml(r)}</h2>${reading.mode==='source'?`<div class="english-title">${escape(r.english.title&&r.english.title!==r.text.title?r.english.title:'')}</div>`:''}${questMetadata(r,reading.mode==='source')}
-   <div class="reading-strip"><span>${reading.mode==='player'?`玩家视角 · ${escape(reading.name||'玩家名称')}`:'原文视角 · 保留游戏变量'}</span><button id="reading-current">阅读设置</button></div>
+   <div class="reading-strip"><span>${reading.mode==='player'?`玩家视角 · ${escape(reading.name||'玩家名称')}${reading.className?' · '+escape(reading.className):''}`:'原文视角 · 保留游戏变量'}</span><button id="reading-current">阅读设置</button></div>
    ${quality}${r.tags.includes('suspected-test')?'<div class="notice">标题含测试、废弃或占位线索。该标签来自规则筛选，尚未人工核验。</div>':''}${r.locales.includes('enUS')?'<div class="notice">部分字段使用英文回退；每段文本右侧标明实际选用的语言。</div>':''}
    ${section(r,'objectives','objective-box')}${section(r,'description')}<div class="npc-strip"><div>接取任务<b>${entityList(r.starters)}</b></div><div>交付任务<b>${entityList(r.enders)}</b></div></div>${section(r,'progress')}${section(r,'completion')}${related(r)}
-   <details><summary>更多任务信息</summary>${['end','completed','giverWindow','giverTarget','turninWindow','turninTarget','objective1','objective2','objective3','objective4'].filter(k=>r.text[k]).map(k=>section(r,k)).join('')}${r.objectiveDetails.map(o=>`<p>${readingHtml(o.description||'目标 #'+o.id)} ${badge(o.locale)}<br><small>类型 ${o.type} · 对象 ${o.objectId} · 数量 ${o.amount}</small></p>`).join('')||'<p>无额外目标记录</p>'}</details>
+   <details><summary>更多任务信息</summary>${['end','completed','giverWindow','giverTarget','turninWindow','turninTarget','objective1','objective2','objective3','objective4'].filter(k=>r.text[k]).map(k=>section(r,k)).join('')}${r.objectiveDetails.map(o=>`<p>${readingHtml(o.description||'目标 #'+o.id,r,o)} ${badge(o.locale)}<br><small>类型 ${o.type} · 对象 ${o.objectId} · 数量 ${o.amount}</small></p>`).join('')||'<p>无额外目标记录</p>'}</details>
    <details><summary>英文原文对照</summary>${Object.entries(r.english).filter(([,v])=>v).map(([k,v])=>`<h3>${fieldLabels[k]}</h3><div class="quest-prose">${escape(originalLayout(v))}</div>`).join('')}</details>
-   <details id="quest-source"><summary>原始资料 · 字段、奖励与来源</summary>${questMetadata(r,true)}${textSources(r)}<pre>${escape(JSON.stringify(r,null,2))}</pre><div class="provenance">任务基础资料 ${sourceLink(meta)} · ${escape(meta.snapshot)}<br>${escape(meta.note)}<br>玩家视角仅代入已设置的称呼；JSON / JSONL 中的游戏变量与原文保持不变。</div></details>`;
+   <details id="quest-source"><summary>原始资料 · 字段、奖励与来源</summary>${questMetadata(r,true)}${textSources(r)}<pre>${escape(JSON.stringify(r,null,2))}</pre><div class="provenance">任务基础资料 ${sourceLink(meta)} · ${escape(meta.snapshot)}<br>${escape(meta.note)}<br>玩家视角会代入称呼和可确定的数量；JSON / JSONL 中的游戏变量与原文保持不变。</div></details>`;
   $('bookmark-current').onclick=()=>{bookmarks.has(r.key)?bookmarks.delete(r.key):bookmarks.add(r.key);saveBookmarks();if(state.bookmarks)applyFilters();else selectQuest(r.id,{updateHash:false});};
   $('reading-current').onclick=openReading;
   $('quest-back').onclick=()=>{rememberView();navigation.goBack();};
   $('copy-current').onclick=()=>copyText(markdown(r),r.key.replace(':','-')+'-'+reading.mode+'.md');$('export-current').onclick=()=>download(r.key.replace(':','-')+'.json',JSON.stringify(r,null,2),'application/json');
   queueView();
  }
- function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼已代入）':'原文视角'}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v)}\n\n来源：${sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n';}
+ function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼与可确定的数量已代入）':'原文视角'}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v,r)}\n\n来源：${sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n';}
  async function copyText(text,filename){try{if(navigator.clipboard){await navigator.clipboard.writeText(text);}else{const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();if(!document.execCommand('copy'))throw new Error('copy');t.remove();}toast('已复制当前视角的文本');}catch{download(filename,text,'text/markdown');toast('浏览器限制剪贴板，已导出当前文本');}}
  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type:type+';charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  function info(){
@@ -151,6 +151,7 @@
    '<p>空白与损坏文本不参与回退，中文表中的英文占位不计作中文。暂时没有可匹配来源的内容保留为空；部分自动任务、测试任务或可选对白本身也可能没有文本。译文仍可能存在社区修订或错误，不由 AI 补写。</p>'+
    '<table><thead><tr><th>版本</th><th>任务</th><th>简中标题</th><th>繁中标题</th><th>英文标题</th><th>简中描述</th></tr></thead><tbody>'+coverage+'</tbody></table>'+
    '<p>任务详情的“原始资料”可按字段查看实际来源。完整语言与缺失统计见 reports/coverage.json；补充前后统计、匹配依据见下方检查报告。测试及已确认的自定义记录默认隐藏，仍保存在原始数据中。</p>'+sources+
+   '<h3>阅读称呼与数量</h3><p>目标数量取自本任务记录。军团职业头衔与对应敌人名称使用 Wago Tools 导出的 7.3.5.26972 客户端表，优先简中；原始表和哈希保存在 sources/reading/。这些是展示层的阅读解释，原始对白和任务 NPC 关系保持不变。<a href="docs/READING-VARIABLES.md" target="_blank" rel="noopener noreferrer">查看解释依据与局限 ↗</a></p>'+
    '<h3>研究与 AI 使用</h3><p>JSONL 位于 data/版本/。导出保留游戏变量、实际语言、版本差异与字段来源，研究者的分析标签应与原文分开。阅读设置和书签只保存于当前浏览器。详细限制和复现方法见 README、docs/ 与 sources/。</p>'+
    '<p>网页和工具代码采用 MIT；社区资料遵循各自上游许可与署名。魔兽世界文本、商标及相关内容归 Blizzard Entertainment 或相应权利人所有。代码许可不等于游戏原文或模型训练的授权。</p>';
   $('info-dialog').showModal();
@@ -162,6 +163,7 @@
  });
  $('actors-open').onclick=()=>actors.open();
  $('reading-open').onclick=openReading;
+ $('player-classes').innerHTML=globalThis.QuestReadingData.classes.map(c=>`<option value="${escape(c.name.text)}"></option>`).join('');
  $('reading-close').onclick=$('reading-cancel').onclick=()=>$('reading-dialog').close();
  $('reading-reset').onclick=()=>fillReadingForm(window.QuestReading.normalize(null));
  $('reading-form').onchange=()=>{$('character-settings').disabled=$('reading-form').querySelector('input[name="reading-mode"]:checked').value==='source';};
