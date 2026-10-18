@@ -16,7 +16,7 @@
 | `textIssues`, `qualityNotes` | 上游损坏字符的字段记录、已确认的译文待核说明；有替代文本时继续回退 |
 | `english` | 同版本基础英文及可用 enUS 本地化原文，用于对照 |
 | `level`, `minLevel` | 任务等级与最低等级；-1 等特殊值原样保留 |
-| `zoneOrSort` | 原始区域 / 分类 ID；负值通常表示任务分类，网页不猜测地区名称 |
+| `zoneOrSort` | 原始区域 / 分类 ID；正值指向 AreaTable，负值的绝对值指向 QuestSort，零为未分类。网页名称来自独立的版本名称表 `data/regions/`，详见 [区域名称说明](REGIONS.md) |
 | `type`, `suggestedPlayers` | 源任务信息类型与建议人数 |
 | `raceMask`, `classMask` | 原始种族 / 职业位掩码；不同客户端位定义可能不同 |
 | `flags`, `specialFlags` | 原始任务标志，不能跨版本直接解释 |

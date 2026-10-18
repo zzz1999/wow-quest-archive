@@ -29,3 +29,5 @@ World of Warcraft 及相关任务文本、角色、世界设定、商标与游�
 奖励物品扩展档案 `data/items/`、网页副本 `web/items/` 和 `web/icons/` 同样不适用本项目 MIT 授权。额外来源包括 Xian55/tortoise-db-viewer 的客户端提取 JSON、wowgaming/client-data v20.0、5.4.8 项目链接的客户端 Data.zip、4.3.4 / 7.3.5 客户端表、wowdev/wow-listfile 文件名映射，以及 Wowhead/ZAM 提供的 Blizzard 物品图标。具体来源与文件哈希见 `sources/items/`，转换边界见 `docs/ITEMS.md`。公开下载或社区程序的开源许可不代表游戏文字、数值或图像被重新授予 MIT 许可；转发离线包时须保留本声明与这些来源清单。
 
 上游程序或数据库结构的开源许可，不表示游戏原文已被重新授权为 MIT，也不构成模型训练或其他使用目的的单独授权。研究导出保持来源与版本信息。需要转发资料时，应一并保留本声明和上游许可文件。
+
+区域及任务分类名称 `data/regions/` 与 `web/regions-data.js` 同样属于游戏资料。来源为上述客户端提取文件，以及 Wago Tools 的 1.15.7.60277、5.5.0.60700 和 7.3.5.26972 客户端表；使用 WoWDBDefs 解析格式、5.4.8 核心枚举核对分类含义。固定来源、哈希与匹配边界见 `sources/regions/manifest.json` 和 `docs/REGIONS.md`，不纳入本项目 MIT 授权。

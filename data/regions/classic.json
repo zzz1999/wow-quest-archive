@@ -1,0 +1,4686 @@
+{
+  "schemaVersion": 1,
+  "version": "classic",
+  "records": [
+    {
+      "value": -369,
+      "id": 369,
+      "kind": "category",
+      "name": "仲夏",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Midsummer",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Midsummer",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Midsummer",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -368,
+      "id": 368,
+      "kind": "category",
+      "name": "天灾入侵",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Invasion",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Invasion",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Invasion",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -367,
+      "id": 367,
+      "kind": "category",
+      "name": "声望",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Reputation",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Reputation",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Reputation",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -366,
+      "id": 366,
+      "kind": "category",
+      "name": "新年",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Lunar Festival",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Lunar Festival",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Lunar Festival",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -365,
+      "id": 365,
+      "kind": "category",
+      "name": "安其拉战争",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Ahn'Qiraj War",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Ahn'Qiraj War",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Ahn'Qiraj War",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -364,
+      "id": 364,
+      "kind": "category",
+      "name": "暗月马戏团",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Darkmoon Faire",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Darkmoon Faire",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Darkmoon Faire",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -344,
+      "id": 344,
+      "kind": "category",
+      "name": "传说",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Legendary",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Legendary",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Legendary",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -324,
+      "id": 324,
+      "kind": "category",
+      "name": "急救",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "First Aid",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "First Aid",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "First Aid",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -304,
+      "id": 304,
+      "kind": "category",
+      "name": "烹饪",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Cooking",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Cooking",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Cooking",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -284,
+      "id": 284,
+      "kind": "category",
+      "name": "特殊",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Special",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Special",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Special",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -264,
+      "id": 264,
+      "kind": "category",
+      "name": "裁缝",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Tailoring",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Tailoring",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Tailoring",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -263,
+      "id": 263,
+      "kind": "category",
+      "name": "德鲁伊",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Druid",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Druid",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Druid",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -262,
+      "id": 262,
+      "kind": "category",
+      "name": "牧师",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Priest",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Priest",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Priest",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -261,
+      "id": 261,
+      "kind": "category",
+      "name": "猎人",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Hunter",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Hunter",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Hunter",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -221,
+      "id": 221,
+      "kind": "category",
+      "name": "藏宝图",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Treasure Map",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Treasure Map",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Treasure Map",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -201,
+      "id": 201,
+      "kind": "category",
+      "name": "工程学",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Engineering",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Engineering",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Engineering",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -182,
+      "id": 182,
+      "kind": "category",
+      "name": "制皮",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Leatherworking",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Leatherworking",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Leatherworking",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -181,
+      "id": 181,
+      "kind": "category",
+      "name": "炼金术",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Alchemy",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Alchemy",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Alchemy",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -162,
+      "id": 162,
+      "kind": "category",
+      "name": "潜行者",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Rogue",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Rogue",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Rogue",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -161,
+      "id": 161,
+      "kind": "category",
+      "name": "法师",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Mage",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Mage",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Mage",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -141,
+      "id": 141,
+      "kind": "category",
+      "name": "圣骑士",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Paladin",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Paladin",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Paladin",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -121,
+      "id": 121,
+      "kind": "category",
+      "name": "锻造",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blacksmithing",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blacksmithing",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Blacksmithing",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -101,
+      "id": 101,
+      "kind": "category",
+      "name": "钓鱼",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Fishing",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Fishing",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Fishing",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -82,
+      "id": 82,
+      "kind": "category",
+      "name": "萨满祭司",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Shaman",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Shaman",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Shaman",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -81,
+      "id": 81,
+      "kind": "category",
+      "name": "战士",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Warrior",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Warrior",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Warrior",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -61,
+      "id": 61,
+      "kind": "category",
+      "name": "术士",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Warlock",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Warlock",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Warlock",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -24,
+      "id": 24,
+      "kind": "category",
+      "name": "草药学",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Herbalism",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Herbalism",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Herbalism",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -22,
+      "id": 22,
+      "kind": "category",
+      "name": "季节性",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Seasonal",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Seasonal",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Seasonal",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": -1,
+      "id": 1,
+      "kind": "category",
+      "name": "史诗",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/QuestSort-zhCN.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Epic",
+      "englishSource": {
+        "asset": "classic-ref/QuestSort-enUS.csv",
+        "table": "QuestSort",
+        "column": "sortname_lang",
+        "build": "1.15.7.60277",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Epic",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic-ref/QuestSort-enUS.csv",
+          "table": "QuestSort",
+          "column": "sortname_lang",
+          "build": "1.15.7.60277",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "same-client-table",
+        "locale": "enUS",
+        "name": "Epic",
+        "source": "classic-ref/QuestSort-enUS.csv"
+      }
+    },
+    {
+      "value": 1,
+      "id": 1,
+      "kind": "area",
+      "name": "丹莫罗",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Dun Morogh",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Dun Morogh",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Dun Morogh",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 3,
+      "id": 3,
+      "kind": "area",
+      "name": "荒芜之地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Badlands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Badlands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Badlands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 4,
+      "id": 4,
+      "kind": "area",
+      "name": "诅咒之地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blasted Lands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blasted Lands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Blasted Lands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 8,
+      "id": 8,
+      "kind": "area",
+      "name": "悲伤沼泽",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Swamp of Sorrows",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Swamp of Sorrows",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Swamp of Sorrows",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 9,
+      "id": 9,
+      "kind": "area",
+      "name": "北郡山谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Northshire Valley",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Northshire Valley",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Northshire Valley",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 10,
+      "id": 10,
+      "kind": "area",
+      "name": "暮色森林",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Duskwood",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Duskwood",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Duskwood",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 11,
+      "id": 11,
+      "kind": "area",
+      "name": "湿地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Wetlands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Wetlands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Wetlands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 12,
+      "id": 12,
+      "kind": "area",
+      "name": "艾尔文森林",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Elwynn Forest",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Elwynn Forest",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Elwynn Forest",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 14,
+      "id": 14,
+      "kind": "area",
+      "name": "杜隆塔尔",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Durotar",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Durotar",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Durotar",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 15,
+      "id": 15,
+      "kind": "area",
+      "name": "尘泥沼泽",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Dustwallow Marsh",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Dustwallow Marsh",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Dustwallow Marsh",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 16,
+      "id": 16,
+      "kind": "area",
+      "name": "艾萨拉",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Azshara",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Azshara",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Azshara",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 17,
+      "id": 17,
+      "kind": "area",
+      "name": "贫瘠之地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "The Barrens",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "The Barrens",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "The Barrens",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 19,
+      "id": 19,
+      "kind": "area",
+      "name": "祖尔格拉布",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Zul'Gurub",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Zul'Gurub",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Zul'Gurub",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 24,
+      "id": 24,
+      "kind": "area",
+      "name": "北郡修道院",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Northshire Abbey",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Northshire Abbey",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Northshire Abbey",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 25,
+      "id": 25,
+      "kind": "area",
+      "name": "黑石山",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blackrock Mountain",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blackrock Mountain",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Blackrock Mountain",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 28,
+      "id": 28,
+      "kind": "area",
+      "name": "西瘟疫之地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Western Plaguelands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Western Plaguelands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Western Plaguelands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 33,
+      "id": 33,
+      "kind": "area",
+      "name": "荆棘谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Stranglethorn Vale",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Stranglethorn Vale",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Stranglethorn Vale",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 35,
+      "id": 35,
+      "kind": "area",
+      "name": "藏宝海湾",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Booty Bay",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Booty Bay",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Booty Bay",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 36,
+      "id": 36,
+      "kind": "area",
+      "name": "奥特兰克山脉",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Alterac Mountains",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Alterac Mountains",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Alterac Mountains",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 38,
+      "id": 38,
+      "kind": "area",
+      "name": "洛克莫丹",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Loch Modan",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Loch Modan",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Loch Modan",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 40,
+      "id": 40,
+      "kind": "area",
+      "name": "西部荒野",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Westfall",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Westfall",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Westfall",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 44,
+      "id": 44,
+      "kind": "area",
+      "name": "赤脊山",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Redridge Mountains",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Redridge Mountains",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Redridge Mountains",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 45,
+      "id": 45,
+      "kind": "area",
+      "name": "阿拉希高地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Arathi Highlands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Arathi Highlands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Arathi Highlands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 46,
+      "id": 46,
+      "kind": "area",
+      "name": "燃烧平原",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Burning Steppes",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Burning Steppes",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Burning Steppes",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 47,
+      "id": 47,
+      "kind": "area",
+      "name": "辛特兰",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "The Hinterlands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "The Hinterlands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "The Hinterlands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 51,
+      "id": 51,
+      "kind": "area",
+      "name": "灼热峡谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Searing Gorge",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Searing Gorge",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Searing Gorge",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 85,
+      "id": 85,
+      "kind": "area",
+      "name": "提瑞斯法林地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Tirisfal Glades",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Tirisfal Glades",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Tirisfal Glades",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 130,
+      "id": 130,
+      "kind": "area",
+      "name": "银松森林",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Silverpine Forest",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Silverpine Forest",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Silverpine Forest",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 132,
+      "id": 132,
+      "kind": "area",
+      "name": "寒脊山谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Coldridge Valley",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Coldridge Valley",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Coldridge Valley",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 133,
+      "id": 133,
+      "kind": "area",
+      "name": "诺莫瑞根",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Gnomeregan",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Gnomeregan",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Gnomeregan",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 139,
+      "id": 139,
+      "kind": "area",
+      "name": "东瘟疫之地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Eastern Plaguelands",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Eastern Plaguelands",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Eastern Plaguelands",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 141,
+      "id": 141,
+      "kind": "area",
+      "name": "泰达希尔",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Teldrassil",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Teldrassil",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Teldrassil",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 148,
+      "id": 148,
+      "kind": "area",
+      "name": "黑海岸",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Darkshore",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Darkshore",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Darkshore",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 154,
+      "id": 154,
+      "kind": "area",
+      "name": "丧钟镇",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Deathknell",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Deathknell",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Deathknell",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 188,
+      "id": 188,
+      "kind": "area",
+      "name": "幽影谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Shadowglen",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Shadowglen",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Shadowglen",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 209,
+      "id": 209,
+      "kind": "area",
+      "name": "影牙城堡",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Shadowfang Keep",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Shadowfang Keep",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Shadowfang Keep",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 215,
+      "id": 215,
+      "kind": "area",
+      "name": "莫高雷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Mulgore",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Mulgore",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Mulgore",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 220,
+      "id": 220,
+      "kind": "area",
+      "name": "红云台地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Red Cloud Mesa",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Red Cloud Mesa",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Red Cloud Mesa",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 221,
+      "id": 221,
+      "kind": "area",
+      "name": "纳拉其营地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Camp Narache",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Camp Narache",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Camp Narache",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 267,
+      "id": 267,
+      "kind": "area",
+      "name": "希尔斯布莱德丘陵",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Hillsbrad Foothills",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Hillsbrad Foothills",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Hillsbrad Foothills",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 331,
+      "id": 331,
+      "kind": "area",
+      "name": "灰谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Ashenvale",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Ashenvale",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Ashenvale",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 357,
+      "id": 357,
+      "kind": "area",
+      "name": "菲拉斯",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Feralas",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Feralas",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Feralas",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 361,
+      "id": 361,
+      "kind": "area",
+      "name": "费伍德森林",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Felwood",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Felwood",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Felwood",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 363,
+      "id": 363,
+      "kind": "area",
+      "name": "试炼谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Valley of Trials",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Valley of Trials",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Valley of Trials",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 400,
+      "id": 400,
+      "kind": "area",
+      "name": "千针石林",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Thousand Needles",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Thousand Needles",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Thousand Needles",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 405,
+      "id": 405,
+      "kind": "area",
+      "name": "凄凉之地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Desolace",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Desolace",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Desolace",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 406,
+      "id": 406,
+      "kind": "area",
+      "name": "石爪山脉",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Stonetalon Mountains",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Stonetalon Mountains",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Stonetalon Mountains",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 440,
+      "id": 440,
+      "kind": "area",
+      "name": "塔纳利斯",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Tanaris",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Tanaris",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Tanaris",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 490,
+      "id": 490,
+      "kind": "area",
+      "name": "安戈洛环形山",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Un'Goro Crater",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Un'Goro Crater",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Un'Goro Crater",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 493,
+      "id": 493,
+      "kind": "area",
+      "name": "月光林地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Moonglade",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Moonglade",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Moonglade",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 618,
+      "id": 618,
+      "kind": "area",
+      "name": "冬泉谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Winterspring",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Winterspring",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Winterspring",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 702,
+      "id": 702,
+      "kind": "area",
+      "name": "鲁瑟兰村",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Rut'theran Village",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Rut'theran Village",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Rut'theran Village",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 717,
+      "id": 717,
+      "kind": "area",
+      "name": "监狱",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "The Stockade",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "The Stockade",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "The Stockade",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 718,
+      "id": 718,
+      "kind": "area",
+      "name": "哀嚎洞穴",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Wailing Caverns",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Wailing Caverns",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Wailing Caverns",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 719,
+      "id": 719,
+      "kind": "area",
+      "name": "黑暗深渊",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blackfathom Deeps",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blackfathom Deeps",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Blackfathom Deeps",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 722,
+      "id": 722,
+      "kind": "area",
+      "name": "剃刀高地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Razorfen Downs",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Razorfen Downs",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Razorfen Downs",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 796,
+      "id": 796,
+      "kind": "area",
+      "name": "血色修道院",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Scarlet Monastery",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Scarlet Monastery",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Scarlet Monastery",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 978,
+      "id": 978,
+      "kind": "area",
+      "name": "祖尔法拉克",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Zul'Farrak",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Zul'Farrak",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Zul'Farrak",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1116,
+      "id": 1116,
+      "kind": "area",
+      "name": "羽月要塞",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Feathermoon Stronghold",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Feathermoon Stronghold",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Feathermoon Stronghold",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1377,
+      "id": 1377,
+      "kind": "area",
+      "name": "希利苏斯",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Silithus",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Silithus",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Silithus",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1417,
+      "id": 1417,
+      "kind": "area",
+      "name": "沉没的神庙",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Sunken Temple",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Sunken Temple",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Sunken Temple",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1497,
+      "id": 1497,
+      "kind": "area",
+      "name": "幽暗城",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Undercity",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Undercity",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Undercity",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1517,
+      "id": 1517,
+      "kind": "area",
+      "name": "奥达曼",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Uldaman",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Uldaman",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Uldaman",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1519,
+      "id": 1519,
+      "kind": "area",
+      "name": "暴风城",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Stormwind City",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Stormwind City",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Stormwind City",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1537,
+      "id": 1537,
+      "kind": "area",
+      "name": "铁炉堡",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Ironforge",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Ironforge",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Ironforge",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1581,
+      "id": 1581,
+      "kind": "area",
+      "name": "死亡矿井",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "The Deadmines",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "The Deadmines",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "The Deadmines",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1583,
+      "id": 1583,
+      "kind": "area",
+      "name": "黑石塔",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blackrock Spire",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blackrock Spire",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Blackrock Spire",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1584,
+      "id": 1584,
+      "kind": "area",
+      "name": "黑石深渊",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blackrock Depths",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blackrock Depths",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Blackrock Depths",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1637,
+      "id": 1637,
+      "kind": "area",
+      "name": "奥格瑞玛",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Orgrimmar",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Orgrimmar",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Orgrimmar",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1638,
+      "id": 1638,
+      "kind": "area",
+      "name": "雷霆崖",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Thunder Bluff",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Thunder Bluff",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Thunder Bluff",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1657,
+      "id": 1657,
+      "kind": "area",
+      "name": "达纳苏斯",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Darnassus",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Darnassus",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Darnassus",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1717,
+      "id": 1717,
+      "kind": "area",
+      "name": "剃刀沼泽",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Razorfen Kraul",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Razorfen Kraul",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Razorfen Kraul",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1769,
+      "id": 1769,
+      "kind": "area",
+      "name": "木喉要塞",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Timbermaw Hold",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Timbermaw Hold",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Timbermaw Hold",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 1977,
+      "id": 1977,
+      "kind": "area",
+      "name": "祖尔格拉布",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Zul'Gurub",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Zul'Gurub",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Zul'Gurub",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2017,
+      "id": 2017,
+      "kind": "area",
+      "name": "斯坦索姆",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Stratholme",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Stratholme",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Stratholme",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2057,
+      "id": 2057,
+      "kind": "area",
+      "name": "通灵学院",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Scholomance",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Scholomance",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Scholomance",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2079,
+      "id": 2079,
+      "kind": "area",
+      "name": "奥卡兹岛",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Alcaz Island",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Alcaz Island",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Alcaz Island",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2100,
+      "id": 2100,
+      "kind": "area",
+      "name": "玛拉顿",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Maraudon",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Maraudon",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Maraudon",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2159,
+      "id": 2159,
+      "kind": "area",
+      "name": "奥妮克希亚的巢穴",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Onyxia's Lair",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Onyxia's Lair",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Onyxia's Lair",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2257,
+      "id": 2257,
+      "kind": "area",
+      "name": "矿道地铁",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Deeprun Tram",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Deeprun Tram",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Deeprun Tram",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2437,
+      "id": 2437,
+      "kind": "area",
+      "name": "怒焰裂谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Ragefire Chasm",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Ragefire Chasm",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Ragefire Chasm",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2557,
+      "id": 2557,
+      "kind": "area",
+      "name": "厄运之槌",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Dire Maul",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Dire Maul",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Dire Maul",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2597,
+      "id": 2597,
+      "kind": "area",
+      "name": "奥特兰克山谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Alterac Valley",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Alterac Valley",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Alterac Valley",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2677,
+      "id": 2677,
+      "kind": "area",
+      "name": "黑翼之巢",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Blackwing Lair",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Blackwing Lair",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Blackwing Lair",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2717,
+      "id": 2717,
+      "kind": "area",
+      "name": "熔火之心",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Molten Core",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Molten Core",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Molten Core",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 2839,
+      "id": 2839,
+      "kind": "area",
+      "name": "奥特兰克山谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Alterac Valley",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Alterac Valley",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Alterac Valley",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 3277,
+      "id": 3277,
+      "kind": "area",
+      "name": "战歌峡谷",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Warsong Gulch",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Warsong Gulch",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Warsong Gulch",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 3358,
+      "id": 3358,
+      "kind": "area",
+      "name": "阿拉希盆地",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Arathi Basin",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Arathi Basin",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Arathi Basin",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 3428,
+      "id": 3428,
+      "kind": "area",
+      "name": "安其拉",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Ahn'Qiraj",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Ahn'Qiraj",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Ahn'Qiraj",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 3429,
+      "id": 3429,
+      "kind": "area",
+      "name": "安其拉废墟",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Ruins of Ahn'Qiraj",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Ruins of Ahn'Qiraj",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Ruins of Ahn'Qiraj",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    },
+    {
+      "value": 3456,
+      "id": 3456,
+      "kind": "area",
+      "name": "纳克萨玛斯",
+      "nameLocale": "zhCN",
+      "nameSource": {
+        "asset": "classic-ref/AreaTable-zhCN.csv",
+        "table": "AreaTable",
+        "column": "areaname_lang",
+        "build": "1.15.7.60277",
+        "locale": "zhCN"
+      },
+      "english": "Naxxramas",
+      "englishSource": {
+        "asset": "classic/client-enUS.json",
+        "table": "AreaTable",
+        "column": "areas.name",
+        "build": "1.12.1.5875",
+        "locale": "enUS"
+      },
+      "base": {
+        "name": "Naxxramas",
+        "locale": "enUS",
+        "source": {
+          "asset": "classic/client-enUS.json",
+          "table": "AreaTable",
+          "column": "areas.name",
+          "build": "1.12.1.5875",
+          "locale": "enUS"
+        }
+      },
+      "match": {
+        "rule": "id-and-source-name",
+        "locale": "enUS",
+        "name": "Naxxramas",
+        "source": "classic-ref/AreaTable-enUS.csv"
+      }
+    }
+  ]
+}

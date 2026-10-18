@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "versions": [
+    {
+      "version": "classic",
+      "total": 120,
+      "areas": 91,
+      "categories": 29,
+      "locales": {
+        "zhCN": 120,
+        "zhTW": 0,
+        "enUS": 0,
+        "missing": 0
+      },
+      "missing": []
+    },
+    {
+      "version": "wotlk",
+      "total": 221,
+      "areas": 182,
+      "categories": 39,
+      "locales": {
+        "zhCN": 218,
+        "zhTW": 2,
+        "enUS": 1,
+        "missing": 0
+      },
+      "missing": []
+    },
+    {
+      "version": "cataclysm",
+      "total": 274,
+      "areas": 229,
+      "categories": 45,
+      "locales": {
+        "zhCN": 272,
+        "zhTW": 2,
+        "enUS": 0,
+        "missing": 0
+      },
+      "missing": []
+    },
+    {
+      "version": "pandaria",
+      "total": 324,
+      "areas": 269,
+      "categories": 55,
+      "locales": {
+        "zhCN": 321,
+        "zhTW": 3,
+        "enUS": 0,
+        "missing": 0
+      },
+      "missing": []
+    },
+    {
+      "version": "legion",
+      "total": 467,
+      "areas": 380,
+      "categories": 87,
+      "locales": {
+        "zhCN": 462,
+        "zhTW": 4,
+        "enUS": 0,
+        "missing": 1
+      },
+      "missing": [
+        3535
+      ]
+    }
+  ]
+}

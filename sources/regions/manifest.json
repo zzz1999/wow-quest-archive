@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-18",
+  "localeOrder": [
+    "zhCN",
+    "zhTW",
+    "enUS"
+  ],
+  "copyright": "Blizzard Entertainment game data; upstream attribution in docs/REGIONS.md and DATA-LICENSE.md",
+  "policy": "Keep versioned base names. Supplemental translations require equal table, ID and base-language name, or a verified same-version QuestSort enum. Classic QuestSort uses Classic Era client names with explicit source build.",
+  "assets": [
+    {
+      "name": "schemas/AreaTable.dbd",
+      "table": "AreaTable",
+      "format": "dbd",
+      "url": "https://raw.githubusercontent.com/wowdev/WoWDBDefs/b9a63096cdd99b26967f17f9515377ae62cadfd7/definitions/AreaTable.dbd",
+      "commit": "b9a63096cdd99b26967f17f9515377ae62cadfd7",
+      "bytes": 39317,
+      "sha256": "d599b97015ea90ec2388f713dba26ac1f352830fcf31266c3d04aed209e8dd74"
+    },
+    {
+      "name": "wotlk/AreaTable.dbc",
+      "version": "wotlk",
+      "table": "AreaTable",
+      "format": "dbc",
+      "build": "3.3.5.12340",
+      "locale": "enUS",
+      "url": "https://github.com/wowgaming/client-data/releases/tag/v20.0",
+      "archive": {
+        "url": "https://api.github.com/repos/wowgaming/client-data/releases/assets/482333572?download=1",
+        "total": 1196168257,
+        "name": "dbc/AreaTable.dbc",
+        "method": 8,
+        "crc32": 1363793044,
+        "packed": 40683,
+        "size": 366962,
+        "offset": 233066
+      },
+      "bytes": 366962,
+      "sha256": "eb4bcfa77b03aed853c4783ac260a4259970effaad5b8a74d868783b4dbdc44e"
+    },
+    {
+      "name": "cataclysm/AreaTable.dbc",
+      "version": "cataclysm",
+      "table": "AreaTable",
+      "format": "dbc",
+      "build": "4.3.4.15595",
+      "locale": "enUS",
+      "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/AreaTable.dbc",
+      "commit": "33359c12c01ac9127a1d299be008a4ab38ee75d4",
+      "bytes": 382984,
+      "sha256": "292f75a70e9975a307b20fb91f4fcd856f975d8e784fc4b0ca9991961c0bffc2"
+    },
+    {
+      "name": "pandaria/AreaTable.dbc",
+      "version": "pandaria",
+      "table": "AreaTable",
+      "format": "dbc",
+      "build": "5.4.8.18414",
+      "locale": "ruRU",
+      "url": "https://drive.google.com/file/d/103QiAyR5lJsfFPaEAkWqWV2HkqrV8PzN/view",
+      "archive": {
+        "url": "https://drive.usercontent.google.com/download?id=103QiAyR5lJsfFPaEAkWqWV2HkqrV8PzN&export=download&confirm=t&uuid=c22bfc22-d031-41ea-946f-994f6c2a47a3",
+        "total": 2600575164,
+        "name": "dbc/AreaTable.dbc",
+        "method": 8,
+        "crc32": 2655760078,
+        "packed": 121448,
+        "size": 650454,
+        "offset": 560800
+      },
+      "bytes": 650454,
+      "sha256": "fa7e170c2098a8abbb6a1a79bf99bda6112b3255c33d975f3292c9bff3832715"
+    },
+    {
+      "name": "classic-ref/AreaTable-enUS.csv",
+      "reference": "classic-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "1.15.7.60277",
+      "locale": "enUS",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=1.15.7.60277&locale=enUS",
+      "bytes": 127529,
+      "sha256": "9569427467c75de027fa62375a92a7d2c0dd1b0ca2b3ba31d915d3743e1d793e"
+    },
+    {
+      "name": "classic-ref/AreaTable-zhCN.csv",
+      "reference": "classic-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "1.15.7.60277",
+      "locale": "zhCN",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=1.15.7.60277&locale=zhCN",
+      "bytes": 123417,
+      "sha256": "3fee73992c6499b34da7380182d97aa667114f9915ef3d3c1362d88602a8ffb3"
+    },
+    {
+      "name": "classic-ref/AreaTable-zhTW.csv",
+      "reference": "classic-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "1.15.7.60277",
+      "locale": "zhTW",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=1.15.7.60277&locale=zhTW",
+      "bytes": 123392,
+      "sha256": "95f39c8c22ca3e85597f21979efabcafefa293ac54158f3b2aa343e162242e34"
+    },
+    {
+      "name": "mop-ref/AreaTable-enUS.csv",
+      "reference": "mop-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "enUS",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=5.5.0.60700&locale=enUS",
+      "bytes": 464275,
+      "sha256": "fe70495359b3e4f0533ee23a80bbb22fbdde8fa4b47b7a4455f076b448c0c89c"
+    },
+    {
+      "name": "mop-ref/AreaTable-zhCN.csv",
+      "reference": "mop-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "zhCN",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=5.5.0.60700&locale=zhCN",
+      "bytes": 448157,
+      "sha256": "4fff577b5c798014df5e4253ae10e3daf44922c5d5bb7473fe4d76391adb1649"
+    },
+    {
+      "name": "mop-ref/AreaTable-zhTW.csv",
+      "reference": "mop-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "zhTW",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=5.5.0.60700&locale=zhTW",
+      "bytes": 447722,
+      "sha256": "d58ff3d41adad4ea002cdf461d14fcb95855a8e4888114198d82358f39ecb5fc"
+    },
+    {
+      "name": "mop-ref/AreaTable-ruRU.csv",
+      "reference": "mop-ref",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "ruRU",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=5.5.0.60700&locale=ruRU",
+      "bytes": 526921,
+      "sha256": "bb4fd87e82cdc72835dcf60c64265229e2f18a736210d75fb1739aaff3957c78"
+    },
+    {
+      "name": "legion/AreaTable-enUS.csv",
+      "reference": "legion",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "enUS",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=7.3.5.26972&locale=enUS",
+      "bytes": 659973,
+      "sha256": "f878cb7d15359ede1aa7341ae1233e595cfd8e29e12985a3fc769a3a890f69b4"
+    },
+    {
+      "name": "legion/AreaTable-zhCN.csv",
+      "reference": "legion",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "zhCN",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 637508,
+      "sha256": "ab42749e05986e50cc0acd7e36bb36231c3bb1db236ac4f554da8d0245a7a980"
+    },
+    {
+      "name": "legion/AreaTable-zhTW.csv",
+      "reference": "legion",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "zhTW",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=7.3.5.26972&locale=zhTW",
+      "bytes": 636874,
+      "sha256": "f51920e784e9a1a9547e6eeb29a5913841a26c4fcc2165adaa2a05bcc4116932"
+    },
+    {
+      "name": "legion/AreaTable-ruRU.csv",
+      "reference": "legion",
+      "table": "AreaTable",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "ruRU",
+      "url": "https://wago.tools/db2/AreaTable/csv?build=7.3.5.26972&locale=ruRU",
+      "bytes": 751229,
+      "sha256": "926166d009d9362082d87da255e7216e4a442233ce50316116cf3096a3dbad45"
+    },
+    {
+      "name": "schemas/QuestSort.dbd",
+      "table": "QuestSort",
+      "format": "dbd",
+      "url": "https://raw.githubusercontent.com/wowdev/WoWDBDefs/b9a63096cdd99b26967f17f9515377ae62cadfd7/definitions/QuestSort.dbd",
+      "commit": "b9a63096cdd99b26967f17f9515377ae62cadfd7",
+      "bytes": 25208,
+      "sha256": "4d41a631a6249a303bb5948395125f8fb830251415c8d3a32c37b4d3145b9069"
+    },
+    {
+      "name": "wotlk/QuestSort.dbc",
+      "version": "wotlk",
+      "table": "QuestSort",
+      "format": "dbc",
+      "build": "3.3.5.12340",
+      "locale": "enUS",
+      "url": "https://github.com/wowgaming/client-data/releases/tag/v20.0",
+      "archive": {
+        "url": "https://api.github.com/repos/wowgaming/client-data/releases/assets/482333572?download=1",
+        "total": 1196168257,
+        "name": "dbc/QuestSort.dbc",
+        "method": 8,
+        "crc32": 4013345763,
+        "packed": 587,
+        "size": 3440,
+        "offset": 4802260
+      },
+      "bytes": 3440,
+      "sha256": "d2707e3478d973f28c5714fb34ba525b624f5d3cb43375225b6fa43357cf984a"
+    },
+    {
+      "name": "cataclysm/QuestSort.dbc",
+      "version": "cataclysm",
+      "table": "QuestSort",
+      "format": "dbc",
+      "build": "4.3.4.15595",
+      "locale": "enUS",
+      "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/QuestSort.dbc",
+      "commit": "33359c12c01ac9127a1d299be008a4ab38ee75d4",
+      "bytes": 902,
+      "sha256": "499d36a086cfe06c18ddf996b21203507a5c3be14d47471c7bf3d218ef68628b"
+    },
+    {
+      "name": "pandaria/QuestSort.dbc",
+      "version": "pandaria",
+      "table": "QuestSort",
+      "format": "dbc",
+      "build": "5.4.8.18414",
+      "locale": "ruRU",
+      "url": "https://drive.google.com/file/d/103QiAyR5lJsfFPaEAkWqWV2HkqrV8PzN/view",
+      "archive": {
+        "url": "https://drive.usercontent.google.com/download?id=103QiAyR5lJsfFPaEAkWqWV2HkqrV8PzN&export=download&confirm=t&uuid=c22bfc22-d031-41ea-946f-994f6c2a47a3",
+        "total": 2600575164,
+        "name": "dbc/QuestSort.dbc",
+        "method": 8,
+        "crc32": 2108776190,
+        "packed": 888,
+        "size": 1770,
+        "offset": 15747539
+      },
+      "bytes": 1770,
+      "sha256": "382fbe4a6192c1fbca29eb0546bcb375b7ea6d22a9ed5b89fc331e8769eaa007"
+    },
+    {
+      "name": "classic-ref/QuestSort-enUS.csv",
+      "reference": "classic-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "1.15.7.60277",
+      "locale": "enUS",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=1.15.7.60277&locale=enUS",
+      "bytes": 705,
+      "sha256": "4837b743ebbafa6d3cc53d33b92d00890824144e44747294cc43c51bff888af3"
+    },
+    {
+      "name": "classic-ref/QuestSort-zhCN.csv",
+      "reference": "classic-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "1.15.7.60277",
+      "locale": "zhCN",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=1.15.7.60277&locale=zhCN",
+      "bytes": 661,
+      "sha256": "890002b04f4da68de9b91b77b607460ea6e3ca198f1f5ac33ca2d2058c6db1b8"
+    },
+    {
+      "name": "classic-ref/QuestSort-zhTW.csv",
+      "reference": "classic-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "1.15.7.60277",
+      "locale": "zhTW",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=1.15.7.60277&locale=zhTW",
+      "bytes": 649,
+      "sha256": "455874e43f07c7de5d541d2c1a7dd5a1cb8047bf2e9ad7ed545c589254dde1fe"
+    },
+    {
+      "name": "mop-ref/QuestSort-enUS.csv",
+      "reference": "mop-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "enUS",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=5.5.0.60700&locale=enUS",
+      "bytes": 1013,
+      "sha256": "45e00bb98da2fc5d12f7591872533cf1abf0e96e7bcbcb6e70ade9eb83f01f84"
+    },
+    {
+      "name": "mop-ref/QuestSort-zhCN.csv",
+      "reference": "mop-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "zhCN",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=5.5.0.60700&locale=zhCN",
+      "bytes": 899,
+      "sha256": "f648d4aa500486546862b2e1bc5d3657a4331474fe9757f6bd5da336aa7a5daf"
+    },
+    {
+      "name": "mop-ref/QuestSort-zhTW.csv",
+      "reference": "mop-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "zhTW",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=5.5.0.60700&locale=zhTW",
+      "bytes": 908,
+      "sha256": "4f8ccdb03e32dbb1d2b7f4de5b20b2ce9023d1116737682c8a031efa5228e18e"
+    },
+    {
+      "name": "mop-ref/QuestSort-ruRU.csv",
+      "reference": "mop-ref",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "5.5.0.60700",
+      "locale": "ruRU",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=5.5.0.60700&locale=ruRU",
+      "bytes": 1714,
+      "sha256": "9171549b9c753a1d39459c94beda8c118990fe3c2de9f9ecbbfa901eff30ba28"
+    },
+    {
+      "name": "legion/QuestSort-enUS.csv",
+      "reference": "legion",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "enUS",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=7.3.5.26972&locale=enUS",
+      "bytes": 1923,
+      "sha256": "3f36a321307f10ed8f54fc09d265e27af4cbf3163b64935096fbfae8e8ba0820"
+    },
+    {
+      "name": "legion/QuestSort-zhCN.csv",
+      "reference": "legion",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "zhCN",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 1667,
+      "sha256": "3acfa5831ff1bbbb42c88065da9f4c3f0c05e83b77bc18be2ee5906476cf818a"
+    },
+    {
+      "name": "legion/QuestSort-zhTW.csv",
+      "reference": "legion",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "zhTW",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=7.3.5.26972&locale=zhTW",
+      "bytes": 1671,
+      "sha256": "12f9a4ac5d73aa6df35bdc71155d5f3f8e2dfab9e00a8b65995dfac5d6062cdc"
+    },
+    {
+      "name": "legion/QuestSort-ruRU.csv",
+      "reference": "legion",
+      "table": "QuestSort",
+      "format": "csv",
+      "build": "7.3.5.26972",
+      "locale": "ruRU",
+      "url": "https://wago.tools/db2/QuestSort/csv?build=7.3.5.26972&locale=ruRU",
+      "bytes": 3306,
+      "sha256": "3369a0bbc19b6a9969a11e22fabb3a21f8018d17efbbb9258ef65dedb53ff8c0"
+    },
+    {
+      "version": "classic",
+      "table": "AreaTable",
+      "format": "classic-json",
+      "url": "https://raw.githubusercontent.com/Xian55/tortoise-db-viewer/91e7e8c757b515a90a83842a6bf886ff72e3e67b/scripts/data/cmangos-dbc.json",
+      "build": "1.12.1.5875",
+      "locale": "enUS",
+      "name": "classic/client-enUS.json",
+      "bytes": 3782064,
+      "sha256": "53fa2530933e343449d9d0aff3f1fae53f61938aee2e8e6abe8d0048edb9ccac"
+    },
+    {
+      "name": "pandaria/SharedDefines.h",
+      "version": "pandaria",
+      "table": "QuestSort",
+      "format": "cpp-enum",
+      "build": "5.4.8.18414",
+      "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Miscellaneous/SharedDefines.h",
+      "commit": "e0a20613d73e2b9324ac13a4783c724fec1d4559",
+      "bytes": 293161,
+      "sha256": "43023307f9c6b444a4183aefdd8fad9983d6bd481eb89e851e1516e8f836c238"
+    }
+  ]
+}

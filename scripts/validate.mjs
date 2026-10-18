@@ -6,6 +6,7 @@ import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import {rewardAudit} from './reward-audit.mjs';
 import {validateItems} from './validate-items.mjs';
+import {validateRegions,validateRegionBundle} from './validate-regions.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const lock=JSON.parse(await fs.readFile(path.join(root,'sources/manifest.json'),'utf8'));
 const catalog=JSON.parse((await fs.readFile(path.join(root,'web/catalog.js'),'utf8')).replace(/^window\.QUEST_CATALOG=/,'').replace(/;\s*$/,''));
@@ -65,6 +66,7 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  const catalogEntry=catalog.versions.find(v=>v.id===id);assert.ok(catalogEntry);
  for(const [directory,key]of [['data','quests'],['actors','actors']])assert.equal(createHash('sha256').update(await fs.readFile(path.join(root,'web',directory,id+'.js'))).digest('hex').slice(0,12),catalogEntry.bundleHashes[key],'Stale browser cache revision');
  await verifyBundle('data',id,records);
+ await validateRegions(root,id,records);
  const actors=await readShards(m.actors.files),byKey=new Map(),expected=new Map(),actorFields={};
  for(const a of actors){
   assert.equal(a.schemaVersion,1);assert.equal(a.version,id);assert.equal(a.source,id);assert.ok(['creature','gameobject'].includes(a.kind));assert.ok(Number.isInteger(a.id)&&a.id>0);assert.equal(a.key,`${id}:${a.kind}:${a.id}`);assert.ok(!byKey.has(a.key),'Duplicate '+a.key);byKey.set(a.key,a);expected.set(a.key,{starts:new Set(),ends:new Set()});
@@ -79,3 +81,4 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
 }
 console.log(`Verified ${total} versioned quests, ${totalNpcs} NPCs and ${totalObjects} task objects.`);
 await validateItems(root,catalog);
+await validateRegionBundle(root);

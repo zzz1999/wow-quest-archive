@@ -5,6 +5,7 @@ import {gzipSync} from 'node:zlib';
 import {createHash} from 'node:crypto';
 import {buildReadingData} from './reading-data.mjs';
 import {rewardAudit} from './reward-audit.mjs';
+import {regionAudit,regionBrowserData,regionVersions} from './region-data.mjs';
 const hash=value=>createHash('sha256').update(value).digest('hex').slice(0,12);
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 await fs.writeFile(path.join(root,'web/reading-data.js'),'globalThis.QuestReadingData='+JSON.stringify(await buildReadingData())+';\n');
@@ -44,6 +45,10 @@ await fs.mkdir(path.join(root,'reports'),{recursive:true});
 await fs.writeFile(path.join(root,'reports/coverage.json'),JSON.stringify(catalog,null,2)+'\n');
 await fs.writeFile(path.join(root,'reports/reward-audit.json'),JSON.stringify({schemaVersion:1,versions:rewardReports},null,2)+'\n');
 await fs.writeFile(path.join(root,'reports/item-audit.json'),JSON.stringify({schemaVersion:1,versions:itemReports,icons:{available:iconLock.icons.filter(i=>!i.missing).length,missing:iconLock.icons.filter(i=>i.missing).map(i=>i.name)}},null,2)+'\n');
+const regionLock=JSON.parse(await fs.readFile(path.join(root,'sources/regions/manifest.json'),'utf8'));
+const regions=await Promise.all(regionVersions.map(async id=>JSON.parse(await fs.readFile(path.join(root,'data/regions',id+'.json'),'utf8'))));
+await fs.writeFile(path.join(root,'web/regions-data.js'),'globalThis.QuestRegionData='+JSON.stringify(regionBrowserData(regions,regionLock))+';\n');
+await fs.writeFile(path.join(root,'reports/region-audit.json'),JSON.stringify({schemaVersion:1,versions:regions.map(regionAudit)},null,2)+'\n');
 // Stable content hashes refresh old Pages/browser caches and still work offline.
 const htmlPath=path.join(root,'index.html');let html=await fs.readFile(htmlPath,'utf8');
 for(const match of [...html.matchAll(/(?:src|href)="(web\/[a-z-]+\.(?:js|css))(?:\?v=[a-f0-9]+)?"/g)]){
