@@ -4,6 +4,7 @@
  const $=id=>document.getElementById(id),cat=window.QUEST_CATALOG;
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const label={zhCN:'简中',zhTW:'繁中',enUS:'英文'};
+ const wowheadPaths={classic:'classic/',wotlk:'wotlk/',cataclysm:'cata/',pandaria:'mop-classic/',legion:''};
  const fieldLabels={title:'标题',objectives:'任务目标',description:'任务描述',progress:'进行中对白',completion:'完成对白',end:'区域提示',completed:'完成日志',giverWindow:'接取角色对白',giverTarget:'接取角色名',turninWindow:'交付角色对白',turninTarget:'交付角色名',objective1:'目标说明 1',objective2:'目标说明 2',objective3:'目标说明 3',objective4:'目标说明 4'};
  let state={version:'classic',rows:[],filtered:[],selected:null,page:0,bookmarks:false},loadGeneration=0,navigateGeneration=0;
  const PAGE=40,cache=new Map(),loading=new Map();window.QUEST_PACKS={};
@@ -21,6 +22,11 @@
  function originalLayout(text){return String(text||'').replace(/\$[Bb]/g,'\n').replace(/\\n/g,'\n');}
  function questTitle(r){return format(r.text.title||'未命名任务 #'+r.id);}
  function questTitleHtml(r){return readingHtml(r.text.title||'未命名任务 #'+r.id);}
+ function wowheadLink(r){
+  const path=wowheadPaths[r.version];if(path===undefined||!Number.isSafeInteger(r.id)||r.id<=0||r.tags.includes('community-custom'))return '';
+  const edition=r.version==='legion'?'正式服数据库（含军团再临任务）':cat.versions.find(x=>x.id===r.version).name+'怀旧服数据库';
+  return `<a id="wowhead-current" href="https://www.wowhead.com/${path}cn/quest=${r.id}" target="_blank" rel="noopener noreferrer" title="在新标签页查看 Wowhead ${escape(edition)} · 需要联网" aria-label="在 Wowhead 查看任务 #${r.id}（新标签页）">在 Wowhead 查看 ↗</a>`;
+ }
  function rememberView(){
   if(restoringView||!state.selected||navigation.current().quest?.route!==`#${state.version}/${state.selected.id}`)return;
   const filters=Object.fromEntries(filterIds.map(id=>[id,$(id).type==='checkbox'?$(id).checked:$(id).value]));
@@ -113,7 +119,7 @@
   }
   const meta=cat.versions.find(x=>x.id===state.version);
   const quality=(r.qualityNotes||[]).map(note=>'<div class="notice">翻译待核：'+escape(note)+'</div>').join('')+(r.tags.includes('community-custom')?'<div class="notice">已核实的社区服务器自定义任务，不应当作暴雪原版任务样本。</div>':'')+(r.tags.includes('source-encoding-issue')?'<div class="notice">上游部分文本含损坏字符，已跳过损坏候选并继续语言回退；详见结构化记录 textIssues。</div>':'');
-  $('reader').innerHTML=`${backButton()}<div class="reader-top"><span>${reading.mode==='player'?'任务日志 · #':'QUEST RECORD / '}${r.id}</span><div class="reader-actions"><button id="bookmark-current" aria-pressed="${bookmarks.has(r.key)}">${bookmarks.has(r.key)?'★ 已收藏':'☆ 收藏'}</button><button id="copy-current">复制当前文本</button><button id="export-current" title="导出保留游戏变量的原始资料">原始 JSON ↓</button></div></div>
+  $('reader').innerHTML=`${backButton()}<div class="reader-top"><span>${reading.mode==='player'?'任务日志 · #':'QUEST RECORD / '}${r.id}</span><div class="reader-actions">${wowheadLink(r)}<button id="bookmark-current" aria-pressed="${bookmarks.has(r.key)}">${bookmarks.has(r.key)?'★ 已收藏':'☆ 收藏'}</button><button id="copy-current">复制当前文本</button><button id="export-current" title="导出保留游戏变量的原始资料">原始 JSON ↓</button></div></div>
    <h2>${questTitleHtml(r)}</h2>${reading.mode==='source'?`<div class="english-title">${escape(r.english.title&&r.english.title!==r.text.title?r.english.title:'')}</div>`:''}${questMetadata(r,reading.mode==='source')}
    <div class="reading-strip"><span>${reading.mode==='player'?`玩家视角 · ${escape(reading.name||'玩家名称')}`:'原文视角 · 保留游戏变量'}</span><button id="reading-current">阅读设置</button></div>
    ${quality}${r.tags.includes('suspected-test')?'<div class="notice">标题含测试、废弃或占位线索。该标签来自规则筛选，尚未人工核验。</div>':''}${r.locales.includes('enUS')?'<div class="notice">部分字段使用英文回退；每段文本右侧标明实际选用的语言。</div>':''}
