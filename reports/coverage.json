@@ -193,9 +193,13 @@
           }
         ]
       },
+      "items": {
+        "count": 2138
+      },
       "bundleHashes": {
         "quests": "ae7806844f4e",
-        "actors": "7c2aea22b5c0"
+        "actors": "7c2aea22b5c0",
+        "items": "fd200d126922"
       }
     },
     {
@@ -423,9 +427,13 @@
           }
         ]
       },
+      "items": {
+        "count": 5051
+      },
       "bundleHashes": {
         "quests": "0bbd70929d72",
-        "actors": "85fdc49f4858"
+        "actors": "85fdc49f4858",
+        "items": "772eb1d8efd5"
       }
     },
     {
@@ -693,9 +701,13 @@
           }
         ]
       },
+      "items": {
+        "count": 8656
+      },
       "bundleHashes": {
         "quests": "7e6e5c684b84",
-        "actors": "502a340e154d"
+        "actors": "502a340e154d",
+        "items": "7af66f5b7713"
       }
     },
     {
@@ -1106,9 +1118,13 @@
           }
         ]
       },
+      "items": {
+        "count": 8826
+      },
       "bundleHashes": {
         "quests": "6c4b16a786b5",
-        "actors": "f83cccc5e6a7"
+        "actors": "f83cccc5e6a7",
+        "items": "d5dccc67f35a"
       }
     },
     {
@@ -1491,9 +1507,13 @@
           }
         ]
       },
+      "items": {
+        "count": 13086
+      },
       "bundleHashes": {
         "quests": "a2e288353804",
-        "actors": "ec625bf113a4"
+        "actors": "ec625bf113a4",
+        "items": "90f5cbcb2b95"
       }
     }
   ]

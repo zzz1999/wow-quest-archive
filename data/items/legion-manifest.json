@@ -1,0 +1,97 @@
+{
+  "version": "legion",
+  "count": 13086,
+  "templates": 13036,
+  "iconMappings": 11905,
+  "withStats": 10357,
+  "withEffects": 1651,
+  "effects": 2025,
+  "resolvedEffectText": 907,
+  "missingEffectText": 607,
+  "files": [
+    {
+      "path": "data/items/legion/000.jsonl",
+      "bytes": 6113853,
+      "records": 1000,
+      "sha256": "32df4cab300eaa2824b8c4ac808ec54024debac230edeec5d14907ba00ceeb44"
+    },
+    {
+      "path": "data/items/legion/001.jsonl",
+      "bytes": 6395803,
+      "records": 1000,
+      "sha256": "ed6055798cc95562fcab6717be0b9e29e79613e7fa60621a5ba6729f460b0ec8"
+    },
+    {
+      "path": "data/items/legion/002.jsonl",
+      "bytes": 6175946,
+      "records": 1000,
+      "sha256": "6333d03c636ca22d96e0650276a929596f147067f5c1bc49f1546fc8d374eaa2"
+    },
+    {
+      "path": "data/items/legion/003.jsonl",
+      "bytes": 6343624,
+      "records": 1000,
+      "sha256": "422fc1bdaf1c5efa717ce3f094ee748c812cec60667985ae0913f9713ad58f1c"
+    },
+    {
+      "path": "data/items/legion/004.jsonl",
+      "bytes": 6404257,
+      "records": 1000,
+      "sha256": "9903347cf6d19924182850f3383d3b6d0b7cd483afc38a11d12db10175cf9ff7"
+    },
+    {
+      "path": "data/items/legion/005.jsonl",
+      "bytes": 6015345,
+      "records": 1000,
+      "sha256": "b9a562cc06096650cc0da3203c854e671c9d18ab7f31b9c52b719bba32ab17c2"
+    },
+    {
+      "path": "data/items/legion/006.jsonl",
+      "bytes": 6130941,
+      "records": 1000,
+      "sha256": "1e3fdbbd94accae9d6ef63db5de0c07adc6b2682cda6a7cff7ed27dceb8cffb1"
+    },
+    {
+      "path": "data/items/legion/007.jsonl",
+      "bytes": 6239756,
+      "records": 1000,
+      "sha256": "a8f8d65f96bd757ccdccb46c940a23bb3a53c8dc078c678b03f82dffd72c589b"
+    },
+    {
+      "path": "data/items/legion/008.jsonl",
+      "bytes": 6411322,
+      "records": 1000,
+      "sha256": "ee50541f099ff5bee00b069793c06478451248972ecb08e2ebb9a81c841d9dbf"
+    },
+    {
+      "path": "data/items/legion/009.jsonl",
+      "bytes": 6578352,
+      "records": 1000,
+      "sha256": "a2af8aff57e7241c7c628678296b50c32764b68fa7f9d47c2e191d15a5a3871f"
+    },
+    {
+      "path": "data/items/legion/010.jsonl",
+      "bytes": 6653083,
+      "records": 1000,
+      "sha256": "38412d31e5b950d54afe203b7398918b4361423dba3a4abd1cf4717cccb5d87f"
+    },
+    {
+      "path": "data/items/legion/011.jsonl",
+      "bytes": 6436710,
+      "records": 1000,
+      "sha256": "fabdc55f29a5a7b703a934b5b76a0ea74c81860dc6e055730f9526930499a9ee"
+    },
+    {
+      "path": "data/items/legion/012.jsonl",
+      "bytes": 6707183,
+      "records": 1000,
+      "sha256": "eec708bb205749a6fd58f27b3e25457acad97a68c2bbe8590c6b8aab3a4777e3"
+    },
+    {
+      "path": "data/items/legion/013.jsonl",
+      "bytes": 539263,
+      "records": 86,
+      "sha256": "d74a2b08c4b197bafdcb6107d4aaeab2b389ca877f9d840a829d472fe9913e97"
+    }
+  ]
+}

@@ -61,6 +61,7 @@
     if(typeof DecompressionStream==='undefined')throw new Error('请使用较新版本的 Chrome、Edge、Firefox 或 Safari。');
     const b64=window.QUEST_PACKS[id];if(!b64)throw new Error('数据文件不完整，请下载并解压整个项目。');
     const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));const data=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
+    await window.QuestItems.load(id,cat.versions.find(v=>v.id===id).bundleHashes?.items||'1');
     const prepared=data.map(r=>({record:r,search:rowText(r)}));cache.set(id,prepared);delete window.QUEST_PACKS[id];resolve(prepared);
    }catch(e){reject(e);}finally{s.remove();}};s.onerror=()=>{s.remove();reject(new Error(location.protocol==='file:'?'无法读取本地数据。请先解压整个文件夹，再打开 index.html。':'无法下载这个版本的数据。请检查网络后重试。'));};document.head.append(s);});
   loading.set(id,promise);promise.catch(()=>loading.delete(id));return promise;
@@ -70,7 +71,7 @@
   if(!fromHash)restoringView=false;
   rememberView();
   if(resetSearch)$('search').value='';
-  const generation=++loadGeneration;actors.close({restoreHash:false});$('actors-open').disabled=true;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
+  const generation=++loadGeneration;window.QuestItems.close();actors.close({restoreHash:false});$('actors-open').disabled=true;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
   document.querySelectorAll('.version-button').forEach(b=>{b.classList.toggle('active',b.dataset.version===id);b.setAttribute('aria-current',b.dataset.version===id?'page':'false');});
   $('version-title').textContent=meta.name;$('version-patch').textContent=meta.patch;$('breadcrumb').textContent=meta.name;$('result-count').textContent='正在载入资料…';$('quest-list').replaceChildren();
   $('reader').innerHTML='<div class="empty"><span>✦</span><h2>正在打开任务档案</h2><p>首次读取这个版本需要片刻。</p></div>';
@@ -112,8 +113,9 @@
   return links.length?`<section class="text-section"><h3 class="section-label">任务关系</h3><div class="related">${links.join('')}</div><p class="empty-field" style="margin-top:10px;font-size:10px">依据数据库字段关联；分支、条件与脚本可能影响实际顺序。</p></section>`:'';
  }
  function entityList(rows){return rows.length?rows.map(x=>`<button class="actor-link" data-actor-kind="${x.kind}" data-actor-id="${x.id}" title="打开${x.kind==='creature'?'NPC':'物件'}档案">${escape(x.name||'未命名')} ↗</button> ${badge(x.nameLocale)}${reading.mode==='source'?` <span>#${x.id} · ${x.kind==='creature'?'NPC':'物件'}</span>`:x.kind==='gameobject'?' <span>任务物件</span>':''}`).join('<br>'):'暂未收录';}
- function renderEmpty(){$('reader').innerHTML='<div class="empty"><span>✦</span><h2>选择一条任务，开始阅读</h2><p>可按关键词、语言与等级筛选。</p></div>';}
+ function renderEmpty(){window.QuestItems.close();$('reader').innerHTML='<div class="empty"><span>✦</span><h2>选择一条任务，开始阅读</h2><p>可按关键词、语言与等级筛选。</p></div>';}
  function selectQuest(id,{updateHash=true}={}){
+  window.QuestItems.close();
   const r=state.rows.find(x=>x.record.id===Number(id))?.record;if(!r)return;
   if(updateHash){rememberView();navigation.showQuest(`#${state.version}/${r.id}`,questTitle(r));}
   state.selected=r;

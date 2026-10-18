@@ -39,5 +39,7 @@ async function prepare(src,dir){
 for(const src of selected)configs.push(await prepare(src,path.join(root,'.cache',src.id)));
 const config=path.join(root,'.cache/rebuild-inputs.json');await fs.writeFile(config,JSON.stringify(configs,null,2));
 run(process.execPath,[path.join(root,'scripts/import.mjs'),config]);
+for(const src of selected)run(process.execPath,[path.join(root,'scripts/import-items.mjs'),src.id]);
+run(process.execPath,[path.join(root,'scripts/import-items.mjs'),'--icons']);
 run(process.execPath,[path.join(root,'scripts/build-web.mjs')]);
 run(process.execPath,[path.join(root,'scripts/validate.mjs')]);

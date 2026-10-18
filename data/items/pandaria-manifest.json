@@ -1,0 +1,67 @@
+{
+  "version": "pandaria",
+  "count": 8826,
+  "templates": 8826,
+  "iconMappings": 8824,
+  "withStats": 7119,
+  "withEffects": 1010,
+  "effects": 1204,
+  "resolvedEffectText": 0,
+  "missingEffectText": 1204,
+  "files": [
+    {
+      "path": "data/items/pandaria/000.jsonl",
+      "bytes": 4313821,
+      "records": 1000,
+      "sha256": "a8ea341a69f83cfc9b1a9afc453dc3589eeeee036c8af028e264dcb400539a53"
+    },
+    {
+      "path": "data/items/pandaria/001.jsonl",
+      "bytes": 4564204,
+      "records": 1000,
+      "sha256": "8bb7fde303ace0e69b4036c233bd086262576f56b8abc3d976608e6ed105c8ad"
+    },
+    {
+      "path": "data/items/pandaria/002.jsonl",
+      "bytes": 4469121,
+      "records": 1000,
+      "sha256": "2376384d680e36e0530dfe4cee18369585a5f64b96365593d42002d1dfbc790b"
+    },
+    {
+      "path": "data/items/pandaria/003.jsonl",
+      "bytes": 4489853,
+      "records": 1000,
+      "sha256": "878e7066e63fd0a5a333764217867761e8c109af8b75c032021c303fca28fde3"
+    },
+    {
+      "path": "data/items/pandaria/004.jsonl",
+      "bytes": 4533597,
+      "records": 1000,
+      "sha256": "fd01f7783a0c968eadc640d1ee16b450df7982e5659ee69622dde8929e6e4501"
+    },
+    {
+      "path": "data/items/pandaria/005.jsonl",
+      "bytes": 4240120,
+      "records": 1000,
+      "sha256": "58a1f4ac8af2519e29d1af634b653779a674f3a5790bedc0d9724bdbe67f8c42"
+    },
+    {
+      "path": "data/items/pandaria/006.jsonl",
+      "bytes": 4332502,
+      "records": 1000,
+      "sha256": "553f1012dee1033b43baadc14306af8e0f03fb05591c1937242331a983b2f4ba"
+    },
+    {
+      "path": "data/items/pandaria/007.jsonl",
+      "bytes": 4417961,
+      "records": 1000,
+      "sha256": "5da04b39e6e26e0ccc5441e406f372a4d61dd822b463a49f7712bf01cfb5fba4"
+    },
+    {
+      "path": "data/items/pandaria/008.jsonl",
+      "bytes": 3806583,
+      "records": 826,
+      "sha256": "7ec3a6fc115cbb6117c9a535624c26b53a2a607a343d1de8d863a7d8c9fb75a2"
+    }
+  ]
+}

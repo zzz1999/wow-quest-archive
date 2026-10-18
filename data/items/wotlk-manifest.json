@@ -1,0 +1,49 @@
+{
+  "version": "wotlk",
+  "count": 5051,
+  "templates": 5051,
+  "iconMappings": 5050,
+  "withStats": 3666,
+  "withEffects": 2595,
+  "effects": 3256,
+  "resolvedEffectText": 2911,
+  "missingEffectText": 287,
+  "files": [
+    {
+      "path": "data/items/wotlk/000.jsonl",
+      "bytes": 4232945,
+      "records": 1000,
+      "sha256": "a46c16b65c84d70615c7cdad53555f38c4177d860c5bf0fb4553ba177b8feb0e"
+    },
+    {
+      "path": "data/items/wotlk/001.jsonl",
+      "bytes": 5113492,
+      "records": 1000,
+      "sha256": "f69b00e56e9b132eee9001105d794ad08ae63f01dd5da3e2134d1038bcc83c73"
+    },
+    {
+      "path": "data/items/wotlk/002.jsonl",
+      "bytes": 5246838,
+      "records": 1000,
+      "sha256": "e9b9db87bc29c0229b3195dc222b6177d47911df39b015772b4756822b9c9899"
+    },
+    {
+      "path": "data/items/wotlk/003.jsonl",
+      "bytes": 5357486,
+      "records": 1000,
+      "sha256": "cba6d8473e7ccba614956351388f159a84c108622e99c99f637e8f836c91ab3a"
+    },
+    {
+      "path": "data/items/wotlk/004.jsonl",
+      "bytes": 4840592,
+      "records": 1000,
+      "sha256": "80e5528927699c800ae423b2c330e0a8e4af6212421dcc6044914c300293fdd0"
+    },
+    {
+      "path": "data/items/wotlk/005.jsonl",
+      "bytes": 274578,
+      "records": 51,
+      "sha256": "48d1aee9702d1a4ea934bc4d5a633e625227f450669865d120f497449efea0fc"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import {rewardAudit} from './reward-audit.mjs';
+import {validateItems} from './validate-items.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const lock=JSON.parse(await fs.readFile(path.join(root,'sources/manifest.json'),'utf8'));
 const catalog=JSON.parse((await fs.readFile(path.join(root,'web/catalog.js'),'utf8')).replace(/^window\.QUEST_CATALOG=/,'').replace(/;\s*$/,''));
@@ -77,3 +78,4 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  total+=m.count;totalNpcs+=m.actors.npcs;totalObjects+=m.actors.objects;console.log(`${id}: ${m.count} quests, ${m.actors.npcs} NPCs, ${m.actors.objects} objects; hashes, locales, reverse relations and browser bundles verified`);
 }
 console.log(`Verified ${total} versioned quests, ${totalNpcs} NPCs and ${totalObjects} task objects.`);
+await validateItems(root,catalog);

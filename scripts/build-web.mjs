@@ -12,6 +12,10 @@ const catalog={schemaVersion:1,generatedAt:'2026-10-18',localeOrder:['zhCN','zhT
 const rewardReports=[];
 await fs.mkdir(path.join(root,'web/data'),{recursive:true});
 await fs.mkdir(path.join(root,'web/actors'),{recursive:true});
+await fs.mkdir(path.join(root,'web/items'),{recursive:true});
+const iconLock=JSON.parse(await fs.readFile(path.join(root,'sources/items/icons.json'),'utf8'));
+const unavailableIcons=new Set(iconLock.icons.filter(i=>i.missing).map(i=>i.name));
+const itemReports=[];
 for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  const manifestPath=path.join(root,'data',id,'manifest.json');
  try{await fs.access(manifestPath);}catch{continue;}
@@ -25,12 +29,21 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  const actorPayload=gzipSync(Buffer.from(JSON.stringify(actors)),{level:9}).toString('base64');
  const actorBundle=`window.QUEST_ACTOR_PACKS[${JSON.stringify(id)}]=${JSON.stringify(actorPayload)};\n`;
  await fs.writeFile(path.join(root,'web/actors',id+'.js'),actorBundle);
- catalog.versions.push({...manifest,bundleHashes:{quests:hash(questBundle),actors:hash(actorBundle)}});console.log(id,records.length,Math.round(payload.length/1024)+' KiB browser bundle');
+ const itemManifest=JSON.parse(await fs.readFile(path.join(root,'data/items',id+'-manifest.json'),'utf8'));
+ const items=[];for(const file of itemManifest.files)items.push(...(await fs.readFile(path.join(root,file.path),'utf8')).trim().split('\n').filter(Boolean).map(x=>JSON.parse(x)));
+ // Raw fields stay in JSONL. The browser needs only the normalized presentation.
+ const browserItems=items.map(({raw,sources,...item})=>({...item,icon:unavailableIcons.has(item.icon)?null:item.icon}));
+ const itemPayload=gzipSync(Buffer.from(JSON.stringify(browserItems)),{level:9}).toString('base64');
+ const itemBundle=`window.QUEST_ITEM_PACKS[${JSON.stringify(id)}]=${JSON.stringify(itemPayload)};\n`;
+ await fs.writeFile(path.join(root,'web/items',id+'.js'),itemBundle);
+ itemReports.push(itemManifest);
+ catalog.versions.push({...manifest,items:{count:items.length},bundleHashes:{quests:hash(questBundle),actors:hash(actorBundle),items:hash(itemBundle)}});console.log(id,records.length,Math.round(payload.length/1024)+' KiB browser bundle',items.length,'items');
 }
 await fs.writeFile(path.join(root,'web/catalog.js'),'window.QUEST_CATALOG='+JSON.stringify(catalog)+';\n');
 await fs.mkdir(path.join(root,'reports'),{recursive:true});
 await fs.writeFile(path.join(root,'reports/coverage.json'),JSON.stringify(catalog,null,2)+'\n');
 await fs.writeFile(path.join(root,'reports/reward-audit.json'),JSON.stringify({schemaVersion:1,versions:rewardReports},null,2)+'\n');
+await fs.writeFile(path.join(root,'reports/item-audit.json'),JSON.stringify({schemaVersion:1,versions:itemReports,icons:{available:iconLock.icons.filter(i=>!i.missing).length,missing:iconLock.icons.filter(i=>i.missing).map(i=>i.name)}},null,2)+'\n');
 // Stable content hashes refresh old Pages/browser caches and still work offline.
 const htmlPath=path.join(root,'index.html');let html=await fs.readFile(htmlPath,'utf8');
 for(const match of [...html.matchAll(/(?:src|href)="(web\/[a-z-]+\.(?:js|css))(?:\?v=[a-f0-9]+)?"/g)]){

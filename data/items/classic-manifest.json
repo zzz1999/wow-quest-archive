@@ -1,0 +1,31 @@
+{
+  "version": "classic",
+  "count": 2138,
+  "templates": 2138,
+  "iconMappings": 2138,
+  "withStats": 1228,
+  "withEffects": 902,
+  "effects": 1172,
+  "resolvedEffectText": 1117,
+  "missingEffectText": 12,
+  "files": [
+    {
+      "path": "data/items/classic/000.jsonl",
+      "bytes": 4048926,
+      "records": 1000,
+      "sha256": "b4881719069c85ea4bb6c7295d846e876ad5e159a36d701c8b91c01067aedb56"
+    },
+    {
+      "path": "data/items/classic/001.jsonl",
+      "bytes": 4974068,
+      "records": 1000,
+      "sha256": "109c523c5d09d2f47d2363ada695bc7d53cce40908dc67fb116f02fb018f9acb"
+    },
+    {
+      "path": "data/items/classic/002.jsonl",
+      "bytes": 861244,
+      "records": 138,
+      "sha256": "50c64e696c76f798be30cc57771d84f1b8d77875b41748dfcf91ae51c3f32e11"
+    }
+  ]
+}

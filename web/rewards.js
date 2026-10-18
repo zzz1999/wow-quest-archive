@@ -17,7 +17,7 @@
  }
  function cards(q,items,settings){return `<ul class="reward-items">${items.map(item=>{
   const details=[quality[item.quality],slots[item.inventoryType],item.itemLevel>0?`基础物品等级 ${num(item.itemLevel)}`:'',item.requiredLevel>0?`需要等级 ${num(item.requiredLevel)}`:'',item.scalesWithLevel?'随等级变化':''].filter(Boolean);
-  return `<li class="reward-item"><span class="reward-quality quality-${Number.isInteger(item.quality)?item.quality:1}" aria-hidden="true">◇</span><div><div class="reward-item-name">${itemLink(q,item,'item',settings)} ${badge(item.nameLocale)}</div>${details.length?`<small>${details.map(escape).join(' · ')}</small>`:''}</div><b class="reward-count">${item.count===null?'数量未收录':'× '+num(item.count)}</b></li>`;
+  return `<li class="reward-item">${globalThis.QuestItems?QuestItems.button(q.version,item):`<span class="reward-quality quality-${Number.isInteger(item.quality)?item.quality:1}" aria-hidden="true">◇</span>`}<div><div class="reward-item-name">${itemLink(q,item,'item',settings)} ${badge(item.nameLocale)}</div>${details.length?`<small>${details.map(escape).join(' · ')}</small>`:''}</div><b class="reward-count">${item.count===null?'数量未收录':'× '+num(item.count)}</b></li>`;
  }).join('')}</ul>`;}
  function describe(q,settings={}){
   const r=q.rewards;if(!r)return {groups:[],stats:[],notes:['暂未收录奖励详情。']};
@@ -49,7 +49,7 @@
    content+=`<div class="reward-group"><h4>${title}</h4><ul class="reward-lines">${rows.map(item=>`<li><span>${itemLink(q,item,kind,settings)} ${badge(item.nameLocale)}</span><b>${field==='reputation'?(item.amount===null?'数值暂未收录':signed(item.amount)):field==='currencies'?(item.count===null?'数量暂未收录':'× '+num(item.count)):item.role==='cast'?'完成时触发':'奖励效果'}</b></li>`).join('')}</ul></div>`;
   }
   if(!content&&!notes.length)content='<p class="empty-field">档案未记录可直接列出的奖励。</p>';
-  return `<section class="text-section quest-rewards" aria-labelledby="quest-rewards-heading"><h3 class="section-label" id="quest-rewards-heading">任务奖励</h3>${content}${notes.map(n=>`<p class="reward-note">${escape(n)}</p>`).join('')}<p class="reward-footnote">按对应版本的档案展示基础值；等级、职业、重复完成与服务器设置可能改变实得奖励。物品链接可在 Wowhead 查看更多资料。</p></section>`;
+  return `<section class="text-section quest-rewards" aria-labelledby="quest-rewards-heading"><h3 class="section-label" id="quest-rewards-heading">任务奖励</h3>${groups.length?'<p class="reward-tip-hint">悬停或点击物品图标查看属性与效果 · 支持离线查阅</p>':''}${content}${notes.map(n=>`<p class="reward-note">${escape(n)}</p>`).join('')}<p class="reward-footnote">按对应版本的档案展示基础值；等级、职业、重复完成与服务器设置可能改变实得奖励。物品名称链接可在 Wowhead 查看更多资料。</p></section>`;
  }
  function text(q,settings={}){
   const r=q.rewards,{groups,stats,notes}=describe(q,settings),lines=['## 任务奖励'];

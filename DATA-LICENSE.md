@@ -26,4 +26,6 @@
 
 World of Warcraft 及相关任务文本、角色、世界设定、商标与游戏内容归 Blizzard Entertainment 或相应权利人所有。本项目为独立研究与资料整理项目，与 Blizzard Entertainment 无隶属或授权关系。
 
+奖励物品扩展档案 `data/items/`、网页副本 `web/items/` 和 `web/icons/` 同样不适用本项目 MIT 授权。额外来源包括 Xian55/tortoise-db-viewer 的客户端提取 JSON、wowgaming/client-data v20.0、5.4.8 项目链接的客户端 Data.zip、4.3.4 / 7.3.5 客户端表、wowdev/wow-listfile 文件名映射，以及 Wowhead/ZAM 提供的 Blizzard 物品图标。具体来源与文件哈希见 `sources/items/`，转换边界见 `docs/ITEMS.md`。公开下载或社区程序的开源许可不代表游戏文字、数值或图像被重新授予 MIT 许可；转发离线包时须保留本声明与这些来源清单。
+
 上游程序或数据库结构的开源许可，不表示游戏原文已被重新授权为 MIT，也不构成模型训练或其他使用目的的单独授权。研究导出保持来源与版本信息。需要转发资料时，应一并保留本声明和上游许可文件。

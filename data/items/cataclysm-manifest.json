@@ -1,0 +1,67 @@
+{
+  "version": "cataclysm",
+  "count": 8656,
+  "templates": 8656,
+  "iconMappings": 8655,
+  "withStats": 7142,
+  "withEffects": 903,
+  "effects": 1083,
+  "resolvedEffectText": 700,
+  "missingEffectText": 302,
+  "files": [
+    {
+      "path": "data/items/cataclysm/000.jsonl",
+      "bytes": 4398955,
+      "records": 1000,
+      "sha256": "38cca518f3e4dd2ccc19f644657c1702b54894f9c79028060a650034776d017e"
+    },
+    {
+      "path": "data/items/cataclysm/001.jsonl",
+      "bytes": 4674557,
+      "records": 1000,
+      "sha256": "9bd81837ad91638802deb62eaf7ca3b18fa2552a49b31cd0e7f0216718af197f"
+    },
+    {
+      "path": "data/items/cataclysm/002.jsonl",
+      "bytes": 4548448,
+      "records": 1000,
+      "sha256": "360380005fb2659f6caa3e0641903cee978be2cdda3b60a5cabacc55c75b8d19"
+    },
+    {
+      "path": "data/items/cataclysm/003.jsonl",
+      "bytes": 4565755,
+      "records": 1000,
+      "sha256": "1e969ad9a3a34c694d6f11b5dab88d6feaf8d25b6212b7a702a473eb72167a35"
+    },
+    {
+      "path": "data/items/cataclysm/004.jsonl",
+      "bytes": 4617358,
+      "records": 1000,
+      "sha256": "8d3635b350d80f7aadeb0e796b3b86502d921b9d8ff759eb9b428c721d66de28"
+    },
+    {
+      "path": "data/items/cataclysm/005.jsonl",
+      "bytes": 4268246,
+      "records": 1000,
+      "sha256": "946936c91c46c321181718df5e6ed7f0cef3ea0d6df401a79ddd1a05c8cab7b2"
+    },
+    {
+      "path": "data/items/cataclysm/006.jsonl",
+      "bytes": 4366144,
+      "records": 1000,
+      "sha256": "e9ad4a447f1c6c8598c89eb08f86ca03299180935c700379626cfc36be3d4f94"
+    },
+    {
+      "path": "data/items/cataclysm/007.jsonl",
+      "bytes": 4476482,
+      "records": 1000,
+      "sha256": "82529d048581cef4e65bc780097499270fe36213f3578e96235c01634ed4d4e0"
+    },
+    {
+      "path": "data/items/cataclysm/008.jsonl",
+      "bytes": 3028496,
+      "records": 656,
+      "sha256": "e9177ea2b954ce178e12067640590a9a34e57a5edcb962c66f0abc08444ad9ac"
+    }
+  ]
+}
