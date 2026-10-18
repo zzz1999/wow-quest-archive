@@ -35,7 +35,7 @@
  <div class="dialog-top"><h2 id="reading-heading">阅读设置</h2><button id="reading-close" aria-label="关闭阅读设置">×</button></div>
  <form id="reading-form">
   <fieldset class="reading-modes"><legend>阅读视角</legend><label><input type="radio" name="reading-mode" value="player"> 玩家视角 <small>代入角色称呼，突出目标与对话</small></label><label><input type="radio" name="reading-mode" value="source"> 原文视角 <small>保留游戏变量与资料字段</small></label></fieldset>
-  <fieldset id="character-settings"><legend>你的角色</legend><p class="reading-help">填写后，对话中的称呼会换成你的角色资料。留空则显示“玩家名称”“玩家职业”“玩家种族”。</p>
+  <fieldset id="character-settings"><legend>你的角色</legend><p class="reading-help">游戏变量以小标签显示。留空时显示“名字”“职业”“种族”；填写后，标签中显示你的角色资料。</p>
    <div class="character-fields"><label>玩家名称<input id="player-name" maxlength="40" placeholder="玩家名称" autocomplete="off"></label><label>玩家职业<input id="player-class" maxlength="40" placeholder="例如：法师" autocomplete="off"></label><label>玩家种族<input id="player-race" maxlength="40" placeholder="例如：人类" autocomplete="off"></label><label>性别称呼<select id="player-gender"><option value="both">并列显示两种称呼</option><option value="male">男性称呼</option><option value="female">女性称呼</option></select></label></div>
   </fieldset>
   <p class="reading-help">设置仅保存在当前浏览器。原始资料与 JSON / JSONL 导出保持原文。</p>

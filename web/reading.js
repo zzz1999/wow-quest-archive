@@ -1,4 +1,4 @@
-/* Shared, text-only presentation rules. Source records are never modified. */
+/* Shared presentation rules. Text and safe badge markup use the same token boundaries. */
 (() => {
  'use strict';
  const defaults=Object.freeze({mode:'player',name:'',race:'',className:'',gender:'both'});
@@ -7,18 +7,27 @@
   const text=key=>typeof input[key]==='string'?input[key].replace(/[\u0000-\u001f\u007f]/g,'').trim().slice(0,40):'';
   return {mode:input.mode==='source'?'source':'player',name:text('name'),race:text('race'),className:text('className'),gender:['male','female'].includes(input.gender)?input.gender:'both'};
  }
- function format(value,options=defaults){
+ function segments(value,options=defaults){
   const source=String(value??''),settings=normalize(options);
-  if(settings.mode==='source')return source;
+  if(settings.mode==='source')return [{text:source}];
   // Only the documented two-branch gender form is resolved. Extended or malformed forms stay intact.
   const branched=source.replace(/\$[Gg]([^:;\r\n]*):([^:;\r\n]*);/g,(_,male,female)=>settings.gender==='male'?male:settings.gender==='female'?female:male===female?male:`${male||'（无称呼）'} / ${female||'（无称呼）'}`);
-  // A single substitution pass keeps user names such as "$B" literal.
-  return branched.replace(/\\n|\$[BbNnCcRr]/g,token=>{
-   if(token==='\\n'||/^\$[Bb]$/.test(token))return '\n';
-   if(/^\$[Nn]$/.test(token))return settings.name||'玩家名称';
-   const key=token[1].toLowerCase(),word=key==='c'?(settings.className||'玩家职业'):(settings.race||'玩家种族');
-   return token[1]===key?word.toLowerCase():word.slice(0,1).toUpperCase()+word.slice(1);
-  });
+  // Tokenize before inserting character values, so tokens or markup in names stay literal.
+  const result=[];let cursor=0;
+  for(const match of branched.matchAll(/\\n|\$[BbNnCcRr]/g)){
+   if(match.index>cursor)result.push({text:branched.slice(cursor,match.index)});
+   const token=match[0];cursor=match.index+token.length;
+   if(token==='\\n'||/^\$[Bb]$/.test(token)){result.push({text:'\n'});continue;}
+   const key=token[1].toLowerCase(),label={n:'名字',c:'职业',r:'种族'}[key];
+   let text=settings[{n:'name',c:'className',r:'race'}[key]]||label;
+   if(key!=='n')text=token[1]===key?text.toLowerCase():text.slice(0,1).toUpperCase()+text.slice(1);
+   result.push({text,token,label});
+  }
+  if(cursor<branched.length)result.push({text:branched.slice(cursor)});
+  return result;
  }
- (typeof window==='undefined'?globalThis:window).QuestReading=Object.freeze({defaults,normalize,format});
+ const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function format(value,options){return segments(value,options).map(part=>part.text).join('');}
+ function html(value,options){return segments(value,options).map(part=>part.token?`<span class="locale-badge zhCN variable-badge" data-variable="${part.token}" title="${part.token} · ${part.label}">${escape(part.text)}</span>`:escape(part.text)).join('');}
+ (typeof window==='undefined'?globalThis:window).QuestReading=Object.freeze({defaults,normalize,format,html});
 })();
