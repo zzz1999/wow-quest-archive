@@ -30,6 +30,16 @@
     "changedFields": 1594,
     "report": "reports/text-audit/cataclysm.json"
   },
+  "rewards": {
+    "manifest": "sources/rewards/manifest.json",
+    "clientSource": {
+      "repo": "caicaicai/dbc434",
+      "commit": "33359c12c01ac9127a1d299be008a4ab38ee75d4",
+      "build": "4.3.4.15595"
+    },
+    "questsWithItems": 5246,
+    "experienceResolved": 13545
+  },
   "count": 14907,
   "fields": {
     "title": {
@@ -129,77 +139,77 @@
     {
       "path": "data/cataclysm/000.jsonl",
       "records": 1000,
-      "sha256": "3ce3bdcf4116005968d4558999a1b16668711dd8043b5634bc909f9daac29ee6"
+      "sha256": "1077f64496a0b1b69f4283af5daaed6082ca47bebf6bade9074882f916660879"
     },
     {
       "path": "data/cataclysm/001.jsonl",
       "records": 1000,
-      "sha256": "c8641479d3e2537d4ba93827b62e2cb32e905d6fa10e641f7d5947c9ffad2233"
+      "sha256": "061f1e496016387a86396bdb5b59c5f272589baa917eab6ce8ff721d3238c376"
     },
     {
       "path": "data/cataclysm/002.jsonl",
       "records": 1000,
-      "sha256": "58d1865689fc9d2c9ef29a1a8ebf2cfe4f55ff259ecc27c65e8db62cfaf4a763"
+      "sha256": "c32553fbfdcc365e1fb795c7de34a4318cd6e0c08520a28f7a7bc4077a8de7e1"
     },
     {
       "path": "data/cataclysm/003.jsonl",
       "records": 1000,
-      "sha256": "467715451e0bdac07bbaa61e0b9db27b8fa59b6a7ea996535a68de6900dae505"
+      "sha256": "48f3ecf1cb9f02bc1c5e38db8858a83866fc298927966749821cad0d2d4c1f1b"
     },
     {
       "path": "data/cataclysm/004.jsonl",
       "records": 1000,
-      "sha256": "435289093e0dc123c6ec3f5cea96cc117b201866d4601c5d9f8eb3fe1714de48"
+      "sha256": "799f43d3b402702f1e332992bfbaca222e19f5c7e6d6106e9c405910f2acba76"
     },
     {
       "path": "data/cataclysm/005.jsonl",
       "records": 1000,
-      "sha256": "ca2feed837b9a3d9186906163b16b08a4e748fcbb375690bbdca732eadbb6dea"
+      "sha256": "37b1f05d2c16615954a4d37d2fdc46ce98339f4ae8e579498195ff7dd62eb207"
     },
     {
       "path": "data/cataclysm/006.jsonl",
       "records": 1000,
-      "sha256": "f67463146e6ddd7e329a45ff6c97b740975fe0b0fa73e54768c45d6f2c18f9c3"
+      "sha256": "58b59fae7b1b6efe478a49d881b77f3584329bed4f92292d80832990549e6c25"
     },
     {
       "path": "data/cataclysm/007.jsonl",
       "records": 1000,
-      "sha256": "e3fd8b212aba6cd4aee1e73edc2873c0dff9f2cfccc437496d3de8c37585cd1d"
+      "sha256": "4f8fe20a609ab8d7f9ea3c736a1423e17430c7d4b0de1c48d7c23c33ee73fcdd"
     },
     {
       "path": "data/cataclysm/008.jsonl",
       "records": 1000,
-      "sha256": "ab8eb4368657e69ad0f3418ba6e5733db5730d37f54ce210f9045d6e412ddc9c"
+      "sha256": "f3ced2f83b5c858498b4833adb7ee8258d25142e413b546c64773065612b87e9"
     },
     {
       "path": "data/cataclysm/009.jsonl",
       "records": 1000,
-      "sha256": "f9591cb29d8ebebfcb83be134abc4c61673206d741b2bf0fa227d7d1b42a65a1"
+      "sha256": "94c59bf6f0b34d3a136b8e48bb7516f05650231543d96c536a8480fedddaed80"
     },
     {
       "path": "data/cataclysm/010.jsonl",
       "records": 1000,
-      "sha256": "f7f66f7334033d8574fb23285a282f081bf040bddd3c721b1b5a245bd6a9fb31"
+      "sha256": "7abd76bba19b4cfcfe03680e2a9182f9b566b97b69ce978d7b082616e9295f22"
     },
     {
       "path": "data/cataclysm/011.jsonl",
       "records": 1000,
-      "sha256": "c90d4614e90c8ed363b9aa1c79e76c40b3ecc7eb8e61cfaa06005f532eda5c3b"
+      "sha256": "9fc6e396f3620d9318dce68bb80a9be8e1b7fa2153b6250cbc861b4d58264123"
     },
     {
       "path": "data/cataclysm/012.jsonl",
       "records": 1000,
-      "sha256": "a95445dc972f476d032ee14b69245d1f27354179c563bf062c9c42e8109aaf26"
+      "sha256": "80c3fa94031ae51c1235e15d3183c5aae367aa0646723bae28ccc71dc2c0d3ef"
     },
     {
       "path": "data/cataclysm/013.jsonl",
       "records": 1000,
-      "sha256": "6053df0ed86b0522b508b307aa0d0b63fb9978d841f53666b3113e693090fd32"
+      "sha256": "bdd427ab0724d537de0b35c47a067ad54b82112f9a75524d85d6b2217c4428dc"
     },
     {
       "path": "data/cataclysm/014.jsonl",
       "records": 907,
-      "sha256": "96c93487d9318e545220075293f15cdd997d0ce3521710b5b9d6d3a883b6bd30"
+      "sha256": "ddf92d1dcd1eb208a5aebae73b45502d9617fa66595f40a97de5163c65998947"
     }
   ],
   "actors": {

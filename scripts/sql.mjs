@@ -69,6 +69,7 @@ export function* tuples(text,start=0,tail=null) {
         const s=text.slice(from,i).trim();
         if(/^NULL$/i.test(s))value=null;
         else if(/^-?\d+(?:\.\d+)?$/.test(s))value=Number.isSafeInteger(Number(s))||s.includes('.')?Number(s):s;
+        else if(/^[+-]?\d+(?:\.\d+)?e[+-]?\d+$/i.test(s)&&Number.isFinite(Number(s)))value=Number.isSafeInteger(Number(s))||!Number.isInteger(Number(s))?Number(s):s;
         else if(/^0x[\da-f]+$/i.test(s))value=s;
         else throw new Error('Unsupported SQL value: '+s.slice(0,100));
       }
@@ -85,7 +86,7 @@ export async function readTables(files,wanted,{onTable}={}) {
       const statement=original.replace(/^(?:\s|--[^\n]*(?:\n|$)|#[^\n]*(?:\n|$)|\/\*[^]*?\*\/)+/,'');
       const create=/^CREATE TABLE(?: IF NOT EXISTS)?\s+`([^`]+)`\s*\(/i.exec(statement);
       if(create&&wanted.has(create[1])){
-        const columns=[...statement.matchAll(/^\s*`([^`]+)`\s+/gm)].map(x=>x[1]);
+        const columns=[...statement.slice(create[0].length).matchAll(/^\s*`([^`]+)`\s+/gm)].map(x=>x[1]);
         schemas.set(create[1],columns);if(!tables.has(create[1]))tables.set(create[1],[]);
       }
       const update=/^UPDATE\s+`([^`]+)`\s+SET\s+([^]*)\s+WHERE\s*\(?\s*`?(entry|id)`?\s*=\s*'?(\d+)'?(?:\s+AND\s+`?locale`?\s*=\s*'([A-Za-z0-9]+)')?\s*\)?\s*;?\s*$/i.exec(statement);

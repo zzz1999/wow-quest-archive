@@ -20,6 +20,9 @@
 | The-Legion-Preservation-Project/TrinityCore（军团中文补充） | GPL-2.0，保留 COPYING 和 README.md；TDB735.25051 社区快照 |
 | zitengzela/LegionCore-7.3.5V2（军团中文补充） | GPL-2.0，保留 COPYING 和 README.md；Legion Proyect 数据库，具有 LegionCore/UWOW 派生背景，未独立核实全部文字来源 |
 | Wago Tools 的 7.3.5.26972 客户端 DB2 导出（阅读称呼表） | `sources/reading/` 保存原始简中、繁中、英文 CSV 及来源哈希；属于 Blizzard 游戏数据，不纳入本项目 MIT 授权 |
+| Wago Tools 的 7.3.5.26972 奖励辅助表 | 物品、阵营、货币、法术、经验及奖励包等客户端数据，原始 URL 和哈希见 `sources/rewards/manifest.json`；属于 Blizzard 游戏数据 |
+| Kaev/AzerothcoreDBCToSQL（3.3.5 奖励辅助表） | 固定提交的客户端 DBC 转 SQL 数据，未附单独许可证；不属于本项目 MIT 授权 |
+| caicaicai/dbc434（4.3.4 奖励辅助表） | 保留仓库 GPL-3.0 LICENSE；客户端数据权利仍属于 Blizzard 或相应权利人 |
 
 World of Warcraft 及相关任务文本、角色、世界设定、商标与游戏内容归 Blizzard Entertainment 或相应权利人所有。本项目为独立研究与资料整理项目，与 Blizzard Entertainment 无隶属或授权关系。
 

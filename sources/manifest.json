@@ -62,6 +62,13 @@
           "bytes": 1795664,
           "sha256": "bbee8c3ca416b4a8818112d6b0c2ffe10b5daac3df2306496f6dcfa0f8468c27",
           "input": true
+        },
+        {
+          "name": "locales_item.sql",
+          "url": "https://raw.githubusercontent.com/cmangos/classic-db/ec4f596146be6467ea93c57397858e329e2db852/locales/Chinese/locales_item.sql",
+          "bytes": 4496583,
+          "sha256": "e1a5f654c2bae0815470852643a790d0bdcf35b8725d2570c3e1f8b40e267f21",
+          "input": true
         }
       ],
       "supplements": [
@@ -256,6 +263,20 @@
           "bytes": 18091,
           "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
           "input": false
+        },
+        {
+          "name": "item_template.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/item_template.sql",
+          "bytes": 16159418,
+          "sha256": "bd4859be01946ca1521f7896f558f665e1e1d98890757a3df30e717b62768cc6",
+          "input": true
+        },
+        {
+          "name": "item_template_locale.sql",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/data/sql/base/db_world/item_template_locale.sql",
+          "bytes": 21098509,
+          "sha256": "df7792e44e50627d27ba68151e8c40ab27de8a5ebe7efb145aef75537b13cb27",
+          "input": true
         }
       ],
       "supplements": [
@@ -449,6 +470,34 @@
           "bytes": 18046,
           "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73",
           "input": false
+        },
+        {
+          "name": "locales_item.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/locales_item.sql",
+          "bytes": 1676,
+          "sha256": "27686c65032aefb8ec6d00200b3d695a66e971b4bae974513d847fae3120fc18",
+          "input": true
+        },
+        {
+          "name": "Chinese_items.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Chinese/Chinese_items.sql",
+          "bytes": 4585818,
+          "sha256": "136797f80d62639cc565f60531f65f1f3dbc55d853e3c78d4664105f90bc055c",
+          "input": true
+        },
+        {
+          "name": "item_template.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/World/Setup/FullDB/item_template.sql",
+          "bytes": 23623842,
+          "sha256": "5c469761e2953b1b324fff95ff64e42ca5f730d417fef59e70c7abba627059da",
+          "input": true
+        },
+        {
+          "name": "Taiwanese_items.sql",
+          "url": "https://raw.githubusercontent.com/mangosthree/database/2e72872298e59a7ec8763ad2cdf897218b761b20/Translations/Translations/Taiwanese/Taiwanese_items.sql",
+          "bytes": 4586871,
+          "sha256": "39608aac59cdb4043a02fe667fa9bf16422a837fe0f817096f1ebe328f12186c",
+          "input": true
         }
       ],
       "supplements": [

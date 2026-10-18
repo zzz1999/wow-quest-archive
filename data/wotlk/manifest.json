@@ -25,6 +25,16 @@
     "changedFields": 20,
     "report": "reports/text-audit/wotlk.json"
   },
+  "rewards": {
+    "manifest": "sources/rewards/manifest.json",
+    "clientSource": {
+      "repo": "Kaev/AzerothcoreDBCToSQL",
+      "commit": "ef28c4205b329e11cc1327e8d817dbfa967a6797",
+      "build": "3.3.5.12340"
+    },
+    "questsWithItems": 3778,
+    "experienceResolved": 8461
+  },
   "count": 9464,
   "fields": {
     "title": {
@@ -124,52 +134,52 @@
     {
       "path": "data/wotlk/000.jsonl",
       "records": 1000,
-      "sha256": "7ef88c523cef9ef0b1dbf8a9d9564ff8d6e5c33dde356308b348b0f84f97d9f8"
+      "sha256": "ed7f987b0939a71977c1175bd06c8c1a6d3deed607bd9de550f8479b0033af07"
     },
     {
       "path": "data/wotlk/001.jsonl",
       "records": 1000,
-      "sha256": "7f7ba02035cddc71af7d92174a2378a8f42c37099a60077c9857eed6acec6532"
+      "sha256": "dc3263a88d0193346c23db06cb60a79092bf35a31bf5089afffc487cf131bde2"
     },
     {
       "path": "data/wotlk/002.jsonl",
       "records": 1000,
-      "sha256": "6760f08c27f6b6baa181fc28b9a42176916012a26df265daf810a0741acb5175"
+      "sha256": "7ea4efb99588cbeb7b0cb7b6c2f2e3a2bf3a3bcb562274ef06be172d77030936"
     },
     {
       "path": "data/wotlk/003.jsonl",
       "records": 1000,
-      "sha256": "9972fdce5a31dcd0387e4fb22d05a4a75485034b91a1b62fa67529f8e3c70378"
+      "sha256": "1c526623a0b7754a1314c6f754a84c129fc6ba803d35eb4b454e4295d71c91e9"
     },
     {
       "path": "data/wotlk/004.jsonl",
       "records": 1000,
-      "sha256": "9471848d958d88687f9218d74c09f300157c3aa27792ad48e676057834b32255"
+      "sha256": "6c1cad915a1b0fe60776b74efee33c587df44c1466de154ca70ce6f1eb7bce09"
     },
     {
       "path": "data/wotlk/005.jsonl",
       "records": 1000,
-      "sha256": "b24106b6237a5c874c0835008107a7df65adf1a95fb3b67333d9cb7bd8cbe77c"
+      "sha256": "282b962100aa39c59604f59b35de25ca1f5d6fb1ef33051169d44d078fce6dd9"
     },
     {
       "path": "data/wotlk/006.jsonl",
       "records": 1000,
-      "sha256": "db4434fc8ce0367135920562bc78036f8fdf37575ccfccc1edf1a9923009cf4a"
+      "sha256": "e8887679defc48514df9b67f82ac382d264cf847bf29849acbf6b34453b3a67d"
     },
     {
       "path": "data/wotlk/007.jsonl",
       "records": 1000,
-      "sha256": "eee56faf14ddeca67906695a3d933d5a4267aebf01e140d32c1e03c181aaa331"
+      "sha256": "ec515b1c7278ad56886914454703b809a8a673466ba81e44384c9075df69ca13"
     },
     {
       "path": "data/wotlk/008.jsonl",
       "records": 1000,
-      "sha256": "f0080090cacfa842141c658cc08665afd7af047b203a60b7ea8d55eebe0fa354"
+      "sha256": "3e970b825f3e5295ea323b123ad6218a903d11ca1a6072abbcb981d99ac9aa1d"
     },
     {
       "path": "data/wotlk/009.jsonl",
       "records": 464,
-      "sha256": "eddf67956501071a32a4496c50ef22a22db3954c20acdad6a2dcc4f80c49d360"
+      "sha256": "564a08aa79b8a4e7df600b4c0c445561842dec0bbc4c74fb5b3e61b8ea536e31"
     }
   ],
   "actors": {

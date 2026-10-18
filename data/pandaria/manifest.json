@@ -157,6 +157,12 @@
     "changedFields": 8185,
     "report": "reports/text-audit/pandaria.json"
   },
+  "rewards": {
+    "manifest": "sources/rewards/manifest.json",
+    "clientSource": null,
+    "questsWithItems": 5737,
+    "experienceResolved": 2593
+  },
   "count": 18144,
   "fields": {
     "title": {
@@ -256,97 +262,97 @@
     {
       "path": "data/pandaria/000.jsonl",
       "records": 1000,
-      "sha256": "375ef77472d77c5895db330ffd80d5e1512ad8285de179fb45a2a5c43e81e89d"
+      "sha256": "8f67c245fe97116220635db1bb78a48a3359952cd6ca51c62e0e7104d2c594be"
     },
     {
       "path": "data/pandaria/001.jsonl",
       "records": 1000,
-      "sha256": "80f1c3db1ffb610089212231cf69e04d74c939ffa4690324e49d63b50a7f336e"
+      "sha256": "601695228fada9b5ef385bdf3b6a71a0a3993bb69497ff9516b571e5b9951699"
     },
     {
       "path": "data/pandaria/002.jsonl",
       "records": 1000,
-      "sha256": "f3802a5230c12aee46a688d2018aa9b0b031baacc7a3374e01b536987456d663"
+      "sha256": "dc90c84e73754baad92703454f6adcd4a593ceb991d1eba50fabe84dba0be439"
     },
     {
       "path": "data/pandaria/003.jsonl",
       "records": 1000,
-      "sha256": "613cd0d07e2d5b95d8ccda68602e920c97522078b8f8c900ac4875370f4c077d"
+      "sha256": "4f711058b6de0b875b250d0184b63d629e9cb8e4b1b71a406776d5284ade7e7c"
     },
     {
       "path": "data/pandaria/004.jsonl",
       "records": 1000,
-      "sha256": "f7bc133e1848f37743a7b930bd5ef50f2f3d4d617c33a159f068f5c24bcf2c1c"
+      "sha256": "8017dee2fbb7e11ad36b49f7b16463dd7e171ea73906a4877769a96580558ef5"
     },
     {
       "path": "data/pandaria/005.jsonl",
       "records": 1000,
-      "sha256": "1b23114d0b1668fd74285fdff5aa891a3f400078ce4d00d758d8c74f68b26594"
+      "sha256": "3b1b91de8b88e42b7de5ec135fb1769d1b845bf456a65ed05e098a569d79f61d"
     },
     {
       "path": "data/pandaria/006.jsonl",
       "records": 1000,
-      "sha256": "a9e0392032bd3955459836daf12b1ef4e524428a4a07e02e8397a6d17edecbdc"
+      "sha256": "4031b5024fc2f26845e943401fe7599fc404263338dff2c19edcded0152b8d27"
     },
     {
       "path": "data/pandaria/007.jsonl",
       "records": 1000,
-      "sha256": "91ba0df7ae308390f1fa29bd3b2f0ced70f096acd039298d16db9345bb91e7de"
+      "sha256": "7dfc347291a915aca1f124a22ae629052170aca92f8b49bd8eec25940a97e3f7"
     },
     {
       "path": "data/pandaria/008.jsonl",
       "records": 1000,
-      "sha256": "eb630fc28537e4ca6faef018172ec10ef874fa0e653d0f230eb01849af1e2be5"
+      "sha256": "64d0b9d06be9b1670f85390aa1f47aca1e27ef8271698aaae12c3ef3ab6ec46b"
     },
     {
       "path": "data/pandaria/009.jsonl",
       "records": 1000,
-      "sha256": "286c0e976088e7b75e5cb9f618a7c67a0756f1f23003e0aef34af968cb5f5b73"
+      "sha256": "8603322be4f3efb0a697118a764bfe3f065abbc7dae42ccd6c6ab2fb983d7597"
     },
     {
       "path": "data/pandaria/010.jsonl",
       "records": 1000,
-      "sha256": "bdfcd5c643b32eb06c6a109dec7e767011ee0ea9f604b008da04752062aedafc"
+      "sha256": "7fc200a27b07d3d88aabda57372687804d2ed93cddf2da447ff17ab087aced9b"
     },
     {
       "path": "data/pandaria/011.jsonl",
       "records": 1000,
-      "sha256": "3836ff8befd92852fefbd82eb7c3f968ec4984ac37086280be8994b173b991f5"
+      "sha256": "ea38be3c433349e31fa2069375563259a529823b14091c5ab1a51f87afcb1489"
     },
     {
       "path": "data/pandaria/012.jsonl",
       "records": 1000,
-      "sha256": "c5c99ff35ab9a00ad779701cc8983488dc141b84f738c783e7003f883f32da59"
+      "sha256": "a3b34cd76d459c2dac9a4914ba42ecfc5161e5cd8e0f2a18957dbabe839e1f5f"
     },
     {
       "path": "data/pandaria/013.jsonl",
       "records": 1000,
-      "sha256": "14b059c4c08f3af3dfb2bd8df35f6a1874d059558796cf320bcfee0aab824434"
+      "sha256": "58c40ac85e513b441b57863078171cbee4e9fb7dcb1749f1cf97531c1ba3450e"
     },
     {
       "path": "data/pandaria/014.jsonl",
       "records": 1000,
-      "sha256": "841fe7e3c56fd1cd17a404f25ef9db6c7f332336d2b36a6a40f5351e7d400d94"
+      "sha256": "ec2519101a3359b56c3724da1cb492f4c6959af8ee1bc00d4eb77fe9ffede026"
     },
     {
       "path": "data/pandaria/015.jsonl",
       "records": 1000,
-      "sha256": "e0dc0826c6259b8908f38cbdd506ad78ffed94d918cf0de1fc5daa8dc0cfd0c5"
+      "sha256": "a434762c7df9083bfae4cc08e151f89f9bc805d115632a477d40ecd02e397794"
     },
     {
       "path": "data/pandaria/016.jsonl",
       "records": 1000,
-      "sha256": "88aa7cb2d0bf645e66c7207ab2ed470ab55a88ab52f9228392312b64a110853e"
+      "sha256": "77586e466a3143492beb6cbbf62c4e0c4c3be9231c277100cced8a111d9fc7a0"
     },
     {
       "path": "data/pandaria/017.jsonl",
       "records": 1000,
-      "sha256": "f9cc335d52a8b184d8fdb579f35da3b94410ca726ec7ab65c30b79cd151e847f"
+      "sha256": "cbe7d1df13407d623ec1986ce66fd5a29b6065999ccc6ce8e3d8b3fbeb890af7"
     },
     {
       "path": "data/pandaria/018.jsonl",
       "records": 144,
-      "sha256": "04b137cb2b17c224208d8c378d490ec29d418672d714a0e32d9c2af3d648cd40"
+      "sha256": "ac2b12dbb3aa126600bb51ef5e032227820e451c3be5ca7388ed2ceece50bec0"
     }
   ],
   "actors": {

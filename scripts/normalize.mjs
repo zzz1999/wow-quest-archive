@@ -1,3 +1,4 @@
+import {normalizeRewards} from './rewards.mjs';
 export const TEXT_FIELDS={
  title:['logtitle','title'],objectives:['logdescription','objectives'],description:['questdescription','details'],
  progress:['requestitemstext','completiontext'],completion:['offerrewardtext','rewardtext'],
@@ -65,7 +66,7 @@ export function normalizeActors(tables,version,quests){
  }
  return [...actors.values()].map(actor=>({...actor,starts:actor.starts.sort((a,b)=>a-b),ends:actor.ends.sort((a,b)=>a-b)})).sort((a,b)=>a.kind.localeCompare(b.kind)||a.id-b.id);
 }
-export function normalize(tables,version,{customQuestIds=[],translationWarnings={}}={}){
+export function normalize(tables,version,{customQuestIds=[],translationWarnings={},rewardContext=null}={}){
  const bases=index(tables.get('quest_template')),addons=index(tables.get('quest_template_addon'));
  const localeRows=localizedIndex(tables,['locales_quest','quest_template_locale']);
  const progress=index(tables.get('quest_request_items')),completion=index(tables.get('quest_offer_reward'));
@@ -118,6 +119,7 @@ export function normalize(tables,version,{customQuestIds=[],translationWarnings=
     const chosen=chooseText([...candidates(locRows,['description']),{text:o.description,locale:'enUS',table,column:'description'}]);
     record.objectiveDetails.push({id:oid,type:o.type,objectId:o.objectid,amount:o.amount,order:o.storageindex??o.index??0,description:chosen.text,locale:chosen.locale});
   }
+  if(rewardContext)record.rewards=normalizeRewards(b,a,version,rewardContext);
   records.push(record);
  }
  return records.sort((a,b)=>a.id-b.id);

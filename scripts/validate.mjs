@@ -4,10 +4,12 @@ import {fileURLToPath} from 'node:url';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
+import {rewardAudit} from './reward-audit.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const lock=JSON.parse(await fs.readFile(path.join(root,'sources/manifest.json'),'utf8'));
 const catalog=JSON.parse((await fs.readFile(path.join(root,'web/catalog.js'),'utf8')).replace(/^window\.QUEST_CATALOG=/,'').replace(/;\s*$/,''));
 const html=await fs.readFile(path.join(root,'index.html'),'utf8');
+const rewardReport=JSON.parse(await fs.readFile(path.join(root,'reports/reward-audit.json'),'utf8'));
 for(const match of html.matchAll(/(?:src|href)="(web\/[a-z-]+\.(?:js|css))(?:\?v=([a-f0-9]+))?"/g)){
  const hash=createHash('sha256').update(await fs.readFile(path.join(root,match[1]))).digest('hex').slice(0,12);
  assert.equal(match[2],hash,'Stale page asset revision: '+match[1]);
@@ -36,6 +38,27 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
    }
   }records.push(...rows);
  }
+ for(const q of records){
+  const r=q.rewards;assert.equal(r?.schemaVersion,1);assert.equal(r.source,id);
+  for(const field of ['items','choices','currencies','reputation','spells'])assert.ok(Array.isArray(r[field]));
+  const entries=[...r.items,...r.choices,...r.currencies,...r.reputation,...r.spells,...(r.package?.items||[]),...(r.skill?[r.skill]:[]),...(r.title?[r.title]:[])];
+  for(const e of entries){
+   assert.ok(Number.isSafeInteger(e.id)&&e.id>0);assert.equal(typeof e.name,'string');assert.ok(!e.name.includes('\ufffd'));
+   assert.ok(['zhCN','zhTW','enUS',null].includes(e.nameLocale));
+   if(e.name){assert.ok(e.nameLocale);assert.ok([id,'rewards-'+id].includes(e.nameSource?.source));assert.equal(typeof e.nameSource.table,'string');assert.equal(typeof e.nameSource.column,'string');}else{assert.equal(e.nameLocale,null);assert.equal(e.nameSource,null);}
+   if(['zhCN','zhTW'].includes(e.nameLocale))assert.ok(/\p{Script=Han}/u.test(e.name));
+   if(e.count!==undefined)assert.ok(e.count===null||Number.isSafeInteger(e.count)&&e.count>=0);
+  }
+  for(const field of ['items','choices','currencies'])for(const e of r[field]){
+   const idColumn=r.columns[`${field}.${e.slot}.id`]?.split('.')[1],countColumn=r.columns[`${field}.${e.slot}.count`]?.split('.')[1];
+   assert.equal(q.sourceFields[idColumn],e.id,'Reward reference differs from source '+q.key);
+   assert.equal(countColumn?(q.sourceFields[countColumn]??0):null,e.count,'Reward quantity differs from source '+q.key);
+  }
+  assert.ok(r.experience.amount===null||Number.isSafeInteger(r.experience.amount)&&r.experience.amount>=0);
+  assert.ok(r.money.copper===null||Number.isSafeInteger(r.money.copper));
+  for(const e of r.reputation)assert.ok(e.amount===null||Number.isSafeInteger(e.amount));
+ }
+ assert.deepEqual(rewardReport.versions.find(v=>v.version===id),rewardAudit(records),'Reward report out of date');
  assert.equal(seen.size,m.count);assert.deepEqual(fields,m.fields);
  assert.equal(auditChanges.size,0,'Audit contains unused changes');assert.deepEqual(audit.after,fields);assert.equal(audit.changedFields,audit.changes.length);assert.equal(audit.changedFields,m.textAudit.changedFields);assert.equal(audit.changedQuests,new Set(audit.changes.map(c=>c.id)).size);
  const catalogEntry=catalog.versions.find(v=>v.id===id);assert.ok(catalogEntry);

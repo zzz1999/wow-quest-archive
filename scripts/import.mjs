@@ -5,16 +5,20 @@ import {createHash} from 'node:crypto';
 import {readTables} from './sql.mjs';
 import {normalize,normalizeActors} from './normalize.mjs';
 import {supplementQuests,textCoverage,filterSupplementBuilds} from './supplements.mjs';
+import {loadRewardData} from './reward-data.mjs';
+import {createRewardContext} from './rewards.mjs';
 export const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const config=JSON.parse(await fs.readFile(process.argv[2],'utf8'));
 const wanted=new Set(['quest_relations','quest_template','quest_template_addon','locales_quest','quest_template_locale','quest_request_items','quest_request_items_locale','quest_offer_reward','quest_offer_reward_locale','quest_objective','quest_objectives','quest_objective_locale','quest_objectives_locale','locales_quest_objective','creature_template','gameobject_template','locales_creature','locales_gameobject','creature_template_locale','gameobject_template_locale',...['creature','gameobject'].flatMap(k=>['queststarter','questender','questrelation','involvedrelation'].map(t=>k+'_'+t))]);
 const metadata=[];
+wanted.add('item_template');wanted.add('item_template_locale');wanted.add('locales_item');wanted.add('spell_template');
 for(const src of config){
  if(process.argv[3]&&src.id!==process.argv[3])continue;
  console.log('Reading '+src.id);
  const tables=await readTables(src.localFiles,wanted);
  console.log(JSON.stringify([...tables].map(([key,rows])=>[key,rows.length])));
- const primary=normalize(tables,src.id,{customQuestIds:src.customQuestIds||[],translationWarnings:src.translationWarnings||{}});
+ const rewardData=await loadRewardData(src.id),rewardContext=createRewardContext(tables,src.id,rewardData);
+ const primary=normalize(tables,src.id,{customQuestIds:src.customQuestIds||[],translationWarnings:src.translationWarnings||{},rewardContext});
  const supplements=[];
  const textTables=new Set(['quest_template','locales_quest','quest_template_locale','quest_request_items','quest_request_items_locale','quest_offer_reward','quest_offer_reward_locale']);
  for(const supplement of src.supplements||[]){
@@ -45,7 +49,8 @@ for(const src of config){
  const {localFiles,supplements:sourceSupplements,...publicSource}=src;
  const supplementSources=(sourceSupplements||[]).map(({localFiles,...metadata})=>metadata);
  const textAudit={policy:report.policy,changedQuests:report.changedQuests,changedFields:report.changedFields,report:`reports/text-audit/${src.id}.json`};
- const info={...publicSource,supplements:supplementSources,textAudit,count:records.length,fields,testLike:records.filter(x=>x.tags.includes('suspected-test')).length,communityCustom:records.filter(x=>x.tags.includes('community-custom')).length,files,actors:actorInfo};
+ const rewards={manifest:'sources/rewards/manifest.json',clientSource:rewardData.source?{repo:rewardData.source.repo??null,commit:rewardData.source.commit??null,build:rewardData.source.build}:null,questsWithItems:records.filter(q=>q.rewards.items.length||q.rewards.choices.length||q.rewards.package?.items.length).length,experienceResolved:records.filter(q=>q.rewards.experience.amount!==null).length};
+ const info={...publicSource,supplements:supplementSources,textAudit,rewards,count:records.length,fields,testLike:records.filter(x=>x.tags.includes('suspected-test')).length,communityCustom:records.filter(x=>x.tags.includes('community-custom')).length,files,actors:actorInfo};
  await fs.writeFile(path.join(dir,'manifest.json'),JSON.stringify(info,null,2)+'\n');metadata.push(info);
  console.log(`${src.id}: ${records.length} quests, titles ${JSON.stringify(fields.title)}, description ${JSON.stringify(fields.description)}`);
  console.log(`${src.id}: ${actorInfo.npcs} NPCs, ${actorInfo.objects} quest objects, names ${JSON.stringify(actorFields.name)}`);

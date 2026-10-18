@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-18",
+  "provider": "Version-specific community database and client table sources",
+  "copyright": "Blizzard Entertainment game data; see DATA-LICENSE.md",
+  "versions": [
+    {
+      "id": "wotlk",
+      "build": "3.3.5.12340",
+      "repo": "Kaev/AzerothcoreDBCToSQL",
+      "commit": "ef28c4205b329e11cc1327e8d817dbfa967a6797",
+      "format": "sql",
+      "assets": [
+        {
+          "name": "CharTitles.sql",
+          "table": "CharTitles",
+          "format": "sql",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/Kaev/AzerothcoreDBCToSQL/ef28c4205b329e11cc1327e8d817dbfa967a6797/CharTitles.sql",
+          "bytes": 28944,
+          "sha256": "3bedae969ec6f3cc5fc639d6ea656abce8887fe1503c0f82257414df9e260d69"
+        },
+        {
+          "name": "Faction.sql",
+          "table": "Faction",
+          "format": "sql-name-prefix",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/Kaev/AzerothcoreDBCToSQL/ef28c4205b329e11cc1327e8d817dbfa967a6797/Faction.sql",
+          "bytes": 99403,
+          "sha256": "27b90f18b23ab786a8ed8e59d37b6f937f4eda68da6b1f685e70e35a519c1105"
+        },
+        {
+          "name": "QuestFactionReward.sql",
+          "table": "QuestFactionReward",
+          "format": "sql",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/Kaev/AzerothcoreDBCToSQL/ef28c4205b329e11cc1327e8d817dbfa967a6797/QuestFactionReward.sql",
+          "bytes": 759,
+          "sha256": "aad6bd648c44e806f0d44256b8f5b3d68b783435f8f4d950815886eb49ce13d1"
+        },
+        {
+          "name": "QuestXP.sql",
+          "table": "QuestXP",
+          "format": "sql",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/Kaev/AzerothcoreDBCToSQL/ef28c4205b329e11cc1327e8d817dbfa967a6797/QuestXP.sql",
+          "bytes": 8618,
+          "sha256": "974e65b3bdd6e6136a021426d4d1b6ea894c5e37e5650622a12317cecde27f66"
+        },
+        {
+          "name": "SkillLine.sql",
+          "table": "SkillLine",
+          "format": "sql",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/Kaev/AzerothcoreDBCToSQL/ef28c4205b329e11cc1327e8d817dbfa967a6797/SkillLine.sql",
+          "bytes": 40730,
+          "sha256": "2983117472ee2ebfac664ae065f75c388bb76dc19f7c40c1b39956093262bf52"
+        },
+        {
+          "name": "Spell.sql",
+          "table": "Spell",
+          "format": "sql-name-prefix",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/Kaev/AzerothcoreDBCToSQL/ef28c4205b329e11cc1327e8d817dbfa967a6797/Spell.sql",
+          "bytes": 35100673,
+          "sha256": "4b1d4dad432be85099ad7b4de35f082820da59892fdf49fee9afc47162b0ecc6"
+        }
+      ]
+    },
+    {
+      "id": "cataclysm",
+      "build": "4.3.4.15595",
+      "repo": "caicaicai/dbc434",
+      "commit": "33359c12c01ac9127a1d299be008a4ab38ee75d4",
+      "format": "dbc",
+      "assets": [
+        {
+          "name": "CharTitles.dbc",
+          "table": "CharTitles",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/CharTitles.dbc",
+          "bytes": 7754,
+          "sha256": "7a24c64882d565e38e0763ddab91cc3315d2cf5fc7b4ae3b4aaf90d861089682"
+        },
+        {
+          "name": "CurrencyTypes.dbc",
+          "table": "CurrencyTypes",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/CurrencyTypes.dbc",
+          "bytes": 5909,
+          "sha256": "2fc90bfc9f187d196f1f37a9ab31cf00e173936eb3d46865175b1f35bd5194e6"
+        },
+        {
+          "name": "Faction.dbc",
+          "table": "Faction",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/Faction.dbc",
+          "bytes": 66571,
+          "sha256": "b15dfd51c2b0fe7ae889ee8c1bf566e3dda369e46659b9d5718a59246ffd4efc"
+        },
+        {
+          "name": "QuestFactionReward.dbc",
+          "table": "QuestFactionReward",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/QuestFactionReward.dbc",
+          "bytes": 109,
+          "sha256": "b77370593e354d6d58f30ede9faf4327fa418931b91a6bc4ccdead5d2a9c6dc5"
+        },
+        {
+          "name": "QuestXP.dbc",
+          "table": "QuestXP",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/QuestXP.dbc",
+          "bytes": 4421,
+          "sha256": "dcb01815702f1f75bd76538c89d7227b99a265d86407254c4578ee9588a9b12a"
+        },
+        {
+          "name": "SkillLine.dbc",
+          "table": "SkillLine",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/SkillLine.dbc",
+          "bytes": 10526,
+          "sha256": "b988a59c292ba58f83dd6e991afe43b5f5df63882cb49395939209de4c5706a1"
+        },
+        {
+          "name": "Spell.dbc",
+          "table": "Spell",
+          "format": "dbc",
+          "locale": "enUS",
+          "url": "https://raw.githubusercontent.com/caicaicai/dbc434/33359c12c01ac9127a1d299be008a4ab38ee75d4/Spell.dbc",
+          "bytes": 17344388,
+          "sha256": "088a14963d3f81a10963702c760215f49ff73132bea751306c57aae0dae9f39f"
+        }
+      ]
+    },
+    {
+      "id": "legion",
+      "build": "7.3.5.26972",
+      "assets": [
+        {
+          "name": "CharTitles-enUS.csv",
+          "table": "CharTitles",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/CharTitles/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 18257,
+          "sha256": "37bb3445c5a325138d4a91659695681004dde33a1151fe6d5fc85235e9ba0a20"
+        },
+        {
+          "name": "CharTitles-zhCN.csv",
+          "table": "CharTitles",
+          "locale": "zhCN",
+          "url": "https://wago.tools/db2/CharTitles/csv?build=7.3.5.26972&locale=zhCN",
+          "bytes": 16521,
+          "sha256": "003b5777ae832525bbc880f8c1702e3736852267af5c2cfd2ebe73c75c59b5b2"
+        },
+        {
+          "name": "CharTitles-zhTW.csv",
+          "table": "CharTitles",
+          "locale": "zhTW",
+          "url": "https://wago.tools/db2/CharTitles/csv?build=7.3.5.26972&locale=zhTW",
+          "bytes": 16987,
+          "sha256": "414e9a78673bffc67c515cb2cdca46e79d04cba23f1aaebfa33c554c1bfaf446"
+        },
+        {
+          "name": "CurrencyTypes-enUS.csv",
+          "table": "CurrencyTypes",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/CurrencyTypes/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 11818,
+          "sha256": "a25f52770bb8d825d1a73887eaddb12a974728a98e3dca4dada6608b262f83f6"
+        },
+        {
+          "name": "CurrencyTypes-zhCN.csv",
+          "table": "CurrencyTypes",
+          "locale": "zhCN",
+          "url": "https://wago.tools/db2/CurrencyTypes/csv?build=7.3.5.26972&locale=zhCN",
+          "bytes": 10860,
+          "sha256": "73001c2da77585ba6e5f8ca59f90320d02ccbd1326f4e160f0eab898f9eb6720"
+        },
+        {
+          "name": "CurrencyTypes-zhTW.csv",
+          "table": "CurrencyTypes",
+          "locale": "zhTW",
+          "url": "https://wago.tools/db2/CurrencyTypes/csv?build=7.3.5.26972&locale=zhTW",
+          "bytes": 10801,
+          "sha256": "3051a75a4e20ba869ec73ab503f4bdc69a91302f4ab0046a259168757451be0b"
+        },
+        {
+          "name": "Faction-enUS.csv",
+          "table": "Faction",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/Faction/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 82112,
+          "sha256": "048511fe06fda7911fbe45f0aea2484483ab674962cdedb5d81e2b8ee48de426"
+        },
+        {
+          "name": "Faction-zhCN.csv",
+          "table": "Faction",
+          "locale": "zhCN",
+          "url": "https://wago.tools/db2/Faction/csv?build=7.3.5.26972&locale=zhCN",
+          "bytes": 78759,
+          "sha256": "720da9119f55ecffc6e1ba0d7969fe05e94ab61b023bf5baa18e05a03cd4d00a"
+        },
+        {
+          "name": "Faction-zhTW.csv",
+          "table": "Faction",
+          "locale": "zhTW",
+          "url": "https://wago.tools/db2/Faction/csv?build=7.3.5.26972&locale=zhTW",
+          "bytes": 78249,
+          "sha256": "a360aad8bc08f38f09eba12537e92d58c2b7d432bb4001e9d541b3cbaa8ead19"
+        },
+        {
+          "name": "ItemSparse-enUS.csv",
+          "table": "ItemSparse",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/ItemSparse/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 30953822,
+          "sha256": "82c0cb28dafaffbe3818543a110a36bea75455da63be238ca413bc0336e18a19"
+        },
+        {
+          "name": "ItemSparse-zhCN.csv",
+          "table": "ItemSparse",
+          "locale": "zhCN",
+          "url": "https://wago.tools/db2/ItemSparse/csv?build=7.3.5.26972&locale=zhCN",
+          "bytes": 30246244,
+          "sha256": "92476e65bf08296e243ea6c3df14252a0d0949f8eaaa6814c9349200b092e779"
+        },
+        {
+          "name": "ItemSparse-zhTW.csv",
+          "table": "ItemSparse",
+          "locale": "zhTW",
+          "url": "https://wago.tools/db2/ItemSparse/csv?build=7.3.5.26972&locale=zhTW",
+          "bytes": 30196415,
+          "sha256": "226fe05ca2f75322f9b38a41e4bc85341c0279bc723615c45a24523e8018acb0"
+        },
+        {
+          "name": "QuestFactionReward-enUS.csv",
+          "table": "QuestFactionReward",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/QuestFactionReward/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 213,
+          "sha256": "0f6c7ad3d4ed1c699ecb47dff89e796218ce9d05c90131e1a246383c4efd04dc"
+        },
+        {
+          "name": "QuestMoneyReward-enUS.csv",
+          "table": "QuestMoneyReward",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/QuestMoneyReward/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 6492,
+          "sha256": "9f967ad6f2e4c123c467e25c3f93658e85b5ddb3e6e088fb0e84acc0eb8f7257"
+        },
+        {
+          "name": "QuestPackageItem-enUS.csv",
+          "table": "QuestPackageItem",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/QuestPackageItem/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 248305,
+          "sha256": "b77113b8d79ada31378c3b016f069aaf4ddafb1ea5bce6d2f931e49ede0ddce8"
+        },
+        {
+          "name": "QuestXP-enUS.csv",
+          "table": "QuestXP",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/QuestXP/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 6135,
+          "sha256": "7dadf5e44319787448580fbff0124ac6beafb3df9bc8ce8a1e68dac5650d6219"
+        },
+        {
+          "name": "SkillLine-enUS.csv",
+          "table": "SkillLine",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/SkillLine/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 12346,
+          "sha256": "646b542042e44679d2a88596020de911cdf33251f3489c8026faeb919f8add02"
+        },
+        {
+          "name": "SkillLine-zhCN.csv",
+          "table": "SkillLine",
+          "locale": "zhCN",
+          "url": "https://wago.tools/db2/SkillLine/csv?build=7.3.5.26972&locale=zhCN",
+          "bytes": 12535,
+          "sha256": "a332fc9607b6ae087a74814c188ac5db27de1a27e7232732371cbba416719447"
+        },
+        {
+          "name": "SkillLine-zhTW.csv",
+          "table": "SkillLine",
+          "locale": "zhTW",
+          "url": "https://wago.tools/db2/SkillLine/csv?build=7.3.5.26972&locale=zhTW",
+          "bytes": 12268,
+          "sha256": "81e81b65cc96ec3bfedf22b4336f0c47f7a6fa14df877f54aa11e0acc5a415d0"
+        },
+        {
+          "name": "Spell-enUS.csv",
+          "table": "Spell",
+          "locale": "enUS",
+          "url": "https://wago.tools/db2/Spell/csv?build=7.3.5.26972&locale=enUS",
+          "bytes": 14196195,
+          "sha256": "943e4118b4cdc59f1447dfc05ebfadcb31cab6627fce2cd7ef517a4b8b014335"
+        },
+        {
+          "name": "Spell-zhCN.csv",
+          "table": "Spell",
+          "locale": "zhCN",
+          "url": "https://wago.tools/db2/Spell/csv?build=7.3.5.26972&locale=zhCN",
+          "bytes": 13023959,
+          "sha256": "214f755429b8eb2fd9bfec924cc2139091f751279d879a96129c772854c1802f"
+        },
+        {
+          "name": "Spell-zhTW.csv",
+          "table": "Spell",
+          "locale": "zhTW",
+          "url": "https://wago.tools/db2/Spell/csv?build=7.3.5.26972&locale=zhTW",
+          "bytes": 12975272,
+          "sha256": "6049932f5630afad9caa313244a9f6d0ca4cb99489c81e3f1d2cfc5929e5dfdb"
+        }
+      ]
+    }
+  ]
+}

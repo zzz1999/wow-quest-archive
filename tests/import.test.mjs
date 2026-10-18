@@ -14,6 +14,10 @@ test('SQL preserves apostrophes, separators, Unicode, NULL and game tokens',()=>
 test('packet-capture comments between tuples do not change quoted text',()=>{
  assert.deepEqual([...tuples("(7,'-- 原文 /* 原文 */'), -- task name\n/* next */ (8,'正文 $N');")],[[7,'-- 原文 /* 原文 */'],[8,'正文 $N']]);
 });
+test('item and spell dump scientific numbers do not lose unsafe integer precision',()=>{
+ assert.deepEqual([...tuples('(1e17,2.5E2,1e-3);')],[['1e17',250,0.001]]);
+ assert.throws(()=>[...tuples('(1e999)')],/Unsupported SQL value/);
+});
 test('stream handles comments, large inserts and flexible INSERT whitespace',async()=>{
  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'quest-sql-'));const file=path.join(dir,'test.sql');
  const title='汉'.repeat(700000);

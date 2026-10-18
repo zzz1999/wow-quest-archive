@@ -25,6 +25,12 @@
     "changedFields": 4097,
     "report": "reports/text-audit/classic.json"
   },
+  "rewards": {
+    "manifest": "sources/rewards/manifest.json",
+    "clientSource": null,
+    "questsWithItems": 1793,
+    "experienceResolved": 4230
+  },
   "count": 4245,
   "fields": {
     "title": {
@@ -124,27 +130,27 @@
     {
       "path": "data/classic/000.jsonl",
       "records": 1000,
-      "sha256": "84c5c9d36a4ade73c9ce3cd7deb71c5aa0c379404f6d6fbd47458e5049435165"
+      "sha256": "187a6aa9c292b68c904ad341b41dab57f06116d0ff013f60d794cff63294f8cf"
     },
     {
       "path": "data/classic/001.jsonl",
       "records": 1000,
-      "sha256": "3b2748bac433f59d96f7ca66786e5cd433453c98d11cbb69d6f6ea0c7124b52a"
+      "sha256": "2cdfd1c4d0c856b5ce916192f97acaa805a3a4708d89c69a8b881023746f76c4"
     },
     {
       "path": "data/classic/002.jsonl",
       "records": 1000,
-      "sha256": "87c4ea8e0e072ac17ba979fc61d7b309e8acb2194804ac889fc154dfeb870aab"
+      "sha256": "5b1758c3cd62c483970cb2f95277a77d4853aec6045d5f6c3ee6ac98dc3a3c26"
     },
     {
       "path": "data/classic/003.jsonl",
       "records": 1000,
-      "sha256": "f653e4d757d086389dc2dcb3e1351f9a873c9a54c8cd644606931a5c0b1b0161"
+      "sha256": "a51bb96fcde2cbb7f8f994debcc840112c77f09bd5090624549d03dc6218c2e2"
     },
     {
       "path": "data/classic/004.jsonl",
       "records": 245,
-      "sha256": "acc7b7a70b7ce33e305ad64d27c7a967d3be25a525e38e4173a5c2760dc56630"
+      "sha256": "4380ec3d14c263b8bce47af91451ada8943f19aecb46afbee87269b2dc6b27a2"
     }
   ],
   "actors": {
