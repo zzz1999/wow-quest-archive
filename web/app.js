@@ -22,10 +22,10 @@
  function originalLayout(text){return String(text||'').replace(/\$[Bb]/g,'\n').replace(/\\n/g,'\n');}
  function questTitle(r){return format(r.text.title||'未命名任务 #'+r.id);}
  function questTitleHtml(r){return readingHtml(r.text.title||'未命名任务 #'+r.id);}
- function wowheadLink(r){
-  const path=wowheadPaths[r.version];if(path===undefined||!Number.isSafeInteger(r.id)||r.id<=0||r.tags.includes('community-custom'))return '';
-  const edition=r.version==='legion'?'正式服数据库（含军团再临任务）':cat.versions.find(x=>x.id===r.version).name+'怀旧服数据库';
-  return `<a id="wowhead-current" href="https://www.wowhead.com/${path}cn/quest=${r.id}" target="_blank" rel="noopener noreferrer" title="在新标签页查看 Wowhead ${escape(edition)} · 需要联网" aria-label="在 Wowhead 查看任务 #${r.id}（新标签页）">在 Wowhead 查看 ↗</a>`;
+ function wowheadLink(r,type='quest'){
+  const path=wowheadPaths[r.version];if(!['quest','npc'].includes(type)||path===undefined||!Number.isSafeInteger(r.id)||r.id<=0||r.tags?.includes('community-custom'))return '';
+  const edition=r.version==='legion'?'正式服数据库（含军团再临资料）':cat.versions.find(x=>x.id===r.version).name+'怀旧服数据库';
+  return `<a id="${type==='npc'?'actor-wowhead':'wowhead-current'}" href="https://www.wowhead.com/${path}cn/${type}=${r.id}" target="_blank" rel="noopener noreferrer" title="在新标签页查看 Wowhead ${escape(edition)} · 需要联网" aria-label="在 Wowhead 查看${type==='npc'?' NPC':'任务'} #${r.id}（新标签页）">在 Wowhead 查看 ↗</a>`;
  }
  function rememberView(){
   if(restoringView||!state.selected||navigation.current().quest?.route!==`#${state.version}/${state.selected.id}`)return;
@@ -140,7 +140,7 @@
   $('info-body').innerHTML=`<p>按客户端版本分别收录社区数据库的基础任务快照，包括该版本保留的早期内容。数量按「版本 + ID」统计，不能相加视为独立故事数，也不代表全部任务均可在游戏中接取。</p><p>每个字段依次选用 <b>简体中文 → 繁体中文 → 英文</b>。空白与含损坏字符的文本不作为可用翻译；中文表中没有汉字的英文占位文本会继续回退。缺失内容保留为空，不由 AI 补写。</p><table><thead><tr><th>版本</th><th>任务</th><th>简中标题</th><th>繁中标题</th><th>英文标题</th><th>简中描述</th></tr></thead><tbody>${cat.versions.map(v=>`<tr><td>${v.name}<br>${v.patch}</td><td>${v.count.toLocaleString()}</td><td>${v.fields.title.zhCN}</td><td>${v.fields.title.zhTW}</td><td>${v.fields.title.enUS}</td><td>${v.fields.description.zhCN}</td></tr>`).join('')}</tbody></table><p>标题缺失、正文缺失与每个字段的完整统计可查 reports/coverage.json。地区目前保留数据库区域/分类 ID；负值表示任务分类。疑似测试及已确认的自定义记录默认隐藏，但仍保存在原始数据中。研究书签仅保存在当前浏览器。</p>${cat.versions.map(v=>`<h3>${v.name} · ${v.patch}</h3><p><a href="https://github.com/${v.repo}/tree/${v.commit}" target="_blank" rel="noreferrer">${escape(v.repo)}</a> · ${escape(v.snapshot)}<br>${escape(v.note)}<br>固定提交 <code>${v.commit.slice(0,12)}</code></p>`).join('')}<h3>研究与 AI 使用</h3><p>JSONL 位于 data/版本/；每行是一条记录。可导出筛选结果用于检索、比较与风格分析。游戏变量、空字段、版本差异以及社区修订痕迹均应保留。详细字段说明、复现方法和数据限制见 README、docs/ 与 sources/。</p><p>网页和工具代码采用 MIT；社区数据遵循各自上游许可与署名。魔兽世界文本、商标及相关内容归 Blizzard Entertainment 或相应权利人所有。代码许可不等于游戏原文或模型训练的授权。</p>`;
   $('info-dialog').showModal();
  }
- const actors=window.createActorBrowser({catalog:cat,getVersion:()=>state.version,getQuests:()=>state.rows.map(x=>x.record),questTitleHtml,escape,badge,download,
+ const actors=window.createActorBrowser({catalog:cat,getVersion:()=>state.version,getQuests:()=>state.rows.map(x=>x.record),questTitleHtml,wowheadLink,escape,badge,download,
   onQuest:id=>{selectQuest(id);$('reader').scrollIntoView({behavior:'smooth',block:'start'});},
   onSelect:actor=>{rememberView();navigation.showActor(`#${actor.version}/${actor.kind==='creature'?'npc':'object'}/${actor.id}`);},
   onClose:()=>{if(/^#[^/]+\/(npc|object)\//.test(location.hash)&&state.selected){navigation.showQuest(`#${state.version}/${state.selected.id}`,questTitle(state.selected),{push:false});rememberView();}}
