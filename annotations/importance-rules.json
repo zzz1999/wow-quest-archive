@@ -1,0 +1,806 @@
+{
+  "schemaVersion": 1,
+  "policy": "archive-importance-v1",
+  "note": "档案编辑分类，并非所有版本通用的官方重要任务标记；不代表完整主线或当前可接取状态。",
+  "categories": {
+    "story": "主线剧情",
+    "class": "职业关键任务",
+    "unlock": "重要功能解锁",
+    "legendary": "传说任务"
+  },
+  "groups": [
+    {
+      "id": "onyxia-alliance",
+      "version": "classic",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reason": "揭露暴风城黑龙阴谋，并推进奥妮克希亚巢穴准入任务线。",
+      "source": {
+        "label": "背景资料",
+        "url": "https://warcraft.wiki.gg/wiki/World_of_Warcraft_endgame_and_patch_storylines"
+      },
+      "quests": [
+        {
+          "id": 4182,
+          "englishTitle": "Dragonkin Menace"
+        },
+        {
+          "id": 4183,
+          "englishTitle": "The True Masters"
+        },
+        {
+          "id": 4184,
+          "englishTitle": "The True Masters"
+        },
+        {
+          "id": 4185,
+          "englishTitle": "The True Masters"
+        },
+        {
+          "id": 4186,
+          "englishTitle": "The True Masters"
+        },
+        {
+          "id": 4223,
+          "englishTitle": "The True Masters"
+        },
+        {
+          "id": 4224,
+          "englishTitle": "The True Masters"
+        },
+        {
+          "id": 4241,
+          "englishTitle": "Marshal Windsor"
+        },
+        {
+          "id": 4242,
+          "englishTitle": "Abandoned Hope"
+        },
+        {
+          "id": 4264,
+          "englishTitle": "A Crumpled Up Note"
+        },
+        {
+          "id": 4282,
+          "englishTitle": "A Shred of Hope"
+        },
+        {
+          "id": 4322,
+          "englishTitle": "Jail Break!"
+        },
+        {
+          "id": 6402,
+          "englishTitle": "Stormwind Rendezvous"
+        },
+        {
+          "id": 6403,
+          "englishTitle": "The Great Masquerade"
+        },
+        {
+          "id": 6501,
+          "englishTitle": "The Dragon's Eye"
+        },
+        {
+          "id": 6502,
+          "englishTitle": "Drakefire Amulet"
+        }
+      ]
+    },
+    {
+      "id": "onyxia-horde",
+      "version": "classic",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reason": "部落追查黑龙威胁、取得龙火护符的准入任务线。",
+      "source": {
+        "label": "背景资料",
+        "url": "https://warcraft.wiki.gg/wiki/World_of_Warcraft_endgame_and_patch_storylines"
+      },
+      "quests": [
+        {
+          "id": 4903,
+          "englishTitle": "Warlord's Command"
+        },
+        {
+          "id": 4941,
+          "englishTitle": "Eitrigg's Wisdom"
+        },
+        {
+          "id": 4974,
+          "englishTitle": "For The Horde!"
+        },
+        {
+          "id": 6566,
+          "englishTitle": "What the Wind Carries"
+        },
+        {
+          "id": 6567,
+          "englishTitle": "The Champion of the Horde"
+        },
+        {
+          "id": 6568,
+          "englishTitle": "The Testament of Rexxar"
+        },
+        {
+          "id": 6569,
+          "englishTitle": "Oculus Illusions"
+        },
+        {
+          "id": 6570,
+          "englishTitle": "Emberstrife"
+        },
+        {
+          "id": 6582,
+          "englishTitle": "The Test of Skulls, Scryer"
+        },
+        {
+          "id": 6583,
+          "englishTitle": "The Test of Skulls, Somnus"
+        },
+        {
+          "id": 6584,
+          "englishTitle": "The Test of Skulls, Chronalis"
+        },
+        {
+          "id": 6585,
+          "englishTitle": "The Test of Skulls, Axtroz"
+        },
+        {
+          "id": 6601,
+          "englishTitle": "Ascension..."
+        },
+        {
+          "id": 6602,
+          "englishTitle": "Blood of the Black Dragon Champion"
+        }
+      ]
+    },
+    {
+      "id": "classic-dungeon-keys",
+      "version": "classic",
+      "categories": [
+        "unlock"
+      ],
+      "reason": "副本钥匙、准入资格或快捷入口的关键任务。",
+      "source": {
+        "label": "背景资料",
+        "url": "https://warcraft.wiki.gg/wiki/World_of_Warcraft_endgame_and_patch_storylines"
+      },
+      "quests": [
+        {
+          "id": 3801,
+          "englishTitle": "Dark Iron Legacy"
+        },
+        {
+          "id": 3802,
+          "englishTitle": "Dark Iron Legacy"
+        },
+        {
+          "id": 4742,
+          "englishTitle": "Seal of Ascension"
+        },
+        {
+          "id": 4743,
+          "englishTitle": "Seal of Ascension"
+        },
+        {
+          "id": 5505,
+          "englishTitle": "The Key to Scholomance"
+        },
+        {
+          "id": 5511,
+          "englishTitle": "The Key to Scholomance"
+        },
+        {
+          "id": 7761,
+          "englishTitle": "Blackhand's Command"
+        },
+        {
+          "id": 7848,
+          "englishTitle": "Attunement to the Core"
+        }
+      ]
+    },
+    {
+      "id": "wrath-story",
+      "version": "wotlk",
+      "categories": [
+        "story"
+      ],
+      "reason": "天谴之门、幽暗城之战或死亡骑士脱离巫妖王的关键剧情节点。",
+      "source": {
+        "label": "背景资料",
+        "url": "https://warcraft.wiki.gg/wiki/Wrath_of_the_Lich_King_campaign"
+      },
+      "quests": [
+        {
+          "id": 12499,
+          "englishTitle": "Return To Angrathar"
+        },
+        {
+          "id": 12500,
+          "englishTitle": "Return To Angrathar"
+        },
+        {
+          "id": 12801,
+          "englishTitle": "The Light of Dawn"
+        },
+        {
+          "id": 13188,
+          "englishTitle": "Where Kings Walk"
+        },
+        {
+          "id": 13189,
+          "englishTitle": "Warchief's Blessing"
+        },
+        {
+          "id": 13267,
+          "englishTitle": "The Battle For The Undercity"
+        },
+        {
+          "id": 13377,
+          "englishTitle": "The Battle For The Undercity"
+        }
+      ]
+    },
+    {
+      "id": "wrath-faction-unlocks",
+      "version": "wotlk",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reason": "推进黑锋骑士团据点或霍迪尔之子盟约的关键节点。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 12898,
+          "englishTitle": "The Shadow Vault"
+        },
+        {
+          "id": 12899,
+          "englishTitle": "The Shadow Vault"
+        },
+        {
+          "id": 12924,
+          "englishTitle": "Forging an Alliance"
+        },
+        {
+          "id": 13009,
+          "englishTitle": "A New Beginning"
+        }
+      ]
+    },
+    {
+      "id": "shadowmourne",
+      "version": "wotlk",
+      "categories": [
+        "legendary"
+      ],
+      "reason": "影之哀伤铸造与击败巫妖王的传说任务线。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 24545,
+          "englishTitle": "The Sacred and the Corrupt"
+        },
+        {
+          "id": 24743,
+          "englishTitle": "Shadow's Edge"
+        },
+        {
+          "id": 24547,
+          "englishTitle": "A Feast of Souls"
+        },
+        {
+          "id": 24749,
+          "englishTitle": "Unholy Infusion"
+        },
+        {
+          "id": 24756,
+          "englishTitle": "Blood Infusion"
+        },
+        {
+          "id": 24757,
+          "englishTitle": "Frost Infusion"
+        },
+        {
+          "id": 24548,
+          "englishTitle": "The Splintered Throne"
+        },
+        {
+          "id": 24912,
+          "englishTitle": "Empowerment"
+        },
+        {
+          "id": 24549,
+          "englishTitle": "Shadowmourne..."
+        },
+        {
+          "id": 24748,
+          "englishTitle": "The Lich King's Last Stand"
+        }
+      ]
+    },
+    {
+      "id": "cata-deepholm",
+      "version": "cataclysm",
+      "categories": [
+        "story"
+      ],
+      "reason": "前往深岩之洲、修复世界之柱的主线关键节点。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 27203,
+          "englishTitle": "The Maelstrom"
+        },
+        {
+          "id": 27123,
+          "englishTitle": "Deepholm, Realm of Earth"
+        },
+        {
+          "id": 26243,
+          "englishTitle": "The World Pillar"
+        },
+        {
+          "id": 26876,
+          "englishTitle": "The World Pillar Fragment"
+        }
+      ]
+    },
+    {
+      "id": "cata-deepholm-access",
+      "version": "cataclysm",
+      "categories": [
+        "unlock"
+      ],
+      "reason": "开启前往深岩之洲的旅程。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 27203,
+          "englishTitle": "The Maelstrom"
+        },
+        {
+          "id": 27123,
+          "englishTitle": "Deepholm, Realm of Earth"
+        }
+      ]
+    },
+    {
+      "id": "cata-maelstrom-intro",
+      "version": "cataclysm",
+      "categories": [
+        "story"
+      ],
+      "reason": "响应大地之环召唤、了解大灾变危机的主线引导任务。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 28790,
+          "englishTitle": "A Personal Summons"
+        },
+        {
+          "id": 28805,
+          "englishTitle": "The Eye of the Storm"
+        },
+        {
+          "id": 28825,
+          "englishTitle": "A Personal Summons"
+        },
+        {
+          "id": 28826,
+          "englishTitle": "The Eye of the Storm"
+        }
+      ]
+    },
+    {
+      "id": "pandaria-intro",
+      "version": "pandaria",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 29547,
+          "englishTitle": "The King's Command"
+        },
+        {
+          "id": 29548,
+          "englishTitle": "The Mission"
+        },
+        {
+          "id": 29611,
+          "englishTitle": "The Art of War"
+        },
+        {
+          "id": 29612,
+          "englishTitle": "The Art of War"
+        },
+        {
+          "id": 29690,
+          "englishTitle": "Into the Mists"
+        },
+        {
+          "id": 31853,
+          "englishTitle": "All Aboard!"
+        }
+      ]
+    },
+    {
+      "id": "vale-access",
+      "version": "pandaria",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reason": "见证天神开启锦绣谷入口的关键剧情。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 31511,
+          "englishTitle": "A Witness to History"
+        },
+        {
+          "id": 31512,
+          "englishTitle": "A Witness to History"
+        }
+      ]
+    },
+    {
+      "id": "legion-intro",
+      "version": "legion",
+      "categories": [
+        "story"
+      ],
+      "reason": "军团入侵、破碎海滩之战与达拉然迁移的开篇剧情。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 40519,
+          "englishTitle": "The Legion Returns"
+        },
+        {
+          "id": 43926,
+          "englishTitle": "The Legion Returns"
+        },
+        {
+          "id": 40518,
+          "englishTitle": "The Battle for Broken Shore"
+        },
+        {
+          "id": 42740,
+          "englishTitle": "The Battle for Broken Shore"
+        },
+        {
+          "id": 43806,
+          "englishTitle": "The Battle for Broken Shore"
+        },
+        {
+          "id": 44543,
+          "englishTitle": "The Battle for Broken Shore"
+        },
+        {
+          "id": 44184,
+          "englishTitle": "In the Blink of an Eye"
+        },
+        {
+          "id": 44663,
+          "englishTitle": "In the Blink of an Eye"
+        }
+      ]
+    },
+    {
+      "id": "world-quest-unlock",
+      "version": "legion",
+      "categories": [
+        "unlock"
+      ],
+      "reason": "解锁破碎群岛世界任务，获得飞行管理员的哨子。",
+      "source": {
+        "label": "背景资料",
+        "url": "https://worldofwarcraft.blizzard.com/en-us/news/20252892/legion-world-quests-and-you"
+      },
+      "quests": [
+        {
+          "id": 43341,
+          "englishTitle": "Uniting the Isles"
+        },
+        {
+          "id": 45727,
+          "englishTitle": "Uniting the Isles"
+        }
+      ]
+    },
+    {
+      "id": "argus-intro",
+      "version": "legion",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reason": "开启阿古斯远征，登上维迪卡尔并推进资料片主线。",
+      "source": {
+        "label": "背景资料",
+        "url": "https://worldofwarcraft.blizzard.com/en-us/news/20979713"
+      },
+      "quests": [
+        {
+          "id": 47221,
+          "englishTitle": "The Hand of Fate"
+        },
+        {
+          "id": 47835,
+          "englishTitle": "The Hand of Fate"
+        },
+        {
+          "id": 48506,
+          "englishTitle": "The Hand of Fate"
+        },
+        {
+          "id": 48507,
+          "englishTitle": "The Hand of Fate"
+        },
+        {
+          "id": 47224,
+          "englishTitle": "The Vindicaar"
+        }
+      ]
+    },
+    {
+      "id": "death-knight-abilities-wotlk",
+      "version": "wotlk",
+      "categories": [
+        "class",
+        "unlock"
+      ],
+      "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 12619,
+          "englishTitle": "The Emblazoned Runeblade"
+        },
+        {
+          "id": 12687,
+          "englishTitle": "Into the Realm of Shadows"
+        },
+        {
+          "id": 12801,
+          "englishTitle": "The Light of Dawn"
+        }
+      ]
+    },
+    {
+      "id": "death-knight-abilities-cataclysm",
+      "version": "cataclysm",
+      "categories": [
+        "class",
+        "unlock"
+      ],
+      "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 12619,
+          "englishTitle": "The Emblazoned Runeblade"
+        },
+        {
+          "id": 12687,
+          "englishTitle": "Into the Realm of Shadows"
+        },
+        {
+          "id": 12801,
+          "englishTitle": "The Light of Dawn"
+        }
+      ]
+    },
+    {
+      "id": "death-knight-abilities-pandaria",
+      "version": "pandaria",
+      "categories": [
+        "class",
+        "unlock"
+      ],
+      "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+      "source": {
+        "label": "同版本任务正文、目标与奖励",
+        "url": "docs/IMPORTANCE.md#人工核对条目"
+      },
+      "quests": [
+        {
+          "id": 12619,
+          "englishTitle": "The Emblazoned Runeblade"
+        },
+        {
+          "id": 12687,
+          "englishTitle": "Into the Realm of Shadows"
+        },
+        {
+          "id": 12801,
+          "englishTitle": "The Light of Dawn"
+        }
+      ]
+    }
+  ],
+  "abilityRewards": [
+    {
+      "name": "德鲁伊形态",
+      "spellIds": [
+        1066,
+        1446,
+        19179
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "战士姿态",
+      "spellIds": [
+        8121,
+        8616
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "圣骑士救赎",
+      "spellIds": [
+        7328,
+        7329
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "盗贼制毒",
+      "spellIds": [
+        2842,
+        2995
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "猎人驯服与训练宠物",
+      "spellIds": [
+        23356,
+        1579,
+        23357,
+        5300
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "萨满图腾",
+      "spellIds": [
+        8071,
+        8073,
+        3599,
+        2075,
+        5394,
+        5396
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "术士恶魔召唤",
+      "spellIds": [
+        688,
+        7763,
+        697,
+        11520,
+        712,
+        11519,
+        691,
+        1373,
+        1122,
+        1413,
+        18540,
+        20700
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "职业坐骑或迅捷飞行形态",
+      "spellIds": [
+        13819,
+        13820,
+        5784,
+        5785,
+        23161,
+        23160,
+        23215,
+        34767,
+        34766,
+        34768,
+        40120,
+        40123,
+        48778,
+        52382
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "死亡骑士能力",
+      "spellIds": [
+        53431,
+        50977,
+        53821
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    },
+    {
+      "name": "法师传送：达拉然",
+      "spellIds": [
+        53140,
+        3578
+      ],
+      "versions": [
+        "classic",
+        "wotlk"
+      ]
+    }
+  ]
+}

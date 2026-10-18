@@ -10,6 +10,7 @@ import {validateWowhead} from './validate-wowhead.mjs';
 import {attachReferences} from './wowhead-data.mjs';
 import {validateRegions,validateRegionBundle} from './validate-regions.mjs';
 import {buildQuestTraitData,questTraitAudit} from './quest-traits-data.mjs';
+import {buildQuestImportance,importanceBrowserData} from './importance-data.mjs';
 import '../web/quest-traits.js';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const lock=JSON.parse(await fs.readFile(path.join(root,'sources/manifest.json'),'utf8'));
@@ -17,6 +18,7 @@ const catalog=JSON.parse((await fs.readFile(path.join(root,'web/catalog.js'),'ut
 const html=await fs.readFile(path.join(root,'index.html'),'utf8');
 const rewardReport=JSON.parse(await fs.readFile(path.join(root,'reports/reward-audit.json'),'utf8'));
 const traitReport=JSON.parse(await fs.readFile(path.join(root,'reports/quest-traits.json'),'utf8'));
+const importanceDefinition=JSON.parse(await fs.readFile(path.join(root,'annotations/importance-rules.json'),'utf8')),importanceVersions=[];
 globalThis.QuestTraitData=await buildQuestTraitData();
 const traitBundle=JSON.parse((await fs.readFile(path.join(root,'web/quest-traits-data.js'),'utf8')).replace(/^globalThis\.QuestTraitData=/,'').replace(/;\s*$/,''));
 assert.deepEqual(traitBundle,globalThis.QuestTraitData,'Stale task trait definitions');
@@ -70,6 +72,8 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  }
  assert.deepEqual(rewardReport.versions.find(v=>v.version===id),rewardAudit(records),'Reward report out of date');
  assert.deepEqual(traitReport.versions.find(v=>v.version===id),questTraitAudit(records,globalThis.QuestTraits.derive),'Task trait report out of date');
+ const importance=buildQuestImportance(records,JSON.parse(await fs.readFile(path.join(root,'data/regions',id+'.json'),'utf8')),importanceDefinition,globalThis.QuestTraits.derive);
+ assert.deepEqual(JSON.parse(await fs.readFile(path.join(root,'annotations/importance',id+'.json'),'utf8')),importance,'Stale importance annotations '+id);importanceVersions.push(importance);
  assert.equal(seen.size,m.count);assert.deepEqual(fields,m.fields);
  assert.equal(auditChanges.size,0,'Audit contains unused changes');assert.deepEqual(audit.after,fields);assert.equal(audit.changedFields,audit.changes.length);assert.equal(audit.changedFields,m.textAudit.changedFields);assert.equal(audit.changedQuests,new Set(audit.changes.map(c=>c.id)).size);
  const catalogEntry=catalog.versions.find(v=>v.id===id);assert.ok(catalogEntry);
@@ -90,6 +94,10 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  total+=m.count;totalNpcs+=m.actors.npcs;totalObjects+=m.actors.objects;console.log(`${id}: ${m.count} quests, ${m.actors.npcs} NPCs, ${m.actors.objects} objects; hashes, locales, reverse relations and browser bundles verified`);
 }
 console.log(`Verified ${total} versioned quests, ${totalNpcs} NPCs and ${totalObjects} task objects.`);
+const importanceBundle=JSON.parse((await fs.readFile(path.join(root,'web/importance-data.js'),'utf8')).replace(/^globalThis\.QuestImportanceData=/,'').replace(/;\s*$/,''));
+assert.deepEqual(importanceBundle,importanceBrowserData(importanceDefinition,importanceVersions),'Stale importance browser bundle');
+assert.deepEqual(JSON.parse(await fs.readFile(path.join(root,'reports/quest-importance.json'),'utf8')),{schemaVersion:1,policy:importanceDefinition.policy,versions:importanceVersions.map(({version,count,counts,quests})=>({version,count,categories:counts,questIds:Object.keys(quests).map(Number)}))},'Stale importance report');
+console.log(`Verified ${importanceVersions.reduce((n,v)=>n+v.count,0)} versioned importance annotations and offline browser bundle.`);
 await validateItems(root,catalog);
 await validateWowhead(root);
 await validateRegionBundle(root);

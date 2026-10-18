@@ -1,0 +1,4220 @@
+{
+  "schemaVersion": 1,
+  "policy": "archive-importance-v1",
+  "version": "pandaria",
+  "count": 190,
+  "counts": {
+    "story": 125,
+    "class": 3,
+    "unlock": 11,
+    "legendary": 62
+  },
+  "quests": {
+    "7521": {
+      "englishTitle": "Thunderaan the Windseeker",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 62,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "7522": {
+      "englishTitle": "Examine the Vessel",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 0,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "7561": {
+      "englishTitle": "Rise, Thunderfury!",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 0,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "7785": {
+      "englishTitle": "Examine the Vessel",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 0,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "7786": {
+      "englishTitle": "Thunderaan the Windseeker",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 62,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "7787": {
+      "englishTitle": "Rise, Thunderfury!",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 0,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "8446": {
+      "englishTitle": "Shrouded in Nightmare",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "epic-category",
+          "category": "story",
+          "reason": "所属分类为史诗任务，作为重要剧情收录。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -1,
+            "categoryName": "Epic"
+          }
+        }
+      ]
+    },
+    "8447": {
+      "englishTitle": "Waking Legends",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "epic-category",
+          "category": "story",
+          "reason": "所属分类为史诗任务，作为重要剧情收录。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -1,
+            "categoryName": "Epic"
+          }
+        }
+      ]
+    },
+    "9250": {
+      "englishTitle": "Frame of Atiesh",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 62,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "9251": {
+      "englishTitle": "Atiesh, the Befouled Greatstaff",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 62,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "9257": {
+      "englishTitle": "Atiesh, Greatstaff of the Guardian",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 81,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "9269": {
+      "englishTitle": "Atiesh, Greatstaff of the Guardian",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 81,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "9270": {
+      "englishTitle": "Atiesh, Greatstaff of the Guardian",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 81,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "9271": {
+      "englishTitle": "Atiesh, Greatstaff of the Guardian",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 81,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "12619": {
+      "englishTitle": "The Emblazoned Runeblade",
+      "categories": [
+        "class",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "death-knight-abilities-pandaria",
+          "category": "class",
+          "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 12619,
+            "englishTitle": "The Emblazoned Runeblade"
+          }
+        },
+        {
+          "rule": "death-knight-abilities-pandaria",
+          "category": "unlock",
+          "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 12619,
+            "englishTitle": "The Emblazoned Runeblade"
+          }
+        }
+      ]
+    },
+    "12687": {
+      "englishTitle": "Into the Realm of Shadows",
+      "categories": [
+        "class",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "death-knight-abilities-pandaria",
+          "category": "class",
+          "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 12687,
+            "englishTitle": "Into the Realm of Shadows"
+          }
+        },
+        {
+          "rule": "death-knight-abilities-pandaria",
+          "category": "unlock",
+          "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 12687,
+            "englishTitle": "Into the Realm of Shadows"
+          }
+        }
+      ]
+    },
+    "12801": {
+      "englishTitle": "The Light of Dawn",
+      "categories": [
+        "class",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "death-knight-abilities-pandaria",
+          "category": "class",
+          "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 12801,
+            "englishTitle": "The Light of Dawn"
+          }
+        },
+        {
+          "rule": "death-knight-abilities-pandaria",
+          "category": "unlock",
+          "reason": "死亡骑士符文熔铸、职业坐骑或黑锋之门的关键节点。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 12801,
+            "englishTitle": "The Light of Dawn"
+          }
+        }
+      ]
+    },
+    "29547": {
+      "englishTitle": "The King's Command",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "pandaria-intro",
+          "category": "story",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29547,
+            "englishTitle": "The King's Command"
+          }
+        },
+        {
+          "rule": "pandaria-intro",
+          "category": "unlock",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29547,
+            "englishTitle": "The King's Command"
+          }
+        }
+      ]
+    },
+    "29548": {
+      "englishTitle": "The Mission",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "pandaria-intro",
+          "category": "story",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29548,
+            "englishTitle": "The Mission"
+          }
+        },
+        {
+          "rule": "pandaria-intro",
+          "category": "unlock",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29548,
+            "englishTitle": "The Mission"
+          }
+        }
+      ]
+    },
+    "29611": {
+      "englishTitle": "The Art of War",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "pandaria-intro",
+          "category": "story",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29611,
+            "englishTitle": "The Art of War"
+          }
+        },
+        {
+          "rule": "pandaria-intro",
+          "category": "unlock",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29611,
+            "englishTitle": "The Art of War"
+          }
+        }
+      ]
+    },
+    "29612": {
+      "englishTitle": "The Art of War",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "pandaria-intro",
+          "category": "story",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29612,
+            "englishTitle": "The Art of War"
+          }
+        },
+        {
+          "rule": "pandaria-intro",
+          "category": "unlock",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29612,
+            "englishTitle": "The Art of War"
+          }
+        }
+      ]
+    },
+    "29690": {
+      "englishTitle": "Into the Mists",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "pandaria-intro",
+          "category": "story",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29690,
+            "englishTitle": "Into the Mists"
+          }
+        },
+        {
+          "rule": "pandaria-intro",
+          "category": "unlock",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 29690,
+            "englishTitle": "Into the Mists"
+          }
+        }
+      ]
+    },
+    "29801": {
+      "englishTitle": "Proving Your Worth",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "29802": {
+      "englishTitle": "A Hidden Message",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "29847": {
+      "englishTitle": "To Catch a Thief",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "29934": {
+      "englishTitle": "To Ravenholdt",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30092": {
+      "englishTitle": "Our Man in Gilneas",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30093": {
+      "englishTitle": "Assassinate Creed",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30106": {
+      "englishTitle": "The Deed is Done",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30107": {
+      "englishTitle": "Cluster Clutch",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30108": {
+      "englishTitle": "Our Man in Karazhan",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30109": {
+      "englishTitle": "Blood of the Betrayer",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30113": {
+      "englishTitle": "Victory in the Depths",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30116": {
+      "englishTitle": "Sharpening Your Fangs",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "30118": {
+      "englishTitle": "Patricide",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -162,
+            "categoryName": "Rogue"
+          }
+        }
+      ]
+    },
+    "31454": {
+      "englishTitle": "A Legend in the Making",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31468": {
+      "englishTitle": "Trial of the Black Prince",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31473": {
+      "englishTitle": "The Strength of One's Foes",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31481": {
+      "englishTitle": "Fear Itself",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31482": {
+      "englishTitle": "Breath of the Black Prince",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31483": {
+      "englishTitle": "Incoming...",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31488": {
+      "englishTitle": "Stranger in a Strange Land",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31489": {
+      "englishTitle": "Stranger in a Strange Land",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "31511": {
+      "englishTitle": "A Witness to History",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "vale-access",
+          "category": "story",
+          "reason": "见证天神开启锦绣谷入口的关键剧情。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 31511,
+            "englishTitle": "A Witness to History"
+          }
+        },
+        {
+          "rule": "vale-access",
+          "category": "unlock",
+          "reason": "见证天神开启锦绣谷入口的关键剧情。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 31511,
+            "englishTitle": "A Witness to History"
+          }
+        }
+      ]
+    },
+    "31512": {
+      "englishTitle": "A Witness to History",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "vale-access",
+          "category": "story",
+          "reason": "见证天神开启锦绣谷入口的关键剧情。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 31512,
+            "englishTitle": "A Witness to History"
+          }
+        },
+        {
+          "rule": "vale-access",
+          "category": "unlock",
+          "reason": "见证天神开启锦绣谷入口的关键剧情。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 31512,
+            "englishTitle": "A Witness to History"
+          }
+        }
+      ]
+    },
+    "31853": {
+      "englishTitle": "All Aboard!",
+      "categories": [
+        "story",
+        "unlock"
+      ],
+      "reasons": [
+        {
+          "rule": "pandaria-intro",
+          "category": "story",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 31853,
+            "englishTitle": "All Aboard!"
+          }
+        },
+        {
+          "rule": "pandaria-intro",
+          "category": "unlock",
+          "reason": "联盟或部落远征潘达利亚的开篇与航行引导。",
+          "source": {
+            "label": "同版本任务正文、目标与奖励",
+            "url": "docs/IMPORTANCE.md#人工核对条目"
+          },
+          "fields": {
+            "id": 31853,
+            "englishTitle": "All Aboard!"
+          }
+        }
+      ]
+    },
+    "32013": {
+      "englishTitle": "[Coming in Patch 5.1]",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32014": {
+      "englishTitle": "[Coming Soon...]",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32015": {
+      "englishTitle": "[Coming Soon...]",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32108": {
+      "englishTitle": "Domination Point",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32109": {
+      "englishTitle": "Lion's Landing",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32190": {
+      "englishTitle": "To Mogujia",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32191": {
+      "englishTitle": "Ancient Guardians",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32192": {
+      "englishTitle": "Bloodlines",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32193": {
+      "englishTitle": "To Mogujia",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32194": {
+      "englishTitle": "Bad Blood",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32195": {
+      "englishTitle": "Anger Remains",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32242": {
+      "englishTitle": "Buried Secrets",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32243": {
+      "englishTitle": "The Source of Korune Power",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32244": {
+      "englishTitle": "The Korune",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32246": {
+      "englishTitle": "Meet the Scout",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32247": {
+      "englishTitle": "A King Among Men",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32248": {
+      "englishTitle": "A Little Patience",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32249": {
+      "englishTitle": "Meet the Scout",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32250": {
+      "englishTitle": "The Might of the Warchief",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32251": {
+      "englishTitle": "Dagger in the Dark",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32256": {
+      "englishTitle": "Rise Of An Empire",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32257": {
+      "englishTitle": "Voice of the Gods",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32284": {
+      "englishTitle": "Someone You Should See",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32315": {
+      "englishTitle": "Anduin's Plea",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32316": {
+      "englishTitle": "Heart Of The Alliance",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32318": {
+      "englishTitle": "Regeneration Takes Time",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32319": {
+      "englishTitle": "Find Thrall!",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32320": {
+      "englishTitle": "The Horde Is Family",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32321": {
+      "englishTitle": "The Monkey King",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32326": {
+      "englishTitle": "Insertion",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32327": {
+      "englishTitle": "The Darnassus Mission",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32328": {
+      "englishTitle": "Victorious Return",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32329": {
+      "englishTitle": "Get My Results!",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32330": {
+      "englishTitle": "What's in the Box?",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32331": {
+      "englishTitle": "The Kirin Tor",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32332": {
+      "englishTitle": "The First Riddle: Mercy",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32333": {
+      "englishTitle": "The Second Riddle: Fellowship",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32334": {
+      "englishTitle": "The Third Riddle: Strength",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32335": {
+      "englishTitle": "The Greatest Prank",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32336": {
+      "englishTitle": "The Handle",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32337": {
+      "englishTitle": "The Head",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32338": {
+      "englishTitle": "The Harmonic Ointment",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32351": {
+      "englishTitle": "Echoes of Thunder",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32352": {
+      "englishTitle": "A Gathering Storm",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32355": {
+      "englishTitle": "The Harmonic Mallet",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32362": {
+      "englishTitle": "The Fate of Dalaran",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32363": {
+      "englishTitle": "The Kun-Lai Expedition",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32364": {
+      "englishTitle": "Pandaren Medicine",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32366": {
+      "englishTitle": "A Lick of Fire",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32367": {
+      "englishTitle": "A Bit of Yak",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32368": {
+      "englishTitle": "Memory Wine",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32370": {
+      "englishTitle": "The Kun-Lai Expedition",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32371": {
+      "englishTitle": "Memory Wine",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32372": {
+      "englishTitle": "De-Subjugation",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32373": {
+      "englishTitle": "The Measure of a Leader",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32374": {
+      "englishTitle": "The Prince's Pursuit",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32375": {
+      "englishTitle": "A Dash of That",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32376": {
+      "englishTitle": "To the Valley!",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32377": {
+      "englishTitle": "A Kor'kron In Our Midst",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32378": {
+      "englishTitle": "Clearing a Path",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32379": {
+      "englishTitle": "Legacy of the Korune",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32380": {
+      "englishTitle": "The Best Around",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32381": {
+      "englishTitle": "To Catch A Spy",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32382": {
+      "englishTitle": "He's In Deep",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32383": {
+      "englishTitle": "Bugging Out",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32384": {
+      "englishTitle": "Trapping the Leader",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32388": {
+      "englishTitle": "A Change of Command",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32389": {
+      "englishTitle": "The Lion Roars",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32390": {
+      "englishTitle": "Call of the Packmaster",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32391": {
+      "englishTitle": "The Ruins of Korune",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32392": {
+      "englishTitle": "The Divine Bell",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32393": {
+      "englishTitle": "The Ruins of Korune",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32394": {
+      "englishTitle": "The Divine Bell",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32397": {
+      "englishTitle": "He Won't Even Miss It",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32398": {
+      "englishTitle": "The Bell Speaks",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32399": {
+      "englishTitle": "Breath of Darkest Shadow",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32400": {
+      "englishTitle": "The Bell Speaks",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32401": {
+      "englishTitle": "Breath of Darkest Shadow",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32402": {
+      "englishTitle": "The Situation In Dalaran",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32403": {
+      "englishTitle": "It Starts in the Sewers",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32404": {
+      "englishTitle": "Violence in the Arena",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32405": {
+      "englishTitle": "Hand of the Silver Covenant",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32406": {
+      "englishTitle": "A Tactical Assault",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32407": {
+      "englishTitle": "[NYI] Magus Commerce Exchange",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32408": {
+      "englishTitle": "The Silver Covenant's Stronghold",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32409": {
+      "englishTitle": "The Kirin Tor's True Colors",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32410": {
+      "englishTitle": "Krasus' Landing",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32411": {
+      "englishTitle": "The Remaining Sunreavers",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32412": {
+      "englishTitle": "One Last Grasp",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32413": {
+      "englishTitle": "A Return to Krasarang",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32414": {
+      "englishTitle": "Darnassus Attacked?",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32415": {
+      "englishTitle": "Their Tracks",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32416": {
+      "englishTitle": "Jaina's Resolution",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32417": {
+      "englishTitle": "Sewer Cleaning",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32418": {
+      "englishTitle": "Unfair Trade",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32419": {
+      "englishTitle": "Nowhere to Hide",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32420": {
+      "englishTitle": "Cashing Out",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32421": {
+      "englishTitle": "Nowhere to Run",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32422": {
+      "englishTitle": "[NYI] Into Violet Hold",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32423": {
+      "englishTitle": "What Had To Be Done",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32424": {
+      "englishTitle": "[NYI] What Had To Be Done",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32425": {
+      "englishTitle": "[NYI] A Return to Lion's Landing",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32426": {
+      "englishTitle": "Stirred, Not Shaken",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32427": {
+      "englishTitle": "The Measure of a Leader",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32430": {
+      "englishTitle": "A Change of Command",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32431": {
+      "englishTitle": "Glory to the Horde",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32432": {
+      "englishTitle": "The Soul of the Horde",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32448": {
+      "englishTitle": "Ties with the Past",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32455": {
+      "englishTitle": "The Silence",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32457": {
+      "englishTitle": "The Thunder King",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32460": {
+      "englishTitle": "Tracking the Thieves",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32590": {
+      "englishTitle": "Meet Me Upstairs",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32591": {
+      "englishTitle": "Secrets of the First Empire",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32593": {
+      "englishTitle": "The Thunder Forge",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32594": {
+      "englishTitle": "Spirit of the Storm Lord",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32595": {
+      "englishTitle": "The Crown of Heaven",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32596": {
+      "englishTitle": "Echoes of the Titans",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32597": {
+      "englishTitle": "Heart of the Thunder King",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32598": {
+      "englishTitle": "A Reckoning",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32806": {
+      "englishTitle": "The King and the Council",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32807": {
+      "englishTitle": "The Warchief and the Darkness",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32808": {
+      "englishTitle": "A Little Field Work",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32809": {
+      "englishTitle": "Gathering Intelligence",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32810": {
+      "englishTitle": "The Darkspear Rebellion",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32811": {
+      "englishTitle": "Battlefield: Barrens",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32812": {
+      "englishTitle": "The Darkspear Rebellion",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32813": {
+      "englishTitle": "Battle of Sen'jin Village",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32814": {
+      "englishTitle": "Battle of Razor Hill",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32815": {
+      "englishTitle": "The Old Seer",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32816": {
+      "englishTitle": "Path of the Last Emperor",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32817": {
+      "englishTitle": "Complete \"Loyalty\" Scenario",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32818": {
+      "englishTitle": "Complete \"The Dark Heart of Pandaria\" Scenario",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32819": {
+      "englishTitle": "Battlefield: Barrens",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32861": {
+      "englishTitle": "Cloak of Virtue",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32867": {
+      "englishTitle": "Vol'jin of the Darkspear",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32870": {
+      "englishTitle": "Preparing to Strike",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "32871": {
+      "englishTitle": "Vol'jin of the Darkspear",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "32892": {
+      "englishTitle": "War is Coming",
+      "categories": [
+        "story"
+      ],
+      "reasons": [
+        {
+          "rule": "campaign-category",
+          "category": "story",
+          "reason": "属于熊猫人战役，推进对应战役剧情。",
+          "source": {
+            "label": "同版本任务分类与来源",
+            "url": "docs/REGIONS.md"
+          },
+          "fields": {
+            "zoneOrSort": -397,
+            "categoryName": "Pandaren Campaign"
+          }
+        }
+      ]
+    },
+    "33087": {
+      "englishTitle": "Meet Me Back at the Inn",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "33088": {
+      "englishTitle": "A Timeless Discovery",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "33098": {
+      "englishTitle": "Secrets of the Timeless Isle",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "33100": {
+      "englishTitle": "The Emperor's Way",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 62,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "33104": {
+      "englishTitle": "A Pandaren Legend",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    },
+    "33105": {
+      "englishTitle": "Judgment of the Black Prince",
+      "categories": [
+        "legendary"
+      ],
+      "reasons": [
+        {
+          "rule": "legendary-category",
+          "category": "legendary",
+          "reason": "任务类型或所属分类明确属于传说任务线。",
+          "source": {
+            "label": "版本任务类型与分类",
+            "url": "docs/IMPORTANCE.md#数据分类规则"
+          },
+          "fields": {
+            "type": 83,
+            "zoneOrSort": -344,
+            "categoryName": "Legendary"
+          }
+        }
+      ]
+    }
+  }
+}

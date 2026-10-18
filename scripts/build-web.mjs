@@ -8,6 +8,7 @@ import {rewardAudit} from './reward-audit.mjs';
 import {regionAudit,regionBrowserData,regionVersions} from './region-data.mjs';
 import {buildQuestTraitData,questTraitAudit} from './quest-traits-data.mjs';
 import {attachReferences} from './wowhead-data.mjs';
+import {buildQuestImportance,importanceBrowserData} from './importance-data.mjs';
 import '../web/quest-traits.js';
 const hash=value=>createHash('sha256').update(value).digest('hex').slice(0,12);
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -17,6 +18,8 @@ await fs.writeFile(path.join(root,'web/quest-traits-data.js'),'globalThis.QuestT
 const catalog={schemaVersion:1,generatedAt:'2026-10-18',localeOrder:['zhCN','zhTW','enUS'],versions:[]};
 const rewardReports=[];
 const traitReports=[];
+const importanceDefinition=JSON.parse(await fs.readFile(path.join(root,'annotations/importance-rules.json'),'utf8')),importanceVersions=[];
+await fs.mkdir(path.join(root,'annotations/importance'),{recursive:true});
 await fs.mkdir(path.join(root,'web/data'),{recursive:true});
 await fs.mkdir(path.join(root,'web/actors'),{recursive:true});
 await fs.mkdir(path.join(root,'web/items'),{recursive:true});
@@ -28,6 +31,9 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  try{await fs.access(manifestPath);}catch{continue;}
  const manifest=JSON.parse(await fs.readFile(manifestPath,'utf8'));
  let records=[];for(const f of manifest.files)records.push(...(await fs.readFile(path.join(root,f.path),'utf8')).trim().split('\n').filter(Boolean).map(x=>JSON.parse(x)));
+ const importance=buildQuestImportance(records,JSON.parse(await fs.readFile(path.join(root,'data/regions',id+'.json'),'utf8')),importanceDefinition,globalThis.QuestTraits.derive);
+ importanceVersions.push(importance);
+ await fs.writeFile(path.join(root,'annotations/importance',id+'.json'),JSON.stringify(importance,null,2)+'\n');
  rewardReports.push(rewardAudit(records));
  traitReports.push(questTraitAudit(records,globalThis.QuestTraits.derive));
  const references=JSON.parse(await fs.readFile(path.join(root,'data/wowhead',id+'.json'),'utf8'));
@@ -49,10 +55,12 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  catalog.versions.push({...manifest,items:{count:items.length},bundleHashes:{quests:hash(questBundle),actors:hash(actorBundle),items:hash(itemBundle)}});console.log(id,records.length,Math.round(payload.length/1024)+' KiB browser bundle',items.length,'items');
 }
 await fs.writeFile(path.join(root,'web/catalog.js'),'window.QUEST_CATALOG='+JSON.stringify(catalog)+';\n');
+await fs.writeFile(path.join(root,'web/importance-data.js'),'globalThis.QuestImportanceData='+JSON.stringify(importanceBrowserData(importanceDefinition,importanceVersions))+';\n');
 await fs.mkdir(path.join(root,'reports'),{recursive:true});
 await fs.writeFile(path.join(root,'reports/coverage.json'),JSON.stringify(catalog,null,2)+'\n');
 await fs.writeFile(path.join(root,'reports/reward-audit.json'),JSON.stringify({schemaVersion:1,versions:rewardReports},null,2)+'\n');
 await fs.writeFile(path.join(root,'reports/quest-traits.json'),JSON.stringify({schemaVersion:1,versions:traitReports},null,2)+'\n');
+await fs.writeFile(path.join(root,'reports/quest-importance.json'),JSON.stringify({schemaVersion:1,policy:importanceDefinition.policy,versions:importanceVersions.map(({version,count,counts,quests})=>({version,count,categories:counts,questIds:Object.keys(quests).map(Number)}))},null,2)+'\n');
 await fs.writeFile(path.join(root,'reports/item-audit.json'),JSON.stringify({schemaVersion:1,versions:itemReports,icons:{available:iconLock.icons.filter(i=>!i.missing).length,missing:iconLock.icons.filter(i=>i.missing).map(i=>i.name)}},null,2)+'\n');
 const regionLock=JSON.parse(await fs.readFile(path.join(root,'sources/regions/manifest.json'),'utf8'));
 const regions=await Promise.all(regionVersions.map(async id=>JSON.parse(await fs.readFile(path.join(root,'data/regions',id+'.json'),'utf8'))));
