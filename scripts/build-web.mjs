@@ -34,7 +34,10 @@ await fs.writeFile(path.join(root,'reports/reward-audit.json'),JSON.stringify({s
 // Stable content hashes refresh old Pages/browser caches and still work offline.
 const htmlPath=path.join(root,'index.html');let html=await fs.readFile(htmlPath,'utf8');
 for(const match of [...html.matchAll(/(?:src|href)="(web\/[a-z-]+\.(?:js|css))(?:\?v=[a-f0-9]+)?"/g)]){
- const revision=hash(await fs.readFile(path.join(root,match[1])));
+ // Match .gitattributes before hashing, including files edited with CRLF on Windows.
+ const assetPath=path.join(root,match[1]),asset=await fs.readFile(assetPath,'utf8'),normalized=asset.replace(/\r\n/g,'\n');
+ if(normalized!==asset)await fs.writeFile(assetPath,normalized);
+ const revision=hash(normalized);
  html=html.replace(match[0],match[0].replace(/="[^"]+"$/,`="${match[1]}?v=${revision}"`));
 }
 await fs.writeFile(htmlPath,html);
