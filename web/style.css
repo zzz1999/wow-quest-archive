@@ -14,6 +14,12 @@
 .variable-badge{display:inline-block;margin:0 .18em;padding:1px 6px;font:12px/1.5 "Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:0;vertical-align:baseline;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 .reader-top,.reader-actions{flex-wrap:wrap}.reader-actions>a{display:inline-block;padding:3px 8px;font-size:10px;text-decoration:none;border:1px solid #dae2ce;border-radius:6px;background:#edf1e5;color:#536d43;white-space:nowrap}.reader-actions>a:hover{background:#e2ead6}.reader-actions button{white-space:nowrap}
 
+.filter-toggle{align-self:flex-end;display:flex;align-items:center;gap:7px;margin-top:8px;padding:4px 8px;border:0;font-size:11px;color:#6a7c5e}
+.filter-toggle-icon{display:inline-block;font-size:12px}
+.filter-toggle[aria-expanded=false] .filter-toggle-icon{transform:rotate(180deg)}
+#quest-filters>.filters:first-child{margin-top:6px}
+#quest-filters[hidden]{display:none}
+
 /* Keep the task catalog beside long prose instead of leaving an empty column. */
 @media(min-width:651px){
  .workbench{overflow:clip}

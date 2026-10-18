@@ -11,6 +11,18 @@
  const navigation=window.QuestNavigation.create({history,location});
  const listPager=window.QuestListPager.attach({list:$('quest-list'),getPage:()=>({page:state.page,total:Math.ceil(state.filtered.length/PAGE)}),changePage});
  const filterIds=['search','language','zone','repeat-filter','faction-filter','class-filter','race-filter','level-min','level-max','story-only','important-only','hide-test'];
+ const filterCollapseKey='wow-quest-filters-collapsed-v1';
+ function setFiltersCollapsed(collapsed){
+  $('quest-filters').hidden=collapsed;$('filter-toggle').setAttribute('aria-expanded',String(!collapsed));
+  $('filter-toggle-label').textContent=collapsed?'展开筛选':'收起筛选';
+  listPager.refresh();
+ }
+ try{setFiltersCollapsed(localStorage.getItem(filterCollapseKey)==='true');}catch{setFiltersCollapsed(false);}
+ $('filter-toggle').onclick=()=>{
+  const collapsed=!$('quest-filters').hidden;setFiltersCollapsed(collapsed);
+  try{localStorage.setItem(filterCollapseKey,String(collapsed));}catch{}
+  queueView();
+ };
  let restoringView=false,viewTimer=0;
  history.scrollRestoration='manual';
  let reading;try{reading=window.QuestReading.normalize(JSON.parse(localStorage.getItem('wow-quest-reading-v1')||'null'));}catch{reading=window.QuestReading.normalize(null);}
