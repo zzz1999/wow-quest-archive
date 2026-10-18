@@ -7,6 +7,10 @@
  const fieldLabels={title:'标题',objectives:'任务目标',description:'任务描述',progress:'进行中对白',completion:'完成对白',end:'区域提示',completed:'完成日志',giverWindow:'接取角色对白',giverTarget:'接取角色名',turninWindow:'交付角色对白',turninTarget:'交付角色名',objective1:'目标说明 1',objective2:'目标说明 2',objective3:'目标说明 3',objective4:'目标说明 4'};
  let state={version:'classic',rows:[],filtered:[],selected:null,page:0,bookmarks:false},loadGeneration=0,navigateGeneration=0;
  const PAGE=40,cache=new Map(),loading=new Map();window.QUEST_PACKS={};
+ const navigation=window.QuestNavigation.create({history,location});
+ const filterIds=['search','language','zone','level-min','level-max','story-only','hide-test'];
+ let restoringView=false,viewTimer=0;
+ history.scrollRestoration='manual';
  let reading;try{reading=window.QuestReading.normalize(JSON.parse(localStorage.getItem('wow-quest-reading-v1')||'null'));}catch{reading=window.QuestReading.normalize(null);}
  let bookmarks;try{bookmarks=new Set(JSON.parse(localStorage.getItem('wow-quest-bookmarks-v1')||'[]'));}catch{bookmarks=new Set();}
  function toast(s){$('toast').textContent=s;$('toast').classList.add('visible');setTimeout(()=>$('toast').classList.remove('visible'),2500);}
@@ -15,6 +19,19 @@
  function format(text){return window.QuestReading.format(text,reading);}
  function originalLayout(text){return String(text||'').replace(/\$[Bb]/g,'\n').replace(/\\n/g,'\n');}
  function questTitle(r){return format(r.text.title||'未命名任务 #'+r.id);}
+ function rememberView(){
+  if(restoringView||!state.selected||navigation.current().quest?.route!==`#${state.version}/${state.selected.id}`)return;
+  const filters=Object.fromEntries(filterIds.map(id=>[id,$(id).type==='checkbox'?$(id).checked:$(id).value]));
+  navigation.save({filters,bookmarks:state.bookmarks,page:state.page,listScroll:$('quest-list').scrollTop,x:scrollX,y:scrollY,details:[...$('reader').querySelectorAll('details')].map(el=>el.open),moreFilters:document.querySelector('.more-filters').open});
+ }
+ function queueView(){clearTimeout(viewTimer);viewTimer=setTimeout(rememberView,250);}
+ function backButton(){const previous=navigation.previous();return `<div class="quest-history"><button id="quest-back" ${previous?'':'disabled'} title="${previous?'返回：'+escape(previous.title):'还没有上一条任务'}">← 返回上一任务</button>${previous?`<span>${escape(previous.title)}</span>`:''}</div>`;}
+ function restoreFilters(view){
+  if(!view?.filters)return;
+  for(const id of filterIds){const el=$(id),value=view.filters[id];if(el.type==='checkbox')el.checked=Boolean(value);else el.value=String(value??'');}
+  state.bookmarks=Boolean(view.bookmarks);$('bookmarks').setAttribute('aria-pressed',state.bookmarks);
+  document.querySelector('.more-filters').open=Boolean(view.moreFilters);
+ }
  function fieldLabel(field){return reading.mode==='player'?({description:'任务说明',progress:'尚未完成时',completion:'完成任务时',giverWindow:'接取时的对话',turninWindow:'交付时的对话'}[field]||fieldLabels[field]):fieldLabels[field];}
  function questMetadata(r,source=false){return `<div class="quest-meta"><span>任务等级 <b>${r.level===-1?'随角色等级变化':r.level}</b></span><span>需要等级 <b>${r.minLevel}</b></span>${source?`<span>区域 / 分类 <b>${r.zoneOrSort}</b></span><span>类型 <b>${r.type}</b></span>`:''}${r.suggestedPlayers?`<span>建议人数 <b>${r.suggestedPlayers}</b></span>`:source?'<span>建议人数 <b>未指定</b></span>':''}</div>`;}
  function fillReadingForm(value){
@@ -40,8 +57,11 @@
    }catch(e){reject(e);}finally{s.remove();}};s.onerror=()=>{s.remove();reject(new Error(location.protocol==='file:'?'无法读取本地数据。请先解压整个文件夹，再打开 index.html。':'无法下载这个版本的数据。请检查网络后重试。'));};document.head.append(s);});
   loading.set(id,promise);promise.catch(()=>loading.delete(id));return promise;
  }
- async function selectVersion(id,questId,{fromHash=false}={}){
+ async function selectVersion(id,questId,{fromHash=false,view=null,resetSearch=false}={}){
   const meta=cat.versions.find(x=>x.id===id);if(!meta)return;
+  if(!fromHash)restoringView=false;
+  rememberView();
+  if(resetSearch)$('search').value='';
   const generation=++loadGeneration;actors.close({restoreHash:false});$('actors-open').disabled=true;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
   document.querySelectorAll('.version-button').forEach(b=>{b.classList.toggle('active',b.dataset.version===id);b.setAttribute('aria-current',b.dataset.version===id?'page':'false');});
   $('version-title').textContent=meta.name;$('version-patch').textContent=meta.patch;$('breadcrumb').textContent=meta.name;$('result-count').textContent='正在载入资料…';$('quest-list').replaceChildren();
@@ -49,7 +69,7 @@
   try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;$('actors-open').disabled=false;
    const zones=[...new Set(prepared.map(x=>x.record.zoneOrSort))].sort((a,b)=>a-b);
    $('zone').innerHTML='<option value="">全部区域</option>'+zones.map(z=>`<option value="${z}">${z===0?'未分类':z<0?'任务分类 #'+Math.abs(z):'区域 #'+z}</option>`).join('');
-   applyFilters(false);const chosen=questId?prepared.find(x=>x.record.id===Number(questId))?.record:state.filtered.find(r=>r.id===783&&r.textLocales.title==="zhCN")||state.filtered.find(r=>r.text.description&&r.textLocales.description==='zhCN')||state.filtered[0];
+   restoreFilters(view);applyFilters(false);const chosen=questId?prepared.find(x=>x.record.id===Number(questId))?.record:state.filtered.find(r=>r.id===783&&r.textLocales.title==="zhCN")||state.filtered.find(r=>r.text.description&&r.textLocales.description==='zhCN')||state.filtered[0];
    if(chosen)selectQuest(chosen.id,{updateHash:!fromHash});else if(questId)$('reader').innerHTML='<div class="empty"><h2>快照中没有这条任务</h2><p>请在当前版本中选择其他记录。</p></div>';
    else renderEmpty();
   }catch(e){if(generation!==loadGeneration)return;$('reader').innerHTML=`<div class="empty"><h2>资料读取失败</h2><p>${escape(e.message)}</p><button id="retry">重试</button></div>`;$('result-count').textContent='读取失败';$('retry').onclick=()=>selectVersion(id,questId);}
@@ -79,7 +99,9 @@
  function entityList(rows){return rows.length?rows.map(x=>`<button class="actor-link" data-actor-kind="${x.kind}" data-actor-id="${x.id}" title="打开${x.kind==='creature'?'NPC':'物件'}档案">${escape(x.name||'未命名')} ↗</button> ${badge(x.nameLocale)}${reading.mode==='source'?` <span>#${x.id} · ${x.kind==='creature'?'NPC':'物件'}</span>`:x.kind==='gameobject'?' <span>任务物件</span>':''}`).join('<br>'):'暂未收录';}
  function renderEmpty(){$('reader').innerHTML='<div class="empty"><span>✦</span><h2>选择一条任务，开始阅读</h2><p>可按关键词、语言与等级筛选。</p></div>';}
  function selectQuest(id,{updateHash=true}={}){
-  const r=state.rows.find(x=>x.record.id===Number(id))?.record;if(!r)return;state.selected=r;
+  const r=state.rows.find(x=>x.record.id===Number(id))?.record;if(!r)return;
+  if(updateHash){rememberView();navigation.showQuest(`#${state.version}/${r.id}`,questTitle(r));}
+  state.selected=r;
   $('reader').dataset.readingMode=reading.mode;
   const previousPage=state.page,position=state.filtered.findIndex(x=>x.id===r.id);if(position>=0)state.page=Math.floor(position/PAGE);
   if(state.page!==previousPage)renderList();
@@ -87,10 +109,9 @@
    const selected=Number(button.dataset.id)===r.id;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected));
    if(selected)button.querySelector('strong').textContent=(bookmarks.has(r.key)?'☆ ':'')+questTitle(r);
   }
-  if(updateHash){const hash=`#${state.version}/${r.id}`;if(location.hash!==hash)history.pushState(null,'',hash);}
   const meta=cat.versions.find(x=>x.id===state.version);
   const quality=(r.qualityNotes||[]).map(note=>'<div class="notice">翻译待核：'+escape(note)+'</div>').join('')+(r.tags.includes('community-custom')?'<div class="notice">已核实的社区服务器自定义任务，不应当作暴雪原版任务样本。</div>':'')+(r.tags.includes('source-encoding-issue')?'<div class="notice">上游部分文本含损坏字符，已跳过损坏候选并继续语言回退；详见结构化记录 textIssues。</div>':'');
-  $('reader').innerHTML=`<div class="reader-top"><span>${reading.mode==='player'?'任务日志 · #':'QUEST RECORD / '}${r.id}</span><div class="reader-actions"><button id="bookmark-current" aria-pressed="${bookmarks.has(r.key)}">${bookmarks.has(r.key)?'★ 已收藏':'☆ 收藏'}</button><button id="copy-current">复制当前文本</button><button id="export-current" title="导出保留游戏变量的原始资料">原始 JSON ↓</button></div></div>
+  $('reader').innerHTML=`${backButton()}<div class="reader-top"><span>${reading.mode==='player'?'任务日志 · #':'QUEST RECORD / '}${r.id}</span><div class="reader-actions"><button id="bookmark-current" aria-pressed="${bookmarks.has(r.key)}">${bookmarks.has(r.key)?'★ 已收藏':'☆ 收藏'}</button><button id="copy-current">复制当前文本</button><button id="export-current" title="导出保留游戏变量的原始资料">原始 JSON ↓</button></div></div>
    <h2>${escape(questTitle(r))}</h2>${reading.mode==='source'?`<div class="english-title">${escape(r.english.title&&r.english.title!==r.text.title?r.english.title:'')}</div>`:''}${questMetadata(r,reading.mode==='source')}
    <div class="reading-strip"><span>${reading.mode==='player'?`玩家视角 · ${escape(reading.name||'玩家名称')}`:'原文视角 · 保留游戏变量'}</span><button id="reading-current">阅读设置</button></div>
    ${quality}${r.tags.includes('suspected-test')?'<div class="notice">标题含测试、废弃或占位线索。该标签来自规则筛选，尚未人工核验。</div>':''}${r.locales.includes('enUS')?'<div class="notice">部分字段使用英文回退；每段文本右侧标明实际选用的语言。</div>':''}
@@ -100,7 +121,9 @@
    <details id="quest-source"><summary>原始资料 · 字段、奖励与来源</summary>${questMetadata(r,true)}<pre>${escape(JSON.stringify(r,null,2))}</pre><div class="provenance">来源 <a href="https://github.com/${meta.repo}/tree/${meta.commit}" target="_blank" rel="noreferrer">${escape(meta.repo)} ↗</a> · ${escape(meta.snapshot)}<br>${escape(meta.note)}<br>玩家视角仅代入已设置的称呼；JSON / JSONL 中的游戏变量与原文保持不变。</div></details>`;
   $('bookmark-current').onclick=()=>{bookmarks.has(r.key)?bookmarks.delete(r.key):bookmarks.add(r.key);saveBookmarks();if(state.bookmarks)applyFilters();else selectQuest(r.id,{updateHash:false});};
   $('reading-current').onclick=openReading;
+  $('quest-back').onclick=()=>{rememberView();navigation.goBack();};
   $('copy-current').onclick=()=>copyText(markdown(r),r.key.replace(':','-')+'-'+reading.mode+'.md');$('export-current').onclick=()=>download(r.key.replace(':','-')+'.json',JSON.stringify(r,null,2),'application/json');
+  queueView();
  }
  function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼已代入）':'原文视角'}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v)}`).join('\n\n')+`\n\n来源：${cat.versions.find(x=>x.id===r.version).repo}\n`;}
  async function copyText(text,filename){try{if(navigator.clipboard){await navigator.clipboard.writeText(text);}else{const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();if(!document.execCommand('copy'))throw new Error('copy');t.remove();}toast('已复制当前视角的文本');}catch{download(filename,text,'text/markdown');toast('浏览器限制剪贴板，已导出当前文本');}}
@@ -111,8 +134,8 @@
  }
  const actors=window.createActorBrowser({catalog:cat,getVersion:()=>state.version,getQuests:()=>state.rows.map(x=>x.record),questTitle,escape,badge,download,
   onQuest:id=>{selectQuest(id);$('reader').scrollIntoView({behavior:'smooth',block:'start'});},
-  onSelect:actor=>{const hash=`#${actor.version}/${actor.kind==='creature'?'npc':'object'}/${actor.id}`;if(location.hash!==hash)history.pushState(null,'',hash);},
-  onClose:()=>{if(/^#[^/]+\/(npc|object)\//.test(location.hash))history.replaceState(null,'',`#${state.version}/${state.selected?.id||''}`);}
+  onSelect:actor=>{rememberView();navigation.showActor(`#${actor.version}/${actor.kind==='creature'?'npc':'object'}/${actor.id}`);},
+  onClose:()=>{if(/^#[^/]+\/(npc|object)\//.test(location.hash)&&state.selected){navigation.showQuest(`#${state.version}/${state.selected.id}`,questTitle(state.selected),{push:false});rememberView();}}
  });
  $('actors-open').onclick=()=>actors.open();
  $('reading-open').onclick=openReading;
@@ -127,26 +150,35 @@
  refreshReading();
  $('versions').innerHTML=cat.versions.map((v,i)=>`<button class="version-button" data-version="${v.id}"><span class="version-icon" aria-hidden="true">${['✦','❅','♜','◈','☾'][i]}</span><span><b>${v.name}</b><small>${v.patch} · ${v.count.toLocaleString()} 条</small></span></button>`).join('');
  $('total-count').textContent=cat.versions.reduce((s,v)=>s+v.count,0).toLocaleString();saveBookmarks();
- $('versions').onclick=e=>{const b=e.target.closest('[data-version]');if(b){++navigateGeneration;$('search').value='';selectVersion(b.dataset.version);}};
+ $('versions').onclick=e=>{const b=e.target.closest('[data-version]');if(b){++navigateGeneration;selectVersion(b.dataset.version,undefined,{resetSearch:true});}};
  $('quest-list').onclick=e=>{const b=e.target.closest('[data-id]');if(b){selectQuest(b.dataset.id);if(innerWidth<650)$('reader').scrollIntoView({behavior:'smooth'});}};
  $('reader').onclick=e=>{const actor=e.target.closest('[data-actor-id]');if(actor){actors.open({kind:actor.dataset.actorKind,id:Number(actor.dataset.actorId)});return;}const b=e.target.closest('[data-related]');if(b&&!b.disabled){selectQuest(b.dataset.related);$('reader').scrollIntoView({behavior:'smooth',block:'start'});}};
  let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(applyFilters,140);};
  for(const id of ['language','zone','level-min','level-max','story-only','hide-test'])$(id).onchange=applyFilters;
  $('reset').onclick=()=>{for(const id of ['search','language','zone','level-min','level-max'])$(id).value='';$('story-only').checked=false;$('hide-test').checked=true;applyFilters();};
- $('prev-page').onclick=()=>{state.page--;renderList();};$('next-page').onclick=()=>{state.page++;renderList();};
+ $('prev-page').onclick=()=>{state.page--;renderList();queueView();};$('next-page').onclick=()=>{state.page++;renderList();queueView();};
  $('bookmarks').onclick=()=>{state.bookmarks=!state.bookmarks;$('bookmarks').setAttribute('aria-pressed',state.bookmarks);applyFilters();};
  $('export-results').onclick=()=>{if(!state.filtered.length){toast('当前筛选没有可导出的任务');return;}download(`${state.version}-quests-${state.filtered.length}.jsonl`,state.filtered.map(r=>JSON.stringify(r)).join('\n')+'\n','application/x-ndjson');toast(`已导出 ${state.filtered.length} 条任务`);};
  $('about').onclick=$('source-open').onclick=info;$('close-dialog').onclick=()=>$('info-dialog').close();
  $('info-dialog').onclick=e=>{if(e.target===$('info-dialog')){const r=$('info-dialog').getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)$('info-dialog').close();}};
  document.addEventListener('keydown',e=>{if(e.key==='/'&&!$('reading-dialog').open&&!$('info-dialog').open&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){e.preventDefault();$(actors.isOpen()?'actor-search':'search').focus();}});
  async function navigate(){
+  clearTimeout(searchTimer);clearTimeout(viewTimer);restoringView=true;
+  const entry=navigation.adopt(),view=entry.view;
   const request=++navigateGeneration,[v,id,actorId]=location.hash.slice(1).split('/'),actorRoute=['npc','object'].includes(id);
   const version=cat.versions.some(x=>x.id===v)?v:cat.versions[0].id;
   if(!actorRoute)actors.close({restoreHash:false});
-  if(version!==state.version||!state.rows.length)await selectVersion(version,actorRoute?undefined:id,{fromHash:true});
-  else if(!actorRoute&&id)selectQuest(id,{updateHash:false});
-  if(request!==navigateGeneration||version!==state.version||!state.rows.length)return;
-  if(actorRoute)actors.open({kind:id==='npc'?'creature':'gameobject',id:Number(actorId),updateHash:false});
+  const questId=actorRoute?entry.quest?.route.split('/')[1]:id;
+  if(version!==state.version||!state.rows.length)await selectVersion(version,questId,{fromHash:true,view});
+  else {restoreFilters(view);if(view)applyFilters(false);if(questId)selectQuest(questId,{updateHash:false});}
+  if(request!==navigateGeneration)return;
+  if(version!==state.version||!state.rows.length){restoringView=false;return;}
+  if(!actorRoute&&state.selected){navigation.showQuest(`#${state.version}/${state.selected.id}`,questTitle(state.selected),{push:false});selectQuest(state.selected.id,{updateHash:false});}
+  if(view){state.page=view.page||0;renderList();[...$('reader').querySelectorAll('details')].forEach((el,i)=>el.open=Boolean(view.details?.[i]));}
+  requestAnimationFrame(()=>{if(request!==navigateGeneration)return;if(view){$('quest-list').scrollTop=view.listScroll||0;window.scrollTo({left:view.x||0,top:view.y||0,behavior:'instant'});}restoringView=false;rememberView();});
+  if(actorRoute)await actors.open({kind:id==='npc'?'creature':'gameobject',id:Number(actorId),updateHash:false});
  }
+ addEventListener('scroll',queueView,{passive:true});$('quest-list').addEventListener('scroll',queueView,{passive:true});
+ document.addEventListener('change',queueView);document.addEventListener('toggle',queueView,true);addEventListener('pagehide',rememberView);
  addEventListener('popstate',navigate);navigate();
 })();
