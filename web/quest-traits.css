@@ -1,0 +1,15 @@
+.quest-traits{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 4px}
+.trait-pill{display:inline-block;padding:4px 9px;border:1px solid #dce3d1;border-radius:5px;background:#f1f4eb;color:#64754f;font-size:11px;line-height:1.6}
+.trait-faction.alliance,.trait-faction.alliance-neutral{color:#52779a}
+.trait-faction.horde,.trait-faction.horde-neutral{color:#9c6253}
+.trait-faction.neutral,.trait-faction.unknown{color:#8d806a}
+.row-traits{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:8px;color:#85916e;font-size:10px;line-height:1.5}
+.row-traits .trait-faction{margin-left:auto}
+.reader .quest-requirements{font-family:"Segoe UI","Microsoft YaHei",sans-serif;margin:4px 0 20px;padding:0;color:#7b876c;font-size:11px}
+.quest-requirements summary{padding:10px 0}
+.quest-requirements dl{margin:3px 0 10px;padding:12px 14px;background:#f7f8f2;border-radius:5px}
+.quest-requirements dl>div{display:grid;grid-template-columns:64px 1fr;gap:12px;margin:7px 0;line-height:1.8}
+.quest-requirements dt{color:#929a85}.quest-requirements dd{margin:0;color:#647154}
+.quest-requirements p{font-size:10px;line-height:1.8;margin:8px 0}.quest-requirements .trait-source{color:#9a9e8e}
+.more-filters .filters{margin:12px 0}.more-filters summary span{max-width:70%;text-align:right}
+@media(min-width:651px){.more-filters[open]{max-height:30dvh;overflow-y:auto;overscroll-behavior:contain}}

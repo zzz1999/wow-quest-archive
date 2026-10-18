@@ -17,6 +17,8 @@
 
 研究原版风格时默认排除 `community-custom`、`suspected-test`，但启发式标记不能代替人工检查。中文叙事样本应检查 `textLocales.description`、`textLocales.progress` 与 `textLocales.completion`，不能只按标题语言筛选。
 
+研究一次性叙事与重复委托时，可以使用网页重复类型筛选与 `reports/quest-traits.json`。规则按版本解释 `flags` / `specialFlags`，军团世界任务另核对客户端类型；“重复性待确认”不能当作非可重复。阵营标签由 `raceMask` 与当前版本种族推导，不证明任务真实可接。原始导出保留位掩码，解释和边界见 [重复规则与接取条件](QUEST-TRAITS.md)。
+
 多源文字使用同版本英文标题、对应字段或上下文进行保守匹配，依据记录在 `textMatches` 和 `reports/text-audit/`。这不证明每句译文准确，也不意味着几个社区库是独立采集；不要把同源文字重复算作多份证据。补充库不会改动任务关系、奖励、等级或 NPC 关联。
 
 奖励另行从主库与同版本客户端表规范化到 `rewards`，原始字段仍在 `sourceFields`。`choices` 与奖励包中的候选不能全部相加；`null` 不代表无奖励。经验、声望与金钱的 `basis` 记录换算依据，名称使用自己的 `nameSource`。不要把基础值当作玩家最终结算；方法与缺失统计见 [奖励说明](REWARDS.md)。

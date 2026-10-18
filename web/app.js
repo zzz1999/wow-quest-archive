@@ -10,7 +10,7 @@
  const PAGE=40,cache=new Map(),loading=new Map();window.QUEST_PACKS={};
  const navigation=window.QuestNavigation.create({history,location});
  const listPager=window.QuestListPager.attach({list:$('quest-list'),getPage:()=>({page:state.page,total:Math.ceil(state.filtered.length/PAGE)}),changePage});
- const filterIds=['search','language','zone','level-min','level-max','story-only','hide-test'];
+ const filterIds=['search','language','zone','repeat-filter','faction-filter','class-filter','race-filter','level-min','level-max','story-only','hide-test'];
  let restoringView=false,viewTimer=0;
  history.scrollRestoration='manual';
  let reading;try{reading=window.QuestReading.normalize(JSON.parse(localStorage.getItem('wow-quest-reading-v1')||'null'));}catch{reading=window.QuestReading.normalize(null);}
@@ -80,6 +80,7 @@
   try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;$('actors-open').disabled=false;
    const zones=[...new Set(prepared.map(x=>x.record.zoneOrSort))].sort((a,b)=>a-b);
    $('zone').innerHTML=window.QuestRegions.options(id,zones);
+   for(const [element,kind,defaults]of [['class-filter','classes','<option value="">全部职业</option><option value="restricted">有职业限制</option><option value="unrestricted">不限职业</option>'],['race-filter','races','<option value="">全部种族</option>']]){const current=$(element).value;$(element).innerHTML=defaults+window.QuestTraits.options(id,kind);$(element).value=[...$(element).options].some(o=>o.value===current)?current:'';}
    restoreFilters(view);applyFilters(false);const chosen=questId?prepared.find(x=>x.record.id===Number(questId))?.record:state.filtered.find(r=>r.id===783&&r.textLocales.title==="zhCN")||state.filtered.find(r=>r.text.description&&r.textLocales.description==='zhCN')||state.filtered[0];
    if(chosen)selectQuest(chosen.id,{updateHash:!fromHash});else if(questId)$('reader').innerHTML='<div class="empty"><h2>快照中没有这条任务</h2><p>请在当前版本中选择其他记录。</p></div>';
    else renderEmpty();
@@ -87,8 +88,8 @@
  }
  function applyFilters(select=true){
   const words=$('search').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean),language=$('language').value,zone=$('zone').value;
-  const min=$('level-min').value,max=$('level-max').value;
-  state.filtered=state.rows.filter(({record:r,search})=>(!state.bookmarks||bookmarks.has(r.key))&&(!language||r.textLocales.title===language)&&(!zone||r.zoneOrSort===Number(zone))&&(min===''||r.level>=Number(min))&&(max===''||r.level<=Number(max))&&(!$('story-only').checked||r.text.description.trim())&&(!$('hide-test').checked||!r.tags.some(t=>['suspected-test','community-custom'].includes(t)))&&words.every(w=>search.includes(w))).map(x=>x.record);
+  const min=$('level-min').value,max=$('level-max').value,traits={repeat:$('repeat-filter').value,faction:$('faction-filter').value,playerClass:$('class-filter').value,race:$('race-filter').value};
+  state.filtered=state.rows.filter(({record:r,search})=>(!state.bookmarks||bookmarks.has(r.key))&&(!language||r.textLocales.title===language)&&(!zone||r.zoneOrSort===Number(zone))&&(min===''||r.level>=Number(min))&&(max===''||r.level<=Number(max))&&(!$('story-only').checked||r.text.description.trim())&&(!$('hide-test').checked||!r.tags.some(t=>['suspected-test','community-custom'].includes(t)))&&words.every(w=>search.includes(w))&&window.QuestTraits.matches(window.QuestTraits.get(r),traits)).map(x=>x.record);
   state.page=0;renderList();if(select&&(!state.selected||!state.filtered.some(r=>r.id===state.selected.id))){if(state.filtered.length)selectQuest(state.filtered[0].id);else{state.selected=null;renderEmpty();}}
  }
  function renderList({edge='top'}={}){
@@ -96,7 +97,7 @@
   $('result-count').textContent=`${state.filtered.length.toLocaleString()} 条结果`;
   $('page-label').textContent=state.filtered.length?`${state.page+1} / ${max}`:'0 / 0';
   const hints=window.QuestListPager.edgeMarkup(state.page,state.filtered.length?max:0);
-  const rows=state.filtered.slice(state.page*PAGE,(state.page+1)*PAGE).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${bookmarks.has(r.key)?'☆ ':''}${questTitleHtml(r)}</strong><span class="row-meta"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span>${badge(r.textLocales.title)}</span></button>`).join('');
+  const rows=state.filtered.slice(state.page*PAGE,(state.page+1)*PAGE).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${bookmarks.has(r.key)?'☆ ':''}${questTitleHtml(r)}</strong><span class="row-meta"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span>${badge(r.textLocales.title)}</span>${window.QuestTraits.rowHtml(r)}</button>`).join('');
   $('quest-list').innerHTML=rows?hints.top+rows+hints.bottom:'<div class="empty"><h2>没有匹配任务</h2><p>试试其他关键词，或重置筛选。</p></div>';
   $('quest-list').scrollTop=edge==='bottom'?$('quest-list').scrollHeight:0;
   listPager.refresh();
@@ -141,7 +142,7 @@
   const meta=cat.versions.find(x=>x.id===state.version);
   const quality=(r.qualityNotes||[]).map(note=>'<div class="notice">翻译待核：'+escape(note)+'</div>').join('')+(r.tags.includes('community-custom')?'<div class="notice">已核实的社区服务器自定义任务，不应当作暴雪原版任务样本。</div>':'')+(r.tags.includes('source-encoding-issue')?'<div class="notice">上游部分文本含损坏字符，已跳过损坏候选并继续语言回退；详见结构化记录 textIssues。</div>':'');
   $('reader').innerHTML=`${backButton()}<div class="reader-top"><span>${reading.mode==='player'?'任务日志 · #':'QUEST RECORD / '}${r.id}</span><div class="reader-actions">${wowheadLink(r)}<button id="bookmark-current" aria-pressed="${bookmarks.has(r.key)}">${bookmarks.has(r.key)?'★ 已收藏':'☆ 收藏'}</button><button id="copy-current">复制当前文本</button><button id="export-current" title="导出保留游戏变量的原始资料">原始 JSON ↓</button></div></div>
-   <h2>${questTitleHtml(r)}</h2>${reading.mode==='source'?`<div class="english-title">${escape(r.english.title&&r.english.title!==r.text.title?r.english.title:'')}</div>`:''}${questMetadata(r,reading.mode==='source')}
+   <h2>${questTitleHtml(r)}</h2>${reading.mode==='source'?`<div class="english-title">${escape(r.english.title&&r.english.title!==r.text.title?r.english.title:'')}</div>`:''}${questMetadata(r,reading.mode==='source')}${window.QuestTraits.html(r)}
    <div class="reading-strip"><span>${reading.mode==='player'?`玩家视角 · ${escape(reading.name||'玩家名称')}${reading.className?' · '+escape(reading.className):''}`:'原文视角 · 保留游戏变量'}</span><button id="reading-current">阅读设置</button></div>
    ${quality}${r.tags.includes('suspected-test')?'<div class="notice">标题含测试、废弃或占位线索。该标签来自规则筛选，尚未人工核验。</div>':''}${r.locales.includes('enUS')?'<div class="notice">部分字段使用英文回退；每段文本右侧标明实际选用的语言。</div>':''}
    ${section(r,'objectives','objective-box')}${section(r,'description')}<div class="npc-strip"><div>接取任务<b>${entityList(r.starters)}</b></div><div>交付任务<b>${entityList(r.enders)}</b></div></div>${section(r,'progress')}${section(r,'completion')}${window.QuestRewards.html(r,reading)}${related(r)}
@@ -154,7 +155,7 @@
   $('copy-current').onclick=()=>copyText(markdown(r),r.key.replace(':','-')+'-'+reading.mode+'.md');$('export-current').onclick=()=>download(r.key.replace(':','-')+'.json',JSON.stringify(r,null,2),'application/json');
   queueView();
  }
- function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n区域 / 分类：${window.QuestRegions.name(r.version,r.zoneOrSort)}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼与可确定的数量已代入）':'原文视角'}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v,r)}\n\n来源：${sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n\n'+window.QuestRewards.text(r,reading)+'\n';}
+ function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n区域 / 分类：${window.QuestRegions.name(r.version,r.zoneOrSort)}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼与可确定的数量已代入）':'原文视角'}\n${window.QuestTraits.text(r)}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v,r)}\n\n来源：${sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n\n'+window.QuestRewards.text(r,reading)+'\n';}
  async function copyText(text,filename){try{if(navigator.clipboard){await navigator.clipboard.writeText(text);}else{const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();if(!document.execCommand('copy'))throw new Error('copy');t.remove();}toast('已复制当前视角的文本');}catch{download(filename,text,'text/markdown');toast('浏览器限制剪贴板，已导出当前文本');}}
  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type:type+';charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  function info(){
@@ -167,6 +168,7 @@
    '<p>任务详情的“原始资料”可按字段查看实际来源。完整语言与缺失统计见 reports/coverage.json；补充前后统计、匹配依据见下方检查报告。测试及已确认的自定义记录默认隐藏，仍保存在原始数据中。</p>'+sources+
    '<h3>阅读称呼与数量</h3><p>目标数量取自本任务记录。军团职业头衔与对应敌人名称使用 Wago Tools 导出的 7.3.5.26972 客户端表，优先简中；原始表和哈希保存在 sources/reading/。这些是展示层的阅读解释，原始对白和任务 NPC 关系保持不变。<a href="docs/READING-VARIABLES.md" target="_blank" rel="noopener noreferrer">查看解释依据与局限 ↗</a></p>'+
    '<h3>区域与任务分类</h3><p>筛选与任务详情显示版本对应的区域或分类名称，优先简中，其次繁中和英文。补充译名按编号与原始名称核对，保留改名前后的版本区别；没有可靠名称的编号标为暂未收录。原始编号、实际语言、客户端表及匹配依据见 data/regions/。<a href="docs/REGIONS.md" target="_blank" rel="noopener noreferrer">查看名称来源 ↗</a></p>'+
+   '<h3>重复规则与接取条件</h3><p>任务列表和详情区分非可重复、可重复、每日、每周、每月及军团世界 / 使者任务。可按重复类型、阵营、种族与职业组合筛选。阵营依据任务种族限制，不能替代前置任务、声望、NPC 关系与脚本条件检查；依据不足的重复规则标为待确认。<a href="docs/QUEST-TRAITS.md" target="_blank" rel="noopener noreferrer">查看字段、版本规则与来源 ↗</a></p>'+
    '<h3>任务奖励</h3><p>物品名称取自同版本物品表，军团再临使用 7.3.5.26972 客户端表补充物品与奖励包。经验、金钱与声望展示可核实的基础值，不模拟角色加成或服务器倍率。原始字段和名称出处保存在每条任务的 rewards 与 sourceFields 中。<a href="docs/REWARDS.md" target="_blank" rel="noopener noreferrer">查看奖励来源与说明 ↗</a></p>'+
    '<h3>研究与 AI 使用</h3><p>JSONL 位于 data/版本/。导出保留游戏变量、实际语言、版本差异与字段来源，研究者的分析标签应与原文分开。阅读设置和书签只保存于当前浏览器。详细限制和复现方法见 README、docs/ 与 sources/。</p>'+
    '<p>网页和工具代码采用 MIT；社区资料遵循各自上游许可与署名。魔兽世界文本、商标及相关内容归 Blizzard Entertainment 或相应权利人所有。代码许可不等于游戏原文或模型训练的授权。</p>';
@@ -195,8 +197,8 @@
  $('quest-list').onclick=e=>{const b=e.target.closest('[data-id]');if(b){selectQuest(b.dataset.id);if(innerWidth<650)$('reader').scrollIntoView({behavior:'smooth'});}};
  $('reader').onclick=e=>{const actor=e.target.closest('[data-actor-id]');if(actor){actors.open({kind:actor.dataset.actorKind,id:Number(actor.dataset.actorId)});return;}const b=e.target.closest('[data-related]');if(b&&!b.disabled){selectQuest(b.dataset.related);$('reader').scrollIntoView({behavior:'smooth',block:'start'});}};
  let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(applyFilters,140);};
- for(const id of ['language','zone','level-min','level-max','story-only','hide-test'])$(id).onchange=applyFilters;
- $('reset').onclick=()=>{for(const id of ['search','language','zone','level-min','level-max'])$(id).value='';$('story-only').checked=false;$('hide-test').checked=true;applyFilters();};
+ for(const id of filterIds.filter(id=>id!=='search'))$(id).onchange=applyFilters;
+ $('reset').onclick=()=>{for(const id of filterIds)if($(id).type!=='checkbox')$(id).value='';$('story-only').checked=false;$('hide-test').checked=true;applyFilters();};
  $('bookmarks').onclick=()=>{state.bookmarks=!state.bookmarks;$('bookmarks').setAttribute('aria-pressed',state.bookmarks);applyFilters();};
  $('export-results').onclick=()=>{if(!state.filtered.length){toast('当前筛选没有可导出的任务');return;}download(`${state.version}-quests-${state.filtered.length}.jsonl`,state.filtered.map(r=>JSON.stringify(r)).join('\n')+'\n','application/x-ndjson');toast(`已导出 ${state.filtered.length} 条任务`);};
  $('about').onclick=$('source-open').onclick=info;$('close-dialog').onclick=()=>$('info-dialog').close();

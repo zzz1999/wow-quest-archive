@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "collectedAt": "2026-10-18",
+  "note": "Read-only interpretation of the versioned primary quest fields. Core snapshots document bit meanings; client tables supply UI labels and Legion quest categories. Raw quests are unchanged.",
+  "versions": [
+    {
+      "id": "classic",
+      "repo": "cmangos/mangos-classic",
+      "commit": "a4b8e30084a16d3c18dc00cd219699f8b30a184e",
+      "assets": [
+        {
+          "path": "src/game/Entities/Player.cpp",
+          "url": "https://raw.githubusercontent.com/cmangos/mangos-classic/a4b8e30084a16d3c18dc00cd219699f8b30a184e/src/game/Entities/Player.cpp",
+          "bytes": 722164,
+          "sha256": "d02d693f2575b0f47be405fe6e81e2a4e833fca8d149354d9cb8d3b458527c7e"
+        },
+        {
+          "path": "src/game/Globals/ObjectMgr.cpp",
+          "url": "https://raw.githubusercontent.com/cmangos/mangos-classic/a4b8e30084a16d3c18dc00cd219699f8b30a184e/src/game/Globals/ObjectMgr.cpp",
+          "bytes": 384902,
+          "sha256": "dd27915ca363f81885d20783fc4f6c0392df20c4e3dfa031faa1a30df7a4b78b"
+        },
+        {
+          "path": "src/game/Globals/SharedDefines.h",
+          "url": "https://raw.githubusercontent.com/cmangos/mangos-classic/a4b8e30084a16d3c18dc00cd219699f8b30a184e/src/game/Globals/SharedDefines.h",
+          "bytes": 81852,
+          "sha256": "4832b8e0da45211143acae7c42173fea42732e2acdbf190692725e51b020bfe8"
+        },
+        {
+          "path": "src/game/Quests/QuestDef.cpp",
+          "url": "https://raw.githubusercontent.com/cmangos/mangos-classic/a4b8e30084a16d3c18dc00cd219699f8b30a184e/src/game/Quests/QuestDef.cpp",
+          "bytes": 8087,
+          "sha256": "e4f868e95421c2be5b90bd046178b6f4413dc5203e945cf5735b9bac26104cfb"
+        },
+        {
+          "path": "src/game/Quests/QuestDef.h",
+          "url": "https://raw.githubusercontent.com/cmangos/mangos-classic/a4b8e30084a16d3c18dc00cd219699f8b30a184e/src/game/Quests/QuestDef.h",
+          "bytes": 17253,
+          "sha256": "a03821312ade7e0e30e620bf37d68e32899d65494e37887c9053eee50ebfa66a"
+        }
+      ],
+      "rules": {
+        "races": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11
+        ],
+        "repeatSpecialFlag": 1,
+        "dailyFlag": 0,
+        "weeklyFlag": 32768,
+        "monthlySpecialFlag": 0,
+        "raceZeroUnrestricted": true,
+        "seasonalSorts": [],
+        "columns": {
+          "raceMask": "quest_template.requiredraces",
+          "classMask": "quest_template.requiredclasses",
+          "flags": "quest_template.questflags",
+          "specialFlags": "quest_template.specialflags"
+        }
+      }
+    },
+    {
+      "id": "wotlk",
+      "repo": "azerothcore/azerothcore-wotlk",
+      "commit": "8265956f54c64ad082e2b9f8d37db64b38600b3f",
+      "assets": [
+        {
+          "path": "src/server/game/Entities/Player/Player.cpp",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/src/server/game/Entities/Player/Player.cpp",
+          "bytes": 618135,
+          "sha256": "b22b8df54e6d11cfd43a49834b240ac1a237a6f88da070ca4f243e2b9770803a"
+        },
+        {
+          "path": "src/server/game/Globals/ObjectMgr.cpp",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/src/server/game/Globals/ObjectMgr.cpp",
+          "bytes": 462719,
+          "sha256": "17a3ab53f637b3ab1a434cd2af46ff3f24f5caaade6847414a54ffaa299706d1"
+        },
+        {
+          "path": "src/server/game/Quests/QuestDef.cpp",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/src/server/game/Quests/QuestDef.cpp",
+          "bytes": 15128,
+          "sha256": "6aff64eb450a7b44a787eef00099c1b553552df339865ac913529715ca7f84c4"
+        },
+        {
+          "path": "src/server/game/Quests/QuestDef.h",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/src/server/game/Quests/QuestDef.h",
+          "bytes": 21798,
+          "sha256": "baaee3502a85ce4e02e045ae67efb1f48b7c6f6aad162f4b116496f028390b20"
+        },
+        {
+          "path": "src/server/shared/SharedDefines.h",
+          "url": "https://raw.githubusercontent.com/azerothcore/azerothcore-wotlk/8265956f54c64ad082e2b9f8d37db64b38600b3f/src/server/shared/SharedDefines.h",
+          "bytes": 204647,
+          "sha256": "7b17defee7cfb58fe42bcfbc2aab304b210eb922446cdf4193925d220b9bdf47"
+        }
+      ],
+      "rules": {
+        "races": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11
+        ],
+        "classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "repeatSpecialFlag": 1,
+        "dailyFlag": 4096,
+        "weeklyFlag": 32768,
+        "monthlySpecialFlag": 16,
+        "raceZeroUnrestricted": true,
+        "seasonalSorts": [
+          22,
+          284,
+          366,
+          369,
+          370,
+          374,
+          376
+        ],
+        "columns": {
+          "raceMask": "quest_template.allowableraces",
+          "classMask": "quest_template_addon.allowableclasses",
+          "flags": "quest_template.flags",
+          "specialFlags": "quest_template_addon.specialflags"
+        }
+      }
+    },
+    {
+      "id": "cataclysm",
+      "repo": "mangosthree/server",
+      "commit": "358e03bafbaa5f3e89d67843c7eced1c54b2259c",
+      "assets": [
+        {
+          "path": "src/game/Object/ObjectMgr.cpp",
+          "url": "https://raw.githubusercontent.com/mangosthree/server/358e03bafbaa5f3e89d67843c7eced1c54b2259c/src/game/Object/ObjectMgr.cpp",
+          "bytes": 129650,
+          "sha256": "8a6f785eff0fe9e65cb4beff5738c65b381808e55cd76f963de78137c8a5a769"
+        },
+        {
+          "path": "src/game/Object/Player.cpp",
+          "url": "https://raw.githubusercontent.com/mangosthree/server/358e03bafbaa5f3e89d67843c7eced1c54b2259c/src/game/Object/Player.cpp",
+          "bytes": 219360,
+          "sha256": "0f6fb84c6a3bf8363bca9271a7cdf78750733736062a6f8adb0c10b469d27dc6"
+        },
+        {
+          "path": "src/game/Server/SharedDefines.h",
+          "url": "https://raw.githubusercontent.com/mangosthree/server/358e03bafbaa5f3e89d67843c7eced1c54b2259c/src/game/Server/SharedDefines.h",
+          "bytes": 189730,
+          "sha256": "bb9c8baf0de7330d741ff286ba3d87fb7f9b345fc43f466116f35c91f9381ddf"
+        },
+        {
+          "path": "src/game/WorldHandlers/QuestDef.cpp",
+          "url": "https://raw.githubusercontent.com/mangosthree/server/358e03bafbaa5f3e89d67843c7eced1c54b2259c/src/game/WorldHandlers/QuestDef.cpp",
+          "bytes": 13015,
+          "sha256": "ab7e22b25bae613ee7482e2225163430c9ff9dbd5803e06b07c322f03b0c5600"
+        },
+        {
+          "path": "src/game/WorldHandlers/QuestDef.h",
+          "url": "https://raw.githubusercontent.com/mangosthree/server/358e03bafbaa5f3e89d67843c7eced1c54b2259c/src/game/WorldHandlers/QuestDef.h",
+          "bytes": 21558,
+          "sha256": "b7f23dbd96b144dc4397be41ab14b01455dce10c548368f7fd15e0deb8af5666"
+        }
+      ],
+      "rules": {
+        "races": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          22
+        ],
+        "classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11
+        ],
+        "repeatSpecialFlag": 1,
+        "dailyFlag": 4096,
+        "weeklyFlag": 32768,
+        "monthlySpecialFlag": 4,
+        "raceZeroUnrestricted": true,
+        "seasonalSorts": [],
+        "columns": {
+          "raceMask": "quest_template.requiredraces",
+          "classMask": "quest_template.requiredclasses",
+          "flags": "quest_template.questflags",
+          "specialFlags": "quest_template.specialflags"
+        }
+      }
+    },
+    {
+      "id": "pandaria",
+      "repo": "alexkulya/pandaria_5.4.8",
+      "commit": "e0a20613d73e2b9324ac13a4783c724fec1d4559",
+      "assets": [
+        {
+          "path": "src/server/game/Entities/Player/Player.cpp",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Entities/Player/Player.cpp",
+          "bytes": 1198723,
+          "sha256": "491423dc8fa5bf5d8d2cff78e7f4790e977c149b8468e2de38964898638c3a79"
+        },
+        {
+          "path": "src/server/game/Globals/ObjectMgr.cpp",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Globals/ObjectMgr.cpp",
+          "bytes": 437043,
+          "sha256": "bce7e8e8241ae66fb360036f2acb516dd68cd689668cb49705f6295e07cf4eeb"
+        },
+        {
+          "path": "src/server/game/Miscellaneous/SharedDefines.h",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Miscellaneous/SharedDefines.h",
+          "bytes": 293161,
+          "sha256": "43023307f9c6b444a4183aefdd8fad9983d6bd481eb89e851e1516e8f836c238"
+        },
+        {
+          "path": "src/server/game/Quests/QuestDef.cpp",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Quests/QuestDef.cpp",
+          "bytes": 11001,
+          "sha256": "3161fb867e89e2fc3962d7a613eb4ef100dd8f5db6399942b9a10d9bcc77feb7"
+        },
+        {
+          "path": "src/server/game/Quests/QuestDef.h",
+          "url": "https://raw.githubusercontent.com/alexkulya/pandaria_5.4.8/e0a20613d73e2b9324ac13a4783c724fec1d4559/src/server/game/Quests/QuestDef.h",
+          "bytes": 23861,
+          "sha256": "6e247981072a981170acee8b3f3103e51d7ab2e36f4ab4c35bc93be64376c929"
+        }
+      ],
+      "rules": {
+        "races": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          22,
+          24,
+          25,
+          26
+        ],
+        "classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "repeatSpecialFlag": 1,
+        "dailyFlag": 4096,
+        "weeklyFlag": 32768,
+        "monthlySpecialFlag": 16,
+        "raceZeroUnrestricted": true,
+        "seasonalSorts": [
+          22,
+          284,
+          366,
+          369,
+          370,
+          374,
+          376,
+          378
+        ],
+        "columns": {
+          "raceMask": "quest_template.requiredraces",
+          "classMask": "quest_template.requiredclasses",
+          "flags": "quest_template.flags",
+          "specialFlags": "quest_template.specialflags"
+        }
+      }
+    },
+    {
+      "id": "legion",
+      "repo": "TrinityCore/TrinityCore",
+      "commit": "7f2b7dc9c2165d2608742473a931f55b1c1a753a",
+      "assets": [
+        {
+          "path": "src/server/game/Entities/Player/Player.cpp",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/src/server/game/Entities/Player/Player.cpp",
+          "bytes": 1064448,
+          "sha256": "4dcae1c27b27210df606e73e5fdc1427f64d3258e925992101b21e9b35063fc1"
+        },
+        {
+          "path": "src/server/game/Globals/ObjectMgr.cpp",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/src/server/game/Globals/ObjectMgr.cpp",
+          "bytes": 417542,
+          "sha256": "30abcf8bff6ada324177cf4ef3bb88951ad7316f11c6327bbcbddb608f3e2f5d"
+        },
+        {
+          "path": "src/server/game/Miscellaneous/SharedDefines.h",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/src/server/game/Miscellaneous/SharedDefines.h",
+          "bytes": 355169,
+          "sha256": "8d484dd59ec92079f0c995d217bc0dfa3440cda7e9f4c1176475efaeb5188e4e"
+        },
+        {
+          "path": "src/server/game/Quests/QuestDef.cpp",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/src/server/game/Quests/QuestDef.cpp",
+          "bytes": 14602,
+          "sha256": "5e031fba9a58c497a0b4e6987b668cb6df3ee9e2712173b6d3a0891046d14c68"
+        },
+        {
+          "path": "src/server/game/Quests/QuestDef.h",
+          "url": "https://raw.githubusercontent.com/TrinityCore/TrinityCore/7f2b7dc9c2165d2608742473a931f55b1c1a753a/src/server/game/Quests/QuestDef.h",
+          "bytes": 29062,
+          "sha256": "51f3891f169b805b45a972bbb4a67b90491be0f92b917658890fa99503ca9e68"
+        }
+      ],
+      "rules": {
+        "races": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "classes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "repeatSpecialFlag": 1,
+        "dailyFlag": 4096,
+        "weeklyFlag": 32768,
+        "monthlySpecialFlag": 16,
+        "raceZeroUnrestricted": false,
+        "seasonalSorts": [
+          22,
+          284,
+          366,
+          369,
+          370,
+          374,
+          376
+        ],
+        "columns": {
+          "raceMask": "quest_template.allowableraces",
+          "classMask": "quest_template_addon.allowableclasses",
+          "flags": "quest_template.flags",
+          "specialFlags": "quest_template_addon.specialflags"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "table": "QuestInfo",
+      "locale": "zhCN",
+      "build": "7.3.5.26972",
+      "path": "sources/quest-traits/QuestInfo-zhCN.csv",
+      "url": "https://wago.tools/db2/QuestInfo/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 1405,
+      "sha256": "c8f6b3c23c3f38e2495d0d628bd39aa8fa060351cea63c796769818454702a5c"
+    },
+    {
+      "table": "ChrRaces",
+      "locale": "zhCN",
+      "build": "7.3.5.26972",
+      "path": "sources/quest-traits/ChrRaces-zhCN.csv",
+      "url": "https://wago.tools/db2/ChrRaces/csv?build=7.3.5.26972&locale=zhCN",
+      "bytes": 6594,
+      "sha256": "593e77840dea213df672238d4cf089e2913a482988cb1c042b5911dbe212be7f"
+    }
+  ]
+}

@@ -7,11 +7,17 @@ import {gunzipSync} from 'node:zlib';
 import {rewardAudit} from './reward-audit.mjs';
 import {validateItems} from './validate-items.mjs';
 import {validateRegions,validateRegionBundle} from './validate-regions.mjs';
+import {buildQuestTraitData,questTraitAudit} from './quest-traits-data.mjs';
+import '../web/quest-traits.js';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const lock=JSON.parse(await fs.readFile(path.join(root,'sources/manifest.json'),'utf8'));
 const catalog=JSON.parse((await fs.readFile(path.join(root,'web/catalog.js'),'utf8')).replace(/^window\.QUEST_CATALOG=/,'').replace(/;\s*$/,''));
 const html=await fs.readFile(path.join(root,'index.html'),'utf8');
 const rewardReport=JSON.parse(await fs.readFile(path.join(root,'reports/reward-audit.json'),'utf8'));
+const traitReport=JSON.parse(await fs.readFile(path.join(root,'reports/quest-traits.json'),'utf8'));
+globalThis.QuestTraitData=await buildQuestTraitData();
+const traitBundle=JSON.parse((await fs.readFile(path.join(root,'web/quest-traits-data.js'),'utf8')).replace(/^globalThis\.QuestTraitData=/,'').replace(/;\s*$/,''));
+assert.deepEqual(traitBundle,globalThis.QuestTraitData,'Stale task trait definitions');
 for(const match of html.matchAll(/(?:src|href)="(web\/[a-z-]+\.(?:js|css))(?:\?v=([a-f0-9]+))?"/g)){
  const hash=createHash('sha256').update(await fs.readFile(path.join(root,match[1]))).digest('hex').slice(0,12);
  assert.equal(match[2],hash,'Stale page asset revision: '+match[1]);
@@ -61,6 +67,7 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
   for(const e of r.reputation)assert.ok(e.amount===null||Number.isSafeInteger(e.amount));
  }
  assert.deepEqual(rewardReport.versions.find(v=>v.version===id),rewardAudit(records),'Reward report out of date');
+ assert.deepEqual(traitReport.versions.find(v=>v.version===id),questTraitAudit(records,globalThis.QuestTraits.derive),'Task trait report out of date');
  assert.equal(seen.size,m.count);assert.deepEqual(fields,m.fields);
  assert.equal(auditChanges.size,0,'Audit contains unused changes');assert.deepEqual(audit.after,fields);assert.equal(audit.changedFields,audit.changes.length);assert.equal(audit.changedFields,m.textAudit.changedFields);assert.equal(audit.changedQuests,new Set(audit.changes.map(c=>c.id)).size);
  const catalogEntry=catalog.versions.find(v=>v.id===id);assert.ok(catalogEntry);

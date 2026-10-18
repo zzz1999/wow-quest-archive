@@ -18,8 +18,8 @@
 | `level`, `minLevel` | 任务等级与最低等级；-1 等特殊值原样保留 |
 | `zoneOrSort` | 原始区域 / 分类 ID；正值指向 AreaTable，负值的绝对值指向 QuestSort，零为未分类。网页名称来自独立的版本名称表 `data/regions/`，详见 [区域名称说明](REGIONS.md) |
 | `type`, `suggestedPlayers` | 源任务信息类型与建议人数 |
-| `raceMask`, `classMask` | 原始种族 / 职业位掩码；不同客户端位定义可能不同 |
-| `flags`, `specialFlags` | 原始任务标志，不能跨版本直接解释 |
+| `raceMask`, `classMask` | 原始种族 / 职业位掩码；网页按版本显示对应种族、职业及由种族推导的阵营，见 [接取条件说明](QUEST-TRAITS.md) |
+| `flags`, `specialFlags` | 原始任务标志，不能跨版本直接解释；网页按固定版本规则区分非可重复、可重复及重置周期，未确定时明确标注 |
 | `links` | 前置、后续、奖励后续、互斥组与引导字段；保留正负号和零 |
 | `starters`, `enders` | 静态接取 / 交付关系中的 NPC 或物件，含档案 `key`、`kind`、名称、名称语言和 ID |
 | `objectiveDetails` | 使用独立目标表的版本，其目标类型、对象、数量、顺序、文本与语言 |
@@ -28,6 +28,8 @@
 | `source` | 对应版本的 manifest 与 sources/manifest.json 条目 |
 
 `text` 包含 `title`（标题）、`objectives`（目标摘要）、`description`（接取描述）、`progress`（进行中 / 交物品对白）、`completion`（奖励 / 完成对白）、`end`（区域提示）、`completed`（完成日志）、角色窗口文本及四个旧式目标说明。缺失数据保留空字符串，不猜测、翻译或生成对白。
+
+任务重复、阵营、种族与职业解释只在展示层生成，原始字段不被标签替换。阵营筛选依据种族条件，不包括完整 NPC、前置、声望及脚本资格；军团世界任务依据固定客户端类型表判断，不能仅从日常显示位断定。固定核心出处、位值差异与待确认范围见 [重复规则与接取条件](QUEST-TRAITS.md)。
 
 ## 语言回退
 
