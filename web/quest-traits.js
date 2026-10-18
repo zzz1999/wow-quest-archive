@@ -58,8 +58,9 @@
   return entries.map(e=>`<option value="${e.id}">${escape(e.name)}</option>`).join('');
  }
  function rowHtml(r){
-  const t=get(r),repeat=t.repeat.kind==='once'?'':`<span title="${escape(t.repeat.note)}">${escape(t.repeat.label)}</span>`,faction=t.faction.kind==='both'?'':`<span class="trait-faction ${t.faction.kind}" title="依据任务种族限制；其他接取条件另计">${escape(t.faction.label)}</span>`;
-  return repeat||faction?`<span class="row-traits">${repeat}${faction}</span>`:'';
+  const t=get(r),shortLabel={daily:'每日',weekly:'每周',monthly:'每月',world:'世界任务',emissary:'使者任务',seasonal:'活动 · 待确认'}[t.repeat.kind]||t.repeat.label;
+  const repeat=t.repeat.kind==='once'?'':`<span class="row-repeat" title="${escape(t.repeat.label+'：'+t.repeat.note)}">${escape(shortLabel)}</span>`,faction=t.faction.kind==='both'?'':`<span class="trait-faction ${t.faction.kind}" title="依据任务种族限制；其他接取条件另计">${escape(t.faction.label)}</span>`;
+  return repeat+faction;
  }
  function html(r){
   const t=get(r),rules=data().versions[r.version],classText=!t.classes.known?'职业待确认':t.classes.restricted?t.classes.names.join('、'):'不限职业',raceText=!t.races.known?'未标注可用种族':t.races.restricted?t.races.names.join('、'):'本版本全部可玩种族';

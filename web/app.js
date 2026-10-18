@@ -6,10 +6,13 @@
  const label={zhCN:'简中',zhTW:'繁中',enUS:'英文'};
  const wowheadPaths={classic:'classic/',wotlk:'wotlk/',cataclysm:'cata/',pandaria:'mop-classic/',legion:''};
  const fieldLabels={title:'标题',objectives:'任务目标',description:'任务描述',progress:'进行中对白',completion:'完成对白',end:'区域提示',completed:'完成日志',giverWindow:'接取角色对白',giverTarget:'接取角色名',turninWindow:'交付角色对白',turninTarget:'交付角色名',objective1:'目标说明 1',objective2:'目标说明 2',objective3:'目标说明 3',objective4:'目标说明 4'};
- let state={version:'classic',rows:[],filtered:[],selected:null,page:0,bookmarks:false},loadGeneration=0,navigateGeneration=0;
- const PAGE=40,cache=new Map(),loading=new Map();window.QUEST_PACKS={};
+ let state={version:'classic',rows:[],filtered:[],selected:null,page:0,pageSize:40,bookmarks:false},loadGeneration=0,navigateGeneration=0;
+ const cache=new Map(),loading=new Map(),pageSizeKey='wow-quest-page-size-v1';window.QUEST_PACKS={};
+ const normalizePageSize=value=>[20,40,100].includes(Number(value))?Number(value):40;
+ try{state.pageSize=normalizePageSize(localStorage.getItem(pageSizeKey));}catch{}
+ $('page-size').value=String(state.pageSize);
  const navigation=window.QuestNavigation.create({history,location});
- const listPager=window.QuestListPager.attach({list:$('quest-list'),getPage:()=>({page:state.page,total:Math.ceil(state.filtered.length/PAGE)}),changePage});
+ const listPager=window.QuestListPager.attach({list:$('quest-list'),getPage:()=>({page:state.page,total:Math.ceil(state.filtered.length/state.pageSize)}),changePage});
  const filterIds=['search','language','zone','repeat-filter','faction-filter','class-filter','race-filter','level-min','level-max','story-only','important-only','hide-test'];
  const filterCollapseKey='wow-quest-filters-collapsed-v1';
  function setFiltersCollapsed(collapsed){
@@ -44,11 +47,13 @@
  function rememberView(){
   if(restoringView||!state.selected||navigation.current().quest?.route!==`#${state.version}/${state.selected.id}`)return;
   const filters=Object.fromEntries(filterIds.map(id=>[id,$(id).type==='checkbox'?$(id).checked:$(id).value]));
-  navigation.save({filters,bookmarks:state.bookmarks,page:state.page,listScroll:$('quest-list').scrollTop,x:scrollX,y:scrollY,details:[...$('reader').querySelectorAll('details')].map(el=>el.open),moreFilters:document.querySelector('.more-filters').open});
+  navigation.save({filters,bookmarks:state.bookmarks,page:state.page,pageSize:state.pageSize,listScroll:$('quest-list').scrollTop,x:scrollX,y:scrollY,details:[...$('reader').querySelectorAll('details')].map(el=>el.open),moreFilters:document.querySelector('.more-filters').open});
  }
  function queueView(){clearTimeout(viewTimer);viewTimer=setTimeout(rememberView,250);}
  function backButton(){const previous=navigation.previous();return `<div class="quest-history"><button id="quest-back" ${previous?'':'disabled'} title="${previous?'返回：'+escape(previous.title):'还没有上一条任务'}">← 返回上一任务</button>${previous?`<span>${escape(previous.title)}</span>`:''}</div>`;}
  function restoreFilters(view){
+  // Older history entries used a fixed 40 records per page.
+  if(view){state.pageSize=normalizePageSize(view.pageSize);$('page-size').value=String(state.pageSize);}
   if(!view?.filters)return;
   for(const id of filterIds){const el=$(id),value=view.filters[id];if(el.type==='checkbox')el.checked=Boolean(value);else el.value=String(value??'');}
   state.bookmarks=Boolean(view.bookmarks);$('bookmarks').setAttribute('aria-pressed',state.bookmarks);
@@ -64,9 +69,10 @@
  function openReading(){fillReadingForm(reading);$('reading-dialog').showModal();}
  function refreshReading(){
   $('reading-open').textContent=reading.mode==='player'?'玩家视角 · 设置':'原文视角 · 设置';
-  if(state.selected)selectQuest(state.selected.id,{updateHash:false});
+  if(state.selected)selectQuest(state.selected.id,{updateHash:false,reveal:false});
   const byId=new Map(state.filtered.map(r=>[r.id,r]));
   for(const button of $('quest-list').querySelectorAll('[data-id]')){const r=byId.get(Number(button.dataset.id));if(r)button.querySelector('strong').innerHTML=questRowTitle(r);}
+  listPager.refresh();
  }
  function rowText(r){return [r.id,...Object.keys(r.text).map(k=>window.QuestWowhead.field(r,k).text),...Object.values(r.english),...r.starters.map(x=>x.name),...r.enders.map(x=>x.name),r.zoneOrSort,window.QuestRegions.searchText(r.version,r.zoneOrSort)].join('\n').toLocaleLowerCase();}
  function loadVersion(id){
@@ -88,9 +94,9 @@
   const generation=++loadGeneration;window.QuestItems.close();actors.close({restoreHash:false});$('actors-open').disabled=true;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
   document.querySelectorAll('.version-button').forEach(b=>{b.classList.toggle('active',b.dataset.version===id);b.setAttribute('aria-current',b.dataset.version===id?'page':'false');});
   $('version-title').textContent=meta.name;$('version-patch').textContent=meta.patch;$('breadcrumb').textContent=meta.name;$('result-count').textContent='正在载入资料…';$('quest-list').replaceChildren();
-  closePageJump();listPager.refresh();$('page-label').textContent='—';$('page-jump').disabled=true;
+  closePageJump();$('page-label').textContent='—';$('page-jump').disabled=true;$('page-size').disabled=true;
   $('reader').innerHTML='<div class="empty"><span>✦</span><h2>正在打开任务档案</h2><p>首次读取这个版本需要片刻。</p></div>';
-  try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;$('actors-open').disabled=false;
+  try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;$('actors-open').disabled=false;$('page-size').disabled=false;
    const zones=[...new Set(prepared.map(x=>x.record.zoneOrSort))].sort((a,b)=>a-b);
    $('zone').innerHTML=window.QuestRegions.options(id,zones);
    for(const [element,kind,defaults]of [['class-filter','classes','<option value="">全部职业</option><option value="restricted">有职业限制</option><option value="unrestricted">不限职业</option>'],['race-filter','races','<option value="">全部种族</option>']]){const current=$(element).value;$(element).innerHTML=defaults+window.QuestTraits.options(id,kind);$(element).value=[...$(element).options].some(o=>o.value===current)?current:'';}
@@ -106,23 +112,35 @@
   state.page=0;renderList();if(select&&(!state.selected||!state.filtered.some(r=>r.id===state.selected.id))){if(state.filtered.length)selectQuest(state.filtered[0].id);else{state.selected=null;renderEmpty();}}
  }
  function renderList({edge='top'}={}){
-  const max=Math.max(1,Math.ceil(state.filtered.length/PAGE));state.page=Math.max(0,Math.min(state.page,max-1));
+  const max=Math.max(1,Math.ceil(state.filtered.length/state.pageSize));state.page=Math.max(0,Math.min(state.page,max-1));
   $('result-count').textContent=`${state.filtered.length.toLocaleString()} 条结果`;
   $('page-label').textContent=state.filtered.length?`${state.page+1} / ${max}`:'0 / 0';
   $('page-jump').disabled=!state.filtered.length;
   $('page-jump').title=state.filtered.length?`当前第 ${state.page+1} 页，共 ${max} 页；点击输入页码跳转`:'没有可跳转的页码';
   closePageJump();
   const hints=window.QuestListPager.edgeMarkup(state.page,state.filtered.length?max:0);
-  const rows=state.filtered.slice(state.page*PAGE,(state.page+1)*PAGE).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${questRowTitle(r)}</strong><span class="row-meta"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span>${r.textLocales.title==='zhCN'?'':badge(r.textLocales.title)}</span>${window.QuestTraits.rowHtml(r)}</button>`).join('');
+  const rows=state.filtered.slice(state.page*state.pageSize,(state.page+1)*state.pageSize).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${questRowTitle(r)}</strong><span class="row-meta"><span class="row-basics"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span></span><span class="row-flags">${r.textLocales.title==='zhCN'?'':badge(r.textLocales.title)}${window.QuestTraits.rowHtml(r)}</span></span></button>`).join('');
   $('quest-list').innerHTML=rows?hints.top+rows+hints.bottom:'<div class="empty"><h2>没有匹配任务</h2><p>试试其他关键词，或重置筛选。</p></div>';
   $('quest-list').scrollTop=edge==='bottom'?$('quest-list').scrollHeight:0;
   listPager.refresh();
  }
  function changePage(direction){
-  const target=state.page+direction,total=Math.ceil(state.filtered.length/PAGE);if(target<0||target>=total)return;
+  const target=state.page+direction,total=Math.ceil(state.filtered.length/state.pageSize);if(target<0||target>=total)return;
   const hadFocus=$('quest-list').contains(document.activeElement);
   state.page=target;renderList({edge:direction<0?'bottom':'top'});
   if(hadFocus)$('quest-list').focus({preventScroll:true});
+  queueView();
+ }
+ function changePageSize(){
+  const size=normalizePageSize($('page-size').value);if(size===state.pageSize)return;
+  const list=$('quest-list'),top=list.getBoundingClientRect().top;
+  const anchor=[...list.querySelectorAll('[data-id]')].find(row=>row.getBoundingClientRect().bottom>top+1);
+  const index=anchor?state.filtered.findIndex(r=>r.id===Number(anchor.dataset.id)):state.page*state.pageSize;
+  const offset=anchor?anchor.getBoundingClientRect().top-top:0,anchorId=anchor?.dataset.id;
+  state.pageSize=size;state.page=Math.floor(Math.max(0,index)/size);renderList();
+  const next=anchorId?list.querySelector(`[data-id="${anchorId}"]`):null;
+  if(next)list.scrollTop+=next.getBoundingClientRect().top-list.getBoundingClientRect().top-offset;
+  listPager.refresh();try{localStorage.setItem(pageSizeKey,String(size));}catch{}
   queueView();
  }
  function clearPageJumpError(){
@@ -134,7 +152,7 @@
   listPager.refresh();
  }
  function openPageJump(){
-  const total=Math.ceil(state.filtered.length/PAGE);if(!total)return;
+  const total=Math.ceil(state.filtered.length/state.pageSize);if(!total)return;
   if(!$('page-jump-form').hidden){closePageJump(true);return;}
   clearPageJumpError();$('page-input').value=String(state.page+1);$('page-input').max=String(total);
   $('page-jump-range').textContent=`共 ${total} 页`;$('page-jump-form').hidden=false;$('page-jump').setAttribute('aria-expanded','true');
@@ -142,7 +160,7 @@
  }
  function submitPageJump(event){
   event.preventDefault();
-  const page=$('page-input').valueAsNumber,total=Math.ceil(state.filtered.length/PAGE);
+  const page=$('page-input').valueAsNumber,total=Math.ceil(state.filtered.length/state.pageSize);
   if(!Number.isInteger(page)||page<1||page>total){
    $('page-input').setAttribute('aria-invalid','true');$('page-jump-error').textContent=`请输入 1–${total} 之间的整数页码。`;$('page-jump-error').hidden=false;
    $('page-input').focus({preventScroll:true});return;
@@ -167,13 +185,13 @@
  }
  function entityList(rows){return rows.length?rows.map(x=>`<button class="actor-link" data-actor-kind="${x.kind}" data-actor-id="${x.id}" title="打开${x.kind==='creature'?'NPC':'物件'}档案">${escape(x.name||'未命名')} ↗</button> ${badge(x.nameLocale)}${reading.mode==='source'?` <span>#${x.id} · ${x.kind==='creature'?'NPC':'物件'}</span>`:x.kind==='gameobject'?' <span>任务物件</span>':''}`).join('<br>'):'暂未收录';}
  function renderEmpty(){window.QuestItems.close();$('reader').innerHTML='<div class="empty"><span>✦</span><h2>选择一条任务，开始阅读</h2><p>可按关键词、语言与等级筛选。</p></div>';}
- function selectQuest(id,{updateHash=true}={}){
+ function selectQuest(id,{updateHash=true,reveal=true}={}){
   window.QuestItems.close();
   const r=state.rows.find(x=>x.record.id===Number(id))?.record;if(!r)return;
   if(updateHash){rememberView();navigation.showQuest(`#${state.version}/${r.id}`,questTitle(r));}
   state.selected=r;
   $('reader').dataset.readingMode=reading.mode;
-  const previousPage=state.page,position=state.filtered.findIndex(x=>x.id===r.id);if(position>=0)state.page=Math.floor(position/PAGE);
+  const previousPage=state.page,position=state.filtered.findIndex(x=>x.id===r.id);if(reveal&&position>=0)state.page=Math.floor(position/state.pageSize);
   if(state.page!==previousPage)renderList();
   else for(const button of $('quest-list').querySelectorAll('[data-id]')){
    const selected=Number(button.dataset.id)===r.id;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected));
@@ -189,7 +207,7 @@
    <details><summary>更多任务信息</summary>${['end','completed','giverWindow','giverTarget','turninWindow','turninTarget','objective1','objective2','objective3','objective4'].filter(k=>r.text[k]).map(k=>section(r,k)).join('')}${r.objectiveDetails.map(o=>`<p>${readingHtml(o.description||'目标 #'+o.id,r,o)} ${badge(o.locale)}<br><small>类型 ${o.type} · 对象 ${o.objectId} · 数量 ${o.amount}</small></p>`).join('')||'<p>无额外目标记录</p>'}</details>
    <details><summary>英文原文对照</summary>${Object.entries(r.english).filter(([,v])=>v).map(([k,v])=>`<h3>${fieldLabels[k]}</h3><div class="quest-prose">${escape(originalLayout(v))}</div>`).join('')}</details>
    <details id="quest-source"><summary>原始资料 · 字段、奖励与来源</summary>${questMetadata(r,true)}${window.QuestRegions.provenance(r.version,r.zoneOrSort)}${textSources(r)}<pre>${escape(JSON.stringify(r,null,2))}</pre><div class="provenance">任务基础资料 ${sourceLink(meta)} · ${escape(meta.snapshot)}<br>${escape(meta.note)}<br>玩家视角会代入称呼和可确定的数量；JSON / JSONL 中的游戏变量与原文保持不变。</div></details>`;
-  $('bookmark-current').onclick=()=>{bookmarks.has(r.key)?bookmarks.delete(r.key):bookmarks.add(r.key);saveBookmarks();if(state.bookmarks)applyFilters();else selectQuest(r.id,{updateHash:false});};
+  $('bookmark-current').onclick=()=>{bookmarks.has(r.key)?bookmarks.delete(r.key):bookmarks.add(r.key);saveBookmarks();if(state.bookmarks)applyFilters();else selectQuest(r.id,{updateHash:false,reveal:false});};
   $('reading-current').onclick=openReading;
   $('quest-back').onclick=()=>{rememberView();navigation.goBack();};
   $('copy-current').onclick=()=>copyText(markdown(r),r.key.replace(':','-')+'-'+reading.mode+'.md');$('export-current').onclick=()=>download(r.key.replace(':','-')+'.json',JSON.stringify(r,null,2),'application/json');
@@ -240,6 +258,7 @@ ${window.QuestImportance.text(r)}\n\n`+Object.keys(r.text).map(k=>[k,window.Ques
  $('reader').onclick=e=>{const actor=e.target.closest('[data-actor-id]');if(actor){actors.open({kind:actor.dataset.actorKind,id:Number(actor.dataset.actorId)});return;}const b=e.target.closest('[data-related]');if(b&&!b.disabled){selectQuest(b.dataset.related);$('reader').scrollIntoView({behavior:'smooth',block:'start'});}};
  let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(applyFilters,140);};
  $('page-jump').onclick=openPageJump;$('page-jump-form').onsubmit=submitPageJump;
+ $('page-size').onchange=changePageSize;
  $('page-jump-cancel').onclick=()=>closePageJump(true);$('page-input').oninput=clearPageJumpError;
  $('page-jump-form').onkeydown=e=>{if(e.key==='Escape'){e.preventDefault();closePageJump(true);}};
  for(const id of filterIds.filter(id=>id!=='search'))$(id).onchange=applyFilters;

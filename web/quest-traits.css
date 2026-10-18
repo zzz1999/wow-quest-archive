@@ -3,8 +3,11 @@
 .trait-faction.alliance,.trait-faction.alliance-neutral{color:#52779a}
 .trait-faction.horde,.trait-faction.horde-neutral{color:#9c6253}
 .trait-faction.neutral,.trait-faction.unknown{color:#8d806a}
-.row-traits{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:8px;color:#85916e;font-size:10px;line-height:1.5}
-.row-traits .trait-faction{margin-left:auto}
+.quest-row .row-meta{gap:8px;min-height:20px}
+.row-basics{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;white-space:nowrap}
+.row-flags{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;flex:1;min-width:0;gap:3px 6px;color:#85916e;line-height:1.5}
+.row-flags .row-repeat,.row-flags .trait-faction{white-space:nowrap}
+.quest-row .row-flags .locale-badge{margin-left:0}
 .reader .quest-requirements{font-family:"Segoe UI","Microsoft YaHei",sans-serif;margin:4px 0 20px;padding:0;color:#7b876c;font-size:11px}
 .quest-requirements summary{padding:10px 0}
 .quest-requirements dl{margin:3px 0 10px;padding:12px 14px;background:#f7f8f2;border-radius:5px}
