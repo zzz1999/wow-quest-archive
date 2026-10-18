@@ -88,7 +88,7 @@
   const generation=++loadGeneration;window.QuestItems.close();actors.close({restoreHash:false});$('actors-open').disabled=true;state.version=id;state.selected=null;state.rows=[];state.filtered=[];
   document.querySelectorAll('.version-button').forEach(b=>{b.classList.toggle('active',b.dataset.version===id);b.setAttribute('aria-current',b.dataset.version===id?'page':'false');});
   $('version-title').textContent=meta.name;$('version-patch').textContent=meta.patch;$('breadcrumb').textContent=meta.name;$('result-count').textContent='正在载入资料…';$('quest-list').replaceChildren();
-  listPager.refresh();$('page-label').textContent='—';
+  closePageJump();listPager.refresh();$('page-label').textContent='—';$('page-jump').disabled=true;
   $('reader').innerHTML='<div class="empty"><span>✦</span><h2>正在打开任务档案</h2><p>首次读取这个版本需要片刻。</p></div>';
   try{const prepared=await loadVersion(id);if(generation!==loadGeneration)return;state.rows=prepared;$('actors-open').disabled=false;
    const zones=[...new Set(prepared.map(x=>x.record.zoneOrSort))].sort((a,b)=>a-b);
@@ -109,6 +109,9 @@
   const max=Math.max(1,Math.ceil(state.filtered.length/PAGE));state.page=Math.max(0,Math.min(state.page,max-1));
   $('result-count').textContent=`${state.filtered.length.toLocaleString()} 条结果`;
   $('page-label').textContent=state.filtered.length?`${state.page+1} / ${max}`:'0 / 0';
+  $('page-jump').disabled=!state.filtered.length;
+  $('page-jump').title=state.filtered.length?`当前第 ${state.page+1} 页，共 ${max} 页；点击输入页码跳转`:'没有可跳转的页码';
+  closePageJump();
   const hints=window.QuestListPager.edgeMarkup(state.page,state.filtered.length?max:0);
   const rows=state.filtered.slice(state.page*PAGE,(state.page+1)*PAGE).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${questRowTitle(r)}</strong><span class="row-meta"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span>${r.textLocales.title==='zhCN'?'':badge(r.textLocales.title)}</span>${window.QuestTraits.rowHtml(r)}</button>`).join('');
   $('quest-list').innerHTML=rows?hints.top+rows+hints.bottom:'<div class="empty"><h2>没有匹配任务</h2><p>试试其他关键词，或重置筛选。</p></div>';
@@ -121,6 +124,30 @@
   state.page=target;renderList({edge:direction<0?'bottom':'top'});
   if(hadFocus)$('quest-list').focus({preventScroll:true});
   queueView();
+ }
+ function clearPageJumpError(){
+  $('page-input').removeAttribute('aria-invalid');$('page-jump-error').hidden=true;$('page-jump-error').textContent='';
+ }
+ function closePageJump(focus=false){
+  $('page-jump-form').hidden=true;$('page-jump').setAttribute('aria-expanded','false');clearPageJumpError();
+  if(focus)$('page-jump').focus({preventScroll:true});
+  listPager.refresh();
+ }
+ function openPageJump(){
+  const total=Math.ceil(state.filtered.length/PAGE);if(!total)return;
+  if(!$('page-jump-form').hidden){closePageJump(true);return;}
+  clearPageJumpError();$('page-input').value=String(state.page+1);$('page-input').max=String(total);
+  $('page-jump-range').textContent=`共 ${total} 页`;$('page-jump-form').hidden=false;$('page-jump').setAttribute('aria-expanded','true');
+  $('page-input').focus({preventScroll:true});$('page-input').select();listPager.refresh();
+ }
+ function submitPageJump(event){
+  event.preventDefault();
+  const page=$('page-input').valueAsNumber,total=Math.ceil(state.filtered.length/PAGE);
+  if(!Number.isInteger(page)||page<1||page>total){
+   $('page-input').setAttribute('aria-invalid','true');$('page-jump-error').textContent=`请输入 1–${total} 之间的整数页码。`;$('page-jump-error').hidden=false;
+   $('page-input').focus({preventScroll:true});return;
+  }
+  state.page=page-1;renderList();$('page-jump').focus({preventScroll:true});queueView();
  }
  function section(r,field,extraClass=''){
   const entry=window.QuestWowhead.field(r,field),value=entry.text,notes=window.QuestReading.notes(value,reading,{quest:r});
@@ -212,6 +239,9 @@ ${window.QuestImportance.text(r)}\n\n`+Object.keys(r.text).map(k=>[k,window.Ques
  $('quest-list').onclick=e=>{const b=e.target.closest('[data-id]');if(b){selectQuest(b.dataset.id);if(innerWidth<650)$('reader').scrollIntoView({behavior:'smooth'});}};
  $('reader').onclick=e=>{const actor=e.target.closest('[data-actor-id]');if(actor){actors.open({kind:actor.dataset.actorKind,id:Number(actor.dataset.actorId)});return;}const b=e.target.closest('[data-related]');if(b&&!b.disabled){selectQuest(b.dataset.related);$('reader').scrollIntoView({behavior:'smooth',block:'start'});}};
  let searchTimer;$('search').oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(applyFilters,140);};
+ $('page-jump').onclick=openPageJump;$('page-jump-form').onsubmit=submitPageJump;
+ $('page-jump-cancel').onclick=()=>closePageJump(true);$('page-input').oninput=clearPageJumpError;
+ $('page-jump-form').onkeydown=e=>{if(e.key==='Escape'){e.preventDefault();closePageJump(true);}};
  for(const id of filterIds.filter(id=>id!=='search'))$(id).onchange=applyFilters;
  $('reset').onclick=()=>{for(const id of filterIds)if($(id).type!=='checkbox')$(id).value='';$('story-only').checked=false;$('important-only').checked=false;$('hide-test').checked=true;applyFilters();};
  $('bookmarks').onclick=()=>{state.bookmarks=!state.bookmarks;$('bookmarks').setAttribute('aria-pressed',state.bookmarks);applyFilters();};

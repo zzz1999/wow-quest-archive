@@ -5,13 +5,13 @@
   <meta name="description" content="魔兽世界五版本任务研究资料库。简体中文优先，支持离线查阅与 JSONL 导出。">
   <title>艾泽拉斯任务档案 · WoW Quest Archive</title>
   <link rel="stylesheet" href="web/style.css?v=f96aaadf8efd">
-  <link rel="stylesheet" href="web/list-pager.css?v=b93198ce382f">
+  <link rel="stylesheet" href="web/list-pager.css?v=2cd665c0929b">
   <link rel="stylesheet" href="web/quest-traits.css?v=9344e9e0e974">
   <script src="web/quest-traits-data.js?v=f89d33a33419" defer></script><script src="web/quest-traits.js?v=a4811015e5bf" defer></script>
   <link rel="stylesheet" href="web/importance.css?v=619abf58f2c4">
   <script src="web/importance-data.js?v=2e107f8a71d9" defer></script><script src="web/importance.js?v=9b173c780977" defer></script>
   <script src="web/wowhead.js?v=ff68d9bc18b6" defer></script>
-  <script src="web/catalog.js?v=04a499161cd8" defer></script><script src="web/reading-data.js?v=3bd7e0716290" defer></script><script src="web/reading.js?v=078d88bf679b" defer></script><script src="web/navigation.js?v=16ad244c81a4" defer></script><script src="web/actors.js?v=5c3f1e0b8603" defer></script><script src="web/items.js?v=8131ee6ca9b9" defer></script><script src="web/rewards.js?v=ce026217f8a7" defer></script><script src="web/regions-data.js?v=372c3f533890" defer></script><script src="web/regions.js?v=54ea5b3205c7" defer></script><script src="web/list-pager.js?v=4bceed84e5fc" defer></script><script src="web/app.js?v=0b6c6e58595a" defer></script>
+  <script src="web/catalog.js?v=04a499161cd8" defer></script><script src="web/reading-data.js?v=3bd7e0716290" defer></script><script src="web/reading.js?v=078d88bf679b" defer></script><script src="web/navigation.js?v=16ad244c81a4" defer></script><script src="web/actors.js?v=5c3f1e0b8603" defer></script><script src="web/items.js?v=8131ee6ca9b9" defer></script><script src="web/rewards.js?v=ce026217f8a7" defer></script><script src="web/regions-data.js?v=372c3f533890" defer></script><script src="web/regions.js?v=54ea5b3205c7" defer></script><script src="web/list-pager.js?v=4bceed84e5fc" defer></script><script src="web/app.js?v=606a436cd539" defer></script>
 <link rel="stylesheet" href="web/items.css?v=63925d5d3832"></head>
 <body>
 <aside class="sidebar">
@@ -34,7 +34,12 @@
    </div>
    <div class="list-toolbar"><span id="result-count" role="status" aria-live="polite">正在读取资料…</span><button id="export-results" title="导出当前筛选的所有结果为 JSONL">导出结果 ↓</button></div>
    <div id="quest-list" class="quest-list" role="region" aria-label="任务列表" aria-describedby="quest-paging-help" tabindex="0"></div>
-   <div class="pagination quest-pagination"><span id="page-label" role="status" aria-live="polite" aria-atomic="true">—</span><span id="quest-paging-help">滚动至列表边缘翻页</span></div>
+   <div class="pagination quest-pagination">
+    <button id="page-jump" type="button" aria-expanded="false" aria-controls="page-jump-form" title="点击输入页码跳转" disabled><span id="page-label" role="status" aria-live="polite" aria-atomic="true">—</span></button><span id="quest-paging-help">滚动翻页 · 点击页码跳转</span>
+    <form id="page-jump-form" class="page-jump-form" aria-label="跳转任务列表页码" hidden novalidate>
+     <label for="page-input">跳至</label><input id="page-input" type="number" min="1" step="1" required inputmode="numeric" aria-label="目标页码" aria-describedby="page-jump-range page-jump-error"><span>页</span><button type="submit">跳转</button><button id="page-jump-cancel" type="button">取消</button><small id="page-jump-range"></small><span id="page-jump-error" class="page-jump-error" role="alert" hidden></span>
+    </form>
+   </div>
   </div>
   <article id="reader" class="reader" aria-label="任务详情"><div class="empty"><span>✦</span><h2>正在打开任务档案</h2><p>首次读取版本资料需要片刻。</p></div></article>
  </section>
