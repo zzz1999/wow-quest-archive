@@ -104,6 +104,8 @@
 
 ## 复现
 
+Wowhead 网页参考独立保存在 `data/wowhead/<version>.json`，原始 JSONL 不覆盖。构建时浏览器记录增加 `wowhead` 属性，原字段缺失时才显示该处的文字；导出的 JSON / JSONL 带有补充原文及 URL、采集日期、响应哈希和匹配依据。网页参考的版本不等于历史采集 build，详细范围与重建方法见 [Wowhead 补充说明](WOWHEAD.md)。
+
 普通使用者不需要构建：直接打开根目录 `index.html`。
 
 维护者需要 Node.js 20+，解压工具（Windows 内置 tar 可处理 ZIP；军团 7z 附件需要 7-Zip）。以下操作仅下载、读取和转换数据，不启动游戏服务器、数据库或执行上游脚本：

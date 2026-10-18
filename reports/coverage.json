@@ -197,7 +197,7 @@
         "count": 2138
       },
       "bundleHashes": {
-        "quests": "ae7806844f4e",
+        "quests": "50df372c0ab7",
         "actors": "7c2aea22b5c0",
         "items": "fd200d126922"
       }
@@ -433,7 +433,7 @@
       "bundleHashes": {
         "quests": "0bbd70929d72",
         "actors": "85fdc49f4858",
-        "items": "772eb1d8efd5"
+        "items": "00a9f830b026"
       }
     },
     {
@@ -707,7 +707,7 @@
       "bundleHashes": {
         "quests": "7e6e5c684b84",
         "actors": "502a340e154d",
-        "items": "7af66f5b7713"
+        "items": "9481ec8a9725"
       }
     },
     {
@@ -1124,7 +1124,7 @@
       "bundleHashes": {
         "quests": "6c4b16a786b5",
         "actors": "f83cccc5e6a7",
-        "items": "d5dccc67f35a"
+        "items": "0e21115a02ac"
       }
     },
     {
@@ -1513,7 +1513,7 @@
       "bundleHashes": {
         "quests": "a2e288353804",
         "actors": "ec625bf113a4",
-        "items": "90f5cbcb2b95"
+        "items": "55c8f0319815"
       }
     }
   ]

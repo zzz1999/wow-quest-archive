@@ -41,10 +41,11 @@
   if(a===42&&Number(e.effecttriggerspell))return '可触发额外法术，具体效果暂未收录。';
   return '';
  }
- function effectHtml(e){
-  const prefix=triggers[e.trigger]||'效果',text=e.text||[...new Set((e.mechanics||[]).map(mechanic).filter(Boolean))].join('；')||e.name||'效果说明暂未收录';
+ function effectHtml(e,item){
+  const supplement=(!e.text||e.unresolved)?globalThis.QuestWowhead?.effect(item,e):null;
+  const prefix=triggers[e.trigger]||'效果',text=supplement?.text||e.text||[...new Set((e.mechanics||[]).map(mechanic).filter(Boolean))].join('；')||e.name||'效果说明暂未收录';
   const cooldown=Math.max(e.cooldown||0,e.categoryCooldown||0),details=[cooldown>0?'冷却 '+duration(cooldown):'',e.charges?Math.abs(e.charges)+' 次'+(e.charges<0?'（用完消耗物品）':''):''].filter(Boolean).join(' · ');
-  return `<div class="item-tip-effect">${escape(prefix+'：'+text)} ${e.text?badge(e.textLocale):''}${details?`<div class="item-tip-muted">${escape(details)}</div>`:''}${e.unresolved?'<div class="item-tip-muted">'+(e.text?'部分数值需要角色或法术条件。':(e.mechanics||[]).some(mechanic)?'根据同版本效果字段列出；完整说明暂未收录。':'完整效果说明暂未收录。')+'</div>':''}</div>`;
+  return `<div class="item-tip-effect">${escape(prefix+'：'+text)} ${supplement?badge(supplement.locale):e.text?badge(e.textLocale):''}${details?`<div class="item-tip-muted">${escape(details)}</div>`:''}${supplement?'<div class="item-tip-muted">Wowhead 补充 · '+escape(item.wowhead.edition)+' · '+escape(supplement.source.capturedAt.slice(0,10))+'</div>':e.unresolved?'<div class="item-tip-muted">'+(e.text?'部分数值需要角色或法术条件。':(e.mechanics||[]).some(mechanic)?'根据同版本效果字段列出；完整说明暂未收录。':'完整效果说明暂未收录。')+'</div>':''}</div>`;
  }
  function tooltipHtml(item){
   if(!item)return '<p>物品资料暂未收录。</p>';
@@ -68,8 +69,12 @@
   if(item.classMask>0&&item.classMask<4095){const allowed=classes.filter((_,i)=>i>0&&item.classMask&(1<<(i-1)));if(allowed.length&&allowed.length<classes.length-1)body+=line('职业：'+allowed.join('、'));}
   if(item.requiredLevel>0)body+=line('需要等级 '+num(item.requiredLevel));
   if(item.requiredSkill)body+=line('需要 '+(skillNames[item.requiredSkill]||'技能 #'+item.requiredSkill)+(item.requiredSkillRank?'（'+num(item.requiredSkillRank)+'）':''));
-  body+=(item.effects||[]).map(effectHtml).join('');
-  if(item.description)body+=`<div class="item-tip-flavor">“${escape(item.description)}” ${badge(item.descriptionLocale)}</div>`;
+  const learned=new Set((item.wowhead?.effects||[]).filter(e=>e.learnedSpellId).map(e=>e.learnedSpellId));
+  const visibleEffects=(item.effects||[]).filter(e=>!(e.trigger===6&&learned.has(e.id)));
+  body+=visibleEffects.map(e=>effectHtml(e,item)).join('');
+  const comparable=s=>String(s||'').replace(/[\u200b\ufeff]/g,'').trim();
+  const repeatedDescription=item.description&&visibleEffects.some(e=>comparable((!e.text||e.unresolved?globalThis.QuestWowhead?.effect(item,e)?.text:null)||e.text)===comparable(item.description));
+  if(item.description&&!repeatedDescription)body+=`<div class="item-tip-flavor">“${escape(item.description)}” ${badge(item.descriptionLocale)}</div>`;
   if(item.sellPrice>0)body+=line('出售价格：'+money(item.sellPrice),'item-tip-price');
   for(const note of item.notes||[])body+=line(note,'item-tip-muted');
   body+=`<div class="item-tip-footer">${escape(quality[item.quality]||'物品')} · ${escape(({classic:'经典旧世',wotlk:'巫妖王之怒',cataclysm:'大地的裂变',pandaria:'潘达利亚之谜',legion:'军团再临'})[item.version]||item.version)} #${item.id}<br>基础物品资料 · 已随离线包保存</div>`;

@@ -1,0 +1,2633 @@
+{
+  "schemaVersion": 1,
+  "version": "wotlk",
+  "edition": "巫妖王之怒怀旧服",
+  "quests": {},
+  "items": {
+    "728": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2543,
+          "text": "教你学会烹制杂味炖肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=728",
+            "capturedAt": "2026-10-18T07:36:55.283Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/728?dataEnv=8&locale=4",
+            "sha256": "a953bace31cd4290802e7955a0957b8a5edaecf38776d722679c0834974e19f4"
+          },
+          "sourceItem": {
+            "name": "食谱：杂味炖肉",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "1ab9c2684be48c10db6ed153ad07cb1dfa88850357dce8da0af475272290dded",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=728",
+              "capturedAt": "2026-10-18T07:36:55.283Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/728?dataEnv=8&locale=4",
+              "sha256": "a953bace31cd4290802e7955a0957b8a5edaecf38776d722679c0834974e19f4"
+            }
+          }
+        }
+      ]
+    },
+    "2697": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2542,
+          "text": "教你学会烹制猪肝馅饼。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=2697",
+            "capturedAt": "2026-10-18T07:36:58.776Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2697?dataEnv=8&locale=4",
+            "sha256": "7b9b53745262fc01bbc04ae6d7826d2169c881c0ae0bd26dcb95b512441f7357"
+          },
+          "sourceItem": {
+            "name": "食谱：猪肝馅饼",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "807b18d20aa707fdc5a215a9735349deeea8b48e1ee45ee149250eb2557ae7ed",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=2697",
+              "capturedAt": "2026-10-18T07:36:58.776Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2697?dataEnv=8&locale=4",
+              "sha256": "7b9b53745262fc01bbc04ae6d7826d2169c881c0ae0bd26dcb95b512441f7357"
+            }
+          }
+        }
+      ]
+    },
+    "2699": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2547,
+          "text": "教你学会烹制赤脊山炖肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=2699",
+            "capturedAt": "2026-10-18T07:36:59.030Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2699?dataEnv=8&locale=4",
+            "sha256": "713a15c898b5e43e7178267ea0a840f929fb8cff48f6d99bf2a9e5da6bd36960"
+          },
+          "sourceItem": {
+            "name": "食谱：赤脊山炖肉",
+            "quality": 1,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "3b25157274e7594edd95d02f5a4ce7ab8e263ac021055bbb5b8b61240cc97406",
+            "quality": 1,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=2699",
+              "capturedAt": "2026-10-18T07:36:59.030Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2699?dataEnv=8&locale=4",
+              "sha256": "713a15c898b5e43e7178267ea0a840f929fb8cff48f6d99bf2a9e5da6bd36960"
+            }
+          }
+        }
+      ]
+    },
+    "2701": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2549,
+          "text": "教你学会烹制干烤狼肉串。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=2701",
+            "capturedAt": "2026-10-18T07:36:59.543Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2701?dataEnv=8&locale=4",
+            "sha256": "e09e726a5583d82f5f8cca41bd2d8aa1000c7a6fec48c31bfbb3a96765e26f68"
+          },
+          "sourceItem": {
+            "name": "食谱：干烤狼肉串",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "497f9795cfc82c3334e4731115954c2879f2bda47d7eeb800c2dce61ee1774a3",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=2701",
+              "capturedAt": "2026-10-18T07:36:59.543Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2701?dataEnv=8&locale=4",
+              "sha256": "e09e726a5583d82f5f8cca41bd2d8aa1000c7a6fec48c31bfbb3a96765e26f68"
+            }
+          }
+        }
+      ]
+    },
+    "2889": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2795,
+          "text": "教你学会烹制啤酒烤猪排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=2889",
+            "capturedAt": "2026-10-18T07:37:00.203Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2889?dataEnv=8&locale=4",
+            "sha256": "28396e0276578189a5846b4dc44e3091e82cecbeeb32fb4bf16336f630114588"
+          },
+          "sourceItem": {
+            "name": "食谱：啤酒烤猪排",
+            "quality": 1,
+            "itemLevel": 8
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c69bb7a55e3586f204f3452e3495b282877e7c433cd7f12b32949b3daa898f1b",
+            "quality": 1,
+            "itemLevel": 8,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=2889",
+              "capturedAt": "2026-10-18T07:37:00.203Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2889?dataEnv=8&locale=4",
+              "sha256": "28396e0276578189a5846b4dc44e3091e82cecbeeb32fb4bf16336f630114588"
+            }
+          }
+        }
+      ]
+    },
+    "3609": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3321,
+          "text": "教你学会制作铜质链甲背心。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3609",
+            "capturedAt": "2026-10-18T07:37:00.944Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3609?dataEnv=8&locale=4",
+            "sha256": "350a1b39aa62f0fa68736b714198133161d6e5504cd0d4ef3936054d6b787998"
+          },
+          "sourceItem": {
+            "name": "设计图：铜质链甲外衣",
+            "quality": 2,
+            "itemLevel": 10
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c6d48f4dfb9c2462527e92fe7ab81f6f29beaf0f776bbef66a1d7805f3142860",
+            "quality": 2,
+            "itemLevel": 10,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3609",
+              "capturedAt": "2026-10-18T07:37:00.944Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3609?dataEnv=8&locale=4",
+              "sha256": "350a1b39aa62f0fa68736b714198133161d6e5504cd0d4ef3936054d6b787998"
+            }
+          }
+        }
+      ]
+    },
+    "3678": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3370,
+          "text": "教你学会烹制鳄鱼煎排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3678",
+            "capturedAt": "2026-10-18T07:37:01.590Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3678?dataEnv=8&locale=4",
+            "sha256": "d5f4da3a62cae5e1b93b8fb8314128f84797d2050aded42a49af9f3ad9f33c8d"
+          },
+          "sourceItem": {
+            "name": "食谱：鳄鱼煎排",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "027a6f2baf3550cf2958a17163ccb3b37cf10fc6fd4f99e427a22da3cb61025d",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3678",
+              "capturedAt": "2026-10-18T07:37:01.590Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3678?dataEnv=8&locale=4",
+              "sha256": "d5f4da3a62cae5e1b93b8fb8314128f84797d2050aded42a49af9f3ad9f33c8d"
+            }
+          }
+        }
+      ]
+    },
+    "3679": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3371,
+          "text": "教你学会烹制血肠。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3679",
+            "capturedAt": "2026-10-18T07:37:02.042Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3679?dataEnv=8&locale=4",
+            "sha256": "e1b64970822a42ce4579ba5b0a528bf127c8ac4ef2fc3a75a6e662895eaa0b41"
+          },
+          "sourceItem": {
+            "name": "食谱：血肠",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "acffc6c3914a10b53f4250657db07610109b4029334fdc233128917731bf6d0c",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3679",
+              "capturedAt": "2026-10-18T07:37:02.042Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3679?dataEnv=8&locale=4",
+              "sha256": "e1b64970822a42ce4579ba5b0a528bf127c8ac4ef2fc3a75a6e662895eaa0b41"
+            }
+          }
+        }
+      ]
+    },
+    "3680": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3372,
+          "text": "教你学会烹制鱼人鳍汤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3680",
+            "capturedAt": "2026-10-18T07:37:02.234Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3680?dataEnv=8&locale=4",
+            "sha256": "92b801f092b7546b9757cbb1f95adbcffb65d3a9e13d14e3c514882de5a97b7b"
+          },
+          "sourceItem": {
+            "name": "食谱：鱼人鳍汤",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "5c9654cb4fb2f3430fdc9ad1e789b2c4dc95db5b1e908bb1cfec1ee3da577697",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3680",
+              "capturedAt": "2026-10-18T07:37:02.234Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3680?dataEnv=8&locale=4",
+              "sha256": "92b801f092b7546b9757cbb1f95adbcffb65d3a9e13d14e3c514882de5a97b7b"
+            }
+          }
+        }
+      ]
+    },
+    "3681": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3373,
+          "text": "教你学会烹制鳄鱼浓汤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3681",
+            "capturedAt": "2026-10-18T07:37:02.651Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3681?dataEnv=8&locale=4",
+            "sha256": "8ff97a14a08e66409f0d727e4c5c944d05731489433a6b675e0195720cc8c0de"
+          },
+          "sourceItem": {
+            "name": "食谱：鳄鱼浓汤",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "fd8fa1925f13e6a19eea23348efee12c62c8c8c281fcf79615a998885c40df63",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3681",
+              "capturedAt": "2026-10-18T07:37:02.651Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3681?dataEnv=8&locale=4",
+              "sha256": "8ff97a14a08e66409f0d727e4c5c944d05731489433a6b675e0195720cc8c0de"
+            }
+          }
+        }
+      ]
+    },
+    "3682": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3376,
+          "text": "教你学会烹制美味煎蛋卷。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3682",
+            "capturedAt": "2026-10-18T07:37:02.897Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3682?dataEnv=8&locale=4",
+            "sha256": "6e54cc7a01d6609ccc4e3f9b78cbfbf7cbc8af7db9dab8e43b077622a4e80810"
+          },
+          "sourceItem": {
+            "name": "食谱：美味煎蛋卷",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f0db3063ed2650aa52109ba8cbe628f1d0c2541c0e581b0c27a77549a93e8e2b",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3682",
+              "capturedAt": "2026-10-18T07:37:02.897Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3682?dataEnv=8&locale=4",
+              "sha256": "6e54cc7a01d6609ccc4e3f9b78cbfbf7cbc8af7db9dab8e43b077622a4e80810"
+            }
+          }
+        }
+      ]
+    },
+    "3683": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3377,
+          "text": "教你学会烹制蜘蛛蛋糕。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3683",
+            "capturedAt": "2026-10-18T07:37:03.254Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3683?dataEnv=8&locale=4",
+            "sha256": "0ffcfc59e89095749faac2da6cee4d640b88cfba05a631fd88994effeb6d2128"
+          },
+          "sourceItem": {
+            "name": "食谱：蜘蛛蛋糕",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0966578c681a1d93776115fcc41259a31d1a98cf970be58155f5a2a0f6de6e37",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3683",
+              "capturedAt": "2026-10-18T07:37:03.254Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3683?dataEnv=8&locale=4",
+              "sha256": "0ffcfc59e89095749faac2da6cee4d640b88cfba05a631fd88994effeb6d2128"
+            }
+          }
+        }
+      ]
+    },
+    "3734": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3397,
+          "text": "教你学会烹制烤熊排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3734",
+            "capturedAt": "2026-10-18T07:37:04.136Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3734?dataEnv=8&locale=4",
+            "sha256": "46ce17df913778518444c04dfe60690fa9e09a2505cba024bde1fd8e7cd6bc3e"
+          },
+          "sourceItem": {
+            "name": "食谱：烤熊排",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "b1bb33efe14c6707ecf41ca888ab5ea8c5395a686d773456259470e7b533b366",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3734",
+              "capturedAt": "2026-10-18T07:37:04.136Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3734?dataEnv=8&locale=4",
+              "sha256": "46ce17df913778518444c04dfe60690fa9e09a2505cba024bde1fd8e7cd6bc3e"
+            }
+          }
+        }
+      ]
+    },
+    "3735": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3398,
+          "text": "教你学会烹制烤狮排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3735",
+            "capturedAt": "2026-10-18T07:37:04.500Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3735?dataEnv=8&locale=4",
+            "sha256": "27843112113544bb79e060e8c3f0f08ac94ca4f6a2d68db51814a9dbaa32dc0e"
+          },
+          "sourceItem": {
+            "name": "食谱：烤狮排",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "eee06068f5d8d086573d0f0b89fc5cd0be6faa595049ba343c83c5342de79137",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3735",
+              "capturedAt": "2026-10-18T07:37:04.500Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3735?dataEnv=8&locale=4",
+              "sha256": "27843112113544bb79e060e8c3f0f08ac94ca4f6a2d68db51814a9dbaa32dc0e"
+            }
+          }
+        }
+      ]
+    },
+    "3736": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3399,
+          "text": "教你学会烹制香烤狮肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3736",
+            "capturedAt": "2026-10-18T07:37:04.832Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3736?dataEnv=8&locale=4",
+            "sha256": "ba5b5fcdb03aad79e562dc451f438e41eb7c9d3e8edad2234171b267322fafbf"
+          },
+          "sourceItem": {
+            "name": "食谱：香烤狮肉",
+            "quality": 1,
+            "itemLevel": 30
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0c7cd4f2a0af20d55724c6e60ca7506674c96ededf1140eddcd037007475fc64",
+            "quality": 1,
+            "itemLevel": 30,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3736",
+              "capturedAt": "2026-10-18T07:37:04.832Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3736?dataEnv=8&locale=4",
+              "sha256": "ba5b5fcdb03aad79e562dc451f438e41eb7c9d3e8edad2234171b267322fafbf"
+            }
+          }
+        }
+      ]
+    },
+    "3737": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3400,
+          "text": "教你学会烹制海龟汤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=3737",
+            "capturedAt": "2026-10-18T07:37:05.160Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3737?dataEnv=8&locale=4",
+            "sha256": "c2025c9d53a52b4f2605d2265616d4a02a6dd403c6837037211a22d72d756ab1"
+          },
+          "sourceItem": {
+            "name": "食谱：海龟汤",
+            "quality": 1,
+            "itemLevel": 30
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c708669222f1bb4bfa89ae82d47d4c9d8bcbe0a946167df4043f7e5894a86cfd",
+            "quality": 1,
+            "itemLevel": 30,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=3737",
+              "capturedAt": "2026-10-18T07:37:05.160Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3737?dataEnv=8&locale=4",
+              "sha256": "c2025c9d53a52b4f2605d2265616d4a02a6dd403c6837037211a22d72d756ab1"
+            }
+          }
+        }
+      ]
+    },
+    "4597": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 4508,
+          "text": "教你学会配制褪色的治疗药水。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=4597",
+            "capturedAt": "2026-10-18T07:37:07.188Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/4597?dataEnv=8&locale=4",
+            "sha256": "382e1f635f86ddc8d0a7d6a08cc2d9ae98c1e16c038d0fbe7e435e2939f446d6"
+          },
+          "sourceItem": {
+            "name": "配方：褪色的治疗药水",
+            "quality": 2,
+            "itemLevel": 10
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f107dd2ad40ed8983510356dcc16aa86c6d39e42e47c234278c154e7002741e1",
+            "quality": 2,
+            "itemLevel": 10,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=4597",
+              "capturedAt": "2026-10-18T07:37:07.188Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/4597?dataEnv=8&locale=4",
+              "sha256": "382e1f635f86ddc8d0a7d6a08cc2d9ae98c1e16c038d0fbe7e435e2939f446d6"
+            }
+          }
+        }
+      ]
+    },
+    "4609": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 4094,
+          "text": "教你学会烹制烧烤秃鹰翅膀。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=4609",
+            "capturedAt": "2026-10-18T07:37:08.670Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/4609?dataEnv=8&locale=4",
+            "sha256": "61c30513c4154e1053d9b65ea45b87d1f2bf8ca32934402c0b08d99f58ec4c71"
+          },
+          "sourceItem": {
+            "name": "食谱：烧烤秃鹰翅膀",
+            "quality": 1,
+            "itemLevel": 35
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "7860a48e17750ed3ec2158f52528ff75c61472652690f67804a8d6e7a961afad",
+            "quality": 1,
+            "itemLevel": 35,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=4609",
+              "capturedAt": "2026-10-18T07:37:08.670Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/4609?dataEnv=8&locale=4",
+              "sha256": "61c30513c4154e1053d9b65ea45b87d1f2bf8ca32934402c0b08d99f58ec4c71"
+            }
+          }
+        }
+      ]
+    },
+    "4624": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 4942,
+          "text": "教你学会配制次级石盾药水。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=4624",
+            "capturedAt": "2026-10-18T07:37:08.933Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/4624?dataEnv=8&locale=4",
+            "sha256": "478f9df94b98cfc1730af32e40057ec3583934508b8352eeb9dea9c2c4c39cd2"
+          },
+          "sourceItem": {
+            "name": "配方：次级石盾药水",
+            "quality": 1,
+            "itemLevel": 43
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "379c955d179e4ce3a4cb2f9160daa0683d2e444e8d02e6370e355c7a75f1b3c8",
+            "quality": 1,
+            "itemLevel": 43,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=4624",
+              "capturedAt": "2026-10-18T07:37:08.933Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/4624?dataEnv=8&locale=4",
+              "sha256": "478f9df94b98cfc1730af32e40057ec3583934508b8352eeb9dea9c2c4c39cd2"
+            }
+          }
+        }
+      ]
+    },
+    "5083": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 5244,
+          "text": "教你学会制作科多兽皮包。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=5083",
+            "capturedAt": "2026-10-18T07:37:10.031Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5083?dataEnv=8&locale=4",
+            "sha256": "47c7c1b52bb24653950cbcde7bcdee21122d0ffb673902112805fee0d45e14fa"
+          },
+          "sourceItem": {
+            "name": "图样：科多兽皮包",
+            "quality": 2,
+            "itemLevel": 11
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "66ba562adecc6b0f2e6aa705cf56351dac6570d6fd7c4c787ad14bc41685286f",
+            "quality": 2,
+            "itemLevel": 11,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=5083",
+              "capturedAt": "2026-10-18T07:37:10.031Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5083?dataEnv=8&locale=4",
+              "sha256": "47c7c1b52bb24653950cbcde7bcdee21122d0ffb673902112805fee0d45e14fa"
+            }
+          }
+        }
+      ]
+    },
+    "5482": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 6412,
+          "text": "教你学会烹制卡多雷蜘蛛烤肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=5482",
+            "capturedAt": "2026-10-18T07:37:11.957Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5482?dataEnv=8&locale=4",
+            "sha256": "08e5e9c6bc9d087f84b74fdfb03016849c4b23b7a86c80f11fd13e3a4c9b7b5f"
+          },
+          "sourceItem": {
+            "name": "食谱：卡多雷蜘蛛烤肉",
+            "quality": 1,
+            "itemLevel": 5
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c3eba051af5b7985f4e770a8c7ef3e63d06b1435e44f14241640163ac4894ed1",
+            "quality": 1,
+            "itemLevel": 5,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=5482",
+              "capturedAt": "2026-10-18T07:37:11.957Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5482?dataEnv=8&locale=4",
+              "sha256": "08e5e9c6bc9d087f84b74fdfb03016849c4b23b7a86c80f11fd13e3a4c9b7b5f"
+            }
+          }
+        }
+      ]
+    },
+    "5486": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 6416,
+          "text": "教你学会烹制炖陆行鸟。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=5486",
+            "capturedAt": "2026-10-18T07:37:12.011Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5486?dataEnv=8&locale=4",
+            "sha256": "f07a511f4cf2fe783ccf8bce9b3b63f60d0b83e57c162a2dc2a0d33fe3d4eacb"
+          },
+          "sourceItem": {
+            "name": "食谱：炖陆行鸟",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "486b26dd0358a0206ec14e902a7eaab2809441d925a4d5903230717ac1614a7e",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=5486",
+              "capturedAt": "2026-10-18T07:37:12.011Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5486?dataEnv=8&locale=4",
+              "sha256": "f07a511f4cf2fe783ccf8bce9b3b63f60d0b83e57c162a2dc2a0d33fe3d4eacb"
+            }
+          }
+        }
+      ]
+    },
+    "5487": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 6417,
+          "text": "教你学会烹制焖鼠肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=5487",
+            "capturedAt": "2026-10-18T07:37:12.578Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5487?dataEnv=8&locale=4",
+            "sha256": "b557df248feba057987bf45cba298af2ec2f7cb73d6e23d26bdeef2f3671f424"
+          },
+          "sourceItem": {
+            "name": "食谱：掘地鼠炖肉",
+            "quality": 1,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "729ce1558cfe7154c010a0882fd0dca6ca44718f56c2e071250e1044a414a3e6",
+            "quality": 1,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=5487",
+              "capturedAt": "2026-10-18T07:37:12.578Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5487?dataEnv=8&locale=4",
+              "sha256": "b557df248feba057987bf45cba298af2ec2f7cb73d6e23d26bdeef2f3671f424"
+            }
+          }
+        }
+      ]
+    },
+    "6476": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 7955,
+          "text": "教你学会制作蛇鳞腰带。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=6476",
+            "capturedAt": "2026-10-18T07:37:13.205Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6476?dataEnv=8&locale=4",
+            "sha256": "7caebda3e193dba1372cebb6b9c49eeda8a5299e32a0bfd9c6cdea0b0b45d867"
+          },
+          "sourceItem": {
+            "name": "图样：蛇鳞腰带",
+            "quality": 2,
+            "itemLevel": 23
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "fb3399a076052d27035d49182f4dc28fe03564306a5c8ca7ea526bb9ca2ca1fe",
+            "quality": 2,
+            "itemLevel": 23,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=6476",
+              "capturedAt": "2026-10-18T07:37:13.205Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6476?dataEnv=8&locale=4",
+              "sha256": "7caebda3e193dba1372cebb6b9c49eeda8a5299e32a0bfd9c6cdea0b0b45d867"
+            }
+          }
+        }
+      ]
+    },
+    "6672": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 8243,
+          "text": "教你学会制作闪光雷。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=6672",
+            "capturedAt": "2026-10-18T07:37:13.406Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6672?dataEnv=8&locale=4",
+            "sha256": "e1f5cd3a088cad71b02c4dac06008ad839d700716122355d093859d3b36d14ee"
+          },
+          "sourceItem": {
+            "name": "结构图：闪光雷",
+            "quality": 2,
+            "itemLevel": 37
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "782475b0002b9ef75bcb7b23d9470abc6732d4d470a16e352bcd9face94f62b6",
+            "quality": 2,
+            "itemLevel": 37,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=6672",
+              "capturedAt": "2026-10-18T07:37:13.406Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6672?dataEnv=8&locale=4",
+              "sha256": "e1f5cd3a088cad71b02c4dac06008ad839d700716122355d093859d3b36d14ee"
+            }
+          }
+        }
+      ]
+    },
+    "6710": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 8322,
+          "text": "教你学会制作月光背心。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=6710",
+            "capturedAt": "2026-10-18T07:37:13.909Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6710?dataEnv=8&locale=4",
+            "sha256": "be7827614a6e3604528c543d4fbb874afb6aceea3fe1f410c720783c42898b54"
+          },
+          "sourceItem": {
+            "name": "图样：月光背心",
+            "quality": 2,
+            "itemLevel": 18
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "3d5445bf3e98f5884e1b457f57c717998c2371db93c4c42a5d62cb7d82356546",
+            "quality": 2,
+            "itemLevel": 18,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=6710",
+              "capturedAt": "2026-10-18T07:37:13.909Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6710?dataEnv=8&locale=4",
+              "sha256": "be7827614a6e3604528c543d4fbb874afb6aceea3fe1f410c720783c42898b54"
+            }
+          }
+        }
+      ]
+    },
+    "6735": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 8367,
+          "text": "教你学会制作铁炉堡胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=6735",
+            "capturedAt": "2026-10-18T07:37:14.092Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6735?dataEnv=8&locale=4",
+            "sha256": "03dbd0fadf4e92f2986fd365c57b497a23f0a5f44ac6691710993e97d1504868"
+          },
+          "sourceItem": {
+            "name": "设计图：铁炉堡胸甲",
+            "quality": 2,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ee16e6c65cf2dba069c9f7757fc2134945c1ff8f8ff8096382052dba4939624a",
+            "quality": 2,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=6735",
+              "capturedAt": "2026-10-18T07:37:14.092Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6735?dataEnv=8&locale=4",
+              "sha256": "03dbd0fadf4e92f2986fd365c57b497a23f0a5f44ac6691710993e97d1504868"
+            }
+          }
+        }
+      ]
+    },
+    "7978": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9811,
+          "text": "教你学会制作野人铁护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7978",
+            "capturedAt": "2026-10-18T07:37:15.380Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7978?dataEnv=8&locale=4",
+            "sha256": "1300215e5abf5f44b10e62b1962e661d813a70af0ddcfeb5e21eb786b97d6d33"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁护肩",
+            "quality": 2,
+            "itemLevel": 32
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "dbf93ce82f7d96d020f725ed2fcd6bebd6b991a861309045c7310137af5768bf",
+            "quality": 2,
+            "itemLevel": 32,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7978",
+              "capturedAt": "2026-10-18T07:37:15.380Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7978?dataEnv=8&locale=4",
+              "sha256": "1300215e5abf5f44b10e62b1962e661d813a70af0ddcfeb5e21eb786b97d6d33"
+            }
+          }
+        }
+      ]
+    },
+    "7979": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9813,
+          "text": "教你学会制作野人铁质胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7979",
+            "capturedAt": "2026-10-18T07:37:15.508Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7979?dataEnv=8&locale=4",
+            "sha256": "7d156854bee6cdf9e3dbef1e78c8e95a051092eba621e5087d80154e691fac1a"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁质胸甲",
+            "quality": 2,
+            "itemLevel": 32
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e00c63fa87b7bd55c0b90168b259502929ae5a81eaa48a587a72ea1997b9ddc0",
+            "quality": 2,
+            "itemLevel": 32,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7979",
+              "capturedAt": "2026-10-18T07:37:15.508Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7979?dataEnv=8&locale=4",
+              "sha256": "7d156854bee6cdf9e3dbef1e78c8e95a051092eba621e5087d80154e691fac1a"
+            }
+          }
+        }
+      ]
+    },
+    "7980": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9814,
+          "text": "教你学会制作野人铁盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7980",
+            "capturedAt": "2026-10-18T07:37:16.050Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7980?dataEnv=8&locale=4",
+            "sha256": "4f95df7656581e5eebe27602afae7e714d819d3b93bbf3b859103845e4ec689c"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁盔",
+            "quality": 2,
+            "itemLevel": 35
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "85b3fa011f531190e3bfd66b61e77c93d2875763e9fda2f666939aed23130d82",
+            "quality": 2,
+            "itemLevel": 35,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7980",
+              "capturedAt": "2026-10-18T07:37:16.050Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7980?dataEnv=8&locale=4",
+              "sha256": "4f95df7656581e5eebe27602afae7e714d819d3b93bbf3b859103845e4ec689c"
+            }
+          }
+        }
+      ]
+    },
+    "7981": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9818,
+          "text": "教你学会制作野人铁靴。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7981",
+            "capturedAt": "2026-10-18T07:37:16.139Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7981?dataEnv=8&locale=4",
+            "sha256": "18f09f097593f61858822b1f464b1589e58d746effbc66081ab70fdfb9b786df"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁靴",
+            "quality": 2,
+            "itemLevel": 36
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "22b8fcc75c03866cfeea25f1de7c4030182b065e1a5331cc6c3c9cb25a9ae5bb",
+            "quality": 2,
+            "itemLevel": 36,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7981",
+              "capturedAt": "2026-10-18T07:37:16.139Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7981?dataEnv=8&locale=4",
+              "sha256": "18f09f097593f61858822b1f464b1589e58d746effbc66081ab70fdfb9b786df"
+            }
+          }
+        }
+      ]
+    },
+    "7982": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9820,
+          "text": "教你学会制作野人铁手套。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7982",
+            "capturedAt": "2026-10-18T07:37:16.704Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7982?dataEnv=8&locale=4",
+            "sha256": "f1bee659ed68e09f9541f48727f29af3749d7ab9752077006caa44a87ebceb4c"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁手套",
+            "quality": 2,
+            "itemLevel": 37
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ac8ae9a5447fe1d057c05289eb1e05e56a889574d751a761538c97dc6ad7f9f9",
+            "quality": 2,
+            "itemLevel": 37,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7982",
+              "capturedAt": "2026-10-18T07:37:16.704Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7982?dataEnv=8&locale=4",
+              "sha256": "f1bee659ed68e09f9541f48727f29af3749d7ab9752077006caa44a87ebceb4c"
+            }
+          }
+        }
+      ]
+    },
+    "7983": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9945,
+          "text": "教你学会制作精制秘银短裤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7983",
+            "capturedAt": "2026-10-18T07:37:16.806Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7983?dataEnv=8&locale=4",
+            "sha256": "1a11ab7a27b4cd75633e353039de6c4f9a90e2fc383938b75a0b801d1bf87fe3"
+          },
+          "sourceItem": {
+            "name": "设计图：精制秘银短裤",
+            "quality": 2,
+            "itemLevel": 44
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "36c7b611e8788524c42a0e019e129bc589546946dd704a032b24b34d5125cf55",
+            "quality": 2,
+            "itemLevel": 44,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7983",
+              "capturedAt": "2026-10-18T07:37:16.806Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7983?dataEnv=8&locale=4",
+              "sha256": "1a11ab7a27b4cd75633e353039de6c4f9a90e2fc383938b75a0b801d1bf87fe3"
+            }
+          }
+        }
+      ]
+    },
+    "7984": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9950,
+          "text": "教你学会制作精制秘银手套。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7984",
+            "capturedAt": "2026-10-18T07:37:17.382Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7984?dataEnv=8&locale=4",
+            "sha256": "e22513f04dc4e4d7a70c19f61f9dc27d32e4f4e51b6d8c471d962edb8421edd2"
+          },
+          "sourceItem": {
+            "name": "设计图：精制秘银手套",
+            "quality": 2,
+            "itemLevel": 44
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "9ae923695f3f61c5d0d5f220fee23a09b889f3cac65ee7f3a4f6e24750edcb62",
+            "quality": 2,
+            "itemLevel": 44,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7984",
+              "capturedAt": "2026-10-18T07:37:17.382Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7984?dataEnv=8&locale=4",
+              "sha256": "e22513f04dc4e4d7a70c19f61f9dc27d32e4f4e51b6d8c471d962edb8421edd2"
+            }
+          }
+        }
+      ]
+    },
+    "7985": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9952,
+          "text": "教你学会制作精制秘银护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=7985",
+            "capturedAt": "2026-10-18T07:37:17.447Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7985?dataEnv=8&locale=4",
+            "sha256": "4e01e598974e0f19cb4478f8c38ee85de41edccce4d8e2e8399c8d2fbce0d445"
+          },
+          "sourceItem": {
+            "name": "设计图：精制秘银护肩",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "b94f57b274a6c468321c12779b52d6c94e8e5d400e3a9b69986279e24ee8daa1",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=7985",
+              "capturedAt": "2026-10-18T07:37:17.447Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7985?dataEnv=8&locale=4",
+              "sha256": "4e01e598974e0f19cb4478f8c38ee85de41edccce4d8e2e8399c8d2fbce0d445"
+            }
+          }
+        }
+      ]
+    },
+    "8403": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10529,
+          "text": "教你学会制作蛮皮护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=8403",
+            "capturedAt": "2026-10-18T07:37:18.066Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8403?dataEnv=8&locale=4",
+            "sha256": "f299582fca754ef4674c69824586fe63a6522ad0a0278d789a41225ee86a7350"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮护肩",
+            "quality": 2,
+            "itemLevel": 44
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "abda8d073d24091b982c4ce92eeb287e30b5c4282465214b3fedccb880792efe",
+            "quality": 2,
+            "itemLevel": 44,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=8403",
+              "capturedAt": "2026-10-18T07:37:18.066Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8403?dataEnv=8&locale=4",
+              "sha256": "f299582fca754ef4674c69824586fe63a6522ad0a0278d789a41225ee86a7350"
+            }
+          }
+        }
+      ]
+    },
+    "8404": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10544,
+          "text": "教你学会制作蛮皮外衣。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=8404",
+            "capturedAt": "2026-10-18T07:37:18.153Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8404?dataEnv=8&locale=4",
+            "sha256": "4588fd739e4ce5c535ebd69a4f3c679c51f00cbc0c9bb5948530dcf56f38a0f7"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮外衣",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f6eebcaf769b7d967536eeb39ce42aca3dc61a4e9fbe50201da23c63feed9eed",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=8404",
+              "capturedAt": "2026-10-18T07:37:18.153Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8404?dataEnv=8&locale=4",
+              "sha256": "4588fd739e4ce5c535ebd69a4f3c679c51f00cbc0c9bb5948530dcf56f38a0f7"
+            }
+          }
+        }
+      ]
+    },
+    "8405": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10546,
+          "text": "教你学会制作蛮皮头盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=8405",
+            "capturedAt": "2026-10-18T07:37:18.740Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8405?dataEnv=8&locale=4",
+            "sha256": "d6bbd31a8fa7451e4e47030589a504bdec563b434591fa02565880118aca4960"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮头盔",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f35dd944ef5c1aff8fc4e170d67f3ada159bbece8040cfab1450d1f2ddb15189",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=8405",
+              "capturedAt": "2026-10-18T07:37:18.740Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8405?dataEnv=8&locale=4",
+              "sha256": "d6bbd31a8fa7451e4e47030589a504bdec563b434591fa02565880118aca4960"
+            }
+          }
+        }
+      ]
+    },
+    "8406": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10566,
+          "text": "教你学会制作蛮皮战靴。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=8406",
+            "capturedAt": "2026-10-18T07:37:18.787Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8406?dataEnv=8&locale=4",
+            "sha256": "27675a148b7d952cebb50a1f283deba13068f67f51233fca412ca19596f39c23"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮战靴",
+            "quality": 2,
+            "itemLevel": 49
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0b25e63c85a130ae046abe4f8c0c5baf757467e4cd6c5143235a816c5a51cd4c",
+            "quality": 2,
+            "itemLevel": 49,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=8406",
+              "capturedAt": "2026-10-18T07:37:18.787Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8406?dataEnv=8&locale=4",
+              "sha256": "27675a148b7d952cebb50a1f283deba13068f67f51233fca412ca19596f39c23"
+            }
+          }
+        }
+      ]
+    },
+    "8407": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10572,
+          "text": "教你学会制作蛮皮护腿。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=8407",
+            "capturedAt": "2026-10-18T07:37:19.363Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8407?dataEnv=8&locale=4",
+            "sha256": "d18a91aabc43f769b9709bc7fb9711b8c3ff816d250b3fcd5c879a8793a74571"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮护腿",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "345e3937cbf18665db30343288ac2d678da899ea98251589a4e79513a359b82c",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=8407",
+              "capturedAt": "2026-10-18T07:37:19.363Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8407?dataEnv=8&locale=4",
+              "sha256": "d18a91aabc43f769b9709bc7fb9711b8c3ff816d250b3fcd5c879a8793a74571"
+            }
+          }
+        }
+      ]
+    },
+    "8408": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10574,
+          "text": "教你学会制作守护披风。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=8408",
+            "capturedAt": "2026-10-18T07:37:19.409Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8408?dataEnv=8&locale=4",
+            "sha256": "cf615476981b3dbe03b2ef0a78ba2656a132e7945dfb2ee3cd275be8b340ad52"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮披风",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "d7d64568771fe1b865358ed89ff080d28b6f616dff54a27abeda23cc3c1966b6",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=8408",
+              "capturedAt": "2026-10-18T07:37:19.409Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8408?dataEnv=8&locale=4",
+              "sha256": "cf615476981b3dbe03b2ef0a78ba2656a132e7945dfb2ee3cd275be8b340ad52"
+            }
+          }
+        }
+      ]
+    },
+    "9367": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 11643,
+          "text": "教你学会制造金鳞护手。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=9367",
+            "capturedAt": "2026-10-18T07:37:19.994Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/9367?dataEnv=8&locale=4",
+            "sha256": "912954cbcc9f33e9964893462fc813412bb22326a47f5ee1631ea3abbccc1976"
+          },
+          "sourceItem": {
+            "name": "设计图：金鳞护手",
+            "quality": 2,
+            "itemLevel": 41
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "dd5bba229e196524dc0d966cc7397171e5006638bf72f3a172523a97774740b9",
+            "quality": 2,
+            "itemLevel": 41,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=9367",
+              "capturedAt": "2026-10-18T07:37:19.994Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/9367?dataEnv=8&locale=4",
+              "sha256": "912954cbcc9f33e9964893462fc813412bb22326a47f5ee1631ea3abbccc1976"
+            }
+          }
+        }
+      ]
+    },
+    "10463": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 12086,
+          "text": "教你学会制作暗纹面罩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=10463",
+            "capturedAt": "2026-10-18T07:37:20.701Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/10463?dataEnv=8&locale=4",
+            "sha256": "051a6ffc28e88a8342e40ee8b3b2a9ebfefdff8484d79301b5f8a00e6619c543"
+          },
+          "sourceItem": {
+            "name": "图样：暗纹面罩",
+            "quality": 2,
+            "itemLevel": 49
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "7a7ed614e20cf45a89cbe6a0cda91b8c5b16819e76f7d05a810a54f8f0267ad3",
+            "quality": 2,
+            "itemLevel": 49,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=10463",
+              "capturedAt": "2026-10-18T07:37:20.701Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/10463?dataEnv=8&locale=4",
+              "sha256": "051a6ffc28e88a8342e40ee8b3b2a9ebfefdff8484d79301b5f8a00e6619c543"
+            }
+          }
+        }
+      ]
+    },
+    "12687": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16646,
+          "text": "教你学会制作君王板甲护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12687",
+            "capturedAt": "2026-10-18T07:37:23.918Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12687?dataEnv=8&locale=4",
+            "sha256": "9778489a608b3d599f3d4acf13c885efdac4b71e23c708605fb2dd2dee395c1c"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护肩",
+            "quality": 2,
+            "itemLevel": 53
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "2a45ac7ad1226ec311bad119318f14c7f8223a7972c52648dcba3cb9ed41fd3c",
+            "quality": 2,
+            "itemLevel": 53,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12687",
+              "capturedAt": "2026-10-18T07:37:23.918Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12687?dataEnv=8&locale=4",
+              "sha256": "9778489a608b3d599f3d4acf13c885efdac4b71e23c708605fb2dd2dee395c1c"
+            }
+          }
+        }
+      ]
+    },
+    "12688": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16647,
+          "text": "教你学会制作君王板甲腰带。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12688",
+            "capturedAt": "2026-10-18T07:37:23.997Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12688?dataEnv=8&locale=4",
+            "sha256": "7879436477615e00be3e4485e85e43585212620dd20b81f9aa28cb249dcbaebb"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲腰带",
+            "quality": 2,
+            "itemLevel": 53
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "7f461548623449987fbca24a23989cd698f1ed8abe0dc739aa42b9c28cd57873",
+            "quality": 2,
+            "itemLevel": 53,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12688",
+              "capturedAt": "2026-10-18T07:37:23.997Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12688?dataEnv=8&locale=4",
+              "sha256": "7879436477615e00be3e4485e85e43585212620dd20b81f9aa28cb249dcbaebb"
+            }
+          }
+        }
+      ]
+    },
+    "12690": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16649,
+          "text": "教你学会制作君王板甲护腕。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12690",
+            "capturedAt": "2026-10-18T07:37:24.611Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12690?dataEnv=8&locale=4",
+            "sha256": "355e0a9fa8b43c23b015797635a4997ea028a840ffddb780e6a59d626fdc0427"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护腕",
+            "quality": 2,
+            "itemLevel": 54
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e329d24cf25a41ed28f6512b1a307d879398ee45ddcfe7cec348b48517c6a1fa",
+            "quality": 2,
+            "itemLevel": 54,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12690",
+              "capturedAt": "2026-10-18T07:37:24.611Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12690?dataEnv=8&locale=4",
+              "sha256": "355e0a9fa8b43c23b015797635a4997ea028a840ffddb780e6a59d626fdc0427"
+            }
+          }
+        }
+      ]
+    },
+    "12696": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16667,
+          "text": "教你学会制作魔铸胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12696",
+            "capturedAt": "2026-10-18T07:37:24.692Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12696?dataEnv=8&locale=4",
+            "sha256": "c7aec1c5c0b00f2befdd5c2deb26018b88cccf19d6457846f1baa5cea336d295"
+          },
+          "sourceItem": {
+            "name": "设计图：魔铸胸甲",
+            "quality": 3,
+            "itemLevel": 57
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f851f48eb9d605fab718e2d444d11f229b455dcb3aba42f696a5d53ae9570db5",
+            "quality": 3,
+            "itemLevel": 57,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12696",
+              "capturedAt": "2026-10-18T07:37:24.692Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12696?dataEnv=8&locale=4",
+              "sha256": "c7aec1c5c0b00f2befdd5c2deb26018b88cccf19d6457846f1baa5cea336d295"
+            }
+          }
+        }
+      ]
+    },
+    "12699": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16655,
+          "text": "教你学会制作炽热板甲护手。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12699",
+            "capturedAt": "2026-10-18T07:37:25.262Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12699?dataEnv=8&locale=4",
+            "sha256": "8fb97b97ef0e397462b502d08b815694bf54b980a355c62a655824de7c63ae5e"
+          },
+          "sourceItem": {
+            "name": "设计图：炽热板甲护手",
+            "quality": 3,
+            "itemLevel": 58
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "245764e87021c4436c9cf4228b520a4d1cc4271d895da691f9dca0ba5b377fb3",
+            "quality": 3,
+            "itemLevel": 58,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12699",
+              "capturedAt": "2026-10-18T07:37:25.262Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12699?dataEnv=8&locale=4",
+              "sha256": "8fb97b97ef0e397462b502d08b815694bf54b980a355c62a655824de7c63ae5e"
+            }
+          }
+        }
+      ]
+    },
+    "12700": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16657,
+          "text": "教你学会制作君王板甲战靴。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12700",
+            "capturedAt": "2026-10-18T07:37:25.380Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12700?dataEnv=8&locale=4",
+            "sha256": "bc486a460c94ba4cafb378a67ffc2d0301ac08bbe5ecdf0341e61809a744052e"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲战靴",
+            "quality": 2,
+            "itemLevel": 59
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "d704d69cc711392ebca4e6c0a761b079ac018ba9bf84b0cc2efcdd73d032aaa5",
+            "quality": 2,
+            "itemLevel": 59,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12700",
+              "capturedAt": "2026-10-18T07:37:25.380Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12700?dataEnv=8&locale=4",
+              "sha256": "bc486a460c94ba4cafb378a67ffc2d0301ac08bbe5ecdf0341e61809a744052e"
+            }
+          }
+        }
+      ]
+    },
+    "12701": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16658,
+          "text": "教你学会制作君王板甲头盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12701",
+            "capturedAt": "2026-10-18T07:37:26.027Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12701?dataEnv=8&locale=4",
+            "sha256": "9002f94881ad139de5db00b40a01ee0af05dc08ed6f863e31726764461fabb64"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲头盔",
+            "quality": 2,
+            "itemLevel": 59
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "a114a1ce4bebb2815ddd6c83b61dd629b0d78daa46c5c724227239c086152224",
+            "quality": 2,
+            "itemLevel": 59,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12701",
+              "capturedAt": "2026-10-18T07:37:26.027Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12701?dataEnv=8&locale=4",
+              "sha256": "9002f94881ad139de5db00b40a01ee0af05dc08ed6f863e31726764461fabb64"
+            }
+          }
+        }
+      ]
+    },
+    "12705": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16663,
+          "text": "教你学会制作君王板甲护胸。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12705",
+            "capturedAt": "2026-10-18T07:37:25.954Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12705?dataEnv=8&locale=4",
+            "sha256": "3859158fa83923a217006f07c4049e75f10a692694dc0f826a84808bdedc94f8"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护胸",
+            "quality": 2,
+            "itemLevel": 60
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e3dc87c68b00facf49b720d2273af6c481a3f6ad9b7fd8e586475b3a5df68dc6",
+            "quality": 2,
+            "itemLevel": 60,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12705",
+              "capturedAt": "2026-10-18T07:37:25.954Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12705?dataEnv=8&locale=4",
+              "sha256": "3859158fa83923a217006f07c4049e75f10a692694dc0f826a84808bdedc94f8"
+            }
+          }
+        }
+      ]
+    },
+    "12715": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16730,
+          "text": "教你学会制作君王板甲护腿。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12715",
+            "capturedAt": "2026-10-18T07:37:26.601Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12715?dataEnv=8&locale=4",
+            "sha256": "c5ad133de318c3af095842056320bdd850f2a68f7545f55723b3c7ad4d2d85f6"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护腿",
+            "quality": 2,
+            "itemLevel": 61
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ddc8a26a6aed18c90edde476d025739fbe960dc4814b4572cbb5d326f0e4ebcf",
+            "quality": 2,
+            "itemLevel": 61,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12715",
+              "capturedAt": "2026-10-18T07:37:26.601Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12715?dataEnv=8&locale=4",
+              "sha256": "c5ad133de318c3af095842056320bdd850f2a68f7545f55723b3c7ad4d2d85f6"
+            }
+          }
+        }
+      ]
+    },
+    "12725": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16742,
+          "text": "教你学会制作魔法瑟银头盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12725",
+            "capturedAt": "2026-10-18T07:37:26.698Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12725?dataEnv=8&locale=4",
+            "sha256": "297d45c20cbb03bd545fb2c51150b8e5654fc6bd21768390aed0fd0ca83c27aa"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法瑟银头盔",
+            "quality": 3,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "68ad62727cbb31d3b308b8944c17bc3a9f720cb3909f639b2c92e6df324512aa",
+            "quality": 3,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12725",
+              "capturedAt": "2026-10-18T07:37:26.698Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12725?dataEnv=8&locale=4",
+              "sha256": "297d45c20cbb03bd545fb2c51150b8e5654fc6bd21768390aed0fd0ca83c27aa"
+            }
+          }
+        }
+      ]
+    },
+    "12726": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16744,
+          "text": "教你学会制作魔法瑟银护腿。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12726",
+            "capturedAt": "2026-10-18T07:37:27.399Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12726?dataEnv=8&locale=4",
+            "sha256": "fa5599a916b958115bbc32a449a3000ecedddd4ae20a0b37d1a53acc07e90529"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法瑟银护腿",
+            "quality": 3,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "361cea79a3b66c2f44263222cdd9d942fce8382c38a284d96c6b5da38f978c13",
+            "quality": 3,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12726",
+              "capturedAt": "2026-10-18T07:37:27.399Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12726?dataEnv=8&locale=4",
+              "sha256": "fa5599a916b958115bbc32a449a3000ecedddd4ae20a0b37d1a53acc07e90529"
+            }
+          }
+        }
+      ]
+    },
+    "12727": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16745,
+          "text": "教你学会制作魔法瑟银胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12727",
+            "capturedAt": "2026-10-18T07:37:27.414Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12727?dataEnv=8&locale=4",
+            "sha256": "fcee16cb13b032f0bdf9d8b1d6d2e372b67645100d1574121ed582f4fedf216e"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法瑟银胸甲",
+            "quality": 3,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "36a8df3975a7ab0a1e5b4c1fb012e623222a25882599c2b149c8a32e0fd72133",
+            "quality": 3,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12727",
+              "capturedAt": "2026-10-18T07:37:27.414Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12727?dataEnv=8&locale=4",
+              "sha256": "fcee16cb13b032f0bdf9d8b1d6d2e372b67645100d1574121ed582f4fedf216e"
+            }
+          }
+        }
+      ]
+    },
+    "12821": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16970,
+          "text": "教你学会制作黎明之刃。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12821",
+            "capturedAt": "2026-10-18T07:37:28.106Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12821?dataEnv=8&locale=4",
+            "sha256": "8244599f6a94aa1030606e6b9a6a93b81c2c0620378ed7db516b4254e9373fc0"
+          },
+          "sourceItem": {
+            "name": "设计图：黎明之刃",
+            "quality": 3,
+            "itemLevel": 55
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0f407b842ce9b3f9ae9049ea76bbc6233f931ca1b647fd2cbb75eebdc0549a3d",
+            "quality": 3,
+            "itemLevel": 55,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12821",
+              "capturedAt": "2026-10-18T07:37:28.106Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12821?dataEnv=8&locale=4",
+              "sha256": "8244599f6a94aa1030606e6b9a6a93b81c2c0620378ed7db516b4254e9373fc0"
+            }
+          }
+        }
+      ]
+    },
+    "12824": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16973,
+          "text": "教你学会制作魔法战锤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12824",
+            "capturedAt": "2026-10-18T07:37:28.126Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12824?dataEnv=8&locale=4",
+            "sha256": "762bf04e3a63a9405a20ed2addf249e1810619f819dd9f2090982d1ac87cfeef"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法战锤",
+            "quality": 2,
+            "itemLevel": 56
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c36851756b171d71a815572a5623ebc785a95841ad23ce43ce29f8602b7c6f15",
+            "quality": 2,
+            "itemLevel": 56,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12824",
+              "capturedAt": "2026-10-18T07:37:28.126Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12824?dataEnv=8&locale=4",
+              "sha256": "762bf04e3a63a9405a20ed2addf249e1810619f819dd9f2090982d1ac87cfeef"
+            }
+          }
+        }
+      ]
+    },
+    "12825": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16978,
+          "text": "教你学会制作闪耀轻剑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=12825",
+            "capturedAt": "2026-10-18T07:37:28.734Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12825?dataEnv=8&locale=4",
+            "sha256": "8ab9c3a5f4dbba225c49d6f82ffbfa08c4430947a80d467d8fbf70a0a610e8bb"
+          },
+          "sourceItem": {
+            "name": "设计图：闪耀轻剑",
+            "quality": 2,
+            "itemLevel": 56
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f636642d796499c06d6e2e0ba7a31a692fabbd00a145f3862e9336dd401b0d96",
+            "quality": 2,
+            "itemLevel": 56,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=12825",
+              "capturedAt": "2026-10-18T07:37:28.734Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12825?dataEnv=8&locale=4",
+              "sha256": "8ab9c3a5f4dbba225c49d6f82ffbfa08c4430947a80d467d8fbf70a0a610e8bb"
+            }
+          }
+        }
+      ]
+    },
+    "18160": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9513,
+          "text": "教你学会烹制菊花茶。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=18160",
+            "capturedAt": "2026-10-18T07:37:31.969Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/18160?dataEnv=8&locale=4",
+            "sha256": "a232f27bedc8050b11e11a727a4b9b9918539774b78f9180164eac0fe0b83e9a"
+          },
+          "sourceItem": {
+            "name": "食谱：菊花茶",
+            "quality": 2,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "8c2e05fa3931e1a5e97440a5e7abcb84830ec8dde176c4b55eae8055801baf4c",
+            "quality": 2,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=18160",
+              "capturedAt": "2026-10-18T07:37:31.969Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/18160?dataEnv=8&locale=4",
+              "sha256": "a232f27bedc8050b11e11a727a4b9b9918539774b78f9180164eac0fe0b83e9a"
+            }
+          }
+        }
+      ]
+    },
+    "18592": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 21161,
+          "text": "教你学会制造萨弗隆之锤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=18592",
+            "capturedAt": "2026-10-18T07:37:32.589Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/18592?dataEnv=8&locale=4",
+            "sha256": "e6ee0470e606fda4cf6802196b75490cf8bffa2bb3778f82570cfcf8139b04ba"
+          },
+          "sourceItem": {
+            "name": "设计图：萨弗隆之锤",
+            "quality": 4,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c3ca74831fd394e841037ea86bf94c3ea9822e2e397300b6d7b1692232d662f8",
+            "quality": 4,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=18592",
+              "capturedAt": "2026-10-18T07:37:32.589Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/18592?dataEnv=8&locale=4",
+              "sha256": "e6ee0470e606fda4cf6802196b75490cf8bffa2bb3778f82570cfcf8139b04ba"
+            }
+          }
+        }
+      ]
+    },
+    "21025": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 25659,
+          "text": "教你学会烹制迪尔格的超美味奇美拉肉片。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=21025",
+            "capturedAt": "2026-10-18T07:37:43.008Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21025?dataEnv=8&locale=4",
+            "sha256": "811992b5691a39e156653826b067a74251962ce0c9dcafd100d75e88c83ba8e0"
+          },
+          "sourceItem": {
+            "name": "食谱：迪尔格的超美味奇美拉肉片",
+            "quality": 4,
+            "itemLevel": 60
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "4fab336e917d94d220294da26f45ac6917373571d3cbf5041cfdc8e0013587cd",
+            "quality": 4,
+            "itemLevel": 60,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=21025",
+              "capturedAt": "2026-10-18T07:37:43.008Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21025?dataEnv=8&locale=4",
+              "sha256": "811992b5691a39e156653826b067a74251962ce0c9dcafd100d75e88c83ba8e0"
+            }
+          }
+        }
+      ]
+    },
+    "21176": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26656,
+          "text": "召唤或解散一头可供骑乘的黑色其拉作战坦克。这是一种速度非常快的坐骑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=21176",
+            "capturedAt": "2026-10-18T07:37:43.442Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21176?dataEnv=8&locale=4",
+            "sha256": "3d7aa5b192d1d087ae7272b794e6bf26b692a3dfbf03107498bb3657dec711d2"
+          },
+          "sourceItem": {
+            "name": "黑色其拉共鸣水晶",
+            "quality": 5,
+            "itemLevel": 40
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e34f8851dd2a56d4c273f7c0a7e8db9cf7b479b83d5983fea282338c6d496341",
+            "quality": 5,
+            "itemLevel": 40,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=21176",
+              "capturedAt": "2026-10-18T07:37:43.442Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21176?dataEnv=8&locale=4",
+              "sha256": "3d7aa5b192d1d087ae7272b794e6bf26b692a3dfbf03107498bb3657dec711d2"
+            }
+          }
+        }
+      ]
+    },
+    "21722": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26403,
+          "text": "教你学会制作红色节庆长裙。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=21722",
+            "capturedAt": "2026-10-18T07:37:43.715Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21722?dataEnv=8&locale=4",
+            "sha256": "f6286ff1683c6e256c435d4e9a14d89258ab61740077250c5ba8506a129e235e"
+          },
+          "sourceItem": {
+            "name": "图样：节庆长裙",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "db1bdfe8be33fa76411a43cc6670007d256e942cdc19e31baede032ef7e14390",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=21722",
+              "capturedAt": "2026-10-18T07:37:43.715Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21722?dataEnv=8&locale=4",
+              "sha256": "f6286ff1683c6e256c435d4e9a14d89258ab61740077250c5ba8506a129e235e"
+            }
+          }
+        }
+      ]
+    },
+    "21723": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26407,
+          "text": "教你学会制作节庆裤装。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=21723",
+            "capturedAt": "2026-10-18T07:37:44.119Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21723?dataEnv=8&locale=4",
+            "sha256": "dcc116bcf4bda161db8677e9286efe41401708ec57efc4ef62d5577fdffe5327"
+          },
+          "sourceItem": {
+            "name": "图样：节庆裤装",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "be50090832e2ed3d070e162eed97d225fb1658cec2496906b40ee37c795e6135",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=21723",
+              "capturedAt": "2026-10-18T07:37:44.119Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21723?dataEnv=8&locale=4",
+              "sha256": "dcc116bcf4bda161db8677e9286efe41401708ec57efc4ef62d5577fdffe5327"
+            }
+          }
+        }
+      ]
+    },
+    "21737": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26443,
+          "text": "教你学会制作烟花束发射器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=21737",
+            "capturedAt": "2026-10-18T07:37:44.362Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21737?dataEnv=8&locale=4",
+            "sha256": "7aa85efc6c5a924a0621736a563939d65ba39dae11d3e2d1fc5345272c42caa0"
+          },
+          "sourceItem": {
+            "name": "结构图：烟花束发射器",
+            "quality": 2,
+            "itemLevel": 55
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "b3ef1f44f2b3902d5dc8cdd454b4b8e60e1e89613d69f918cad89ab03066c092",
+            "quality": 2,
+            "itemLevel": 55,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=21737",
+              "capturedAt": "2026-10-18T07:37:44.362Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21737?dataEnv=8&locale=4",
+              "sha256": "7aa85efc6c5a924a0621736a563939d65ba39dae11d3e2d1fc5345272c42caa0"
+            }
+          }
+        }
+      ]
+    },
+    "21738": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26442,
+          "text": "教你学会制作烟花发射器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=21738",
+            "capturedAt": "2026-10-18T07:37:44.800Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21738?dataEnv=8&locale=4",
+            "sha256": "73b720d1b7cffe041c6af6d96f733bcba7429f2a35adf6d0e5dec1152e0cbd29"
+          },
+          "sourceItem": {
+            "name": "结构图：烟花发射器",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "aaaf500ce00623daf7dc7ddfbe8317e405b2e6bcb0f69a95810ea3e1bb7554d8",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=21738",
+              "capturedAt": "2026-10-18T07:37:44.800Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21738?dataEnv=8&locale=4",
+              "sha256": "73b720d1b7cffe041c6af6d96f733bcba7429f2a35adf6d0e5dec1152e0cbd29"
+            }
+          }
+        }
+      ]
+    },
+    "22647": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 28267,
+          "text": "教你学会烹制松脆蜘蛛。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=22647",
+            "capturedAt": "2026-10-18T07:37:46.867Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/22647?dataEnv=8&locale=4",
+            "sha256": "6fc7008929d2b93119fb44b130fd9574011d68d968e9a6981aea7544ba97e827"
+          },
+          "sourceItem": {
+            "name": "食谱：松脆蜘蛛",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "445a6f567913820afeae88ee252b436469acb9950eca225a89ea7e9f9664af63",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=22647",
+              "capturedAt": "2026-10-18T07:37:46.867Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/22647?dataEnv=8&locale=4",
+              "sha256": "6fc7008929d2b93119fb44b130fd9574011d68d968e9a6981aea7544ba97e827"
+            }
+          }
+        }
+      ]
+    },
+    "22729": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 28327,
+          "text": "教你学会制作蒸汽车控制器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=22729",
+            "capturedAt": "2026-10-18T07:37:47.121Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/22729?dataEnv=8&locale=4",
+            "sha256": "b43de76b612d51219c2e5c70804511cf664ca1c1cba183eebfe94bb42005a03b"
+          },
+          "sourceItem": {
+            "name": "结构图：蒸汽车控制器",
+            "quality": 1,
+            "itemLevel": 55
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "3188f26f82dbd91bdc124ae16e095136ac33ece8ecbf9238c7e39c907b2e1c1a",
+            "quality": 1,
+            "itemLevel": 55,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=22729",
+              "capturedAt": "2026-10-18T07:37:47.121Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/22729?dataEnv=8&locale=4",
+              "sha256": "b43de76b612d51219c2e5c70804511cf664ca1c1cba183eebfe94bb42005a03b"
+            }
+          }
+        }
+      ]
+    },
+    "23888": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 30548,
+          "text": "教你学会制作气阀微粒提取器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=23888",
+            "capturedAt": "2026-10-18T07:37:50.556Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/23888?dataEnv=8&locale=4",
+            "sha256": "532a252a0da527d8608b06f9b0972f312069d6280e9ae31300151c96ad8ef2a6"
+          },
+          "sourceItem": {
+            "name": "结构图：气阀微粒提取器",
+            "quality": 1,
+            "itemLevel": 61
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "377f464da6e3ddf4150ae6bcf932eac6895938a7f20988c02faaa0313bd4bafd",
+            "quality": 1,
+            "itemLevel": 61,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=23888",
+              "capturedAt": "2026-10-18T07:37:50.556Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/23888?dataEnv=8&locale=4",
+              "sha256": "532a252a0da527d8608b06f9b0972f312069d6280e9ae31300151c96ad8ef2a6"
+            }
+          }
+        }
+      ]
+    },
+    "27684": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 33279,
+          "text": "教你学会烹制美味秃鹫。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=27684",
+            "capturedAt": "2026-10-18T07:37:52.858Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/27684?dataEnv=8&locale=4",
+            "sha256": "ef119895d78ef7f934e56a75418d9940ebbd0d6889332342171d357cc02e264b"
+          },
+          "sourceItem": {
+            "name": "食谱：美味秃鹫",
+            "quality": 1,
+            "itemLevel": 60
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "16d0c46c5a19b8546783078ca4f11ea950efbf1f80aead38c492ad83a2dca4d4",
+            "quality": 1,
+            "itemLevel": 60,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=27684",
+              "capturedAt": "2026-10-18T07:37:52.858Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/27684?dataEnv=8&locale=4",
+              "sha256": "ef119895d78ef7f934e56a75418d9940ebbd0d6889332342171d357cc02e264b"
+            }
+          }
+        }
+      ]
+    },
+    "27686": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 33277,
+          "text": "教你学会烹制月痕鹿腰肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=27686",
+            "capturedAt": "2026-10-18T07:37:53.161Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/27686?dataEnv=8&locale=4",
+            "sha256": "cf187f47efffb8b91524dfe65a1b7a8903fa80c483509a4e9d1d98ce1db20d48"
+          },
+          "sourceItem": {
+            "name": "食谱：月痕鹿腰肉",
+            "quality": 1,
+            "itemLevel": 5
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "6bcc72d27c37814746a6b6b878c1c423e8fec205fa5b2c3de2b5ed1beabcbca5",
+            "quality": 1,
+            "itemLevel": 5,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=27686",
+              "capturedAt": "2026-10-18T07:37:53.161Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/27686?dataEnv=8&locale=4",
+              "sha256": "cf187f47efffb8b91524dfe65a1b7a8903fa80c483509a4e9d1d98ce1db20d48"
+            }
+          }
+        }
+      ]
+    },
+    "31674": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 38868,
+          "text": "教你学会烹制香脆蛇。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=31674",
+            "capturedAt": "2026-10-18T07:37:59.610Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/31674?dataEnv=8&locale=4",
+            "sha256": "de2594b00ab45c98aef51ba4fe413948953371b7780dde1b50d1e7a81e7ef316"
+          },
+          "sourceItem": {
+            "name": "食谱：香脆蛇",
+            "quality": 1,
+            "itemLevel": 67
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "a9eed578d2a16a1cdb143095ee3c8a5f06618c57c488401ba905d545e144ecc1",
+            "quality": 1,
+            "itemLevel": 67,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=31674",
+              "capturedAt": "2026-10-18T07:37:59.610Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/31674?dataEnv=8&locale=4",
+              "sha256": "de2594b00ab45c98aef51ba4fe413948953371b7780dde1b50d1e7a81e7ef316"
+            }
+          }
+        }
+      ]
+    },
+    "31675": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 38867,
+          "text": "教你学会烹制莫克纳萨肋排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=31675",
+            "capturedAt": "2026-10-18T07:37:59.821Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/31675?dataEnv=8&locale=4",
+            "sha256": "d4205f7598e8147391ff9f6fa1e767ed8746684af23a939f798f3612a1e92f4f"
+          },
+          "sourceItem": {
+            "name": "食谱：莫克纳萨肋排",
+            "quality": 1,
+            "itemLevel": 67
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "dde762fad821a77d0dbf9e8bd1c8ea51dc9c731593759c2efb1af5a8ad9a0187",
+            "quality": 1,
+            "itemLevel": 67,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=31675",
+              "capturedAt": "2026-10-18T07:37:59.821Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/31675?dataEnv=8&locale=4",
+              "sha256": "d4205f7598e8147391ff9f6fa1e767ed8746684af23a939f798f3612a1e92f4f"
+            }
+          }
+        }
+      ]
+    },
+    "33792": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 43549,
+          "text": "教你学会制作铜质重剑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=33792",
+            "capturedAt": "2026-10-18T07:38:10.325Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/33792?dataEnv=8&locale=4",
+            "sha256": "0e27af2cdf580d5bd6d5dc40cec6cc0355ee91e49e3df8ae4347a4a80363ac15"
+          },
+          "sourceItem": {
+            "name": "设计图：铜质重剑",
+            "quality": 2,
+            "itemLevel": 10
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "37c1654a48b35895e6b16b4a5df5256a72befca31d6692536630b6c5f1c7eb99",
+            "quality": 2,
+            "itemLevel": 10,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=33792",
+              "capturedAt": "2026-10-18T07:38:10.325Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/33792?dataEnv=8&locale=4",
+              "sha256": "0e27af2cdf580d5bd6d5dc40cec6cc0355ee91e49e3df8ae4347a4a80363ac15"
+            }
+          }
+        }
+      ]
+    },
+    "52200": {
+      "edition": "巫妖王之怒怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 73313,
+          "text": "召唤或解散你的血色死亡战马。这是一种速度非常快的坐骑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/wotlk/cn/item=52200",
+            "capturedAt": "2026-10-18T07:38:26.997Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/52200?dataEnv=8&locale=4",
+            "sha256": "0d9f3306b8e87db3d4f914989edec1d6de7b732007309b2668624945cf60f0b5"
+          },
+          "sourceItem": {
+            "name": "血色死亡战马的缰绳",
+            "quality": 4,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f846f21d7b75cda0ecedd38efea1f73bf052d2391b834792343cb7f2a5547c4b",
+            "quality": 4,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/wotlk/cn/item=52200",
+              "capturedAt": "2026-10-18T07:38:26.997Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/52200?dataEnv=8&locale=4",
+              "sha256": "0d9f3306b8e87db3d4f914989edec1d6de7b732007309b2668624945cf60f0b5"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

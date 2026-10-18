@@ -7,6 +7,7 @@ import {buildReadingData} from './reading-data.mjs';
 import {rewardAudit} from './reward-audit.mjs';
 import {regionAudit,regionBrowserData,regionVersions} from './region-data.mjs';
 import {buildQuestTraitData,questTraitAudit} from './quest-traits-data.mjs';
+import {attachReferences} from './wowhead-data.mjs';
 import '../web/quest-traits.js';
 const hash=value=>createHash('sha256').update(value).digest('hex').slice(0,12);
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -29,7 +30,8 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  let records=[];for(const f of manifest.files)records.push(...(await fs.readFile(path.join(root,f.path),'utf8')).trim().split('\n').filter(Boolean).map(x=>JSON.parse(x)));
  rewardReports.push(rewardAudit(records));
  traitReports.push(questTraitAudit(records,globalThis.QuestTraits.derive));
- const payload=gzipSync(Buffer.from(JSON.stringify(records)),{level:9}).toString('base64');
+ const references=JSON.parse(await fs.readFile(path.join(root,'data/wowhead',id+'.json'),'utf8'));
+ const payload=gzipSync(Buffer.from(JSON.stringify(attachReferences(records,references,'quests'))),{level:9}).toString('base64');
  const questBundle=`window.QUEST_PACKS[${JSON.stringify(id)}]=${JSON.stringify(payload)};\n`;
  await fs.writeFile(path.join(root,'web/data',id+'.js'),questBundle);
  const actors=[];for(const f of manifest.actors.files)actors.push(...(await fs.readFile(path.join(root,f.path),'utf8')).trim().split('\n').filter(Boolean).map(x=>JSON.parse(x)));
@@ -39,7 +41,7 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  const itemManifest=JSON.parse(await fs.readFile(path.join(root,'data/items',id+'-manifest.json'),'utf8'));
  const items=[];for(const file of itemManifest.files)items.push(...(await fs.readFile(path.join(root,file.path),'utf8')).trim().split('\n').filter(Boolean).map(x=>JSON.parse(x)));
  // Raw fields stay in JSONL. The browser needs only the normalized presentation.
- const browserItems=items.map(({raw,sources,...item})=>({...item,icon:unavailableIcons.has(item.icon)?null:item.icon}));
+ const browserItems=attachReferences(items,references,'items').map(({raw,sources,...item})=>({...item,icon:unavailableIcons.has(item.icon)?null:item.icon}));
  const itemPayload=gzipSync(Buffer.from(JSON.stringify(browserItems)),{level:9}).toString('base64');
  const itemBundle=`window.QUEST_ITEM_PACKS[${JSON.stringify(id)}]=${JSON.stringify(itemPayload)};\n`;
  await fs.writeFile(path.join(root,'web/items',id+'.js'),itemBundle);

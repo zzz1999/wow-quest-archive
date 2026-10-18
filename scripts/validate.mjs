@@ -6,6 +6,8 @@ import {createHash} from 'node:crypto';
 import {gunzipSync} from 'node:zlib';
 import {rewardAudit} from './reward-audit.mjs';
 import {validateItems} from './validate-items.mjs';
+import {validateWowhead} from './validate-wowhead.mjs';
+import {attachReferences} from './wowhead-data.mjs';
 import {validateRegions,validateRegionBundle} from './validate-regions.mjs';
 import {buildQuestTraitData,questTraitAudit} from './quest-traits-data.mjs';
 import '../web/quest-traits.js';
@@ -72,7 +74,8 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
  assert.equal(auditChanges.size,0,'Audit contains unused changes');assert.deepEqual(audit.after,fields);assert.equal(audit.changedFields,audit.changes.length);assert.equal(audit.changedFields,m.textAudit.changedFields);assert.equal(audit.changedQuests,new Set(audit.changes.map(c=>c.id)).size);
  const catalogEntry=catalog.versions.find(v=>v.id===id);assert.ok(catalogEntry);
  for(const [directory,key]of [['data','quests'],['actors','actors']])assert.equal(createHash('sha256').update(await fs.readFile(path.join(root,'web',directory,id+'.js'))).digest('hex').slice(0,12),catalogEntry.bundleHashes[key],'Stale browser cache revision');
- await verifyBundle('data',id,records);
+ const references=JSON.parse(await fs.readFile(path.join(root,'data/wowhead',id+'.json'),'utf8'));
+ await verifyBundle('data',id,attachReferences(records,references,'quests'));
  await validateRegions(root,id,records);
  const actors=await readShards(m.actors.files),byKey=new Map(),expected=new Map(),actorFields={};
  for(const a of actors){
@@ -88,4 +91,5 @@ for(const id of ['classic','wotlk','cataclysm','pandaria','legion']){
 }
 console.log(`Verified ${total} versioned quests, ${totalNpcs} NPCs and ${totalObjects} task objects.`);
 await validateItems(root,catalog);
+await validateWowhead(root);
 await validateRegionBundle(root);

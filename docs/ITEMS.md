@@ -43,4 +43,6 @@
 
 ## 重建
 
+缺失效果另有按物品身份核对的 [Wowhead 补充](WOWHEAD.md)，保存在 `data/wowhead/`，不覆盖上述原始物品表和数值。提示框会显示来源版本与采集日期。物品统计仍统计原库，网页补充增量见 `reports/wowhead-audit.json`。
+
 完整重建：`node scripts/rebuild.mjs`。已准备主库输入后，可单独运行 `node scripts/import-items.mjs`，再执行 `npm run build`、`npm test`、`npm run validate`。物品输入缓存在 `.cache/items/`，不会发布进网页。重建会核对来源哈希；已锁定图标若在远端变化会报错，不静默替换。日常网页构建和校验不需要联网。

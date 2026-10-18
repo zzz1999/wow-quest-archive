@@ -55,7 +55,7 @@
   const byId=new Map(state.filtered.map(r=>[r.id,r]));
   for(const button of $('quest-list').querySelectorAll('[data-id]')){const r=byId.get(Number(button.dataset.id));if(r)button.querySelector('strong').innerHTML=(bookmarks.has(r.key)?'☆ ':'')+questTitleHtml(r);}
  }
- function rowText(r){return [r.id,...Object.values(r.text),...Object.values(r.english),...r.starters.map(x=>x.name),...r.enders.map(x=>x.name),r.zoneOrSort,window.QuestRegions.searchText(r.version,r.zoneOrSort)].join('\n').toLocaleLowerCase();}
+ function rowText(r){return [r.id,...Object.keys(r.text).map(k=>window.QuestWowhead.field(r,k).text),...Object.values(r.english),...r.starters.map(x=>x.name),...r.enders.map(x=>x.name),r.zoneOrSort,window.QuestRegions.searchText(r.version,r.zoneOrSort)].join('\n').toLocaleLowerCase();}
  function loadVersion(id){
   if(cache.has(id))return Promise.resolve(cache.get(id));if(loading.has(id))return loading.get(id);
   const promise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=`web/data/${id}.js?v=${cat.versions.find(v=>v.id===id).bundleHashes?.quests||'1'}`;s.onload=async()=>{try{
@@ -89,7 +89,7 @@
  function applyFilters(select=true){
   const words=$('search').value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean),language=$('language').value,zone=$('zone').value;
   const min=$('level-min').value,max=$('level-max').value,traits={repeat:$('repeat-filter').value,faction:$('faction-filter').value,playerClass:$('class-filter').value,race:$('race-filter').value};
-  state.filtered=state.rows.filter(({record:r,search})=>(!state.bookmarks||bookmarks.has(r.key))&&(!language||r.textLocales.title===language)&&(!zone||r.zoneOrSort===Number(zone))&&(min===''||r.level>=Number(min))&&(max===''||r.level<=Number(max))&&(!$('story-only').checked||r.text.description.trim())&&(!$('hide-test').checked||!r.tags.some(t=>['suspected-test','community-custom'].includes(t)))&&words.every(w=>search.includes(w))&&window.QuestTraits.matches(window.QuestTraits.get(r),traits)).map(x=>x.record);
+  state.filtered=state.rows.filter(({record:r,search})=>(!state.bookmarks||bookmarks.has(r.key))&&(!language||r.textLocales.title===language)&&(!zone||r.zoneOrSort===Number(zone))&&(min===''||r.level>=Number(min))&&(max===''||r.level<=Number(max))&&(!$('story-only').checked||window.QuestWowhead.field(r,'description').text.trim())&&(!$('hide-test').checked||!r.tags.some(t=>['suspected-test','community-custom'].includes(t)))&&words.every(w=>search.includes(w))&&window.QuestTraits.matches(window.QuestTraits.get(r),traits)).map(x=>x.record);
   state.page=0;renderList();if(select&&(!state.selected||!state.filtered.some(r=>r.id===state.selected.id))){if(state.filtered.length)selectQuest(state.filtered[0].id);else{state.selected=null;renderEmpty();}}
  }
  function renderList({edge='top'}={}){
@@ -110,9 +110,9 @@
   queueView();
  }
  function section(r,field,extraClass=''){
-  const value=r.text[field],notes=window.QuestReading.notes(value,reading,{quest:r});
+  const entry=window.QuestWowhead.field(r,field),value=entry.text,notes=window.QuestReading.notes(value,reading,{quest:r});
   const help=notes.length?`<details class="variable-help"><summary>称呼与数量说明（${notes.length}）</summary><dl>${notes.map(n=>`<dt><code>${escape(n.token)}</code> · ${escape(n.label)}</dt><dd>${escape(n.note)}</dd>`).join('')}</dl></details>`:'';
-  return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(r.textLocales[field])}</h3>${value?`<div class="quest-prose">${readingHtml(value,r)}</div>${help}`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
+  return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(entry.locale)}</h3>${value?`<div class="quest-prose">${readingHtml(value,r)}</div>${help}${window.QuestWowhead.provenance(entry)}`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
  }
  function sourceFor(r,id){const meta=cat.versions.find(v=>v.id===r.version);return id===r.version?meta:meta.supplements?.find(s=>s.id===id);}
  function sourceLink(source){return source?`<a href="https://github.com/${escape(source.repo)}/tree/${escape(source.commit)}" target="_blank" rel="noopener noreferrer">${escape(source.repo)} ↗</a>`:'未记录';}
@@ -155,7 +155,7 @@
   $('copy-current').onclick=()=>copyText(markdown(r),r.key.replace(':','-')+'-'+reading.mode+'.md');$('export-current').onclick=()=>download(r.key.replace(':','-')+'.json',JSON.stringify(r,null,2),'application/json');
   queueView();
  }
- function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n区域 / 分类：${window.QuestRegions.name(r.version,r.zoneOrSort)}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼与可确定的数量已代入）':'原文视角'}\n${window.QuestTraits.text(r)}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v,r)}\n\n来源：${sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n\n'+window.QuestRewards.text(r,reading)+'\n';}
+ function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n区域 / 分类：${window.QuestRegions.name(r.version,r.zoneOrSort)}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼与可确定的数量已代入）':'原文视角'}\n${window.QuestTraits.text(r)}\n\n`+Object.keys(r.text).map(k=>[k,window.QuestWowhead.field(r,k)]).filter(([,v])=>v.text).map(([k,v])=>`## ${fieldLabel(k)} [${v.locale}]\n\n${format(v.text,r)}\n\n来源：${v.source?`Wowhead ${v.edition} ${v.source.url}（${v.source.capturedAt.slice(0,10)} 收录）`:sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n\n'+window.QuestRewards.text(r,reading)+'\n';}
  async function copyText(text,filename){try{if(navigator.clipboard){await navigator.clipboard.writeText(text);}else{const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();if(!document.execCommand('copy'))throw new Error('copy');t.remove();}toast('已复制当前视角的文本');}catch{download(filename,text,'text/markdown');toast('浏览器限制剪贴板，已导出当前文本');}}
  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type:type+';charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  function info(){
@@ -164,6 +164,7 @@
   $('info-body').innerHTML='<p>按客户端版本分别收录社区数据库的任务快照，并使用同版本的其他来源补充文字。数量按「版本 + ID」统计，不能相加视为独立故事数，也不代表全部任务均可在游戏中接取。</p>'+
    '<p>每个字段依次选用 <b>简体中文 → 繁体中文 → 英文</b>；同语言优先保留原有主库。补充文字必须匹配英文标题与对应英文内容；空字段需要匹配描述或目标作为依据。不会只凭相同数字 ID 跨版本套用文字。</p>'+
    '<p>空白与损坏文本不参与回退，中文表中的英文占位不计作中文。暂时没有可匹配来源的内容保留为空；部分自动任务、测试任务或可选对白本身也可能没有文本。译文仍可能存在社区修订或错误，不由 AI 补写。</p>'+
+   '<p>部分缺失短对白和物品效果另由 Wowhead 页面补充，经过身份与上下文核对，随离线包保存。补充处标明怀旧服 / 现行正式服和采集日期，不改动原数据库文字与历史数值。<a href="docs/WOWHEAD.md" target="_blank" rel="noopener noreferrer">查看补充范围与来源 ↗</a></p>'+
    '<table><thead><tr><th>版本</th><th>任务</th><th>简中标题</th><th>繁中标题</th><th>英文标题</th><th>简中描述</th></tr></thead><tbody>'+coverage+'</tbody></table>'+
    '<p>任务详情的“原始资料”可按字段查看实际来源。完整语言与缺失统计见 reports/coverage.json；补充前后统计、匹配依据见下方检查报告。测试及已确认的自定义记录默认隐藏，仍保存在原始数据中。</p>'+sources+
    '<h3>阅读称呼与数量</h3><p>目标数量取自本任务记录。军团职业头衔与对应敌人名称使用 Wago Tools 导出的 7.3.5.26972 客户端表，优先简中；原始表和哈希保存在 sources/reading/。这些是展示层的阅读解释，原始对白和任务 NPC 关系保持不变。<a href="docs/READING-VARIABLES.md" target="_blank" rel="noopener noreferrer">查看解释依据与局限 ↗</a></p>'+

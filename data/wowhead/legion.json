@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "version": "legion",
+  "edition": "现行正式服",
+  "quests": {},
+  "items": {
+    "127267": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 186230,
+          "trigger": 0,
+          "text": "学习在要塞船坞建造航母所需的图纸。\n\n应对舰船：\n战列舰",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=127267",
+            "capturedAt": "2026-10-18T07:55:51.750Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/127267?dataEnv=1&locale=4",
+            "sha256": "2c2c6d5ed211922cc4b0b0cff1cc06b65cf7c2a7a2a02a2e34137ef507d9102b"
+          },
+          "sourceItem": {
+            "name": "舰船图纸：航母",
+            "quality": 3,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "33b428898f1c44aed2908a6016f14891183993ccc83668b849b591fd999a5dda",
+            "quality": 3,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=127267",
+              "capturedAt": "2026-10-18T07:55:51.750Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/127267?dataEnv=1&locale=4",
+              "sha256": "2c2c6d5ed211922cc4b0b0cff1cc06b65cf7c2a7a2a02a2e34137ef507d9102b"
+            }
+          }
+        }
+      ]
+    },
+    "127270": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 186233,
+          "trigger": 0,
+          "text": "学习在要塞船坞建造潜水艇所需的图纸。\n\n应对舰船：\n航母",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=127270",
+            "capturedAt": "2026-10-18T07:55:52.065Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/127270?dataEnv=1&locale=4",
+            "sha256": "b81b80ab4352ffa8c60beab0f011cb53a6add177f612910ed5e4da26b623b9ee"
+          },
+          "sourceItem": {
+            "name": "舰船图纸：潜水艇",
+            "quality": 3,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "6bf842de67d7614f180f2a6594aebf4072460bf301426ff78ef504cafee0aeb0",
+            "quality": 3,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=127270",
+              "capturedAt": "2026-10-18T07:55:52.065Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/127270?dataEnv=1&locale=4",
+              "sha256": "b81b80ab4352ffa8c60beab0f011cb53a6add177f612910ed5e4da26b623b9ee"
+            }
+          }
+        }
+      ]
+    },
+    "141605": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 253937,
+          "trigger": 0,
+          "text": "要求距离最近的飞行管理员来接你。\n\n只能在你已经解锁了飞行哨子的区域使用。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=141605",
+            "capturedAt": "2026-10-18T07:56:18.937Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/141605?dataEnv=1&locale=4",
+            "sha256": "83224d4a613f64f5efbfa5e2722f0192a49055b0feda35ddf980aea3e393c618"
+          },
+          "sourceItem": {
+            "name": "飞行管理员的哨子",
+            "quality": 3,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "cdac7fed234f3f2efff1657446e990bf97edb42787f72a6f2fdf88e3316250ba",
+            "quality": 3,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=141605",
+              "capturedAt": "2026-10-18T07:56:18.937Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/141605?dataEnv=1&locale=4",
+              "sha256": "83224d4a613f64f5efbfa5e2722f0192a49055b0feda35ddf980aea3e393c618"
+            }
+          }
+        }
+      ]
+    },
+    "142279": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 36131,
+          "text": "教你学会制作风铸轻剑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142279",
+            "capturedAt": "2026-10-18T07:56:21.208Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142279?dataEnv=1&locale=4",
+            "sha256": "271fde1cb288d141779bf3fbe5c1c47bae224965c77b2a2f3157abf3f8ad2bc4"
+          },
+          "sourceItem": {
+            "name": "设计图：风铸轻剑",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "d405efe819e80c194790bbb5b92acdc9de1f2199ee36c43d33ee82fbc483f7c2",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142279",
+              "capturedAt": "2026-10-18T07:56:21.208Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142279?dataEnv=1&locale=4",
+              "sha256": "271fde1cb288d141779bf3fbe5c1c47bae224965c77b2a2f3157abf3f8ad2bc4"
+            }
+          }
+        }
+      ]
+    },
+    "142282": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 36134,
+          "text": "教你学会制作雷铸战斧。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142282",
+            "capturedAt": "2026-10-18T07:56:21.143Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142282?dataEnv=1&locale=4",
+            "sha256": "0ad6df7d5c1c1ecee67a814d1089395a47ad078dba2bb1e72d0d93d93ad2e3f6"
+          },
+          "sourceItem": {
+            "name": "设计图：雷铸战斧",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "2b9b198763111002afc7852972bb05b924cb1191000b3529dcd6bfae8fef6b35",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142282",
+              "capturedAt": "2026-10-18T07:56:21.143Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142282?dataEnv=1&locale=4",
+              "sha256": "0ad6df7d5c1c1ecee67a814d1089395a47ad078dba2bb1e72d0d93d93ad2e3f6"
+            }
+          }
+        }
+      ]
+    },
+    "142283": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 36135,
+          "text": "教你学会制作天铸巨斧。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142283",
+            "capturedAt": "2026-10-18T07:56:21.854Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142283?dataEnv=1&locale=4",
+            "sha256": "5f3be84fc03f3e716e6543dfccfe180d140076fc41ed756aa4925ad9951be418"
+          },
+          "sourceItem": {
+            "name": "设计图：天铸巨斧",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "04620006bba2c2dece98d54577e7894c45960f05753a9b3ee1a11fa1c8fad628",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142283",
+              "capturedAt": "2026-10-18T07:56:21.854Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142283?dataEnv=1&locale=4",
+              "sha256": "5f3be84fc03f3e716e6543dfccfe180d140076fc41ed756aa4925ad9951be418"
+            }
+          }
+        }
+      ]
+    },
+    "142284": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 36133,
+          "text": "教你学会制作石铸巨剑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142284",
+            "capturedAt": "2026-10-18T07:56:21.864Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142284?dataEnv=1&locale=4",
+            "sha256": "13783aae8809039af5c68afd5085a4ced0c2e9d66d53d3012509cbfd0889dcd2"
+          },
+          "sourceItem": {
+            "name": "设计图：石铸巨剑",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ec54ce9ed9f587926c0c9f9e72bb9c386fa511af904a4a043345cc3c0afcb1dd",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142284",
+              "capturedAt": "2026-10-18T07:56:21.864Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142284?dataEnv=1&locale=4",
+              "sha256": "13783aae8809039af5c68afd5085a4ced0c2e9d66d53d3012509cbfd0889dcd2"
+            }
+          }
+        }
+      ]
+    },
+    "142286": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 36136,
+          "text": "教你学会制作熔铸战锤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142286",
+            "capturedAt": "2026-10-18T07:56:22.526Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142286?dataEnv=1&locale=4",
+            "sha256": "02f04293b14d7e61483115d218808a7989791ccfb122dc68ed830814d7aebf98"
+          },
+          "sourceItem": {
+            "name": "设计图：熔铸战锤",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "8e91eae6d620ccb5a2abd069398f58195738d413dc98580d14bc48c51ca55eb6",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142286",
+              "capturedAt": "2026-10-18T07:56:22.526Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142286?dataEnv=1&locale=4",
+              "sha256": "02f04293b14d7e61483115d218808a7989791ccfb122dc68ed830814d7aebf98"
+            }
+          }
+        }
+      ]
+    },
+    "142287": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 36137,
+          "text": "教你学会制作巨型地铸战锤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142287",
+            "capturedAt": "2026-10-18T07:56:22.503Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142287?dataEnv=1&locale=4",
+            "sha256": "43122f11dd422532987fc9ca9d08095699f66431f88ae128446b72cc432e5fbe"
+          },
+          "sourceItem": {
+            "name": "设计图：巨型地铸战锤",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "419ae58e84fbb0fc71161d4e1b53a320948d07b722c25c93fe01059958b89519",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142287",
+              "capturedAt": "2026-10-18T07:56:22.503Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142287?dataEnv=1&locale=4",
+              "sha256": "43122f11dd422532987fc9ca9d08095699f66431f88ae128446b72cc432e5fbe"
+            }
+          }
+        }
+      ]
+    },
+    "142346": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16965,
+          "text": "教你学会制作冷木斧。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142346",
+            "capturedAt": "2026-10-18T07:56:23.203Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142346?dataEnv=1&locale=4",
+            "sha256": "f20beaa061f0032cf89d1db17d59371693e1191e691087c4c7329a3377a620b9"
+          },
+          "sourceItem": {
+            "name": "设计图：冷木斧",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "9110d7a20b4574b45ffd0ca883acfc12b5dad94afe552e8ab8653171256e014b",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142346",
+              "capturedAt": "2026-10-18T07:56:23.203Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142346?dataEnv=1&locale=4",
+              "sha256": "f20beaa061f0032cf89d1db17d59371693e1191e691087c4c7329a3377a620b9"
+            }
+          }
+        }
+      ]
+    },
+    "142357": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16970,
+          "text": "教你学会制作黎明之刃。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142357",
+            "capturedAt": "2026-10-18T07:56:23.168Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142357?dataEnv=1&locale=4",
+            "sha256": "7a6efdd7402a886d458ea3287d1f7cc6b75e0b11d8d8014739a18d77ad0d2d2d"
+          },
+          "sourceItem": {
+            "name": "设计图：黎明之刃",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0f407b842ce9b3f9ae9049ea76bbc6233f931ca1b647fd2cbb75eebdc0549a3d",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142357",
+              "capturedAt": "2026-10-18T07:56:23.168Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142357?dataEnv=1&locale=4",
+              "sha256": "7a6efdd7402a886d458ea3287d1f7cc6b75e0b11d8d8014739a18d77ad0d2d2d"
+            }
+          }
+        }
+      ]
+    },
+    "142383": {
+      "edition": "现行正式服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16987,
+          "text": "教你学会制作黑暗之矛。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cn/item=142383",
+            "capturedAt": "2026-10-18T07:56:23.878Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/142383?dataEnv=1&locale=4",
+            "sha256": "f8b94a834824b6909ca05bae865ae06c84abb87fc9956b6606dad25169355777"
+          },
+          "sourceItem": {
+            "name": "设计图：黑暗之矛",
+            "quality": 1,
+            "itemLevel": 1
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0f572429f34ad481b6a201af5181f9b068b143e14e67e5037dd4e4f72ba7eb87",
+            "quality": 1,
+            "itemLevel": 1,
+            "source": {
+              "url": "https://www.wowhead.com/cn/item=142383",
+              "capturedAt": "2026-10-18T07:56:23.878Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/142383?dataEnv=1&locale=4",
+              "sha256": "f8b94a834824b6909ca05bae865ae06c84abb87fc9956b6606dad25169355777"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2493 @@
+{
+  "schemaVersion": 1,
+  "version": "cataclysm",
+  "edition": "大地的裂变怀旧服",
+  "quests": {},
+  "items": {
+    "728": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2543,
+          "text": "教你学会烹制西部荒野杂味炖肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=728",
+            "capturedAt": "2026-10-18T07:40:45.044Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/728?dataEnv=11&locale=4",
+            "sha256": "30206b041ea4d0e274e9d1a5082629dfeef85498691bd83858ab708cd7450b58"
+          },
+          "sourceItem": {
+            "name": "食谱：西部荒野杂味炖肉",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "enUS",
+            "nameSha256": "60314804b9c7f1f12267d49d26b6738cb8bbb5639fd34b98701bf8249dc867e4",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/item=728",
+              "capturedAt": "2026-10-18T07:40:46.528Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/728?dataEnv=11&locale=0",
+              "sha256": "e7845d350a107c99fe80d503978b2cbdf67e345cf240b3b324a9b105fd7591d7"
+            }
+          }
+        }
+      ]
+    },
+    "2697": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2542,
+          "text": "教你学会烹制猪肝馅饼。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=2697",
+            "capturedAt": "2026-10-18T07:40:50.997Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2697?dataEnv=11&locale=4",
+            "sha256": "4445165f42102403504f8848d20d7f62da1b884a4700dd6b97c26d9e5122b046"
+          },
+          "sourceItem": {
+            "name": "食谱：猪肝馅饼",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "807b18d20aa707fdc5a215a9735349deeea8b48e1ee45ee149250eb2557ae7ed",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=2697",
+              "capturedAt": "2026-10-18T07:40:50.997Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2697?dataEnv=11&locale=4",
+              "sha256": "4445165f42102403504f8848d20d7f62da1b884a4700dd6b97c26d9e5122b046"
+            }
+          }
+        }
+      ]
+    },
+    "2699": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2547,
+          "text": "教你学会烹制赤脊山炖肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=2699",
+            "capturedAt": "2026-10-18T07:40:51.415Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2699?dataEnv=11&locale=4",
+            "sha256": "1fb4b385a63ada8df443f855a6c652c791c98c17e5c77af4b5adbcaa7c873a61"
+          },
+          "sourceItem": {
+            "name": "食谱：赤脊山炖肉",
+            "quality": 1,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "3b25157274e7594edd95d02f5a4ce7ab8e263ac021055bbb5b8b61240cc97406",
+            "quality": 1,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=2699",
+              "capturedAt": "2026-10-18T07:40:51.415Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2699?dataEnv=11&locale=4",
+              "sha256": "1fb4b385a63ada8df443f855a6c652c791c98c17e5c77af4b5adbcaa7c873a61"
+            }
+          }
+        }
+      ]
+    },
+    "2701": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2549,
+          "text": "教你学会烹制干烤狼肉串。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=2701",
+            "capturedAt": "2026-10-18T07:40:51.687Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2701?dataEnv=11&locale=4",
+            "sha256": "e24c6780f5ca55df2b21768d4de0f4e6fcaf2f72b1f3825991944bdc3144b75c"
+          },
+          "sourceItem": {
+            "name": "食谱：干烤狼肉串",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "497f9795cfc82c3334e4731115954c2879f2bda47d7eeb800c2dce61ee1774a3",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=2701",
+              "capturedAt": "2026-10-18T07:40:51.687Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2701?dataEnv=11&locale=4",
+              "sha256": "e24c6780f5ca55df2b21768d4de0f4e6fcaf2f72b1f3825991944bdc3144b75c"
+            }
+          }
+        }
+      ]
+    },
+    "2889": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 2795,
+          "text": "教你学会烹制啤酒烤猪排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=2889",
+            "capturedAt": "2026-10-18T07:40:52.489Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/2889?dataEnv=11&locale=4",
+            "sha256": "585872c4822385c14c1ed2b9497df549b77cbb163fe3431874086ec0d7dee7c0"
+          },
+          "sourceItem": {
+            "name": "食谱：啤酒烤猪排",
+            "quality": 1,
+            "itemLevel": 8
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c69bb7a55e3586f204f3452e3495b282877e7c433cd7f12b32949b3daa898f1b",
+            "quality": 1,
+            "itemLevel": 8,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=2889",
+              "capturedAt": "2026-10-18T07:40:52.489Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/2889?dataEnv=11&locale=4",
+              "sha256": "585872c4822385c14c1ed2b9497df549b77cbb163fe3431874086ec0d7dee7c0"
+            }
+          }
+        }
+      ]
+    },
+    "3678": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3370,
+          "text": "教你学会烹制鳄鱼煎排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=3678",
+            "capturedAt": "2026-10-18T07:40:54.934Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3678?dataEnv=11&locale=4",
+            "sha256": "5516f5b654e31125766779b8c90198f89fad871a16639ed0b9934fa7a794a7d3"
+          },
+          "sourceItem": {
+            "name": "食谱：鳄鱼煎排",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "027a6f2baf3550cf2958a17163ccb3b37cf10fc6fd4f99e427a22da3cb61025d",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=3678",
+              "capturedAt": "2026-10-18T07:40:54.934Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3678?dataEnv=11&locale=4",
+              "sha256": "5516f5b654e31125766779b8c90198f89fad871a16639ed0b9934fa7a794a7d3"
+            }
+          }
+        }
+      ]
+    },
+    "3679": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3371,
+          "text": "教你学会烹制血肠。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=3679",
+            "capturedAt": "2026-10-18T07:40:55.090Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3679?dataEnv=11&locale=4",
+            "sha256": "55959521c20ba60945dbf5bcaba9cef5ce32199c400f239905c05692da348777"
+          },
+          "sourceItem": {
+            "name": "食谱：血肠",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "acffc6c3914a10b53f4250657db07610109b4029334fdc233128917731bf6d0c",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=3679",
+              "capturedAt": "2026-10-18T07:40:55.090Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3679?dataEnv=11&locale=4",
+              "sha256": "55959521c20ba60945dbf5bcaba9cef5ce32199c400f239905c05692da348777"
+            }
+          }
+        }
+      ]
+    },
+    "3680": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3372,
+          "text": "教你学会烹制鱼人鳍汤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=3680",
+            "capturedAt": "2026-10-18T07:40:55.619Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3680?dataEnv=11&locale=4",
+            "sha256": "1468664c2fd2d92d3324912562fac74e08ee4ba29df09677a394bb8fb9e623fe"
+          },
+          "sourceItem": {
+            "name": "食谱：鱼人鳍汤",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "5c9654cb4fb2f3430fdc9ad1e789b2c4dc95db5b1e908bb1cfec1ee3da577697",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=3680",
+              "capturedAt": "2026-10-18T07:40:55.619Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3680?dataEnv=11&locale=4",
+              "sha256": "1468664c2fd2d92d3324912562fac74e08ee4ba29df09677a394bb8fb9e623fe"
+            }
+          }
+        }
+      ]
+    },
+    "3681": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3373,
+          "text": "教你学会烹制鳄鱼浓汤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=3681",
+            "capturedAt": "2026-10-18T07:40:55.808Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3681?dataEnv=11&locale=4",
+            "sha256": "9d62e796199eef856150369d946daa3ed702614f589f59d28be2e5425f7b3f52"
+          },
+          "sourceItem": {
+            "name": "食谱：鳄鱼浓汤",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "fd8fa1925f13e6a19eea23348efee12c62c8c8c281fcf79615a998885c40df63",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=3681",
+              "capturedAt": "2026-10-18T07:40:55.808Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3681?dataEnv=11&locale=4",
+              "sha256": "9d62e796199eef856150369d946daa3ed702614f589f59d28be2e5425f7b3f52"
+            }
+          }
+        }
+      ]
+    },
+    "3682": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3376,
+          "text": "教你学会烹制美味煎蛋卷。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=3682",
+            "capturedAt": "2026-10-18T07:40:56.421Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3682?dataEnv=11&locale=4",
+            "sha256": "d56a2dfa0813a08669ef7d5ff7e21e47b98760dbaa07c25bb904ae988b3dd9ef"
+          },
+          "sourceItem": {
+            "name": "食谱：美味煎蛋卷",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f0db3063ed2650aa52109ba8cbe628f1d0c2541c0e581b0c27a77549a93e8e2b",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=3682",
+              "capturedAt": "2026-10-18T07:40:56.421Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3682?dataEnv=11&locale=4",
+              "sha256": "d56a2dfa0813a08669ef7d5ff7e21e47b98760dbaa07c25bb904ae988b3dd9ef"
+            }
+          }
+        }
+      ]
+    },
+    "3683": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 3377,
+          "text": "教你学会烹制蜘蛛蛋糕。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=3683",
+            "capturedAt": "2026-10-18T07:40:56.696Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/3683?dataEnv=11&locale=4",
+            "sha256": "9e73576c6b362ebd478e51300c9901bf09aff1b5b2d47321879fbc62421c0e1f"
+          },
+          "sourceItem": {
+            "name": "食谱：蜘蛛蛋糕",
+            "quality": 1,
+            "itemLevel": 25
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0966578c681a1d93776115fcc41259a31d1a98cf970be58155f5a2a0f6de6e37",
+            "quality": 1,
+            "itemLevel": 25,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=3683",
+              "capturedAt": "2026-10-18T07:40:56.696Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/3683?dataEnv=11&locale=4",
+              "sha256": "9e73576c6b362ebd478e51300c9901bf09aff1b5b2d47321879fbc62421c0e1f"
+            }
+          }
+        }
+      ]
+    },
+    "4597": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 4508,
+          "text": "教你学会配制褪色的治疗药水。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=4597",
+            "capturedAt": "2026-10-18T07:41:00.243Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/4597?dataEnv=11&locale=4",
+            "sha256": "1f9f2fde655bb5ee8ac5d400a5b8d557e4f839f2324def5226e8c747e653b5a4"
+          },
+          "sourceItem": {
+            "name": "配方：褪色的治疗药水",
+            "quality": 2,
+            "itemLevel": 10
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f107dd2ad40ed8983510356dcc16aa86c6d39e42e47c234278c154e7002741e1",
+            "quality": 2,
+            "itemLevel": 10,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=4597",
+              "capturedAt": "2026-10-18T07:41:00.243Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/4597?dataEnv=11&locale=4",
+              "sha256": "1f9f2fde655bb5ee8ac5d400a5b8d557e4f839f2324def5226e8c747e653b5a4"
+            }
+          }
+        }
+      ]
+    },
+    "4609": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 4094,
+          "text": "教你学会烹制烧烤秃鹰翅膀。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=4609",
+            "capturedAt": "2026-10-18T07:41:01.287Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/4609?dataEnv=11&locale=4",
+            "sha256": "1a052e1d9e7e9fe0ad817da45ee88b627866f432bfbb0d2cf63aba3eb676f901"
+          },
+          "sourceItem": {
+            "name": "食谱：烧烤秃鹰翅膀",
+            "quality": 1,
+            "itemLevel": 35
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "7860a48e17750ed3ec2158f52528ff75c61472652690f67804a8d6e7a961afad",
+            "quality": 1,
+            "itemLevel": 35,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=4609",
+              "capturedAt": "2026-10-18T07:41:01.287Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/4609?dataEnv=11&locale=4",
+              "sha256": "1a052e1d9e7e9fe0ad817da45ee88b627866f432bfbb0d2cf63aba3eb676f901"
+            }
+          }
+        }
+      ]
+    },
+    "4624": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 4942,
+          "text": "教你学会配制次级石盾药水。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=4624",
+            "capturedAt": "2026-10-18T07:41:02.281Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/4624?dataEnv=11&locale=4",
+            "sha256": "fb99f194011d9ecda592a9194c715e39f6ac1ad8c649b4043dc681364be55a6f"
+          },
+          "sourceItem": {
+            "name": "配方：次级石盾药水",
+            "quality": 1,
+            "itemLevel": 43
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "379c955d179e4ce3a4cb2f9160daa0683d2e444e8d02e6370e355c7a75f1b3c8",
+            "quality": 1,
+            "itemLevel": 43,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=4624",
+              "capturedAt": "2026-10-18T07:41:02.281Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/4624?dataEnv=11&locale=4",
+              "sha256": "fb99f194011d9ecda592a9194c715e39f6ac1ad8c649b4043dc681364be55a6f"
+            }
+          }
+        }
+      ]
+    },
+    "5083": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 5244,
+          "text": "教你学会制作科多兽皮包。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=5083",
+            "capturedAt": "2026-10-18T07:41:03.603Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5083?dataEnv=11&locale=4",
+            "sha256": "d9b6aa8534b3824ebd4549cd296a175ba386f1510da184505d6a370743ab3016"
+          },
+          "sourceItem": {
+            "name": "图样：科多兽皮包",
+            "quality": 2,
+            "itemLevel": 11
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "66ba562adecc6b0f2e6aa705cf56351dac6570d6fd7c4c787ad14bc41685286f",
+            "quality": 2,
+            "itemLevel": 11,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=5083",
+              "capturedAt": "2026-10-18T07:41:03.603Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5083?dataEnv=11&locale=4",
+              "sha256": "d9b6aa8534b3824ebd4549cd296a175ba386f1510da184505d6a370743ab3016"
+            }
+          }
+        }
+      ]
+    },
+    "5131": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 5265,
+          "text": "将你自己伪装成一个碎石穴居怪。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=5131",
+            "capturedAt": "2026-10-18T07:41:03.395Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5131?dataEnv=11&locale=4",
+            "sha256": "6eea208bb95bc69976713280bc9b8a0e9b168d5a4412611ce62230c2a4acc4e9"
+          },
+          "sourceItem": {
+            "name": "知识：碎石怪伪装",
+            "quality": 1,
+            "itemLevel": 13
+          },
+          "anchor": {
+            "locale": "enUS",
+            "nameSha256": "37eb759d4cfc9b43a1dd66a28ba32f9428b9e2126702f0887ed77a9e0c4a30ae",
+            "quality": 1,
+            "itemLevel": 13,
+            "source": {
+              "url": "https://www.wowhead.com/cata/item=5131",
+              "capturedAt": "2026-10-18T07:41:05.000Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5131?dataEnv=11&locale=0",
+              "sha256": "7814bc2febc1251ffbe504259cbef2e967f545f3b39c73a2f396816d23c9be5c"
+            }
+          }
+        }
+      ]
+    },
+    "5482": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 6412,
+          "text": "教你学会烹制卡多雷蜘蛛烤肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=5482",
+            "capturedAt": "2026-10-18T07:41:06.575Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5482?dataEnv=11&locale=4",
+            "sha256": "2d1d0ecdffc06f95dd5bfa25e6949730c1815dbf04c952b73645ebcb035cb709"
+          },
+          "sourceItem": {
+            "name": "食谱：卡多雷蜘蛛烤肉",
+            "quality": 1,
+            "itemLevel": 5
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c3eba051af5b7985f4e770a8c7ef3e63d06b1435e44f14241640163ac4894ed1",
+            "quality": 1,
+            "itemLevel": 5,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=5482",
+              "capturedAt": "2026-10-18T07:41:06.575Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5482?dataEnv=11&locale=4",
+              "sha256": "2d1d0ecdffc06f95dd5bfa25e6949730c1815dbf04c952b73645ebcb035cb709"
+            }
+          }
+        }
+      ]
+    },
+    "5486": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 6416,
+          "text": "教你学会烹制炖陆行鸟。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=5486",
+            "capturedAt": "2026-10-18T07:41:07.150Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5486?dataEnv=11&locale=4",
+            "sha256": "46bb836294916f57173d2032b67f3a2942c53b8049ee60613bebff012e04cb82"
+          },
+          "sourceItem": {
+            "name": "食谱：炖陆行鸟",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "486b26dd0358a0206ec14e902a7eaab2809441d925a4d5903230717ac1614a7e",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=5486",
+              "capturedAt": "2026-10-18T07:41:07.150Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5486?dataEnv=11&locale=4",
+              "sha256": "46bb836294916f57173d2032b67f3a2942c53b8049ee60613bebff012e04cb82"
+            }
+          }
+        }
+      ]
+    },
+    "5487": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 6417,
+          "text": "教你学会烹制焖鼠肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=5487",
+            "capturedAt": "2026-10-18T07:41:07.348Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/5487?dataEnv=11&locale=4",
+            "sha256": "79d5d7446c10abdd386f133bbb22b8afa7fe1b5a7f21b3599ed0a97df91ab0ee"
+          },
+          "sourceItem": {
+            "name": "食谱：掘地鼠炖肉",
+            "quality": 1,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "729ce1558cfe7154c010a0882fd0dca6ca44718f56c2e071250e1044a414a3e6",
+            "quality": 1,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=5487",
+              "capturedAt": "2026-10-18T07:41:07.348Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/5487?dataEnv=11&locale=4",
+              "sha256": "79d5d7446c10abdd386f133bbb22b8afa7fe1b5a7f21b3599ed0a97df91ab0ee"
+            }
+          }
+        }
+      ]
+    },
+    "6476": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 7955,
+          "text": "教你学会制作蛇鳞腰带。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=6476",
+            "capturedAt": "2026-10-18T07:41:08.817Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6476?dataEnv=11&locale=4",
+            "sha256": "20f9c83e8114a3648486decc9504aa957e2aa4e6ed0526fd473e6c2bd564ea70"
+          },
+          "sourceItem": {
+            "name": "图样：蛇鳞腰带",
+            "quality": 2,
+            "itemLevel": 23
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "fb3399a076052d27035d49182f4dc28fe03564306a5c8ca7ea526bb9ca2ca1fe",
+            "quality": 2,
+            "itemLevel": 23,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=6476",
+              "capturedAt": "2026-10-18T07:41:08.817Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6476?dataEnv=11&locale=4",
+              "sha256": "20f9c83e8114a3648486decc9504aa957e2aa4e6ed0526fd473e6c2bd564ea70"
+            }
+          }
+        }
+      ]
+    },
+    "6672": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 8243,
+          "text": "教你学会制作闪光雷。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=6672",
+            "capturedAt": "2026-10-18T07:41:09.222Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6672?dataEnv=11&locale=4",
+            "sha256": "7c9095b6a2dc7f808510a62472bce3a21bda5312f7e8ff657018d99e88e10d94"
+          },
+          "sourceItem": {
+            "name": "结构图：闪光雷",
+            "quality": 2,
+            "itemLevel": 37
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "782475b0002b9ef75bcb7b23d9470abc6732d4d470a16e352bcd9face94f62b6",
+            "quality": 2,
+            "itemLevel": 37,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=6672",
+              "capturedAt": "2026-10-18T07:41:09.222Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6672?dataEnv=11&locale=4",
+              "sha256": "7c9095b6a2dc7f808510a62472bce3a21bda5312f7e8ff657018d99e88e10d94"
+            }
+          }
+        }
+      ]
+    },
+    "6710": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 8322,
+          "text": "教你学会制作月光背心。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=6710",
+            "capturedAt": "2026-10-18T07:41:09.605Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6710?dataEnv=11&locale=4",
+            "sha256": "2001831d649b9fc236b30ddc8d98cb8d37facf374184af400f3eda5c55f55f8b"
+          },
+          "sourceItem": {
+            "name": "图样：月光背心",
+            "quality": 2,
+            "itemLevel": 18
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "3d5445bf3e98f5884e1b457f57c717998c2371db93c4c42a5d62cb7d82356546",
+            "quality": 2,
+            "itemLevel": 18,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=6710",
+              "capturedAt": "2026-10-18T07:41:09.605Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6710?dataEnv=11&locale=4",
+              "sha256": "2001831d649b9fc236b30ddc8d98cb8d37facf374184af400f3eda5c55f55f8b"
+            }
+          }
+        }
+      ]
+    },
+    "6735": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 8367,
+          "text": "教你学会制作铁炉堡胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=6735",
+            "capturedAt": "2026-10-18T07:41:10.416Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/6735?dataEnv=11&locale=4",
+            "sha256": "63769847bc634f5c9c9d3d9b8563eba5b828f5cc6e6946f053dd3e7230903716"
+          },
+          "sourceItem": {
+            "name": "设计图：铁炉堡胸甲",
+            "quality": 2,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ee16e6c65cf2dba069c9f7757fc2134945c1ff8f8ff8096382052dba4939624a",
+            "quality": 2,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=6735",
+              "capturedAt": "2026-10-18T07:41:10.416Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/6735?dataEnv=11&locale=4",
+              "sha256": "63769847bc634f5c9c9d3d9b8563eba5b828f5cc6e6946f053dd3e7230903716"
+            }
+          }
+        }
+      ]
+    },
+    "7978": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9811,
+          "text": "教你学会制作野人铁护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7978",
+            "capturedAt": "2026-10-18T07:41:13.009Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7978?dataEnv=11&locale=4",
+            "sha256": "5de9b811c2df677c44909aeb6351d5bd960e4ae93ca2daf1186a372c67c122b5"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁护肩",
+            "quality": 2,
+            "itemLevel": 32
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "dbf93ce82f7d96d020f725ed2fcd6bebd6b991a861309045c7310137af5768bf",
+            "quality": 2,
+            "itemLevel": 32,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7978",
+              "capturedAt": "2026-10-18T07:41:13.009Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7978?dataEnv=11&locale=4",
+              "sha256": "5de9b811c2df677c44909aeb6351d5bd960e4ae93ca2daf1186a372c67c122b5"
+            }
+          }
+        }
+      ]
+    },
+    "7979": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9813,
+          "text": "教你学会制作野人铁质胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7979",
+            "capturedAt": "2026-10-18T07:41:13.453Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7979?dataEnv=11&locale=4",
+            "sha256": "5b466731ea262a8ccaa22dd5e7f06fa2d0d2bfd0539e8ad7b0b503971f86aa81"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁质胸甲",
+            "quality": 2,
+            "itemLevel": 32
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e00c63fa87b7bd55c0b90168b259502929ae5a81eaa48a587a72ea1997b9ddc0",
+            "quality": 2,
+            "itemLevel": 32,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7979",
+              "capturedAt": "2026-10-18T07:41:13.453Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7979?dataEnv=11&locale=4",
+              "sha256": "5b466731ea262a8ccaa22dd5e7f06fa2d0d2bfd0539e8ad7b0b503971f86aa81"
+            }
+          }
+        }
+      ]
+    },
+    "7980": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9814,
+          "text": "教你学会制作野人铁盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7980",
+            "capturedAt": "2026-10-18T07:41:14.164Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7980?dataEnv=11&locale=4",
+            "sha256": "5655b74ac4bb977d0fd844270ce56f290d392f3a4a667065ad905ae98239ef2a"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁盔",
+            "quality": 2,
+            "itemLevel": 35
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "85b3fa011f531190e3bfd66b61e77c93d2875763e9fda2f666939aed23130d82",
+            "quality": 2,
+            "itemLevel": 35,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7980",
+              "capturedAt": "2026-10-18T07:41:14.164Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7980?dataEnv=11&locale=4",
+              "sha256": "5655b74ac4bb977d0fd844270ce56f290d392f3a4a667065ad905ae98239ef2a"
+            }
+          }
+        }
+      ]
+    },
+    "7981": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9818,
+          "text": "教你学会制作野人铁靴。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7981",
+            "capturedAt": "2026-10-18T07:41:14.914Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7981?dataEnv=11&locale=4",
+            "sha256": "ec6c22358c9661f405cf1c78ca447f39e707799c8515622e4b3a92523e7a6c8f"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁靴",
+            "quality": 2,
+            "itemLevel": 36
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "22b8fcc75c03866cfeea25f1de7c4030182b065e1a5331cc6c3c9cb25a9ae5bb",
+            "quality": 2,
+            "itemLevel": 36,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7981",
+              "capturedAt": "2026-10-18T07:41:14.914Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7981?dataEnv=11&locale=4",
+              "sha256": "ec6c22358c9661f405cf1c78ca447f39e707799c8515622e4b3a92523e7a6c8f"
+            }
+          }
+        }
+      ]
+    },
+    "7982": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9820,
+          "text": "教你学会制作野人铁手套。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7982",
+            "capturedAt": "2026-10-18T07:41:14.903Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7982?dataEnv=11&locale=4",
+            "sha256": "93c91178b990a2e4d48589b25e3fe05e0e7bcea7e73cd1d8322db38c7ff3298a"
+          },
+          "sourceItem": {
+            "name": "设计图：野人铁手套",
+            "quality": 2,
+            "itemLevel": 37
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ac8ae9a5447fe1d057c05289eb1e05e56a889574d751a761538c97dc6ad7f9f9",
+            "quality": 2,
+            "itemLevel": 37,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7982",
+              "capturedAt": "2026-10-18T07:41:14.903Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7982?dataEnv=11&locale=4",
+              "sha256": "93c91178b990a2e4d48589b25e3fe05e0e7bcea7e73cd1d8322db38c7ff3298a"
+            }
+          }
+        }
+      ]
+    },
+    "7983": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9945,
+          "text": "教你学会制作精制秘银短裤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7983",
+            "capturedAt": "2026-10-18T07:41:15.657Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7983?dataEnv=11&locale=4",
+            "sha256": "7962cb19d32017913fdb0492871b1c7b92f2c8239b54082b3a22babca09b8daa"
+          },
+          "sourceItem": {
+            "name": "设计图：精制秘银短裤",
+            "quality": 2,
+            "itemLevel": 44
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "36c7b611e8788524c42a0e019e129bc589546946dd704a032b24b34d5125cf55",
+            "quality": 2,
+            "itemLevel": 44,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7983",
+              "capturedAt": "2026-10-18T07:41:15.657Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7983?dataEnv=11&locale=4",
+              "sha256": "7962cb19d32017913fdb0492871b1c7b92f2c8239b54082b3a22babca09b8daa"
+            }
+          }
+        }
+      ]
+    },
+    "7984": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9950,
+          "text": "教你学会制作精制秘银手套。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7984",
+            "capturedAt": "2026-10-18T07:41:15.629Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7984?dataEnv=11&locale=4",
+            "sha256": "a99c9959a2ccbc230a5d725720614d691ba71d2b02e1aa7402acb596f84e13ed"
+          },
+          "sourceItem": {
+            "name": "设计图：精制秘银手套",
+            "quality": 2,
+            "itemLevel": 44
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "9ae923695f3f61c5d0d5f220fee23a09b889f3cac65ee7f3a4f6e24750edcb62",
+            "quality": 2,
+            "itemLevel": 44,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7984",
+              "capturedAt": "2026-10-18T07:41:15.629Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7984?dataEnv=11&locale=4",
+              "sha256": "a99c9959a2ccbc230a5d725720614d691ba71d2b02e1aa7402acb596f84e13ed"
+            }
+          }
+        }
+      ]
+    },
+    "7985": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9952,
+          "text": "教你学会制作精制秘银护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=7985",
+            "capturedAt": "2026-10-18T07:41:16.396Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/7985?dataEnv=11&locale=4",
+            "sha256": "9b4dc2851fa6ede9310704a712e740473a096b6c6b72870ca1d65475bca9c685"
+          },
+          "sourceItem": {
+            "name": "设计图：精制秘银护肩",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "b94f57b274a6c468321c12779b52d6c94e8e5d400e3a9b69986279e24ee8daa1",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=7985",
+              "capturedAt": "2026-10-18T07:41:16.396Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/7985?dataEnv=11&locale=4",
+              "sha256": "9b4dc2851fa6ede9310704a712e740473a096b6c6b72870ca1d65475bca9c685"
+            }
+          }
+        }
+      ]
+    },
+    "8403": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10529,
+          "text": "教你学会制作蛮皮护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=8403",
+            "capturedAt": "2026-10-18T07:41:16.410Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8403?dataEnv=11&locale=4",
+            "sha256": "6658b6cdb97028d48baed9b109b3aa65e025aebcda487402c3ac943a139adcb8"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮护肩",
+            "quality": 2,
+            "itemLevel": 44
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "abda8d073d24091b982c4ce92eeb287e30b5c4282465214b3fedccb880792efe",
+            "quality": 2,
+            "itemLevel": 44,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=8403",
+              "capturedAt": "2026-10-18T07:41:16.410Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8403?dataEnv=11&locale=4",
+              "sha256": "6658b6cdb97028d48baed9b109b3aa65e025aebcda487402c3ac943a139adcb8"
+            }
+          }
+        }
+      ]
+    },
+    "8404": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10544,
+          "text": "教你学会制作蛮皮外衣。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=8404",
+            "capturedAt": "2026-10-18T07:41:17.126Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8404?dataEnv=11&locale=4",
+            "sha256": "037ab99d0b38a9224e70634e96269a90b3ba2b552b17a6e92bf7dee4f2305e42"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮外衣",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f6eebcaf769b7d967536eeb39ce42aca3dc61a4e9fbe50201da23c63feed9eed",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=8404",
+              "capturedAt": "2026-10-18T07:41:17.126Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8404?dataEnv=11&locale=4",
+              "sha256": "037ab99d0b38a9224e70634e96269a90b3ba2b552b17a6e92bf7dee4f2305e42"
+            }
+          }
+        }
+      ]
+    },
+    "8405": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10546,
+          "text": "教你学会制作蛮皮头盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=8405",
+            "capturedAt": "2026-10-18T07:41:17.166Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8405?dataEnv=11&locale=4",
+            "sha256": "7d519c1d9b0ed7d092941027367718cb5632e28b8e2c9286f027e080e7b13f71"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮头盔",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f35dd944ef5c1aff8fc4e170d67f3ada159bbece8040cfab1450d1f2ddb15189",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=8405",
+              "capturedAt": "2026-10-18T07:41:17.166Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8405?dataEnv=11&locale=4",
+              "sha256": "7d519c1d9b0ed7d092941027367718cb5632e28b8e2c9286f027e080e7b13f71"
+            }
+          }
+        }
+      ]
+    },
+    "8406": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10566,
+          "text": "教你学会制作蛮皮战靴。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=8406",
+            "capturedAt": "2026-10-18T07:41:17.867Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8406?dataEnv=11&locale=4",
+            "sha256": "3a5d34db52cc005857fc7e870e5a4712df6d1a95b4009245f4feecc230f4d495"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮战靴",
+            "quality": 2,
+            "itemLevel": 49
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0b25e63c85a130ae046abe4f8c0c5baf757467e4cd6c5143235a816c5a51cd4c",
+            "quality": 2,
+            "itemLevel": 49,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=8406",
+              "capturedAt": "2026-10-18T07:41:17.867Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8406?dataEnv=11&locale=4",
+              "sha256": "3a5d34db52cc005857fc7e870e5a4712df6d1a95b4009245f4feecc230f4d495"
+            }
+          }
+        }
+      ]
+    },
+    "8407": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10572,
+          "text": "教你学会制作蛮皮护腿。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=8407",
+            "capturedAt": "2026-10-18T07:41:17.901Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8407?dataEnv=11&locale=4",
+            "sha256": "0c399f2a879eed21fbec95306cef0c3e7ab620794e4c796fa1e26f2e81263658"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮护腿",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "345e3937cbf18665db30343288ac2d678da899ea98251589a4e79513a359b82c",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=8407",
+              "capturedAt": "2026-10-18T07:41:17.901Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8407?dataEnv=11&locale=4",
+              "sha256": "0c399f2a879eed21fbec95306cef0c3e7ab620794e4c796fa1e26f2e81263658"
+            }
+          }
+        }
+      ]
+    },
+    "8408": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 10574,
+          "text": "教你学会制作守护披风。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=8408",
+            "capturedAt": "2026-10-18T07:41:18.608Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/8408?dataEnv=11&locale=4",
+            "sha256": "5b8254b8ec624f5480eaa18efd91f407b9b7a8115177962faf65a1b515edb1fd"
+          },
+          "sourceItem": {
+            "name": "图样：蛮皮披风",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "d7d64568771fe1b865358ed89ff080d28b6f616dff54a27abeda23cc3c1966b6",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=8408",
+              "capturedAt": "2026-10-18T07:41:18.608Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/8408?dataEnv=11&locale=4",
+              "sha256": "5b8254b8ec624f5480eaa18efd91f407b9b7a8115177962faf65a1b515edb1fd"
+            }
+          }
+        }
+      ]
+    },
+    "9367": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 11643,
+          "text": "教你学会制造金鳞护手。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=9367",
+            "capturedAt": "2026-10-18T07:41:19.304Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/9367?dataEnv=11&locale=4",
+            "sha256": "9e54717e8a952f488906d1c17712e61d9a27b0ab7cd5b8e1011d368d2bbda885"
+          },
+          "sourceItem": {
+            "name": "设计图：金鳞护手",
+            "quality": 2,
+            "itemLevel": 41
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "dd5bba229e196524dc0d966cc7397171e5006638bf72f3a172523a97774740b9",
+            "quality": 2,
+            "itemLevel": 41,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=9367",
+              "capturedAt": "2026-10-18T07:41:19.304Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/9367?dataEnv=11&locale=4",
+              "sha256": "9e54717e8a952f488906d1c17712e61d9a27b0ab7cd5b8e1011d368d2bbda885"
+            }
+          }
+        }
+      ]
+    },
+    "10463": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 12086,
+          "text": "教你学会制作暗纹面罩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=10463",
+            "capturedAt": "2026-10-18T07:41:19.942Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/10463?dataEnv=11&locale=4",
+            "sha256": "54c1d1f3ceb67d08990e5a3e28acb7627bed73d31fa8a733aa74ab24d0ab754d"
+          },
+          "sourceItem": {
+            "name": "图样：暗纹面罩",
+            "quality": 2,
+            "itemLevel": 49
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "7a7ed614e20cf45a89cbe6a0cda91b8c5b16819e76f7d05a810a54f8f0267ad3",
+            "quality": 2,
+            "itemLevel": 49,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=10463",
+              "capturedAt": "2026-10-18T07:41:19.942Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/10463?dataEnv=11&locale=4",
+              "sha256": "54c1d1f3ceb67d08990e5a3e28acb7627bed73d31fa8a733aa74ab24d0ab754d"
+            }
+          }
+        }
+      ]
+    },
+    "12687": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16646,
+          "text": "教你学会制作君王板甲护肩。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12687",
+            "capturedAt": "2026-10-18T07:41:22.780Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12687?dataEnv=11&locale=4",
+            "sha256": "ae2a605f5503d98e0ef65eb7bb2f6a88d44f74f24ff02b9d801353041d6bf69f"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护肩",
+            "quality": 2,
+            "itemLevel": 53
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "2a45ac7ad1226ec311bad119318f14c7f8223a7972c52648dcba3cb9ed41fd3c",
+            "quality": 2,
+            "itemLevel": 53,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12687",
+              "capturedAt": "2026-10-18T07:41:22.780Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12687?dataEnv=11&locale=4",
+              "sha256": "ae2a605f5503d98e0ef65eb7bb2f6a88d44f74f24ff02b9d801353041d6bf69f"
+            }
+          }
+        }
+      ]
+    },
+    "12688": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16647,
+          "text": "教你学会制作君王板甲腰带。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12688",
+            "capturedAt": "2026-10-18T07:41:23.229Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12688?dataEnv=11&locale=4",
+            "sha256": "3b7b26124b1a2c67982d8103b2d9412a0237f3e9ad5a73bc29d336c2078e46f4"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲腰带",
+            "quality": 2,
+            "itemLevel": 53
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "7f461548623449987fbca24a23989cd698f1ed8abe0dc739aa42b9c28cd57873",
+            "quality": 2,
+            "itemLevel": 53,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12688",
+              "capturedAt": "2026-10-18T07:41:23.229Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12688?dataEnv=11&locale=4",
+              "sha256": "3b7b26124b1a2c67982d8103b2d9412a0237f3e9ad5a73bc29d336c2078e46f4"
+            }
+          }
+        }
+      ]
+    },
+    "12690": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16649,
+          "text": "教你学会制作君王板甲护腕。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12690",
+            "capturedAt": "2026-10-18T07:41:23.542Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12690?dataEnv=11&locale=4",
+            "sha256": "5f665066f1f37b65167e9c95943a835af73a9913347331812decce8f854c488e"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护腕",
+            "quality": 2,
+            "itemLevel": 54
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e329d24cf25a41ed28f6512b1a307d879398ee45ddcfe7cec348b48517c6a1fa",
+            "quality": 2,
+            "itemLevel": 54,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12690",
+              "capturedAt": "2026-10-18T07:41:23.542Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12690?dataEnv=11&locale=4",
+              "sha256": "5f665066f1f37b65167e9c95943a835af73a9913347331812decce8f854c488e"
+            }
+          }
+        }
+      ]
+    },
+    "12696": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16667,
+          "text": "教你学会制作魔铸胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12696",
+            "capturedAt": "2026-10-18T07:41:23.895Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12696?dataEnv=11&locale=4",
+            "sha256": "7c8141b4f8967afab895cf60e4cc891cddff74b4ee97303537cc5a4b4dd66eea"
+          },
+          "sourceItem": {
+            "name": "设计图：魔铸胸甲",
+            "quality": 3,
+            "itemLevel": 57
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f851f48eb9d605fab718e2d444d11f229b455dcb3aba42f696a5d53ae9570db5",
+            "quality": 3,
+            "itemLevel": 57,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12696",
+              "capturedAt": "2026-10-18T07:41:23.895Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12696?dataEnv=11&locale=4",
+              "sha256": "7c8141b4f8967afab895cf60e4cc891cddff74b4ee97303537cc5a4b4dd66eea"
+            }
+          }
+        }
+      ]
+    },
+    "12699": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16655,
+          "text": "教你学会制作炽热板甲护手。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12699",
+            "capturedAt": "2026-10-18T07:41:24.199Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12699?dataEnv=11&locale=4",
+            "sha256": "95808d0f674528f8e85575eb7c9457ada62217d7d83ea90e4cccf055d63daeae"
+          },
+          "sourceItem": {
+            "name": "设计图：炽热板甲护手",
+            "quality": 3,
+            "itemLevel": 58
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "245764e87021c4436c9cf4228b520a4d1cc4271d895da691f9dca0ba5b377fb3",
+            "quality": 3,
+            "itemLevel": 58,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12699",
+              "capturedAt": "2026-10-18T07:41:24.199Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12699?dataEnv=11&locale=4",
+              "sha256": "95808d0f674528f8e85575eb7c9457ada62217d7d83ea90e4cccf055d63daeae"
+            }
+          }
+        }
+      ]
+    },
+    "12700": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16657,
+          "text": "教你学会制作君王板甲战靴。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12700",
+            "capturedAt": "2026-10-18T07:41:24.574Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12700?dataEnv=11&locale=4",
+            "sha256": "58830ed31c7bffb6307f1f4a161d06149bec28d2e7af707dca0b1dea05f7203e"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲战靴",
+            "quality": 2,
+            "itemLevel": 59
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "d704d69cc711392ebca4e6c0a761b079ac018ba9bf84b0cc2efcdd73d032aaa5",
+            "quality": 2,
+            "itemLevel": 59,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12700",
+              "capturedAt": "2026-10-18T07:41:24.574Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12700?dataEnv=11&locale=4",
+              "sha256": "58830ed31c7bffb6307f1f4a161d06149bec28d2e7af707dca0b1dea05f7203e"
+            }
+          }
+        }
+      ]
+    },
+    "12701": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16658,
+          "text": "教你学会制作君王板甲头盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12701",
+            "capturedAt": "2026-10-18T07:41:24.924Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12701?dataEnv=11&locale=4",
+            "sha256": "c4957c8206f585976eac2bd4b8bf4b469b785f1863d416c83e365d2d9cf1e359"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲头盔",
+            "quality": 2,
+            "itemLevel": 59
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "a114a1ce4bebb2815ddd6c83b61dd629b0d78daa46c5c724227239c086152224",
+            "quality": 2,
+            "itemLevel": 59,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12701",
+              "capturedAt": "2026-10-18T07:41:24.924Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12701?dataEnv=11&locale=4",
+              "sha256": "c4957c8206f585976eac2bd4b8bf4b469b785f1863d416c83e365d2d9cf1e359"
+            }
+          }
+        }
+      ]
+    },
+    "12705": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16663,
+          "text": "教你学会制作君王板甲护胸。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12705",
+            "capturedAt": "2026-10-18T07:41:25.253Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12705?dataEnv=11&locale=4",
+            "sha256": "de86b31bc97a4dc8593fd371600a806154b167ae965d0a2e99eece7983586f41"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护胸",
+            "quality": 2,
+            "itemLevel": 60
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e3dc87c68b00facf49b720d2273af6c481a3f6ad9b7fd8e586475b3a5df68dc6",
+            "quality": 2,
+            "itemLevel": 60,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12705",
+              "capturedAt": "2026-10-18T07:41:25.253Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12705?dataEnv=11&locale=4",
+              "sha256": "de86b31bc97a4dc8593fd371600a806154b167ae965d0a2e99eece7983586f41"
+            }
+          }
+        }
+      ]
+    },
+    "12715": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16730,
+          "text": "教你学会制作君王板甲护腿。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12715",
+            "capturedAt": "2026-10-18T07:41:25.626Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12715?dataEnv=11&locale=4",
+            "sha256": "603c8964694b8453d4b4238612e2fbb0865da41c6f8e02a260bf237ee223880a"
+          },
+          "sourceItem": {
+            "name": "设计图：君王板甲护腿",
+            "quality": 2,
+            "itemLevel": 61
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "ddc8a26a6aed18c90edde476d025739fbe960dc4814b4572cbb5d326f0e4ebcf",
+            "quality": 2,
+            "itemLevel": 61,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12715",
+              "capturedAt": "2026-10-18T07:41:25.626Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12715?dataEnv=11&locale=4",
+              "sha256": "603c8964694b8453d4b4238612e2fbb0865da41c6f8e02a260bf237ee223880a"
+            }
+          }
+        }
+      ]
+    },
+    "12725": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16742,
+          "text": "教你学会制作魔法瑟银头盔。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12725",
+            "capturedAt": "2026-10-18T07:41:25.941Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12725?dataEnv=11&locale=4",
+            "sha256": "96092c924ae16cb17151668d32cad890aee7963ee9c38a508e6fb23cdbe32636"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法瑟银头盔",
+            "quality": 3,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "68ad62727cbb31d3b308b8944c17bc3a9f720cb3909f639b2c92e6df324512aa",
+            "quality": 3,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12725",
+              "capturedAt": "2026-10-18T07:41:25.941Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12725?dataEnv=11&locale=4",
+              "sha256": "96092c924ae16cb17151668d32cad890aee7963ee9c38a508e6fb23cdbe32636"
+            }
+          }
+        }
+      ]
+    },
+    "12726": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16744,
+          "text": "教你学会制作魔法瑟银护腿。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12726",
+            "capturedAt": "2026-10-18T07:41:26.292Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12726?dataEnv=11&locale=4",
+            "sha256": "683e90ff05df00be3263c4c4571e4051560e1db5d7dbb2ef89051383e30f78c2"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法瑟银护腿",
+            "quality": 3,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "361cea79a3b66c2f44263222cdd9d942fce8382c38a284d96c6b5da38f978c13",
+            "quality": 3,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12726",
+              "capturedAt": "2026-10-18T07:41:26.292Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12726?dataEnv=11&locale=4",
+              "sha256": "683e90ff05df00be3263c4c4571e4051560e1db5d7dbb2ef89051383e30f78c2"
+            }
+          }
+        }
+      ]
+    },
+    "12727": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16745,
+          "text": "教你学会制作魔法瑟银胸甲。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12727",
+            "capturedAt": "2026-10-18T07:41:26.640Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12727?dataEnv=11&locale=4",
+            "sha256": "3eaa297e2e8f3683538882c3b10e9cf1c3db8db5ab66c46e8a8c192b7da75dac"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法瑟银胸甲",
+            "quality": 3,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "36a8df3975a7ab0a1e5b4c1fb012e623222a25882599c2b149c8a32e0fd72133",
+            "quality": 3,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12727",
+              "capturedAt": "2026-10-18T07:41:26.640Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12727?dataEnv=11&locale=4",
+              "sha256": "3eaa297e2e8f3683538882c3b10e9cf1c3db8db5ab66c46e8a8c192b7da75dac"
+            }
+          }
+        }
+      ]
+    },
+    "12821": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16970,
+          "text": "教你学会制作黎明之刃。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12821",
+            "capturedAt": "2026-10-18T07:41:27.088Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12821?dataEnv=11&locale=4",
+            "sha256": "d737f3b032c77f257c75fd6ccc0cbb3eb3682e320dbc63a67332403323e23e7b"
+          },
+          "sourceItem": {
+            "name": "设计图：黎明之刃",
+            "quality": 3,
+            "itemLevel": 55
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "0f407b842ce9b3f9ae9049ea76bbc6233f931ca1b647fd2cbb75eebdc0549a3d",
+            "quality": 3,
+            "itemLevel": 55,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12821",
+              "capturedAt": "2026-10-18T07:41:27.088Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12821?dataEnv=11&locale=4",
+              "sha256": "d737f3b032c77f257c75fd6ccc0cbb3eb3682e320dbc63a67332403323e23e7b"
+            }
+          }
+        }
+      ]
+    },
+    "12824": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16973,
+          "text": "教你学会制作魔法战锤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12824",
+            "capturedAt": "2026-10-18T07:41:27.330Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12824?dataEnv=11&locale=4",
+            "sha256": "72b35cde672ee996081a05aa64e03d6d49bd22583fae3a78d6694bf9c4f1af2c"
+          },
+          "sourceItem": {
+            "name": "设计图：魔法战锤",
+            "quality": 2,
+            "itemLevel": 56
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c36851756b171d71a815572a5623ebc785a95841ad23ce43ce29f8602b7c6f15",
+            "quality": 2,
+            "itemLevel": 56,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12824",
+              "capturedAt": "2026-10-18T07:41:27.330Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12824?dataEnv=11&locale=4",
+              "sha256": "72b35cde672ee996081a05aa64e03d6d49bd22583fae3a78d6694bf9c4f1af2c"
+            }
+          }
+        }
+      ]
+    },
+    "12825": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 16978,
+          "text": "教你学会制作闪耀轻剑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=12825",
+            "capturedAt": "2026-10-18T07:41:27.792Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/12825?dataEnv=11&locale=4",
+            "sha256": "57635efdf6251f6cdc4844e08ab48cd890134c151d4a00c0c6f1634d866ba0e6"
+          },
+          "sourceItem": {
+            "name": "设计图：闪耀轻剑",
+            "quality": 2,
+            "itemLevel": 56
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f636642d796499c06d6e2e0ba7a31a692fabbd00a145f3862e9336dd401b0d96",
+            "quality": 2,
+            "itemLevel": 56,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=12825",
+              "capturedAt": "2026-10-18T07:41:27.792Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/12825?dataEnv=11&locale=4",
+              "sha256": "57635efdf6251f6cdc4844e08ab48cd890134c151d4a00c0c6f1634d866ba0e6"
+            }
+          }
+        }
+      ]
+    },
+    "18160": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 9513,
+          "text": "教你学会烹制菊花茶。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=18160",
+            "capturedAt": "2026-10-18T07:41:30.750Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/18160?dataEnv=11&locale=4",
+            "sha256": "16cb3fe1a69f5e80cb01dc3a072b158b4cc5c07f5b0e71e28dc24eece5f55fef"
+          },
+          "sourceItem": {
+            "name": "食谱：菊花茶",
+            "quality": 2,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "8c2e05fa3931e1a5e97440a5e7abcb84830ec8dde176c4b55eae8055801baf4c",
+            "quality": 2,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=18160",
+              "capturedAt": "2026-10-18T07:41:30.750Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/18160?dataEnv=11&locale=4",
+              "sha256": "16cb3fe1a69f5e80cb01dc3a072b158b4cc5c07f5b0e71e28dc24eece5f55fef"
+            }
+          }
+        }
+      ]
+    },
+    "18592": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 21161,
+          "text": "教你学会制造萨弗隆之锤。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=18592",
+            "capturedAt": "2026-10-18T07:41:31.384Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/18592?dataEnv=11&locale=4",
+            "sha256": "5f516a43ca80f3d069a1bad3cc77af42ae3addba062891fa96511505b0cf6d29"
+          },
+          "sourceItem": {
+            "name": "设计图：萨弗隆之锤",
+            "quality": 4,
+            "itemLevel": 63
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "c3ca74831fd394e841037ea86bf94c3ea9822e2e397300b6d7b1692232d662f8",
+            "quality": 4,
+            "itemLevel": 63,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=18592",
+              "capturedAt": "2026-10-18T07:41:31.384Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/18592?dataEnv=11&locale=4",
+              "sha256": "5f516a43ca80f3d069a1bad3cc77af42ae3addba062891fa96511505b0cf6d29"
+            }
+          }
+        }
+      ]
+    },
+    "21025": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 25659,
+          "text": "教你学会烹制迪尔格的超美味奇美拉肉片。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=21025",
+            "capturedAt": "2026-10-18T07:41:43.620Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21025?dataEnv=11&locale=4",
+            "sha256": "df914d7e5c0077093dcae1323a4cfc6afad5b13551ed8aae94bb6648c4ac1baa"
+          },
+          "sourceItem": {
+            "name": "食谱：迪尔格的超美味奇美拉肉片",
+            "quality": 4,
+            "itemLevel": 60
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "4fab336e917d94d220294da26f45ac6917373571d3cbf5041cfdc8e0013587cd",
+            "quality": 4,
+            "itemLevel": 60,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=21025",
+              "capturedAt": "2026-10-18T07:41:43.620Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21025?dataEnv=11&locale=4",
+              "sha256": "df914d7e5c0077093dcae1323a4cfc6afad5b13551ed8aae94bb6648c4ac1baa"
+            }
+          }
+        }
+      ]
+    },
+    "21176": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26656,
+          "text": "召唤或解散一头可供骑乘的黑色其拉作战坦克。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=21176",
+            "capturedAt": "2026-10-18T07:41:43.711Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21176?dataEnv=11&locale=4",
+            "sha256": "b02ac999182cbf83e6fea433034e5155a8156149162b9ccefd4253b176694045"
+          },
+          "sourceItem": {
+            "name": "黑色其拉共鸣水晶",
+            "quality": 5,
+            "itemLevel": 40
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "e34f8851dd2a56d4c273f7c0a7e8db9cf7b479b83d5983fea282338c6d496341",
+            "quality": 5,
+            "itemLevel": 40,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=21176",
+              "capturedAt": "2026-10-18T07:41:43.711Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21176?dataEnv=11&locale=4",
+              "sha256": "b02ac999182cbf83e6fea433034e5155a8156149162b9ccefd4253b176694045"
+            }
+          }
+        }
+      ]
+    },
+    "21722": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26403,
+          "text": "教你学会制作红色节庆长裙。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=21722",
+            "capturedAt": "2026-10-18T07:41:45.001Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21722?dataEnv=11&locale=4",
+            "sha256": "2e9831095028262d6ca186ad3741ee819c59c6af6b3a93df0e67d8185fdfd6a0"
+          },
+          "sourceItem": {
+            "name": "图样：节庆长裙",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "db1bdfe8be33fa76411a43cc6670007d256e942cdc19e31baede032ef7e14390",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=21722",
+              "capturedAt": "2026-10-18T07:41:45.001Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21722?dataEnv=11&locale=4",
+              "sha256": "2e9831095028262d6ca186ad3741ee819c59c6af6b3a93df0e67d8185fdfd6a0"
+            }
+          }
+        }
+      ]
+    },
+    "21723": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26407,
+          "text": "教你学会制作节庆裤装。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=21723",
+            "capturedAt": "2026-10-18T07:41:44.571Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21723?dataEnv=11&locale=4",
+            "sha256": "ee7f901431c12474e0dfdbaaa7ceb42dab289b5483d2139f6e836e2e0b059faa"
+          },
+          "sourceItem": {
+            "name": "图样：节庆裤装",
+            "quality": 2,
+            "itemLevel": 50
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "be50090832e2ed3d070e162eed97d225fb1658cec2496906b40ee37c795e6135",
+            "quality": 2,
+            "itemLevel": 50,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=21723",
+              "capturedAt": "2026-10-18T07:41:44.571Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21723?dataEnv=11&locale=4",
+              "sha256": "ee7f901431c12474e0dfdbaaa7ceb42dab289b5483d2139f6e836e2e0b059faa"
+            }
+          }
+        }
+      ]
+    },
+    "21737": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26443,
+          "text": "教你学会制作烟花束发射器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=21737",
+            "capturedAt": "2026-10-18T07:41:46.364Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21737?dataEnv=11&locale=4",
+            "sha256": "86efcd6bf6ec5930d69f3218e4fe6733b196caa35de0a01e0839c9662eb11096"
+          },
+          "sourceItem": {
+            "name": "结构图：烟花束发射器",
+            "quality": 2,
+            "itemLevel": 55
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "b3ef1f44f2b3902d5dc8cdd454b4b8e60e1e89613d69f918cad89ab03066c092",
+            "quality": 2,
+            "itemLevel": 55,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=21737",
+              "capturedAt": "2026-10-18T07:41:46.364Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21737?dataEnv=11&locale=4",
+              "sha256": "86efcd6bf6ec5930d69f3218e4fe6733b196caa35de0a01e0839c9662eb11096"
+            }
+          }
+        }
+      ]
+    },
+    "21738": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 26442,
+          "text": "教你学会制作烟花发射器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=21738",
+            "capturedAt": "2026-10-18T07:41:46.542Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/21738?dataEnv=11&locale=4",
+            "sha256": "bc742c26bc72523419ee9c5cfbb5cef906968fae648a1e3b21bc618601290fcd"
+          },
+          "sourceItem": {
+            "name": "结构图：烟花发射器",
+            "quality": 2,
+            "itemLevel": 45
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "aaaf500ce00623daf7dc7ddfbe8317e405b2e6bcb0f69a95810ea3e1bb7554d8",
+            "quality": 2,
+            "itemLevel": 45,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=21738",
+              "capturedAt": "2026-10-18T07:41:46.542Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/21738?dataEnv=11&locale=4",
+              "sha256": "bc742c26bc72523419ee9c5cfbb5cef906968fae648a1e3b21bc618601290fcd"
+            }
+          }
+        }
+      ]
+    },
+    "22647": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 28267,
+          "text": "教你学会烹制松脆蜘蛛。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=22647",
+            "capturedAt": "2026-10-18T07:41:49.676Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/22647?dataEnv=11&locale=4",
+            "sha256": "945c1422c55eec2af9ef802e0a3f2a785244ca38ef8ce064d5438dec2965a3d5"
+          },
+          "sourceItem": {
+            "name": "食谱：松脆蜘蛛",
+            "quality": 1,
+            "itemLevel": 15
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "445a6f567913820afeae88ee252b436469acb9950eca225a89ea7e9f9664af63",
+            "quality": 1,
+            "itemLevel": 15,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=22647",
+              "capturedAt": "2026-10-18T07:41:49.676Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/22647?dataEnv=11&locale=4",
+              "sha256": "945c1422c55eec2af9ef802e0a3f2a785244ca38ef8ce064d5438dec2965a3d5"
+            }
+          }
+        }
+      ]
+    },
+    "22729": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 28327,
+          "text": "教你学会制作蒸汽车控制器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=22729",
+            "capturedAt": "2026-10-18T07:41:51.111Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/22729?dataEnv=11&locale=4",
+            "sha256": "fbd5cd8a75d51cabd553127bed57d8c121375e8c9c333abcdbc630f38f52178a"
+          },
+          "sourceItem": {
+            "name": "结构图：蒸汽车控制器",
+            "quality": 1,
+            "itemLevel": 55
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "3188f26f82dbd91bdc124ae16e095136ac33ece8ecbf9238c7e39c907b2e1c1a",
+            "quality": 1,
+            "itemLevel": 55,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=22729",
+              "capturedAt": "2026-10-18T07:41:51.111Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/22729?dataEnv=11&locale=4",
+              "sha256": "fbd5cd8a75d51cabd553127bed57d8c121375e8c9c333abcdbc630f38f52178a"
+            }
+          }
+        }
+      ]
+    },
+    "23888": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 30548,
+          "text": "教你学会制作气阀微粒提取器。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=23888",
+            "capturedAt": "2026-10-18T07:41:53.260Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/23888?dataEnv=11&locale=4",
+            "sha256": "ec29d79151266805f292aaaa62df442bd29c2f49c7e3d003720bde91e02b6c01"
+          },
+          "sourceItem": {
+            "name": "结构图：气阀微粒提取器",
+            "quality": 1,
+            "itemLevel": 61
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "377f464da6e3ddf4150ae6bcf932eac6895938a7f20988c02faaa0313bd4bafd",
+            "quality": 1,
+            "itemLevel": 61,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=23888",
+              "capturedAt": "2026-10-18T07:41:53.260Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/23888?dataEnv=11&locale=4",
+              "sha256": "ec29d79151266805f292aaaa62df442bd29c2f49c7e3d003720bde91e02b6c01"
+            }
+          }
+        }
+      ]
+    },
+    "27684": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 33279,
+          "text": "教你学会烹制美味秃鹫。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=27684",
+            "capturedAt": "2026-10-18T07:41:55.733Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/27684?dataEnv=11&locale=4",
+            "sha256": "4b4b34663339dbbfae2b28b3dd1b2a025ead24822fb0c874283a0e821d9bc9dc"
+          },
+          "sourceItem": {
+            "name": "食谱：美味秃鹫",
+            "quality": 1,
+            "itemLevel": 60
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "16d0c46c5a19b8546783078ca4f11ea950efbf1f80aead38c492ad83a2dca4d4",
+            "quality": 1,
+            "itemLevel": 60,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=27684",
+              "capturedAt": "2026-10-18T07:41:55.733Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/27684?dataEnv=11&locale=4",
+              "sha256": "4b4b34663339dbbfae2b28b3dd1b2a025ead24822fb0c874283a0e821d9bc9dc"
+            }
+          }
+        }
+      ]
+    },
+    "27686": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 33277,
+          "text": "教你学会烹制月痕鹿腰肉。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=27686",
+            "capturedAt": "2026-10-18T07:41:56.394Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/27686?dataEnv=11&locale=4",
+            "sha256": "bf6719040dc43e5e18770ba99ff6ca44f9cc782afd1522ccf12d716bbf856ee3"
+          },
+          "sourceItem": {
+            "name": "食谱：月痕鹿腰肉",
+            "quality": 1,
+            "itemLevel": 5
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "6bcc72d27c37814746a6b6b878c1c423e8fec205fa5b2c3de2b5ed1beabcbca5",
+            "quality": 1,
+            "itemLevel": 5,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=27686",
+              "capturedAt": "2026-10-18T07:41:56.394Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/27686?dataEnv=11&locale=4",
+              "sha256": "bf6719040dc43e5e18770ba99ff6ca44f9cc782afd1522ccf12d716bbf856ee3"
+            }
+          }
+        }
+      ]
+    },
+    "31674": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 38868,
+          "text": "教你学会烹制香脆蛇。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=31674",
+            "capturedAt": "2026-10-18T07:42:02.267Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/31674?dataEnv=11&locale=4",
+            "sha256": "412ed1719a57f993aa7ec962cb9ea0fea4be904b14a7adc411b8564510322218"
+          },
+          "sourceItem": {
+            "name": "食谱：香脆蛇",
+            "quality": 1,
+            "itemLevel": 67
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "a9eed578d2a16a1cdb143095ee3c8a5f06618c57c488401ba905d545e144ecc1",
+            "quality": 1,
+            "itemLevel": 67,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=31674",
+              "capturedAt": "2026-10-18T07:42:02.267Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/31674?dataEnv=11&locale=4",
+              "sha256": "412ed1719a57f993aa7ec962cb9ea0fea4be904b14a7adc411b8564510322218"
+            }
+          }
+        }
+      ]
+    },
+    "31675": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 38867,
+          "text": "教你学会烹制莫克纳萨肋排。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=31675",
+            "capturedAt": "2026-10-18T07:42:02.734Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/31675?dataEnv=11&locale=4",
+            "sha256": "ce1e3477f0f1d63b671429cc581fb659bb6eba78f50188dcd5aa2ea2d37d14d5"
+          },
+          "sourceItem": {
+            "name": "食谱：莫克纳萨肋排",
+            "quality": 1,
+            "itemLevel": 67
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "dde762fad821a77d0dbf9e8bd1c8ea51dc9c731593759c2efb1af5a8ad9a0187",
+            "quality": 1,
+            "itemLevel": 67,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=31675",
+              "capturedAt": "2026-10-18T07:42:02.734Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/31675?dataEnv=11&locale=4",
+              "sha256": "ce1e3477f0f1d63b671429cc581fb659bb6eba78f50188dcd5aa2ea2d37d14d5"
+            }
+          }
+        }
+      ]
+    },
+    "33792": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 43549,
+          "text": "教你学会制作铜质重剑。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=33792",
+            "capturedAt": "2026-10-18T07:42:08.378Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/33792?dataEnv=11&locale=4",
+            "sha256": "e1ae3ec517abfc5ff101685c8e55669ef17ed0810aec600db61cb50594632c32"
+          },
+          "sourceItem": {
+            "name": "设计图：铜质重剑",
+            "quality": 2,
+            "itemLevel": 10
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "37c1654a48b35895e6b16b4a5df5256a72befca31d6692536630b6c5f1c7eb99",
+            "quality": 2,
+            "itemLevel": 10,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=33792",
+              "capturedAt": "2026-10-18T07:42:08.378Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/33792?dataEnv=11&locale=4",
+              "sha256": "e1ae3ec517abfc5ff101685c8e55669ef17ed0810aec600db61cb50594632c32"
+            }
+          }
+        }
+      ]
+    },
+    "52200": {
+      "edition": "大地的裂变怀旧服",
+      "effects": [
+        {
+          "id": 483,
+          "trigger": 0,
+          "learnedSpellId": 73313,
+          "text": "召唤或解散你的血色死亡战马。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/cata/cn/item=52200",
+            "capturedAt": "2026-10-18T07:42:25.689Z",
+            "responseUrl": "https://nether.wowhead.com/tooltip/item/52200?dataEnv=11&locale=4",
+            "sha256": "d0e29aca39dd68c2608cbb6d45a6cc2c0794036fda30c255b9720371d7de8992"
+          },
+          "sourceItem": {
+            "name": "血色死亡战马的缰绳",
+            "quality": 4,
+            "itemLevel": 20
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "nameSha256": "f846f21d7b75cda0ecedd38efea1f73bf052d2391b834792343cb7f2a5547c4b",
+            "quality": 4,
+            "itemLevel": 20,
+            "source": {
+              "url": "https://www.wowhead.com/cata/cn/item=52200",
+              "capturedAt": "2026-10-18T07:42:25.689Z",
+              "responseUrl": "https://nether.wowhead.com/tooltip/item/52200?dataEnv=11&locale=4",
+              "sha256": "d0e29aca39dd68c2608cbb6d45a6cc2c0794036fda30c255b9720371d7de8992"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

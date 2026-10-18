@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "version": "classic",
+  "edition": "经典怀旧服",
+  "quests": {
+    "1661": {
+      "edition": "经典怀旧服",
+      "fields": {
+        "completion": {
+          "text": "祝贺你，愿圣光保护你。",
+          "locale": "zhCN",
+          "source": {
+            "url": "https://www.wowhead.com/classic/cn/quest=1661",
+            "capturedAt": "2026-10-18T07:35:46.110Z",
+            "responseUrl": "https://www.wowhead.com/classic/cn/quest=1661",
+            "sha256": "d196f64c7c335d09ab1fd838b57da08cd1638be622c6da7d387a0271615e1cf8"
+          },
+          "anchor": {
+            "locale": "zhCN",
+            "field": "objectives",
+            "titleSha256": "43ed83739622762a81e394a255ba4dc3eaff0747760718c9088ca3eeaa6c0e7c",
+            "contextSha256": "2296f0d882fdef7ace4c7f7c7530c43b309376963edd83711b2fa0c4e960226a",
+            "source": {
+              "url": "https://www.wowhead.com/classic/cn/quest=1661",
+              "capturedAt": "2026-10-18T07:35:46.110Z",
+              "responseUrl": "https://www.wowhead.com/classic/cn/quest=1661",
+              "sha256": "d196f64c7c335d09ab1fd838b57da08cd1638be622c6da7d387a0271615e1cf8"
+            }
+          }
+        }
+      }
+    }
+  },
+  "items": {}
+}

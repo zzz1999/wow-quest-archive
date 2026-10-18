@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';import path from 'node:path';import {createHash} from 'node:crypto';import {gunzipSync} from 'node:zlib';import assert from 'node:assert/strict';
+import {attachReferences} from './wowhead-data.mjs';
 const hash=b=>createHash('sha256').update(b).digest('hex');
 export async function validateItems(root,catalog){
  const lock=JSON.parse(await fs.readFile(path.join(root,'sources/items/manifest.json'),'utf8')),assets=new Map(lock.assets.map(a=>[a.name,a]));
@@ -19,7 +20,8 @@ export async function validateItems(root,catalog){
   assert.deepEqual([...ids].sort((a,b)=>a-b),[...expected].sort((a,b)=>a-b),'Missing reward item archive '+v.id);
   const bundle=await fs.readFile(path.join(root,'web/items',v.id+'.js'),'utf8');assert.equal(hash(bundle).slice(0,12),v.bundleHashes.items);
   const browser=JSON.parse(gunzipSync(Buffer.from(bundle.match(/="([A-Za-z0-9+/=]+)";/)[1],'base64')));
-  assert.deepEqual(browser,rows.map(({raw,sources,...r})=>({...r,icon:byIcon.get(r.icon)?.missing?null:r.icon})));
+  const references=JSON.parse(await fs.readFile(path.join(root,'data/wowhead',v.id+'.json'),'utf8'));
+  assert.deepEqual(browser,attachReferences(rows,references,'items').map(({raw,sources,...r})=>({...r,icon:byIcon.get(r.icon)?.missing?null:r.icon})));
   console.log(`${v.id}: ${rows.length} offline items, reward references, sources and browser bundle verified`);
  }
  for(const file of ['web/items.js','web/items.css']){const text=await fs.readFile(path.join(root,file),'utf8');assert.doesNotMatch(text,/https?:\/\/|fetch\s*\(|url\(\s*['"]?https?:/,'Runtime remote dependency '+file);}

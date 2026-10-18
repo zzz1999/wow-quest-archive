@@ -41,11 +41,12 @@
   function parse(text,depth=0){
    let cursor=0;
    while(cursor<text.length){
-    const start=text.slice(cursor).search(/\$|\\n/);
+    const start=text.slice(cursor).search(/\$|\\n|<(?:name|class|race)>/i);
     if(start<0){result.push({text:text.slice(cursor)});break;}
     if(start)result.push({text:text.slice(cursor,cursor+start)});cursor+=start;
     const rest=text.slice(cursor);let match;
     const add=(token,value,label,note,unresolved=false)=>{result.push({text:value,token,label,...(note?{note}:{}),unresolved});cursor+=token.length;};
+    if((match=/^<(name|class|race)>/i.exec(rest))){const key=match[1].toLowerCase(),label={name:'名字',class:'职业',race:'种族'}[key];add(match[0],settings[{name:'name',class:'className',race:'race'}[key]]||label,label);continue;}
     if((match=/^(?:\\n|\$[Bb])/.exec(rest))){result.push({text:'\n'});cursor+=match[0].length;continue;}
     if(depth<8&&(match=/^\$([Gg])([^:;\r\n]*):([^:;\r\n]*);/.exec(rest))){
      parse(settings.gender==='male'?match[2]:settings.gender==='female'?match[3]:alternatives(match[2],match[3]),depth+1);cursor+=match[0].length;continue;
