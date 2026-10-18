@@ -57,7 +57,10 @@
   const entries=data()[kind].filter(e=>data().versions[version][kind].includes(e.id));
   return entries.map(e=>`<option value="${e.id}">${escape(e.name)}</option>`).join('');
  }
- function rowHtml(r){const t=get(r);return `<span class="row-traits"><span title="${escape(t.repeat.note)}">${escape(t.repeat.label)}</span><span class="trait-faction ${t.faction.kind}" title="依据任务种族限制；其他接取条件另计">${escape(t.faction.label)}</span></span>`;}
+ function rowHtml(r){
+  const t=get(r),repeat=t.repeat.kind==='once'?'':`<span title="${escape(t.repeat.note)}">${escape(t.repeat.label)}</span>`,faction=t.faction.kind==='both'?'':`<span class="trait-faction ${t.faction.kind}" title="依据任务种族限制；其他接取条件另计">${escape(t.faction.label)}</span>`;
+  return repeat||faction?`<span class="row-traits">${repeat}${faction}</span>`:'';
+ }
  function html(r){
   const t=get(r),rules=data().versions[r.version],classText=!t.classes.known?'职业待确认':t.classes.restricted?t.classes.names.join('、'):'不限职业',raceText=!t.races.known?'未标注可用种族':t.races.restricted?t.races.names.join('、'):'本版本全部可玩种族';
   return `<div class="quest-traits" aria-label="任务性质与阵营"><span class="trait-pill" title="${escape(t.repeat.note)}">${escape(t.repeat.label)}</span><span class="trait-pill trait-faction ${t.faction.kind}" title="依据任务种族限制">${escape(t.faction.label)}</span>${t.classes.restricted?'<span class="trait-pill">'+escape(classText)+'</span>':''}</div><details class="quest-requirements"><summary>接取条件与重复规则</summary><dl><div><dt>重复规则</dt><dd>${escape(t.repeat.note)}</dd></div><div><dt>阵营要求</dt><dd>${escape(t.faction.label)}（按种族条件）</dd></div><div><dt>种族要求</dt><dd>${escape(raceText)}</dd></div><div><dt>职业要求</dt><dd>${escape(classText)}</dd></div></dl><p>以上按已收录条件筛选；前置任务、声望、NPC 关系及脚本也会影响实际接取。</p><p class="trait-source">解释依据：${rules?`<a href="https://github.com/${escape(rules.source.repo)}/blob/${escape(rules.source.commit)}/${escape(rules.source.path)}" target="_blank" rel="noopener noreferrer">${escape(rules.source.repo)} ↗</a>`:'未收录'} · <a href="docs/QUEST-TRAITS.md" target="_blank" rel="noopener noreferrer">字段与版本说明</a></p></details>`;

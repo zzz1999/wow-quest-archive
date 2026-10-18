@@ -97,7 +97,7 @@
   $('result-count').textContent=`${state.filtered.length.toLocaleString()} 条结果`;
   $('page-label').textContent=state.filtered.length?`${state.page+1} / ${max}`:'0 / 0';
   const hints=window.QuestListPager.edgeMarkup(state.page,state.filtered.length?max:0);
-  const rows=state.filtered.slice(state.page*PAGE,(state.page+1)*PAGE).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${bookmarks.has(r.key)?'☆ ':''}${questTitleHtml(r)}</strong><span class="row-meta"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span>${badge(r.textLocales.title)}</span>${window.QuestTraits.rowHtml(r)}</button>`).join('');
+  const rows=state.filtered.slice(state.page*PAGE,(state.page+1)*PAGE).map(r=>`<button class="quest-row ${r.id===state.selected?.id?'selected':''}" data-id="${r.id}" aria-pressed="${r.id===state.selected?.id}"><strong>${bookmarks.has(r.key)?'☆ ':''}${questTitleHtml(r)}</strong><span class="row-meta"><span>#${r.id}</span><span>等级 ${r.level===-1?'动态':r.level}</span>${r.textLocales.title==='zhCN'?'':badge(r.textLocales.title)}</span>${window.QuestTraits.rowHtml(r)}</button>`).join('');
   $('quest-list').innerHTML=rows?hints.top+rows+hints.bottom:'<div class="empty"><h2>没有匹配任务</h2><p>试试其他关键词，或重置筛选。</p></div>';
   $('quest-list').scrollTop=edge==='bottom'?$('quest-list').scrollHeight:0;
   listPager.refresh();
