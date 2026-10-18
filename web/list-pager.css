@@ -1,0 +1,14 @@
+/* In-flow edge hints leave every quest row readable and keep scroll geometry stable. */
+.quest-list{overscroll-behavior:contain;scroll-behavior:auto;overflow-anchor:none}
+.quest-list:focus-visible{outline:2px solid #a5b18c;outline-offset:2px;border-radius:4px}
+.list-page-edge{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:62px;padding:11px 8px;border:1px dashed #cfd8bf;border-radius:5px;background:#f1f4e9;color:#6b7d57;text-align:left;margin:3px 0;font-size:18px}
+.list-page-edge:hover,.list-page-edge:focus-visible{background:#e8efdd;border-color:#a7b88e}
+.list-page-edge strong{display:block;font-size:11px;font-weight:500;line-height:1.7}
+.list-page-edge small{display:block;font-size:10px;color:#8b967d;line-height:1.7}
+.list-page-end{text-align:center;color:#9da68e;font-size:10px;padding:8px;line-height:1.7}
+.quest-pagination{justify-content:center;gap:14px;padding:12px 0 0;flex-wrap:wrap}
+#page-label{font-variant-numeric:tabular-nums;color:#77856b}
+#quest-paging-help{font-size:10px;color:#9ba38f}
+.quest-list[data-page-pull="1"] [data-page-step="1"],.quest-list[data-page-pull="-1"] [data-page-step="-1"]{background:#e3ecd6;border-color:#8da66e}
+.quest-list[data-page-pull="1"] [data-page-step="1"] small,.quest-list[data-page-pull="-1"] [data-page-step="-1"] small{font-size:0}
+.quest-list[data-page-pull="1"] [data-page-step="1"] small:after,.quest-list[data-page-pull="-1"] [data-page-step="-1"] small:after{content:"松开即可翻页";font-size:10px;color:#607b43}
