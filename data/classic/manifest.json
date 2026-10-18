@@ -6,42 +6,61 @@
   "commit": "ec4f596146be6467ea93c57397858e329e2db852",
   "snapshot": "ClassicDB_1_12_1_z2815 / 2023-10-09",
   "note": "基础快照，未应用后续 Updates。任务、NPC 与物件中文来自同库 Chinese 本地化，仅关联基础快照已有任务与接取/交付对象。未找到同库繁中任务与 NPC 文件。",
+  "license": "GPL-3.0; see separate Blizzard copyright notice",
+  "supplements": [
+    {
+      "id": "mangoszero-classic",
+      "version": "classic",
+      "repo": "mangoszero/database",
+      "commit": "325948a78015794e6cc626212bc19fee70c805b2",
+      "patch": "1.12.1–1.12.3",
+      "snapshot": "World/Setup/FullDB + Chinese/Taiwanese quest translations",
+      "note": "同版本独立补充库；只补入与主库英文标题及对应字段/上下文匹配的文字。翻译可能保留社区用词，未进行人工改写。",
+      "license": "Database CC-BY-NC-SA-3.0; translation subdirectory GPL-2.0"
+    }
+  ],
+  "textAudit": {
+    "policy": "same-version-english-anchor-v1",
+    "changedQuests": 1203,
+    "changedFields": 4097,
+    "report": "reports/text-audit/classic.json"
+  },
   "count": 4245,
   "fields": {
     "title": {
-      "zhCN": 3105,
+      "zhCN": 4222,
       "zhTW": 0,
-      "enUS": 1140,
+      "enUS": 23,
       "missing": 0
     },
     "objectives": {
-      "zhCN": 2696,
+      "zhCN": 3602,
       "zhTW": 0,
-      "enUS": 956,
+      "enUS": 50,
       "missing": 593
     },
     "description": {
-      "zhCN": 2695,
+      "zhCN": 3624,
       "zhTW": 0,
-      "enUS": 976,
-      "missing": 574
+      "enUS": 48,
+      "missing": 573
     },
     "progress": {
-      "zhCN": 3092,
+      "zhCN": 3159,
       "zhTW": 0,
-      "enUS": 123,
-      "missing": 1030
+      "enUS": 57,
+      "missing": 1029
     },
     "completion": {
-      "zhCN": 3105,
+      "zhCN": 4066,
       "zhTW": 0,
-      "enUS": 1019,
-      "missing": 121
+      "enUS": 59,
+      "missing": 120
     },
     "end": {
-      "zhCN": 137,
+      "zhCN": 209,
       "zhTW": 0,
-      "enUS": 73,
+      "enUS": 1,
       "missing": 4035
     },
     "completed": {
@@ -75,27 +94,27 @@
       "missing": 4245
     },
     "objective1": {
-      "zhCN": 79,
+      "zhCN": 94,
       "zhTW": 0,
-      "enUS": 15,
+      "enUS": 0,
       "missing": 4151
     },
     "objective2": {
-      "zhCN": 26,
+      "zhCN": 36,
       "zhTW": 0,
-      "enUS": 10,
+      "enUS": 0,
       "missing": 4209
     },
     "objective3": {
-      "zhCN": 18,
+      "zhCN": 28,
       "zhTW": 0,
-      "enUS": 10,
+      "enUS": 0,
       "missing": 4217
     },
     "objective4": {
-      "zhCN": 8,
+      "zhCN": 18,
       "zhTW": 0,
-      "enUS": 10,
+      "enUS": 0,
       "missing": 4227
     }
   },
@@ -105,27 +124,27 @@
     {
       "path": "data/classic/000.jsonl",
       "records": 1000,
-      "sha256": "d37a3cb623b5492cf32812558e6854bbc08305e81352e5ad0b504fb1f11cba47"
+      "sha256": "84c5c9d36a4ade73c9ce3cd7deb71c5aa0c379404f6d6fbd47458e5049435165"
     },
     {
       "path": "data/classic/001.jsonl",
       "records": 1000,
-      "sha256": "c2e6814d20b9bcd9fa323feaddccb9b20860838ad06d20958e028b4a5c9f1b28"
+      "sha256": "3b2748bac433f59d96f7ca66786e5cd433453c98d11cbb69d6f6ea0c7124b52a"
     },
     {
       "path": "data/classic/002.jsonl",
       "records": 1000,
-      "sha256": "3810ce3b87874c8c90841582d2c94c7a8118990be2a0c00db2a94a61967f70bf"
+      "sha256": "87c4ea8e0e072ac17ba979fc61d7b309e8acb2194804ac889fc154dfeb870aab"
     },
     {
       "path": "data/classic/003.jsonl",
       "records": 1000,
-      "sha256": "5855bc202bb5ddd505cc4ba9ee1ffbc09049f4b5546a52b91b85049c60d084b4"
+      "sha256": "f653e4d757d086389dc2dcb3e1351f9a873c9a54c8cd644606931a5c0b1b0161"
     },
     {
       "path": "data/classic/004.jsonl",
       "records": 245,
-      "sha256": "99faa6adf8ab9dd12362c815e5fb63482ebeb5297e564c3e4c91509f6fc06689"
+      "sha256": "acc7b7a70b7ce33e305ad64d27c7a967d3be25a525e38e4173a5c2760dc56630"
     }
   ],
   "actors": {

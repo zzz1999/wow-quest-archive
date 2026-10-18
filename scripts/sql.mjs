@@ -3,11 +3,15 @@ import {createReadStream} from 'node:fs';
 
 export async function* statements(file) {
   const stream=createReadStream(file,{encoding:'utf8',highWaterMark:1024*1024});
-  let parts=[],quote='',escaped=false,comment='',carry='';
-  for await (const chunk of stream) {
-    const data=carry+chunk;const limit=data.length-3;
+  // Retain line endings inside strings. DELIMITER belongs to the dump client,
+  // not its data; routine bodies must remain one ignored CREATE statement.
+  async function* lines(){let pending=[];for await(const chunk of stream){let start=0,end;while((end=chunk.indexOf('\n',start))!==-1){pending.push(chunk.slice(start,end+1));yield pending.join('');pending=[];start=end+1;}if(start<chunk.length)pending.push(chunk.slice(start));}if(pending.length)yield pending.join('');}
+  let parts=[],quote='',escaped=false,comment='',delimiter=';';
+  for await (const data of lines()) {
+    const directive=!quote&&!comment&&/^\s*DELIMITER\s+(\S+)\s*$/i.exec(data);
+    if(directive){delimiter=directive[1];continue;}
     let start=0;
-    for(let i=0;i<limit;i++) {
+    for(let i=0;i<data.length;i++) {
       const c=data[i];
       if(comment==='line'){if(c==='\n')comment='';}
       else if(comment==='block'){if(c==='*'&&data[i+1]==='/'){comment='';i++;}}
@@ -15,17 +19,14 @@ export async function* statements(file) {
         if(escaped)escaped=false;
         else if(c==='\\')escaped=true;
         else if(c===quote)quote='';
-      } else if(c==="'"||c==='"'||c==='`')quote=c;
+      } else if(c===delimiter[0]&&data.startsWith(delimiter,i)){const end=i+delimiter.length;parts.push(data.slice(start,i)+';');yield parts.join('');parts=[];start=end;i=end-1;}
+      else if(c==="'"||c==='"'||c==='`')quote=c;
       else if(c==='-'&&data[i+1]==='-'&&/\s/.test(data[i+2]))comment='line';
       else if(c==='#')comment='line';
       else if(c==='/'&&data[i+1]==='*'){comment='block';i++;}
-      else if(c===';') { parts.push(data.slice(start,i+1));yield parts.join('');parts=[];start=i+1; }
-      // Keep skipped comment delimiters with this chunk rather than scanning twice.
-      if(i>=limit){parts.push(data.slice(start,i+1));start=i+1;}
     }
-    const end=Math.max(start,limit);if(start<end)parts.push(data.slice(start,end));carry=data.slice(end);
+    if(start<data.length)parts.push(data.slice(start));
   }
-  parts.push(carry);
   if(parts.join('').trim())yield parts.join('');
 }
 

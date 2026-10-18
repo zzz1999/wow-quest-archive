@@ -43,6 +43,13 @@ test('locale UPDATEs merge fields by task ID without executing SQL',async()=>{
  const t=await readTables([file],new Set(['locales_quest']));assert.deepEqual(t.get('locales_quest'),[{entry:42,title_loc4:'修正标题',details_loc4:'甲,乙; WHERE',requestitemstext_loc4:'进度'}]);
  await fs.unlink(file);await fs.rmdir(dir);
 });
+test('custom dump delimiters keep stored routine writes out of imported data',async()=>{
+ const dir=await fs.mkdtemp(path.join(os.tmpdir(),'quest-routine-')),file=path.join(dir,'dump.sql');
+ try{
+  await fs.writeFile(file,"INSERT INTO `quest_template` (`entry`,`Title`) VALUES (7,'Original; title');\r\nDELIMITER ;;\r\nCREATE DEFINER=`user`@`localhost` PROCEDURE `change_quest`()\r\nBEGIN\r\nUPDATE `quest_template` SET `Title`='Must not import' WHERE `entry`=7;\r\nUPDATE `quest_template` SET `MinLevel`= some_variable WHERE `entry`= quest_entry;\r\nEND ;;\r\nDELIMITER ;\r\nUPDATE `quest_template` SET `Title`='Actual $N; title' WHERE `entry`=7;\r\n");
+  const tables=await readTables([file],new Set(['quest_template']));assert.deepEqual(tables.get('quest_template'),[{entry:7,title:'Actual $N; title'}]);
+ }finally{await fs.unlink(file);await fs.rmdir(dir);}
+});
 test('NPC archives retain localized names, separate title provenance and reverse quest roles',()=>{
  const tables=new Map([
   ['quest_template',[{id:1,title:'Quest one'},{id:2,title:'Quest two'}]],

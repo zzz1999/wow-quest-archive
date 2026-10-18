@@ -11,8 +11,8 @@ if(!selected.length)throw new Error('Unknown version. Use classic, wotlk, catacl
 const configs=[];
 const hash=b=>createHash('sha256').update(b).digest('hex');
 function run(cmd,args,options={}){const r=spawnSync(cmd,args,{cwd:root,stdio:'inherit',...options});if(r.error||r.status!==0)throw new Error(`${cmd} failed. ${r.error?.message||'exit '+r.status}`);}
-for(const src of selected){
- const dir=path.join(root,'.cache',src.id);await fs.mkdir(dir,{recursive:true});const localFiles=[];
+async function prepare(src,dir){
+ await fs.mkdir(dir,{recursive:true});const localFiles=[];
  for(const asset of src.assets){
   if(!asset.input)continue;
   const file=path.join(dir,asset.name);let bytes;try{bytes=await fs.readFile(file);}catch{}
@@ -29,8 +29,14 @@ for(const src of selected){
    localFiles.push(dest);
   }else localFiles.push(file);
  }
- const {assets,...metadata}=src;configs.push({...metadata,localFiles});
+ const {assets,supplements,...metadata}=src;
+ const prepared=[];for(const supplement of supplements||[]){
+  if(supplement.version!==src.id||!/^[a-z0-9-]+$/.test(supplement.id))throw new Error('Invalid supplement '+supplement.id);
+  prepared.push(await prepare(supplement,path.join(dir,'supplements',supplement.id)));
+ }
+ return {...metadata,...(supplements?{supplements:prepared}:{}),localFiles};
 }
+for(const src of selected)configs.push(await prepare(src,path.join(root,'.cache',src.id)));
 const config=path.join(root,'.cache/rebuild-inputs.json');await fs.writeFile(config,JSON.stringify(configs,null,2));
 run(process.execPath,[path.join(root,'scripts/import.mjs'),config]);
 run(process.execPath,[path.join(root,'scripts/build-web.mjs')]);

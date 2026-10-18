@@ -57,7 +57,7 @@
  function rowText(r){return [r.id,...Object.values(r.text),...Object.values(r.english),...r.starters.map(x=>x.name),...r.enders.map(x=>x.name),r.zoneOrSort].join('\n').toLocaleLowerCase();}
  function loadVersion(id){
   if(cache.has(id))return Promise.resolve(cache.get(id));if(loading.has(id))return loading.get(id);
-  const promise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=`web/data/${id}.js`;s.onload=async()=>{try{
+  const promise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=`web/data/${id}.js?v=${cat.versions.find(v=>v.id===id).bundleHashes?.quests||'1'}`;s.onload=async()=>{try{
     if(typeof DecompressionStream==='undefined')throw new Error('请使用较新版本的 Chrome、Edge、Firefox 或 Safari。');
     const b64=window.QUEST_PACKS[id];if(!b64)throw new Error('数据文件不完整，请下载并解压整个项目。');
     const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));const data=await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).json();
@@ -98,6 +98,11 @@
  function section(r,field,extraClass=''){
   const value=r.text[field];return `<section class="text-section ${extraClass}" data-field="${field}"><h3 class="section-label">${fieldLabel(field)} ${badge(r.textLocales[field])}</h3>${value?`<div class="quest-prose">${readingHtml(value)}</div>`:'<p class="empty-field">暂未收录这段文本</p>'}</section>`;
  }
+ function sourceFor(r,id){const meta=cat.versions.find(v=>v.id===r.version);return id===r.version?meta:meta.supplements?.find(s=>s.id===id);}
+ function sourceLink(source){return source?`<a href="https://github.com/${escape(source.repo)}/tree/${escape(source.commit)}" target="_blank" rel="noopener noreferrer">${escape(source.repo)} ↗</a>`:'未记录';}
+ function textSources(r){
+  return `<div class="text-sources"><p>同版本资料按字段补充，优先简中，其次繁中和英文。表中列出本任务实际使用的文字来源。</p><table><thead><tr><th>文字</th><th>语言</th><th>来源</th></tr></thead><tbody>${Object.entries(r.text).filter(([,value])=>value).map(([field])=>`<tr><td>${fieldLabels[field]}</td><td>${badge(r.textLocales[field])}</td><td>${sourceLink(sourceFor(r,r.textSources?.[field]||r.version))}${r.textSources?.[field]&&r.textSources[field]!==r.version?' <small>补充来源</small>':''}</td></tr>`).join('')}</tbody></table></div>`;
+ }
  function related(r){
   const links=[],seen=new Set();function add(id,label){if(!id||Math.abs(id)===r.id)return;const key=label+id;if(seen.has(key))return;seen.add(key);const target=state.rows.find(x=>x.record.id===Math.abs(id))?.record;const text=reading.mode==='player'?({'前置字段':'前置任务','后续字段':'后续任务','链后续字段':'任务链后续','奖励后续':'完成后的指引','引导目标':'引导任务','以本任务为前置':'后续关联','指向本任务':'前序关联'}[label]||label):label;links.push(`<button data-related="${Math.abs(id)}" ${target?'':'disabled'}><small>${text}${id<0?(reading.mode==='player'?' · 特殊条件':' · 负值条件'):''}</small>${target?questTitleHtml(target):'快照未收录'} #${id}</button>`);}
   add(r.links.prevQuestId,'前置字段');add(r.links.nextQuestId,'后续字段');add(r.links.nextQuestInChain,'链后续字段');add(r.links.rewardNextQuest,'奖励后续');add(r.links.breadcrumbForQuestId,'引导目标');
@@ -126,18 +131,26 @@
    ${section(r,'objectives','objective-box')}${section(r,'description')}<div class="npc-strip"><div>接取任务<b>${entityList(r.starters)}</b></div><div>交付任务<b>${entityList(r.enders)}</b></div></div>${section(r,'progress')}${section(r,'completion')}${related(r)}
    <details><summary>更多任务信息</summary>${['end','completed','giverWindow','giverTarget','turninWindow','turninTarget','objective1','objective2','objective3','objective4'].filter(k=>r.text[k]).map(k=>section(r,k)).join('')}${r.objectiveDetails.map(o=>`<p>${readingHtml(o.description||'目标 #'+o.id)} ${badge(o.locale)}<br><small>类型 ${o.type} · 对象 ${o.objectId} · 数量 ${o.amount}</small></p>`).join('')||'<p>无额外目标记录</p>'}</details>
    <details><summary>英文原文对照</summary>${Object.entries(r.english).filter(([,v])=>v).map(([k,v])=>`<h3>${fieldLabels[k]}</h3><div class="quest-prose">${escape(originalLayout(v))}</div>`).join('')}</details>
-   <details id="quest-source"><summary>原始资料 · 字段、奖励与来源</summary>${questMetadata(r,true)}<pre>${escape(JSON.stringify(r,null,2))}</pre><div class="provenance">来源 <a href="https://github.com/${meta.repo}/tree/${meta.commit}" target="_blank" rel="noreferrer">${escape(meta.repo)} ↗</a> · ${escape(meta.snapshot)}<br>${escape(meta.note)}<br>玩家视角仅代入已设置的称呼；JSON / JSONL 中的游戏变量与原文保持不变。</div></details>`;
+   <details id="quest-source"><summary>原始资料 · 字段、奖励与来源</summary>${questMetadata(r,true)}${textSources(r)}<pre>${escape(JSON.stringify(r,null,2))}</pre><div class="provenance">任务基础资料 ${sourceLink(meta)} · ${escape(meta.snapshot)}<br>${escape(meta.note)}<br>玩家视角仅代入已设置的称呼；JSON / JSONL 中的游戏变量与原文保持不变。</div></details>`;
   $('bookmark-current').onclick=()=>{bookmarks.has(r.key)?bookmarks.delete(r.key):bookmarks.add(r.key);saveBookmarks();if(state.bookmarks)applyFilters();else selectQuest(r.id,{updateHash:false});};
   $('reading-current').onclick=openReading;
   $('quest-back').onclick=()=>{rememberView();navigation.goBack();};
   $('copy-current').onclick=()=>copyText(markdown(r),r.key.replace(':','-')+'-'+reading.mode+'.md');$('export-current').onclick=()=>download(r.key.replace(':','-')+'.json',JSON.stringify(r,null,2),'application/json');
   queueView();
  }
- function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼已代入）':'原文视角'}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v)}`).join('\n\n')+`\n\n来源：${cat.versions.find(x=>x.id===r.version).repo}\n`;}
+ function markdown(r){return `# ${questTitle(r)}\n\n版本：${r.version} | 任务 ID：${r.id}\n阅读视角：${reading.mode==='player'?'玩家视角（称呼已代入）':'原文视角'}\n\n`+Object.entries(r.text).filter(([,v])=>v).map(([k,v])=>`## ${fieldLabel(k)} [${r.textLocales[k]}]\n\n${format(v)}\n\n来源：${sourceFor(r,r.textSources?.[k]||r.version)?.repo||r.source}`).join('\n\n')+'\n';}
  async function copyText(text,filename){try{if(navigator.clipboard){await navigator.clipboard.writeText(text);}else{const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();if(!document.execCommand('copy'))throw new Error('copy');t.remove();}toast('已复制当前视角的文本');}catch{download(filename,text,'text/markdown');toast('浏览器限制剪贴板，已导出当前文本');}}
  function download(name,text,type){const url=URL.createObjectURL(new Blob([text],{type:type+';charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  function info(){
-  $('info-body').innerHTML=`<p>按客户端版本分别收录社区数据库的基础任务快照，包括该版本保留的早期内容。数量按「版本 + ID」统计，不能相加视为独立故事数，也不代表全部任务均可在游戏中接取。</p><p>每个字段依次选用 <b>简体中文 → 繁体中文 → 英文</b>。空白与含损坏字符的文本不作为可用翻译；中文表中没有汉字的英文占位文本会继续回退。缺失内容保留为空，不由 AI 补写。</p><table><thead><tr><th>版本</th><th>任务</th><th>简中标题</th><th>繁中标题</th><th>英文标题</th><th>简中描述</th></tr></thead><tbody>${cat.versions.map(v=>`<tr><td>${v.name}<br>${v.patch}</td><td>${v.count.toLocaleString()}</td><td>${v.fields.title.zhCN}</td><td>${v.fields.title.zhTW}</td><td>${v.fields.title.enUS}</td><td>${v.fields.description.zhCN}</td></tr>`).join('')}</tbody></table><p>标题缺失、正文缺失与每个字段的完整统计可查 reports/coverage.json。地区目前保留数据库区域/分类 ID；负值表示任务分类。疑似测试及已确认的自定义记录默认隐藏，但仍保存在原始数据中。研究书签仅保存在当前浏览器。</p>${cat.versions.map(v=>`<h3>${v.name} · ${v.patch}</h3><p><a href="https://github.com/${v.repo}/tree/${v.commit}" target="_blank" rel="noreferrer">${escape(v.repo)}</a> · ${escape(v.snapshot)}<br>${escape(v.note)}<br>固定提交 <code>${v.commit.slice(0,12)}</code></p>`).join('')}<h3>研究与 AI 使用</h3><p>JSONL 位于 data/版本/；每行是一条记录。可导出筛选结果用于检索、比较与风格分析。游戏变量、空字段、版本差异以及社区修订痕迹均应保留。详细字段说明、复现方法和数据限制见 README、docs/ 与 sources/。</p><p>网页和工具代码采用 MIT；社区数据遵循各自上游许可与署名。魔兽世界文本、商标及相关内容归 Blizzard Entertainment 或相应权利人所有。代码许可不等于游戏原文或模型训练的授权。</p>`;
+  const coverage=cat.versions.map(v=>'<tr><td>'+escape(v.name)+'<br>'+escape(v.patch)+'</td><td>'+v.count.toLocaleString()+'</td><td>'+v.fields.title.zhCN+'</td><td>'+v.fields.title.zhTW+'</td><td>'+v.fields.title.enUS+'</td><td>'+v.fields.description.zhCN+'</td></tr>').join('');
+  const sources=cat.versions.map(v=>'<h3>'+escape(v.name)+' · '+escape(v.patch)+'</h3><p>基础资料：'+sourceLink(v)+' · '+escape(v.snapshot)+'<br>'+escape(v.note)+'</p>'+(v.supplements||[]).map(s=>'<p>补充来源：'+sourceLink(s)+' · '+escape(s.snapshot)+'<br>'+escape(s.note)+'</p>').join('')+(v.textAudit?'<p>本次补充涉及 '+v.textAudit.changedQuests.toLocaleString()+' 条任务、'+v.textAudit.changedFields.toLocaleString()+' 个文字字段。<a href="'+escape(v.textAudit.report)+'" target="_blank" rel="noopener noreferrer">查看逐字段检查报告 ↗</a></p>':'')).join('');
+  $('info-body').innerHTML='<p>按客户端版本分别收录社区数据库的任务快照，并使用同版本的其他来源补充文字。数量按「版本 + ID」统计，不能相加视为独立故事数，也不代表全部任务均可在游戏中接取。</p>'+
+   '<p>每个字段依次选用 <b>简体中文 → 繁体中文 → 英文</b>；同语言优先保留原有主库。补充文字必须匹配英文标题与对应英文内容；空字段需要匹配描述或目标作为依据。不会只凭相同数字 ID 跨版本套用文字。</p>'+
+   '<p>空白与损坏文本不参与回退，中文表中的英文占位不计作中文。暂时没有可匹配来源的内容保留为空；部分自动任务、测试任务或可选对白本身也可能没有文本。译文仍可能存在社区修订或错误，不由 AI 补写。</p>'+
+   '<table><thead><tr><th>版本</th><th>任务</th><th>简中标题</th><th>繁中标题</th><th>英文标题</th><th>简中描述</th></tr></thead><tbody>'+coverage+'</tbody></table>'+
+   '<p>任务详情的“原始资料”可按字段查看实际来源。完整语言与缺失统计见 reports/coverage.json；补充前后统计、匹配依据见下方检查报告。测试及已确认的自定义记录默认隐藏，仍保存在原始数据中。</p>'+sources+
+   '<h3>研究与 AI 使用</h3><p>JSONL 位于 data/版本/。导出保留游戏变量、实际语言、版本差异与字段来源，研究者的分析标签应与原文分开。阅读设置和书签只保存于当前浏览器。详细限制和复现方法见 README、docs/ 与 sources/。</p>'+
+   '<p>网页和工具代码采用 MIT；社区资料遵循各自上游许可与署名。魔兽世界文本、商标及相关内容归 Blizzard Entertainment 或相应权利人所有。代码许可不等于游戏原文或模型训练的授权。</p>';
   $('info-dialog').showModal();
  }
  const actors=window.createActorBrowser({catalog:cat,getVersion:()=>state.version,getQuests:()=>state.rows.map(x=>x.record),questTitleHtml,wowheadLink,escape,badge,download,

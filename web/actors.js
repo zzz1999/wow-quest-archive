@@ -13,7 +13,7 @@ window.createActorBrowser = ({catalog, getVersion, getQuests, questTitleHtml, wo
   if(cache.has(version))return Promise.resolve(cache.get(version));
   if(loading.has(version))return loading.get(version);
   const promise=new Promise((resolve,reject)=>{
-   const script=document.createElement('script');script.src=`web/actors/${version}.js`;
+   const script=document.createElement('script');script.src=`web/actors/${version}.js?v=${catalog.versions.find(v=>v.id===version).bundleHashes?.actors||'1'}`;
    script.onload=async()=>{try{
     if(typeof DecompressionStream==='undefined')throw new Error('请使用较新版本的 Chrome、Edge、Firefox 或 Safari。');
     const encoded=window.QUEST_ACTOR_PACKS[version];if(!encoded)throw new Error('NPC 资料文件不完整，请重新下载整个项目。');

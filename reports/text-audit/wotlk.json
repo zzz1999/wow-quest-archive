@@ -1,0 +1,363 @@
+{
+  "version": "wotlk",
+  "policy": "same-version-english-anchor-v1",
+  "before": {
+    "title": {
+      "zhCN": 9338,
+      "zhTW": 9,
+      "enUS": 109,
+      "missing": 8
+    },
+    "objectives": {
+      "zhCN": 7935,
+      "zhTW": 8,
+      "enUS": 44,
+      "missing": 1477
+    },
+    "description": {
+      "zhCN": 7926,
+      "zhTW": 10,
+      "enUS": 55,
+      "missing": 1473
+    },
+    "progress": {
+      "zhCN": 7435,
+      "zhTW": 0,
+      "enUS": 28,
+      "missing": 2001
+    },
+    "completion": {
+      "zhCN": 9087,
+      "zhTW": 0,
+      "enUS": 60,
+      "missing": 317
+    },
+    "end": {
+      "zhCN": 490,
+      "zhTW": 1,
+      "enUS": 3,
+      "missing": 8970
+    },
+    "completed": {
+      "zhCN": 6122,
+      "zhTW": 12,
+      "enUS": 13,
+      "missing": 3317
+    },
+    "giverWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "giverTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "turninWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "turninTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "objective1": {
+      "zhCN": 924,
+      "zhTW": 26,
+      "enUS": 8,
+      "missing": 8506
+    },
+    "objective2": {
+      "zhCN": 262,
+      "zhTW": 3,
+      "enUS": 3,
+      "missing": 9196
+    },
+    "objective3": {
+      "zhCN": 165,
+      "zhTW": 3,
+      "enUS": 0,
+      "missing": 9296
+    },
+    "objective4": {
+      "zhCN": 68,
+      "zhTW": 2,
+      "enUS": 0,
+      "missing": 9394
+    }
+  },
+  "sources": [
+    {
+      "id": "cmangos-wotlk",
+      "records": 9086,
+      "matchedQuests": 9085,
+      "unmatchedTitles": 1,
+      "customQuestsSkipped": 0,
+      "rejectedFields": 23,
+      "selectedFields": 20
+    }
+  ],
+  "changes": [
+    {
+      "id": 5126,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 6722,
+      "field": "completion",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 11392,
+      "field": "end",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 11401,
+      "field": "end",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 11404,
+      "field": "end",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 11405,
+      "field": "end",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 14101,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24426,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24427,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24499,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24580,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25199,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25212,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25229,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25285,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25287,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25289,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25295,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25461,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 25500,
+      "field": "progress",
+      "source": "cmangos-wotlk",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    }
+  ],
+  "after": {
+    "title": {
+      "zhCN": 9338,
+      "zhTW": 9,
+      "enUS": 109,
+      "missing": 8
+    },
+    "objectives": {
+      "zhCN": 7935,
+      "zhTW": 8,
+      "enUS": 44,
+      "missing": 1477
+    },
+    "description": {
+      "zhCN": 7926,
+      "zhTW": 10,
+      "enUS": 55,
+      "missing": 1473
+    },
+    "progress": {
+      "zhCN": 7435,
+      "zhTW": 0,
+      "enUS": 43,
+      "missing": 1986
+    },
+    "completion": {
+      "zhCN": 9087,
+      "zhTW": 0,
+      "enUS": 61,
+      "missing": 316
+    },
+    "end": {
+      "zhCN": 490,
+      "zhTW": 1,
+      "enUS": 7,
+      "missing": 8966
+    },
+    "completed": {
+      "zhCN": 6122,
+      "zhTW": 12,
+      "enUS": 13,
+      "missing": 3317
+    },
+    "giverWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "giverTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "turninWindow": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "turninTarget": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 9464
+    },
+    "objective1": {
+      "zhCN": 924,
+      "zhTW": 26,
+      "enUS": 8,
+      "missing": 8506
+    },
+    "objective2": {
+      "zhCN": 262,
+      "zhTW": 3,
+      "enUS": 3,
+      "missing": 9196
+    },
+    "objective3": {
+      "zhCN": 165,
+      "zhTW": 3,
+      "enUS": 0,
+      "missing": 9296
+    },
+    "objective4": {
+      "zhCN": 68,
+      "zhTW": 2,
+      "enUS": 0,
+      "missing": 9394
+    }
+  },
+  "changedQuests": 20,
+  "changedFields": 20
+}

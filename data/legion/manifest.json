@@ -6,6 +6,25 @@
   "commit": "7f2b7dc9c2165d2608742473a931f55b1c1a753a",
   "snapshot": "TDB735.00 / 2018-02-19",
   "note": "TrinityCore官方项目的历史基础快照；奖励/进度本地化表为空，因此这些字段主要回退英文。未应用后续updates。",
+  "license": "GPL-2.0",
+  "supplements": [
+    {
+      "id": "legioncore-735",
+      "version": "legion",
+      "repo": "dufernst/LegionCore-7.3.5",
+      "commit": "9222216e0dda0708ae53e6e6f6b07db7d65ba46f",
+      "patch": "7.3.5.26972",
+      "snapshot": "LegionCore_world_2020_04_25",
+      "note": "同版本社区世界数据库快照，仅补充与 Trinity 主库匹配的空白英文文本。上游说明核心源自 UWOW 2020 泄露版本；这是单独标注的社区来源，不代表官方采集或独立权利授权。",
+      "license": "GPL-2.0 project notice; upstream origin described in README"
+    }
+  ],
+  "textAudit": {
+    "policy": "same-version-english-anchor-v1",
+    "changedQuests": 15260,
+    "changedFields": 21585,
+    "report": "reports/text-audit/legion.json"
+  },
   "count": 29716,
   "fields": {
     "title": {
@@ -29,26 +48,26 @@
     "progress": {
       "zhCN": 0,
       "zhTW": 0,
-      "enUS": 7211,
-      "missing": 22505
+      "enUS": 9827,
+      "missing": 19889
     },
     "completion": {
       "zhCN": 0,
       "zhTW": 0,
-      "enUS": 11974,
-      "missing": 17742
+      "enUS": 20299,
+      "missing": 9417
     },
     "end": {
       "zhCN": 525,
       "zhTW": 0,
-      "enUS": 268,
-      "missing": 28923
+      "enUS": 270,
+      "missing": 28921
     },
     "completed": {
       "zhCN": 785,
       "zhTW": 0,
-      "enUS": 1453,
-      "missing": 27478
+      "enUS": 12095,
+      "missing": 16836
     },
     "giverWindow": {
       "zhCN": 914,
@@ -105,152 +124,152 @@
     {
       "path": "data/legion/000.jsonl",
       "records": 1000,
-      "sha256": "cbc561be2f09de45b5d6bbd3c14a7ea9da0e417e37f2a2ead1d9f0962dbf9738"
+      "sha256": "e32495e55d64813624c80265bbf7f87bfd294eb169c4c04b35f3d29adbe6e511"
     },
     {
       "path": "data/legion/001.jsonl",
       "records": 1000,
-      "sha256": "083b390ac8b6e3f47217968b468c41207b9f520109c95b6f14c30885238d94d5"
+      "sha256": "3bf98ac3cd112bc16ba50c15aafdde0760a2be076c8eadb21c9c020f134fb4e3"
     },
     {
       "path": "data/legion/002.jsonl",
       "records": 1000,
-      "sha256": "f4102665c9e1cf887bc6dd31d39af9d09bfa8cd58a984991ffb6b6ff9594dce6"
+      "sha256": "23fd54cb1d581b30f0ab2210d5792db938028ea7cccb87572129cd3b7a94e860"
     },
     {
       "path": "data/legion/003.jsonl",
       "records": 1000,
-      "sha256": "530f0d7a0217f208902672842daead52baceed93fed1758dca3c2bea235075b3"
+      "sha256": "f115082004b38662c5526e38c4abd457e821d9e2207b3de563745423655e4cf5"
     },
     {
       "path": "data/legion/004.jsonl",
       "records": 1000,
-      "sha256": "0af192cc621869e1e0a75826a7619bd24049f4468bb66f375ffaf64775186567"
+      "sha256": "65d53852703a84ece362c14931f67c8c3533d8fb48d7af54f49cac2fddb9407c"
     },
     {
       "path": "data/legion/005.jsonl",
       "records": 1000,
-      "sha256": "17943d2b6150bfb732be6584e05f3f748736db62c720aa6f321ffa181d9b5d3a"
+      "sha256": "dc81aa904ae9a8033b9c565cd29af6e22bd15aa14c564cee548a6534cc53488b"
     },
     {
       "path": "data/legion/006.jsonl",
       "records": 1000,
-      "sha256": "b46b566e643f8b6021567e527f7e08f3aa2639593621636303a283efb4a62251"
+      "sha256": "b87f0f19ae12237de230f70883cee0437a110fabad2580801742c1674fbf1974"
     },
     {
       "path": "data/legion/007.jsonl",
       "records": 1000,
-      "sha256": "4e79e548a589d21a2c3fa3d91ccbd3424bd09c0034db3a0ef5160f1bc0447d35"
+      "sha256": "5f61f6894edd9055ad40dff883715f7ca0749675aacda0120632eafa225420b9"
     },
     {
       "path": "data/legion/008.jsonl",
       "records": 1000,
-      "sha256": "6c545e3bad16cd36d90a0cf2eb18478bb459758c0b7698a9536ce6e4228396e2"
+      "sha256": "c76ca07abfe26ea07d04583554e6922fbe2349b51febf9f5e04f97b753ac5bb9"
     },
     {
       "path": "data/legion/009.jsonl",
       "records": 1000,
-      "sha256": "4df00986176374032789f9b58e0f76e92a2ed85a62b0a15a081dc8871b710730"
+      "sha256": "362d3e5dd40fa92ab53bcd27f9e5f717e127669c350ba5aa0be22ddc0a804d58"
     },
     {
       "path": "data/legion/010.jsonl",
       "records": 1000,
-      "sha256": "c7fc78beafe44363fe02455fa1dd4bb365f54db65474673d17f850a1279a77dd"
+      "sha256": "c3b2f8bf0ad269cad96a590c66b6ece9f6e332a8b9611a52bbe53b0f0bc7723b"
     },
     {
       "path": "data/legion/011.jsonl",
       "records": 1000,
-      "sha256": "5766b4e64191ec83152316a96846d601c0ad6718c194915a54497d3a9930f126"
+      "sha256": "ca2d4d3fe631928bb282d8d417b6f3d97436073a2b7653c2236be84c5547ad84"
     },
     {
       "path": "data/legion/012.jsonl",
       "records": 1000,
-      "sha256": "3c33a6c9600c2d266006278031787da2ef7c7552274dede43863de797f8f5cc3"
+      "sha256": "e837da669834836732e479e46b3b061c49a9ba613375e26ce209125f94c5bb1d"
     },
     {
       "path": "data/legion/013.jsonl",
       "records": 1000,
-      "sha256": "d4979b2952ff24448fb036b934daaed15e078553cfa50efdff46c556d5af5607"
+      "sha256": "3edd59ca3c551d57279b201dedfc61e20dd7dccc1edda687c7837774d1e5713f"
     },
     {
       "path": "data/legion/014.jsonl",
       "records": 1000,
-      "sha256": "9c592e38dcf3a1726989a46deab2b3e646749b285b4eca9b1b2625a47aa1f2fe"
+      "sha256": "329fe727ea934ab3934eeef5c412e4b78652a9298ebee47761d62b1200c8e692"
     },
     {
       "path": "data/legion/015.jsonl",
       "records": 1000,
-      "sha256": "eb1f1a4406cba100211f9843fce2d1e8098ee0ebccbd5b6d5fedfa4bc23dbfa8"
+      "sha256": "35a944ac69ac5bacefc058413d10b211993b02c3ab852d503810f5cd32005da2"
     },
     {
       "path": "data/legion/016.jsonl",
       "records": 1000,
-      "sha256": "921e1e101da4c7481c1cd57cda465e5a07831275121580a7de4b5da1fc8133d0"
+      "sha256": "c29c70b52cca81ccc46d0989b2c3be54e39445729358b38e156caf72a2cfad95"
     },
     {
       "path": "data/legion/017.jsonl",
       "records": 1000,
-      "sha256": "1274a21dc87f5384fb66609b896b9d82ebe4f6856a753af55b707f69c4436eb3"
+      "sha256": "9f600c2dd12025a0363ce4a74b02a840bb813bfca681b835b1cde770dfd55925"
     },
     {
       "path": "data/legion/018.jsonl",
       "records": 1000,
-      "sha256": "ca93f6608f38ed51b7c5d6654f16f7aadf596b2751d4235ceeb111969e0f702a"
+      "sha256": "cd4d93e42c4d080d4e8f08d45106f4399ee9a17e88cceb190814f3ec9de0fcbf"
     },
     {
       "path": "data/legion/019.jsonl",
       "records": 1000,
-      "sha256": "24ba72a6634357d43378abbac980d8281855f1c0c9e27722c3b25820efe9c154"
+      "sha256": "e4ed7bd46082261f0e00acc1f3e3de19c5cea8d393fa6f4920f31715d280b2f4"
     },
     {
       "path": "data/legion/020.jsonl",
       "records": 1000,
-      "sha256": "ab54ed705e462069c6e00f052e173543ec9614f02b948d5c8d0b08ad6d27d48a"
+      "sha256": "9330033bb79b0e764648c20d1b774162f9c0598cabd88e31f3bebceb76334186"
     },
     {
       "path": "data/legion/021.jsonl",
       "records": 1000,
-      "sha256": "945971feab91b5abdc34c50b02395e7e73c8aa8a8aca3aebf86521f498445734"
+      "sha256": "cd86e07579b2bea70074382b133ac663d1e0f1ac7b89777fdb23f875ad0154c3"
     },
     {
       "path": "data/legion/022.jsonl",
       "records": 1000,
-      "sha256": "41baa0ef845c016e37db5a29b9ec286fa5953cfccd794a99abe74e1744a4c645"
+      "sha256": "e6a228c054d4627d7c6b8a8d2cc99e3733b8aec7ed6912bcfa58953210032372"
     },
     {
       "path": "data/legion/023.jsonl",
       "records": 1000,
-      "sha256": "9ae3d6fd5b0c5d6ccf288a5876cfc52bbe470d9755633432a7f4563e0195e00e"
+      "sha256": "775d7fd4105d3fd05d8e0b0c052bf14c4495e17d0898e42a08a388e4092cd4e6"
     },
     {
       "path": "data/legion/024.jsonl",
       "records": 1000,
-      "sha256": "50f8aa0146660247ee1b46ea7592f9d36a93acc3936c28551cfa040f789399de"
+      "sha256": "2efd81f89218f697aacf3eeef335634c8396c66fda150154af393888ab6886be"
     },
     {
       "path": "data/legion/025.jsonl",
       "records": 1000,
-      "sha256": "b7cb774b8e63e2580323296a084d30c114ca67dd94e9de3b33a58867494a8922"
+      "sha256": "0bb764a8ba09287bd2c85dd3fba44400251d9979a587a69a3ebd5eb2d1089750"
     },
     {
       "path": "data/legion/026.jsonl",
       "records": 1000,
-      "sha256": "1d72acc5f4e108d2484da7f92a865e97b97269906065b1f721011e3bf94b96a7"
+      "sha256": "1aafe0b7f1384aef9b71ee6e379166dea0e0695657f39bb47f2e32757e1feda7"
     },
     {
       "path": "data/legion/027.jsonl",
       "records": 1000,
-      "sha256": "a1a74378e9cf564851c7eefa16e78cecac6d9dea83c0d6c99153dc025020ca1e"
+      "sha256": "e09b7d6b70486d331a0cfe7fc3456f8b84bbf26523109f2ebab6e9d9733ad587"
     },
     {
       "path": "data/legion/028.jsonl",
       "records": 1000,
-      "sha256": "2c133585d6ec586cb66dc8a17a8a70691be001e5a0e0635b559d2c7f50ab240d"
+      "sha256": "c3c88be6be2231b6abf15a337e1c36a2ed29e2a5a2380dd88322519f85969f77"
     },
     {
       "path": "data/legion/029.jsonl",
       "records": 716,
-      "sha256": "eb1ddeda21add0d0df6b7293fe3fbbe5e5e07d53016113500106e45c88b809ee"
+      "sha256": "ec5275da6004eda13a26d65e576db38e2ed4730c223d941eb962c2b927b0396f"
     }
   ],
   "actors": {

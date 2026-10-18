@@ -13,3 +13,17 @@
 .quest-history{display:flex;align-items:center;gap:12px;min-width:0;margin:0 0 20px;padding-bottom:16px;border-bottom:1px solid var(--line)}.quest-history button{flex-shrink:0;font-size:12px;color:#536d43;background:#edf1e5;border-color:#dae2ce}.quest-history button:disabled{background:transparent;color:var(--muted)}.quest-history span{font-size:11px;color:#879175;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .variable-badge{display:inline-block;margin:0 .18em;padding:1px 6px;font:12px/1.5 "Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:0;vertical-align:baseline;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 .reader-top,.reader-actions{flex-wrap:wrap}.reader-actions>a{display:inline-block;padding:3px 8px;font-size:10px;text-decoration:none;border:1px solid #dae2ce;border-radius:6px;background:#edf1e5;color:#536d43;white-space:nowrap}.reader-actions>a:hover{background:#e2ead6}.reader-actions button{white-space:nowrap}
+
+/* Keep the task catalog beside long prose instead of leaving an empty column. */
+@media(min-width:651px){
+ .workbench{overflow:clip}
+ .catalog-pane{position:sticky;top:16px;align-self:start;height:calc(100vh - 32px);height:calc(100dvh - 32px);min-height:0;overflow-y:auto;scrollbar-width:thin}
+ .catalog-pane>:not(.quest-list){flex-shrink:0}
+ .catalog-pane .quest-list{flex:1;min-height:120px;max-height:none;overscroll-behavior:contain}
+ .catalog-pane .pagination{margin-top:0}
+}
+.text-sources{overflow-x:auto;margin:16px 0;font-size:11px}
+.text-sources table{width:100%;border-collapse:collapse}
+.text-sources th,.text-sources td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+.text-sources td:first-child{white-space:nowrap}
+.text-sources small{display:block;color:var(--muted)}

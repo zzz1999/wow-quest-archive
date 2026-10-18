@@ -18,6 +18,8 @@
 - 任务详情顶部的“在 Wowhead 查看”会在新标签页打开对应任务的中文页面：经典旧世、巫妖王之怒、大地的裂变、潘达利亚之谜分别使用 `classic`、`wotlk`、`cata`、`mop-classic` 数据库，军团再临使用正式服数据库。此入口需要联网；Wowhead 的现行资料可能与本库的历史快照不同，也可能没有对应任务。已确认的社区自定义任务不显示该入口。
 - 任务详情顶部的“返回上一任务”可沿查阅路径逐步回退，恢复筛选、列表分页与滚动位置、已展开信息和正文阅读位置；支持浏览器后退 / 前进及刷新后继续返回。直接打开的首条任务没有返回目标。
 - 英文原文、字段实际语言、原始来源表 / 列、采集 build，以及奖励 / 条件原始字段。
+- 每个版本使用多个同版本数据源补充文字；“原始资料”中可按字段查看实际数据库来源及匹配依据。
+- 双栏模式下任务列表随页面保持可见、独立滚动；阅读长任务时仍可在左侧查找下一条。
 - 按版本、关键词、标题语言、区域 ID、等级和正文筛选；浏览器本地书签。
 - 单任务 JSON、可复制文本，以及当前筛选全部结果的 JSONL 导出。
 - 单份 NPC / 物件档案 JSON，以及当前筛选档案的 JSONL 导出。
@@ -41,6 +43,8 @@
 
 每个字段依次尝试 **简体中文 → 繁体中文 → 英文**。缺失保留为空，不补写剧情、不自动翻译。没有汉字的中文表英文占位值不计为汉化；损坏字符会触发继续回退并记录 `textIssues`。完整语言覆盖统计在网页“来源与收录情况”和 [reports/coverage.json](reports/coverage.json)。
 
+五个版本分别增加 MaNGOS Zero、CMaNGOS WotLK、Firelands、SkyFire 5.4.8、LegionCore 7.3.5 作为补充来源；只匹配同版本已有任务的英文标题和对应内容，保留现有同语言文字和非文本资料。本次补充 **27,364 个文字字段**，其中 **23,270 个原为空白**；经典旧世简中标题由 3,105 增至 4,222。具体覆盖变化、来源限制和逐字段清单见 [文字检查报告](docs/TEXT-AUDIT.md)。
+
 已知资料限制：大地的裂变有部分旧译文（已确认任务 2，网页提示翻译待核）；潘达利亚部分中文来自较晚客户端采集，另有 **116 条已核实的社区自定义任务**，默认隐藏；军团的进行中 / 完成对白多数仍需英文回退。详见 [数据字典](docs/DATA.md)。
 
 ## 文件入口
@@ -52,9 +56,11 @@ data/<version>/*.jsonl      UTF-8 任务记录，每行一个任务，约每千�
 data/<version>/actors/*.jsonl  NPC 与任务物件档案，含双向任务关系
 data/<version>/manifest.json
 reports/coverage.json      每个字段的语言、缺失统计与分片哈希
+reports/text-audit/        多源补充前后统计与逐字段匹配记录
 sources/manifest.json      固定提交、下载 URL、SHA-256、处理顺序与许可
 sources/licenses/          上游许可证、署名与版权原件
 docs/DATA.md               字段、回退规则、限制与复现方法
+docs/TEXT-AUDIT.md         本次文字检查结果与剩余缺口
 docs/AI-RESEARCH.md         给 AI 的检索与研究建议
 scripts/                   不依赖第三方包的导入、构建与校验工具
 ```
@@ -80,4 +86,4 @@ node scripts/rebuild.mjs    # 从固定源完整重建；需要联网及解压�
 
 ## 许可与署名
 
-原创网页与工具采用 MIT。任务数据遵循各自上游许可；MaNGOS Three 数据库有 CC BY-NC-SA 3.0 的非商业等要求，翻译子目录另附 GPL-2.0。请保留 [DATA-LICENSE.md](DATA-LICENSE.md) 和 `sources/licenses/`。魔兽世界原文及相关内容归 Blizzard Entertainment 或相应权利人所有，代码开源许可不等于游戏原文或模型训练授权。本项目与 Blizzard 无隶属关系。
+原创网页与工具采用 MIT。任务数据遵循各自上游许可；MaNGOS Zero / Three 数据库有 CC BY-NC-SA 3.0 的非商业等要求，翻译子目录另附 GPL-2.0。请保留 [DATA-LICENSE.md](DATA-LICENSE.md) 和 `sources/licenses/`。魔兽世界原文及相关内容归 Blizzard Entertainment 或相应权利人所有，代码开源许可不等于游戏原文或模型训练授权。本项目与 Blizzard 无隶属关系。

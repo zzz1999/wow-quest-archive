@@ -11,6 +11,11 @@
 | MaNGOS Three (4.3.4) | 数据库 CC BY-NC-SA 3.0；Translations 子目录另附 GPL-2.0。保留两份原始声明及非商业限制 |
 | alexkulya/pandaria_5.4.8 | GPL-2.0；社区 5.4.8 适配数据，含后续采集的本地化文字 |
 | TrinityCore TDB735.00 | GPL-2.0 项目声明及 COPYING 原件 |
+| MaNGOS Zero（经典旧世补充） | 数据库 CC BY-NC-SA 3.0；Translations 子目录另附 GPL-2.0，保留两份声明 |
+| CMaNGOS WotLK-DB（巫妖王之怒补充） | GPL-3.0；另有 Blizzard COPYRIGHT.md 声明 |
+| FirelandsProject/firelands-cata（大地的裂变补充） | GPL-2.0，保留 LICENSE 与 AUTHORS |
+| ProjectSkyfire/SkyFire_548（潘达利亚补充） | GPL-3.0，保留 LICENSE.md 与 README.md |
+| dufernst/LegionCore-7.3.5（军团补充） | 项目标示 GPL-2.0；README 明示核心源自 UWOW 2020 泄露版本。保留该来源说明，不把公开仓库或许可证标示视作游戏文本的独立权利证明 |
 
 World of Warcraft 及相关任务文本、角色、世界设定、商标与游戏内容归 Blizzard Entertainment 或相应权利人所有。本项目为独立研究与资料整理项目，与 Blizzard Entertainment 无隶属或授权关系。
 

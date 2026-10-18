@@ -63,6 +63,69 @@
           "sha256": "bbee8c3ca416b4a8818112d6b0c2ffe10b5daac3df2306496f6dcfa0f8468c27",
           "input": true
         }
+      ],
+      "supplements": [
+        {
+          "id": "mangoszero-classic",
+          "version": "classic",
+          "repo": "mangoszero/database",
+          "commit": "325948a78015794e6cc626212bc19fee70c805b2",
+          "patch": "1.12.1–1.12.3",
+          "snapshot": "World/Setup/FullDB + Chinese/Taiwanese quest translations",
+          "note": "同版本独立补充库；只补入与主库英文标题及对应字段/上下文匹配的文字。翻译可能保留社区用词，未进行人工改写。",
+          "license": "Database CC-BY-NC-SA-3.0; translation subdirectory GPL-2.0",
+          "assets": [
+            {
+              "name": "schema.sql",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/World/Setup/mangosdLoadDB.sql",
+              "bytes": 208613,
+              "sha256": "99cba9dc5a25e5cae65db5d2fff6ad7daa13130475c898f765520d68c7d73f80",
+              "input": true
+            },
+            {
+              "name": "quest_template.sql",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/World/Setup/FullDB/quest_template.sql",
+              "bytes": 4408183,
+              "sha256": "3a738ffd4844b1009d670976ff033a0d2f6acfda6c4fe8a8b08dbdd73bea79f7",
+              "input": true
+            },
+            {
+              "name": "Chinese_Quest.sql",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/Translations/Translations/Chinese/Chinese_Quest.sql",
+              "bytes": 3843996,
+              "sha256": "a487ba961de56dd243f82d601cf18380b2b6d553f7aac44531624137003c4a3e",
+              "input": true
+            },
+            {
+              "name": "Taiwanese_Quest.sql",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/Translations/Translations/Taiwanese/Taiwanese_Quest.sql",
+              "bytes": 86746,
+              "sha256": "7f1208d2b5657e5bca77d83a1c943a9484c1d3916e11c35da2088863d7d15985",
+              "input": true
+            },
+            {
+              "name": "mangoszero-LICENSE.md",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/LICENSE.md",
+              "bytes": 2255,
+              "sha256": "67223cc4fe802fa6290382a02e6519c87bcb8ec8124b1321719799cc9f9aca58",
+              "input": false
+            },
+            {
+              "name": "mangoszero-Translations-LICENSE",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/Translations/LICENSE",
+              "bytes": 18046,
+              "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73",
+              "input": false
+            },
+            {
+              "name": "mangoszero-README.md",
+              "url": "https://raw.githubusercontent.com/mangoszero/database/325948a78015794e6cc626212bc19fee70c805b2/README.md",
+              "bytes": 4705,
+              "sha256": "8375e2a068006a8d5e0ff449a7677bb6451091b5e30565015b8c425fff60bd71",
+              "input": false
+            }
+          ]
+        }
       ]
     },
     {
@@ -193,6 +256,56 @@
           "bytes": 18091,
           "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
           "input": false
+        }
+      ],
+      "supplements": [
+        {
+          "id": "cmangos-wotlk",
+          "version": "wotlk",
+          "repo": "cmangos/wotlk-db",
+          "commit": "a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0",
+          "patch": "3.3.5a",
+          "snapshot": "WoTLKDB_1_9_14092 + Chinese quest locales",
+          "note": "同版本任务基础快照和中文表；未运行后续更新，中文表与 CMaNGOS Classic 的文件同源，不能视为独立译文互证。",
+          "license": "GPL-3.0; separate Blizzard copyright notice",
+          "assets": [
+            {
+              "name": "cmangos-wotlk-COPYRIGHT.md",
+              "url": "https://raw.githubusercontent.com/cmangos/wotlk-db/a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0/COPYRIGHT.md",
+              "bytes": 1123,
+              "sha256": "82d2406c330adb4e4b96795821f79e7c171332008f5827d9ddc6433045477385",
+              "input": false
+            },
+            {
+              "name": "WoTLKDB_1_9_14092.sql.gz",
+              "url": "https://raw.githubusercontent.com/cmangos/wotlk-db/a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0/Full_DB/WoTLKDB_1_9_14092.sql.gz",
+              "bytes": 30009076,
+              "sha256": "8a380e6807ccf4b301d1412bdcfbe459b9eb2190f2c5d2ddda902365d41299ac",
+              "input": true,
+              "entry": "WoTLKDB_1_9_14092.sql"
+            },
+            {
+              "name": "cmangos-wotlk-LICENSE.md",
+              "url": "https://raw.githubusercontent.com/cmangos/wotlk-db/a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0/LICENSE.md",
+              "bytes": 35148,
+              "sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b",
+              "input": false
+            },
+            {
+              "name": "cmangos-wotlk-README.md",
+              "url": "https://raw.githubusercontent.com/cmangos/wotlk-db/a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0/README.md",
+              "bytes": 4968,
+              "sha256": "e7d3224fee132da7db95c3b4112454d3b7eb2daff854e83c8c71b66633dc0929",
+              "input": false
+            },
+            {
+              "name": "Chinese-locales_quest.sql",
+              "url": "https://raw.githubusercontent.com/cmangos/wotlk-db/a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0/locales/Chinese/locales_quest.sql",
+              "bytes": 7018016,
+              "sha256": "22799e4cdac36aacaed928803d911424e84c8ae5081db6584939b2c6d74b3233",
+              "input": true
+            }
+          ]
         }
       ]
     },
@@ -336,6 +449,62 @@
           "bytes": 18046,
           "sha256": "db296f2f7f35bca3a174efb0eb392b3b17bd94b341851429a3dff411b1c2fc73",
           "input": false
+        }
+      ],
+      "supplements": [
+        {
+          "id": "firelands-cata",
+          "version": "cataclysm",
+          "repo": "FirelandsProject/firelands-cata",
+          "commit": "b250899d4fdf68603e4d8a4d05b4b522d8319eb0",
+          "patch": "4.3.4",
+          "snapshot": "data/sql/base/db_world quest tables",
+          "note": "独立 4.3.4 基础表；本地化任务表为空，仅为已匹配任务补充缺少的英文对白及提示。未应用后续更新。",
+          "license": "GPL-2.0",
+          "assets": [
+            {
+              "name": "quest_template.sql",
+              "url": "https://raw.githubusercontent.com/FirelandsProject/firelands-cata/b250899d4fdf68603e4d8a4d05b4b522d8319eb0/data/sql/base/db_world/quest_template.sql",
+              "bytes": 12149965,
+              "sha256": "61d77a21f92646219e21d1074c06ff57274dca073c74c3f033fdbb114fcff123",
+              "input": true
+            },
+            {
+              "name": "quest_template_locale.sql",
+              "url": "https://raw.githubusercontent.com/FirelandsProject/firelands-cata/b250899d4fdf68603e4d8a4d05b4b522d8319eb0/data/sql/base/db_world/quest_template_locale.sql",
+              "bytes": 58412963,
+              "sha256": "76832a4dfc920681f9ca6208e5183d9f06b91d685405e5f0cd866524e99022e0",
+              "input": true
+            },
+            {
+              "name": "quest_request_items.sql",
+              "url": "https://raw.githubusercontent.com/FirelandsProject/firelands-cata/b250899d4fdf68603e4d8a4d05b4b522d8319eb0/data/sql/base/db_world/quest_request_items.sql",
+              "bytes": 843174,
+              "sha256": "4dc2a0c2c23c06dd5299b87fea528a5b12417998569cd004d98b1645efb58e24",
+              "input": true
+            },
+            {
+              "name": "quest_offer_reward.sql",
+              "url": "https://raw.githubusercontent.com/FirelandsProject/firelands-cata/b250899d4fdf68603e4d8a4d05b4b522d8319eb0/data/sql/base/db_world/quest_offer_reward.sql",
+              "bytes": 2358369,
+              "sha256": "0722e696cbfe5e4d90bac785b855a9a558b1430ae476c932d80ae07f4f18bd86",
+              "input": true
+            },
+            {
+              "name": "firelands-LICENSE",
+              "url": "https://raw.githubusercontent.com/FirelandsProject/firelands-cata/b250899d4fdf68603e4d8a4d05b4b522d8319eb0/LICENSE",
+              "bytes": 33928,
+              "sha256": "4294e37840b3b3c794d4b8f8a502c2f314c3b7707f521b49120c85a7e213a8c5",
+              "input": false
+            },
+            {
+              "name": "firelands-AUTHORS",
+              "url": "https://raw.githubusercontent.com/FirelandsProject/firelands-cata/b250899d4fdf68603e4d8a4d05b4b522d8319eb0/AUTHORS",
+              "bytes": 13432,
+              "sha256": "71d85c59547c92bc6436f7b21f283da3ddb177ecee07e7ec39ede0d438190205",
+              "input": false
+            }
+          ]
         }
       ]
     },
@@ -532,6 +701,42 @@
           "input": false,
           "role": "field-mapping-evidence"
         }
+      ],
+      "supplements": [
+        {
+          "id": "skyfire-548",
+          "version": "pandaria",
+          "repo": "ProjectSkyfire/SkyFire_548",
+          "commit": "e73070ed087137ed7740b4a37f4f30901a8a1237",
+          "patch": "5.4.8.18414",
+          "snapshot": "SFDB_full_548_26.002_2026_008_18_Release",
+          "note": "同版本 5.4.8 发布快照，仅补充已匹配的英文空字段；不导入新任务或覆盖中文。发布正文曾写 26.001，此处按实际 26.002 附件哈希锁定。",
+          "license": "GPL-3.0",
+          "assets": [
+            {
+              "name": "skyfire-world.zip",
+              "url": "https://github.com/ProjectSkyfire/SkyFire_548/releases/download/sf_db_26/SFDB_full_548_26.002_2026_008_18_Release.zip",
+              "bytes": 21625833,
+              "sha256": "d12ba9ecad381f3b5460612af2a172cd373afdd796c289e2ccc11315db21dd5f",
+              "input": true,
+              "entry": "SFDB_full_548_26.002_2026_008_18_Release.sql"
+            },
+            {
+              "name": "skyfire-LICENSE.md",
+              "url": "https://raw.githubusercontent.com/ProjectSkyfire/SkyFire_548/e73070ed087137ed7740b4a37f4f30901a8a1237/LICENSE.md",
+              "bytes": 35148,
+              "sha256": "f51a732c36a182d9489bc3f074b24aff519214acd72207a70aa24ca171e022f2",
+              "input": false
+            },
+            {
+              "name": "skyfire-README.md",
+              "url": "https://raw.githubusercontent.com/ProjectSkyfire/SkyFire_548/e73070ed087137ed7740b4a37f4f30901a8a1237/README.md",
+              "bytes": 3725,
+              "sha256": "70abb33ab1a240e68e8b09eedb71e9566448286e62468ada44727186804b0f17",
+              "input": false
+            }
+          ]
+        }
       ]
     },
     {
@@ -566,7 +771,44 @@
           "sha256": "6de195331cba3eae08fce5da9cb00e0155f0ae11915e5361019ad975db9a7f32",
           "input": false
         }
+      ],
+      "supplements": [
+        {
+          "id": "legioncore-735",
+          "version": "legion",
+          "repo": "dufernst/LegionCore-7.3.5",
+          "commit": "9222216e0dda0708ae53e6e6f6b07db7d65ba46f",
+          "patch": "7.3.5.26972",
+          "snapshot": "LegionCore_world_2020_04_25",
+          "note": "同版本社区世界数据库快照，仅补充与 Trinity 主库匹配的空白英文文本。上游说明核心源自 UWOW 2020 泄露版本；这是单独标注的社区来源，不代表官方采集或独立权利授权。",
+          "license": "GPL-2.0 project notice; upstream origin described in README",
+          "assets": [
+            {
+              "name": "legion-world.zip",
+              "url": "https://raw.githubusercontent.com/dufernst/LegionCore-7.3.5/9222216e0dda0708ae53e6e6f6b07db7d65ba46f/sql/base/LegionCore_world_2020_04_25.zip",
+              "bytes": 40632081,
+              "sha256": "21daee426c05a176dc829363a8bdec8fedec00428637a6ae00db2d5d8e34aa36",
+              "input": true,
+              "entry": "LegionCore_world_2020_04_25.sql"
+            },
+            {
+              "name": "legioncore-COPYING",
+              "url": "https://raw.githubusercontent.com/dufernst/LegionCore-7.3.5/9222216e0dda0708ae53e6e6f6b07db7d65ba46f/COPYING",
+              "bytes": 18092,
+              "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+              "input": false
+            },
+            {
+              "name": "legioncore-README.md",
+              "url": "https://raw.githubusercontent.com/dufernst/LegionCore-7.3.5/9222216e0dda0708ae53e6e6f6b07db7d65ba46f/README.md",
+              "bytes": 3244,
+              "sha256": "f879e4e3d6e4b3dcbf7dfdef9a19dc2bd5d2bb51dc38245a1538f947e8b130e7",
+              "input": false
+            }
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "textSupplementPolicy": "same-version-english-anchor-v1: locale zhCN > zhTW > enUS; primary wins equal locale; match English title and field or nonempty context; text only; do not import new quest IDs"
 }

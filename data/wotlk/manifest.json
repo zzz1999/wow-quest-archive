@@ -6,6 +6,25 @@
   "commit": "8265956f54c64ad082e2b9f8d37db64b38600b3f",
   "snapshot": "data/sql/base/db_world",
   "note": "固定提交中的基础表快照，未应用 updates。",
+  "license": "GPL-2.0",
+  "supplements": [
+    {
+      "id": "cmangos-wotlk",
+      "version": "wotlk",
+      "repo": "cmangos/wotlk-db",
+      "commit": "a69b5554e7bae06f02a384126cb1e7bcd8d1a1f0",
+      "patch": "3.3.5a",
+      "snapshot": "WoTLKDB_1_9_14092 + Chinese quest locales",
+      "note": "同版本任务基础快照和中文表；未运行后续更新，中文表与 CMaNGOS Classic 的文件同源，不能视为独立译文互证。",
+      "license": "GPL-3.0; separate Blizzard copyright notice"
+    }
+  ],
+  "textAudit": {
+    "policy": "same-version-english-anchor-v1",
+    "changedQuests": 20,
+    "changedFields": 20,
+    "report": "reports/text-audit/wotlk.json"
+  },
   "count": 9464,
   "fields": {
     "title": {
@@ -29,20 +48,20 @@
     "progress": {
       "zhCN": 7435,
       "zhTW": 0,
-      "enUS": 28,
-      "missing": 2001
+      "enUS": 43,
+      "missing": 1986
     },
     "completion": {
       "zhCN": 9087,
       "zhTW": 0,
-      "enUS": 60,
-      "missing": 317
+      "enUS": 61,
+      "missing": 316
     },
     "end": {
       "zhCN": 490,
       "zhTW": 1,
-      "enUS": 3,
-      "missing": 8970
+      "enUS": 7,
+      "missing": 8966
     },
     "completed": {
       "zhCN": 6122,
@@ -105,52 +124,52 @@
     {
       "path": "data/wotlk/000.jsonl",
       "records": 1000,
-      "sha256": "0c720a55765a5ddbf42323a9ad631b8557a35dc82687b6ede27ed44a18d068d8"
+      "sha256": "7ef88c523cef9ef0b1dbf8a9d9564ff8d6e5c33dde356308b348b0f84f97d9f8"
     },
     {
       "path": "data/wotlk/001.jsonl",
       "records": 1000,
-      "sha256": "92e445b63b6c54fa752de2b9b5f731b5bf4b25cacd163357fcc11619972cd29a"
+      "sha256": "7f7ba02035cddc71af7d92174a2378a8f42c37099a60077c9857eed6acec6532"
     },
     {
       "path": "data/wotlk/002.jsonl",
       "records": 1000,
-      "sha256": "30e6c4cd2cef6cb1fa97f5fb5b036564be5b5efe7af1f42e8661934a990e237e"
+      "sha256": "6760f08c27f6b6baa181fc28b9a42176916012a26df265daf810a0741acb5175"
     },
     {
       "path": "data/wotlk/003.jsonl",
       "records": 1000,
-      "sha256": "c5624e317eba0871ed664a72415b72c3a64d0f26775c3402f58b962ce1f718cf"
+      "sha256": "9972fdce5a31dcd0387e4fb22d05a4a75485034b91a1b62fa67529f8e3c70378"
     },
     {
       "path": "data/wotlk/004.jsonl",
       "records": 1000,
-      "sha256": "995f594bcccb22efa1b9ccaffded3e7bab0498642f4415724428ee8dc45aac26"
+      "sha256": "9471848d958d88687f9218d74c09f300157c3aa27792ad48e676057834b32255"
     },
     {
       "path": "data/wotlk/005.jsonl",
       "records": 1000,
-      "sha256": "b68ab81e54ef5a0fd2a6db7f22b40c25179efcab24f64ef98895d352f5d35d93"
+      "sha256": "b24106b6237a5c874c0835008107a7df65adf1a95fb3b67333d9cb7bd8cbe77c"
     },
     {
       "path": "data/wotlk/006.jsonl",
       "records": 1000,
-      "sha256": "5423599094b795b08baa9ef4e0856d2ad7858ef71a233132f5d073c9550720bf"
+      "sha256": "db4434fc8ce0367135920562bc78036f8fdf37575ccfccc1edf1a9923009cf4a"
     },
     {
       "path": "data/wotlk/007.jsonl",
       "records": 1000,
-      "sha256": "3aa00bb40bfe15873a15c3f1f3d7d96e296405cac562b76a43a24e7ef105dae9"
+      "sha256": "eee56faf14ddeca67906695a3d933d5a4267aebf01e140d32c1e03c181aaa331"
     },
     {
       "path": "data/wotlk/008.jsonl",
       "records": 1000,
-      "sha256": "5a2cc1eb91a1dae9323456bad718076e462411d7248c7232a7d5ee03279557ae"
+      "sha256": "f0080090cacfa842141c658cc08665afd7af047b203a60b7ea8d55eebe0fa354"
     },
     {
       "path": "data/wotlk/009.jsonl",
       "records": 464,
-      "sha256": "d01febf7c7adc844994ff543fe628abb6551ccb06d22c5e64ece94caf22fe620"
+      "sha256": "eddf67956501071a32a4496c50ef22a22db3954c20acdad6a2dcc4f80c49d360"
     }
   ],
   "actors": {

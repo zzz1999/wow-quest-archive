@@ -1,0 +1,747 @@
+{
+  "version": "pandaria",
+  "policy": "same-version-english-anchor-v1",
+  "before": {
+    "title": {
+      "zhCN": 13006,
+      "zhTW": 171,
+      "enUS": 4966,
+      "missing": 1
+    },
+    "objectives": {
+      "zhCN": 11978,
+      "zhTW": 165,
+      "enUS": 3498,
+      "missing": 2503
+    },
+    "description": {
+      "zhCN": 11982,
+      "zhTW": 162,
+      "enUS": 3522,
+      "missing": 2478
+    },
+    "progress": {
+      "zhCN": 6114,
+      "zhTW": 55,
+      "enUS": 2574,
+      "missing": 9401
+    },
+    "completion": {
+      "zhCN": 8423,
+      "zhTW": 77,
+      "enUS": 7395,
+      "missing": 2249
+    },
+    "end": {
+      "zhCN": 480,
+      "zhTW": 5,
+      "enUS": 190,
+      "missing": 17469
+    },
+    "completed": {
+      "zhCN": 693,
+      "zhTW": 19,
+      "enUS": 11088,
+      "missing": 6344
+    },
+    "giverWindow": {
+      "zhCN": 778,
+      "zhTW": 3,
+      "enUS": 38,
+      "missing": 17325
+    },
+    "giverTarget": {
+      "zhCN": 793,
+      "zhTW": 4,
+      "enUS": 40,
+      "missing": 17307
+    },
+    "turninWindow": {
+      "zhCN": 138,
+      "zhTW": 0,
+      "enUS": 19,
+      "missing": 17987
+    },
+    "turninTarget": {
+      "zhCN": 141,
+      "zhTW": 0,
+      "enUS": 21,
+      "missing": 17982
+    },
+    "objective1": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    },
+    "objective2": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    },
+    "objective3": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    },
+    "objective4": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    }
+  },
+  "sources": [
+    {
+      "id": "skyfire-548",
+      "records": 17934,
+      "matchedQuests": 17901,
+      "unmatchedTitles": 21,
+      "customQuestsSkipped": 0,
+      "rejectedFields": 5,
+      "selectedFields": 68
+    }
+  ],
+  "changes": [
+    {
+      "id": 13572,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 14098,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 14452,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 14455,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 14459,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 14461,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24639,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24642,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24751,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24754,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24759,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24762,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24765,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24768,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24771,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24774,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24777,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24780,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24783,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24786,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24852,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 24861,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25126,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25131,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25165,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25167,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25168,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25172,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25642,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 25934,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 26078,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 26146,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 26148,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 26273,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 26276,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29401,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-objectives"
+    },
+    {
+      "id": 29409,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29422,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29661,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29663,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29664,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29666,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29769,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29778,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29779,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29780,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 29788,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30033,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30034,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30035,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30036,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30037,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30038,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30159,
+      "field": "end",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 30827,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31018,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31139,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31140,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31141,
+      "field": "giverWindow",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31141,
+      "field": "giverTarget",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31158,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31161,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31387,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31389,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31539,
+      "field": "completed",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31732,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31734,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    },
+    {
+      "id": 31735,
+      "field": "progress",
+      "source": "skyfire-548",
+      "fromLocale": null,
+      "toLocale": "enUS",
+      "match": "english-title-and-description"
+    }
+  ],
+  "after": {
+    "title": {
+      "zhCN": 13006,
+      "zhTW": 171,
+      "enUS": 4966,
+      "missing": 1
+    },
+    "objectives": {
+      "zhCN": 11978,
+      "zhTW": 165,
+      "enUS": 3498,
+      "missing": 2503
+    },
+    "description": {
+      "zhCN": 11982,
+      "zhTW": 162,
+      "enUS": 3522,
+      "missing": 2478
+    },
+    "progress": {
+      "zhCN": 6114,
+      "zhTW": 55,
+      "enUS": 2630,
+      "missing": 9345
+    },
+    "completion": {
+      "zhCN": 8423,
+      "zhTW": 77,
+      "enUS": 7395,
+      "missing": 2249
+    },
+    "end": {
+      "zhCN": 480,
+      "zhTW": 5,
+      "enUS": 191,
+      "missing": 17468
+    },
+    "completed": {
+      "zhCN": 693,
+      "zhTW": 19,
+      "enUS": 11097,
+      "missing": 6335
+    },
+    "giverWindow": {
+      "zhCN": 778,
+      "zhTW": 3,
+      "enUS": 39,
+      "missing": 17324
+    },
+    "giverTarget": {
+      "zhCN": 793,
+      "zhTW": 4,
+      "enUS": 41,
+      "missing": 17306
+    },
+    "turninWindow": {
+      "zhCN": 138,
+      "zhTW": 0,
+      "enUS": 19,
+      "missing": 17987
+    },
+    "turninTarget": {
+      "zhCN": 141,
+      "zhTW": 0,
+      "enUS": 21,
+      "missing": 17982
+    },
+    "objective1": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    },
+    "objective2": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    },
+    "objective3": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    },
+    "objective4": {
+      "zhCN": 0,
+      "zhTW": 0,
+      "enUS": 0,
+      "missing": 18144
+    }
+  },
+  "changedQuests": 67,
+  "changedFields": 68
+}
